@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="consultarCotizacion" skipped="0" tests="1" time="50.35" timestamp="2023-08-01 09:52:24"><testcase name="Consultar cotizacion"><error message="Cannot locate element with text: 118 - ACCIDENTES PERSONALES INDIVID.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'QV-4163', ip: '192.168.101.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: driver.version: unknown&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'QV-4163', ip: '192.168.101.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Cannot locate element with text: 118 - ACCIDENTES PERSONALES INDIVID.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QV-4163', ip: '192.168.101.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QV-4163', ip: '192.168.101.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: unknown</error><system-err>Cannot locate element with text: 118 - ACCIDENTES PERSONALES INDIVID.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QV-4163', ip: '192.168.101.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QV-4163', ip: '192.168.101.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: unknown&#13;
+com.Pages.consultaCotizacionPage.selectseccion(consultaCotizacionPage.java:63)&#13;
+com.Steps.stepConsultaCotizacion.selectseccion(stepConsultaCotizacion.java:21)&#13;
+co.com.simonVentas.stepdefinitions.consultarCotizacionStepDefnition.llenoElFormulario(consultarCotizacionStepDefnition.java:37)&#13;
+✽.Lleno el formulario(file:///C:/Users/Victor%20perez/Downloads/SimonVentas/src/test/resources/features/consultaCotizacion.feature:10)&#13;
+</system-err></testcase></testsuite>

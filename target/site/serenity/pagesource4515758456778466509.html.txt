@@ -1,0 +1,3502 @@
+<html><head>
+
+<title>Cotizacion Portafolio Vida</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+body {
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+/* #footer {
+	bottom: 0;
+	width: 100%;
+	background: #F5F5F5;
+} */
+/*Mantis: 0048613 disabled field not visible on ipad*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+		-webkit-text-fill-color:#000000;
+		-webkit-opacity: .7;
+   		 
+	}
+ }
+</style>
+
+
+<link href="/SimonQuotation/css/quotation-main.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+<link href="/SimonQuotation/css/jquery.masterblaster.css" rel="stylesheet">
+
+<link href="/SimonQuotation/css/bootstrap-cerulean.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/bootstrap-responsive.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/charisma-app.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery-ui-1.8.21.custom.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.print.css?v=SimonQuotation_20230727" rel="stylesheet" media="print">
+<link href="/SimonQuotation/css/chosen.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+<link href="/SimonQuotation/css/colorbox.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.cleditor.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.noty.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/noty_theme_default.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.min.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.theme.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.iphone.toggle.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/opa-icons.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/uploadify.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/consultas/headerPanel.css?v=SimonQuotation_20230727" rel="stylesheet">  
+	<link href="/SimonQuotation/css/consultas/plugins.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/rcarousel.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/main.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/drop-down-search.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+<link rel="shortcut icon" href="/SimonQuotation/img/simon_Logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+
+<link href="/SimonQuotation/css/project.css?v=SimonQuotation_20230727" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	
+
+
+
+<style>
+table.clockTable {
+    margin-left: auto;
+    margin-right: auto;
+	font-family: arial, sans-serif;
+	background-color: #048235;
+	width: 50%;
+	color:#ffcc00; !important;
+}
+
+ td.clockTable {
+	border: 1px solid #ffcc00;
+	text-align: center;
+	font-weight: bold;
+}
+</style>
+<!-- topbar starts -->
+<header>
+<div class="navbar">
+	<div class="">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+			</a> <a class="brand" tabindex="-1" href="agentHomeAction.do" style="margin-left: 30px;"> <img alt="Simon" src="/SimonQuotation/img/consultas/logo-seguros-bolivar.png">
+			</a>
+			 
+			<div class="btn-group pull-right theme-container">
+			
+<div>
+	<table class="clockTable">
+		<tbody><tr>
+			<td class="clockTable"><span id="sw_h">00</span></td>
+			<td class="clockTable"><span id="sw_m">00</span></td>
+			<td class="clockTable"><span id="sw_s">02</span></td>
+		</tr>
+	</tbody></table>
+</div>
+			
+				<a class="btn " href="#" id="userButton"> <i class="icon-user"></i><span class="hidden-phone">Wilson Enrique Sacristan Vaca</span> <span class="caret"></span>
+				</a>
+				
+				<input type="hidden" id="employeeType_analytic" name="employeeType_analytic" value="CC">
+				<input type="hidden" id="userName_analytic" name="userName_analytic" value="79468066">
+				
+				<ul class="dropdown-menu" id="userInfo">
+					<li><a><i class="icon-blank"></i> Número de Documento :
+							CC-79468066</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Nombre Completo : Wilson Enrique Sacristan Vaca</a></li>
+					
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Correo Electrónico :<b> Wilson.Sacristan@segurosbolivar.com</b></a></li>
+
+					<li><a><i class="icon-blank"></i> Celular :
+							<b>----</b></a></li>
+					<li><a><i class="icon-blank"></i> Teléfono :
+							<b>----</b></a></li>
+
+					 <li><a><i class="icon-blank"></i> Tipo de Usuario :
+							Empleado</a></li>
+					<li><a><i class="icon-blank"></i> Código de Empleado :
+							16659</a></li>
+					
+					<li><a><i class="icon-blank"></i> Actividad Comercial :
+							48 (Interno)</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Área/Localidad : <b></b></a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Subtipo : 1 Empleado Administrativo</a></li>
+
+					<li>
+						<div class="form-actions">
+							<a class="btn pull-right" id="logout" name="/SimonQuotation/logoutAction.do"> <span>Log Out</span>
+							</a>
+
+						</div>
+
+					</li>
+				</ul>
+
+
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+</header>
+
+
+
+<!-- topbar ends -->
+
+
+<noscript>
+	<div class="alert alert-block span10">
+		<h4 class="alert-heading">Warning!</h4>
+		<p>
+			You need to have <a href="http://en.wikipedia.org/wiki/JavaScript"
+				target="_blank">JavaScript</a> enabled to use this site.
+		</p>
+	</div>
+</noscript>
+
+	<span> <input type="hidden" id="loginUserCompany" name="loginUserCompany" value="2"> <input type="hidden" id="loginUserCountry" name="loginUserCountry" value="CO"> <input type="hidden" id="contextProject" name="contextProject" value="/SimonQuotation"> <input type="hidden" id="userName" name="userName" value="79468066"> <input type="hidden" id="codProcesoQuotation" name="codProcesoQuotation" value="241"> <input type="hidden" id="codAgent" name="codAgent" value="16659"> <input type="hidden" id="info2" name="info2" value="16659">
+		<input type="hidden" id="info3" name="info3" value="48;1"> <input type="hidden" id="codProcessoFormalization" name="codProcessoFormalization" value="270"> <input type="hidden" id="codSubProcesoFormalization" name="codSubProcesoFormalization" value="260">
+		<!-- Added for Autos Collectiva -->
+		<input type="hidden" id="autosCollectiva" name="autosCollectiva" value="">
+		<input type="hidden" id="isTomadorBlock" name="isTomadorBlock" value="false">
+		<input type="hidden" id="isAseguradoBlock" name="isAseguradoBlock" value="false">
+		<input type="hidden" id="isConductorBlock" name="isConductorBlock" value="false">
+		<input type="hidden" id="isBeneficiarioBlock" name="isBeneficiarioBlock" value="false">
+		<input type="hidden" id="isRepLegBlock" name="isRepLegBlock" value="false">
+		<input type="hidden" id="isLocatarioBlock" name="isLocatarioBlock" value="false">
+		<input type="hidden" id="isOnerosoBlock" name="isOnerosoBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaBlock" name="isDebitoAutomaBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaAhorroBlock" name="isDebitoAutomaAhorroBlock" value="false">
+	</span>
+	<span id="inspectionNotRequired" style="display: none"> El solicitante ya cuenta con agendamiento activo.</span>
+
+	<span id="inspectionRequired" style="display: none"> El solicitante requiere exámenes médicos.</span>
+
+	<!-- --       Inspecion Message  For Autos  ajuste BRGH  -->
+	<span id="inspectionNotRequiredAutos" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionRequiredAutos" style="display: none"> Este riesgo  requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="quotationCanNotBeFormalizeCommonMsg" style="display: none">
+		Cotización NO valida para Formalizar.
+	</span>
+
+	<!-- mail: Fwd: Mantis 43543 -->
+	<span id="quotationNotValidForThisProcess" style="display: none">
+		COTIZACION NO VALIDA PARA ESTE PROCESO
+	</span>
+
+	<!-- --       Inspecion Message  For Hogar    -->
+	<span id="inspectionNotRequiredHogar" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionNotRequiredHogarConsultation" style="display: none">
+		Información de Agendamiento ya registrada. Puede continuar con el proceso de Emisión
+	</span>
+
+	<span id="inspectionRequiredHogar" style="display: none"> Esta cotización requiere agendamiento (o Inspección).</span>
+
+
+
+
+	<!-- --       Inspecion Message ends here                -->
+	<div class="container-fluid">
+		<div class="row-fluid">
+
+
+			<!-- left menu starts -->
+			
+				
+				
+					<div class="span2 main-menu-span">
+						
+
+<link href="/SimonQuotation/css/menuV2.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NSL0NL569E&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-7G044K4EYT&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/SimonQuotation/js/menuV2.js" type="text/javascript"></script>
+
+
+<!-- <div class="well nav-collapse sidebar-nav"> -->
+<!-- 	<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu"> -->
+
+<!-- 	</ul> -->
+<!-- 	<div>&nbsp;</div> -->
+<!-- </div> -->
+
+
+
+	
+	
+	
+		<div class="well nav-collapse sidebar-nav">
+			<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu">
+				
+							<li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones</span></a><ul class="sub" style="display: none; left: 146px; top: 0px;"><li><a href="quotationConsultation.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/consultaIcon.png">Consulta Cotización por Numero</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Autos</span></a><ul class="sub" style="display: none; left: 146px; top: 57px;"><li><a href="autosHomeAgentNew.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/autosIcon.png">Autos Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Hogar</span></a><ul class="sub" style="display: none; left: 146px; top: 115px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/user=hogarOld">Hogar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Salud</span></a><ul class="sub" style="display: none; left: 146px; top: 172px;"><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png">Salud</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Vida</span></a><ul class="sub" style="display: none; left: 146px; top: 229px;"><li><a href="vidaHomeAgentPortafolio.do"> Portafolio Tranquilidad en Vida</a></li><li><a href="vidaHomeAgent.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png">Vida Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion Pymes</span></a><ul class="sub" style="display: none; left: 146px; top: 267px;"><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Cotización nuevo riesgo</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Fuerza de Ventas</span></a><ul class="sub" style="display: none; left: 146px; top: 324px;"><li><a href="https://ambientepruebas.segurosbolivar.com/SimonQuotation/vidaColectivaCertificaciones.do"> Certificaciones</a></li><li><a href="https://stgfuerzaventas.bolnet.com.co/"> Gestión de Solicitudes</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Simulador Finanseguros</span></a><ul class="sub" style="display: none; left: 146px; top: 381px;"><li><a href="https://www.segurosbolivar.com/PrestamosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjkwNTQ5NjgzLCJleHAiOjE2OTA1NjQwODN9.BKb7Cs86jAf89Vs4ZmXicCJlf-xJnAOxFMiwvjX-vHiGh30VVEA0GO8rBd5h3IcfoPBXRU65SMpfrTPHWFjw2Q"> Prestamo Digital Bolivar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Agendamiento</span></a><ul class="sub" style="display: none; left: 146px; top: 439px;"><li><a href="consultAgendamiento.do"> Consulta Agendamiento Vida</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Colectivas Test</span></a><ul class="sub" style="display: none; left: 146px; top: 476px;"><li><a href="transmilinioUploadCSV.do"> Cargue Archivo Colectivas</a></li><li><a href="transmilinioNegociacionCreate.do"> Solicitud de Cotización Autos Colectivas</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Test autosIcon.png</span></a><ul class="sub" style="display: none; left: 146px; top: 533px;"><li><a href="autosImpresionPoliza.do"> Consulta Pólizas Autos</a></li><li><a href="autosHomeAgentNew.do"> Cotización Autos</a></li><li><a href="autosQuotationFromAnotherQuotation.do"> Cotización basada en otra Cotización Test</a></li><li><a href="autosFormalizationInicio.do"> Formalización Cotización Autos Test</a></li><li><a href="https://www.cdaautomas.co/virtualbolivar"> Inspecciones Autos Automas test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones Test</span></a><ul class="sub" style="display: none; left: 146px; top: 591px;"><li><a href="quotationConsultation.do"> Consulta Cotización por Rango de Fechas Test</a></li><li><a href="policyConsultation.do"> Consulta de Pólizas Provisorias por Rango de Fecha</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/hogarIcon.png"><span class="hidden-tablet"> Cotizadores Hogar Test</span></a><ul class="sub" style="display: none; left: 146px; top: 648px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> Hogar Test</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png"><span class="hidden-tablet"> Cotizadores Salud Test</span></a><ul class="sub" style="display: none; left: 146px; top: 707px;"><li><a href="accidentesEscolares.do"> Accidentes Escolares</a></li><li><a href="PolizaRiesgoCollection.do"> Actualización riesgos Clase U y Clase Feliz</a></li><li><a href="masivoRiesgosAsegurados.do"> Cargue Masivo Riesgos Asegurados</a></li><li><a href="consultationPolizaPrincipal.do"> Consulta Cotizacion Poliza principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Cotizacion Poliza Principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Creacion Formulario Colectivo</a></li><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> Salud Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion pymes</span></a><ul class="sub" style="display: none; left: 146px; top: 766px;"><li><a href="CoopropiedadesHome.do"> Cotización Coopropiedades</a></li><li><a href="PymesHome.do"> Expedicion Nuevos Negocios pymes</a></li><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Inclusión nuevo riesgo</a></li><li><a href="https://stage-mipymes.bolnet.com.co/seguro-pymes/redirect#/?company=2&amp;country=CO&amp;email=Wilson.Sacristan@segurosbolivar.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workForceId=16659&amp;usrSubTipo=1"> Tranquilidad Pymes + Digital</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/financiacionIcon.png"><span class="hidden-tablet"> Financiación de Primas Test</span></a><ul class="sub" style="display: none; left: 146px; top: 823px;"><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjkwNTQ5NjgzLCJleHAiOjE2OTA1NjQwODN9.BKb7Cs86jAf89Vs4ZmXicCJlf-xJnAOxFMiwvjX-vHiGh30VVEA0GO8rBd5h3IcfoPBXRU65SMpfrTPHWFjw2Q"> Finanseguros Digital</a></li><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzb3VyY2VJUEFkZHJcIjpcIjEwLjExLjQuNVwiLFwiVXNlcm5hbWVcIjpcIjc5NDY4MDY2XCIsXCJTaW11bGF0b3JcIjpcIlNcIn0iLCJpYXQiOjE2OTA1NDk2ODMsImV4cCI6MTY5MDU2NDA4M30.BJe3Z5Rd58iKx5_5jVID2QEJQUg86JR_uKjHNc5lzEt3NV0EzWhy5eZgZD-_jEMZaJO7q7Apqos_DoDAvi6k6Q"> Simulación Finanseguros Davivienda Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Firma Electrónica</span></a><ul class="sub" style="display: none; left: 146px; top: 882px;"><li><a href="consultarFirma.do"> Consulta Firma Electronica</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Modificaciones</span></a><ul class="sub" style="display: none; left: 146px; top: 939px;"><li><a href="solicitudConsultation.do"> Consulta de Solicitudes</a></li><li><a href="autosPolicyModify.do"> Modificaciones</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Pólizas TUSEGURO Test</span></a><ul class="sub" style="display: none; left: 146px; top: 977px;"><li><a href="/tuseguros/#/?company=2&amp;country=CO&amp;email=Wilson.Sacristan@segurosbolivar.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobcode=E96160&amp;usrLocationCode=&amp;sbcodActBenef=48&amp;userName=79468066&amp;workfordeID=16659&amp;usrSubtipo=1"> Emisión TU SEGURO Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Seguros Agro</span></a><ul class="sub" style="display: none; left: 146px; top: 1034px;"><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect?redirect_uri=individualizacion-caficultores#/?company=2&amp;country=CO&amp;email=Wilson.Sacristan@segurosbolivar.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/redirect_uri=individualizacion-caficultores">Individualización caficultores</a></li><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect#/?company=2&amp;country=CO&amp;email=Wilson.Sacristan@segurosbolivar.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> Plataforma Agrícola</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Soat</span></a><ul class="sub" style="display: none; left: 146px; top: 1071px;"><li><a href="soatQuoteAction.do"> Expedición Soat </a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Vida Grupo</span></a><ul class="sub" style="display: none; left: 146px; top: 1109px;"><li><a href="vidaColectiva.do"> Cotización Póliza Hija</a></li><li><a href="polizaPrincipal.do"> Emisión Póliza Principal(GR)</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png"><span class="hidden-tablet"> Vida Test</span></a><ul class="sub" style="display: none; left: 146px; top: 1146px;"><li><a href="declarationCommonAction.do"> Administracion Declaracion de Asegurabilidad</a></li><li><a href="vidaSimilarQuotationConsultation.do"> Cotizacion Basada en Otra Cotizacion de Vida</a></li><li><a href="vidaFormalizationInicio.do"> Vida Formalizacion</a></li><li><a href="vidaHomeAgent.do"> Vida Individual Test</a></li></ul></li>
+			</ul>
+			<div>&nbsp;</div>
+		</div>
+	
+
+<br>
+
+
+
+
+
+					</div>
+					<div id="content" class="span10">
+
+						<div class="alert alert-error" id="pageError" style="display: none">
+							<button class="close" data-dismiss="alert" type="button">X</button>
+							<strong>Error ! </strong><span id="pageErrorSpan"></span>
+						</div>
+
+						<!-- content starts -->
+						
+
+
+
+<style>
+.table {
+	width: 80%;
+	margin-bottom: 18px;
+}
+
+.premiumAlert {
+	border-radius: 4px 4px 4px 4px;
+	margin-bottom: 18px;
+	padding: 5px 35px 5px 14px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #CCDDBB;
+	border-color: #C6D4AA;
+	color: #669533;
+}
+
+.input-mini {
+	width: 30px;
+}
+
+.input-prepend .add-on, .input-append .add-on {
+	height: 31px;
+	min-width: 33px;
+}
+
+.radio {
+	min-height: 1px;
+	padding-left: 6px;
+}
+
+.radio.inline, .checkbox.inline {
+	padding-left: 6%;
+}
+
+#quesThreeDiv {
+	margin-left: 40%;
+}
+
+@media only screen and (min-width: 768px) {
+	.tableCoberturaCbx {
+		left: 8px;
+		top: -21px
+	}
+	#td902 {
+		left: -28px;
+		top: -23px
+	}
+	#td919 {
+		left: 8px;
+		top: -11px
+	}
+}
+
+@media ( max-width : 768px) {
+	.tableCoberturaCbx {
+		left: -6px;
+		top: -22px
+	}
+	#td902 {
+		left: -28px;
+		top: -23px
+	}
+	#td919 {
+		left: -5px;
+		top: -10px
+	}
+}
+
+.checkboxCervixF {
+	transform: translate(-225%, -100%);
+}
+.campo-radio-check-vidaCob .checkbox label[for="chk915"]:before,
+.campo-radio-check-vidaCob .checkbox label[for="chk903"]:before,
+.campo-radio-check-vidaCob .checkbox label[for="chk905"]:before,
+.campo-radio-check-vidaCob .checkbox label[for="chk918"]:before{
+	margin-left: 3.5em;
+}
+.campo-radio-check-vidaCob input[type=checkbox]:checked + label[for="chk915"]:before,
+.campo-radio-check-vidaCob input[type=checkbox]:checked + label[for="chk903"]:before,
+.campo-radio-check-vidaCob input[type=checkbox]:checked + label[for="chk905"]:before,
+.campo-radio-check-vidaCob input[type=checkbox]:checked + label[for="chk918"]:before{
+	margin-left: 3.3em;
+}
+</style>
+<form id="vidaForm" name="vidaForm" action="" method="POST">
+
+	
+	<input id="UUID" name="UUID" value="8db452d2-5ba3-45af-81d0-f9048ef7de99" type="hidden"> <input id="codCia" name="codCia" type="hidden" value="2"> <input type="hidden" name="codSecc" id="codSecc" value="47"> 
+		<input id="claveAgente" name="claveAgente" type="hidden" value="16659"> 
+		<input id="agent" name="agent" type="hidden" value="Wilson Enrique Sacristan Vaca"> <input id="fechaQuote" name="fechaQuote" type="hidden" value="28/07/2023"> <input type="hidden" id="smlv" name="smlv" value="589500"> <input type="hidden" id="siPer" name="siPer" value="70"> <input type="hidden" id="noPer" name="noPer" value="100"> <input type="hidden" id="fii" name="fii" value="0.9"> <input type="hidden" id="plan" name="plan" value="portafolioTranquilidadEnVida">
+	<!-- 		 value of lDesacumula is populated from VIDA_PARAM_COT  -->
+	<input type="hidden" id="lDesacumula" name="lDesacumula" value="">
+	<!-- 		 value of lAcumula  is populated from VIDA_PARAM_COT  -->
+	<input type="hidden" id="lAcumula" name="lAcumula" value=""> <input type="hidden" id="periodicidad" name="periodicidad" value="30"> <input type="hidden" id="planDesc" name="planDesc" value="PORTAFOLIO TRANQUILIDAD EN VIDA"> <input type="hidden" id="index" name="index" value=""> <input type="hidden" id="asegNumber" name="asegNumber" value=""> <input type="hidden" id="value903" name="value903" value=""> <input type="hidden" id="asegSize" name="asegSize"> <input type="hidden" id="totalAhorro" name="totalAhorro"> <input type="hidden" id="tipoValues" name="tipoValues" value="CC,CE,PP,NT">
+	<input type="hidden" id="currencyContainer" name="currencyContainer" value=""> <input type="hidden" id="subTipo" value="1" name="subTipo"> <input type="hidden" id="agentNombre" name="agentNombre" value="">
+	<!-- added info2 and info3 for sending in data header -->
+	<input type="hidden" id="info2" name="info2" value="16659">
+	<input type="hidden" id="info3" name="info3" value="48;1">
+	<input type="hidden" id="info5" name="info5" value="16659"> <input id="numCotizacion" type="hidden" value=""> <input type="hidden" id="numSecuPol_similarQuotation" name="numSecuPol_similarQuotation" value=""> <input type="hidden" id="quotationNoSimilarQuotation" name="quotationNoSimilarQuotation" value=""> <input id="mode" type="hidden" name="mode" value=""> <input type="hidden" id="asegRisk" value="1"> <input type="hidden" id="terceoroNotExist" name="terceoroNotExit" value=""> <input type="hidden" id="sexoFromConsultation" name="sexoFromConsultation" value=""> <input id="aplicaPreferente" type="hidden" value=""> <input type="hidden" name="codProductoHidden" id="codProductoHidden"> 
+
+	<input id="planDescdata" name="planDescdata" type="hidden" value="PORTAFOLIO TRANQUILIDAD EN VIDA">
+	<input type="hidden" name="codProducto" id="codProducto" value="952">
+	
+	<input type="hidden" id="ciudadDesc954Tomador" name="ciudadDesc954Tomador" value="">
+	<input type="hidden" id="salary" name="salary" value="">
+	<input type="hidden" id="currencyFormattor" name="currencyFormattor" value="">
+	
+	<input type="hidden" name="isCopiarFlow" id="isCopiarFlow" value="">
+	<input type="hidden" name="isLiquidarAfterCopiar" id="isLiquidarAfterCopiar" value="">
+	
+	
+
+
+
+	<!-- ********************************** breadcrumb  **************************** -->
+
+	<div>
+		<ul class="breadcrumb hidden-phone">
+			
+				
+					<li><a href="/SimonQuotation/agentHomeAction.do">Inicio</a></li>
+					<span class="divider">/</span>
+					<li>Vida Portafolio inicio</li>
+					<span class="divider">/</span>
+					<li>Crear cotización de vida portafolio</li>
+
+				
+				
+			
+		</ul>
+	</div>
+	<!-- ---   Span to show page level Error  -->
+	<span id="errorQuotationDetail" name="errorQuotationDetail"></span>
+	<!-- **********************************  product logo   **************************** -->
+	<h2 align="center">
+		
+			
+				COTIZACIÓN
+			
+		
+	</h2>
+	<br>
+	<div class="row-fluid">
+		<h2 align="center">
+			Portafolio Tranquilidad en Vida
+		</h2>
+	</div>
+	<br>
+	
+ 	<!-- ***************** info ********************-->
+	<p align="right"><span style="color: #BD4247;">( * )  indica los campos obligatorios</span></p>
+	
+	<div class="box-content" style="width: 100%;">
+		<div class="form-horizontal">
+			
+			
+			
+			<div class="box span6">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+							Clave 
+					</h2>
+
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+
+				<div class="box-content">
+					<div class="form-horizontal">
+						<div class="clavetag">
+							<div class="row">
+								<div class="row-fluid ">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="clave" style="padding-top: 0px">Clave asesor <font color="#BD4247">*</font>
+										</label>
+												<div class="controls">
+													<input type="text" size="50" id="codAgente" name="codAgente" data-rel="tooltip" value="16659" class="input-large numbersOnly error" minlength="3" maxlength="10" required="required" data-original-title="" tabindex="2"> 
+							
+												</div>
+										<div class="controls alert alert-danger" id="claveErrorDiv">
+											<span id="nombreAgenteError" style="display: block;" title="El usuario actual (79468066) No puede realizar cotizaciones
+            directamente con su clave">El usuario actual (79468066) No puede realizar cotizaciones
+            directamente con su clave</span>
+											<span id="codAgenteError" style=" display: none;" class="error">
+												no hay productos   parametrizados para este agente</span>
+										</div>
+						
+					
+									</div>
+								</div>
+								
+							</div>
+							<!-- Mantis #60532-->
+							<div class="row">
+							<div class="row-fluid">
+									<div class="campos__form" id="nombreAsesorDiv" style="display: none;">
+										<label class="control-label">
+											Asesor nombre:</label>
+										<div class="controls" id="nombreAgenteDiv">
+											<label class="control-datarecord"><b> <span name="nombreAgente" id="nombreAgente"></span></b></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div id="videoButtonDiv" class="row-fluid " style="text-align:center; display:none;">
+										<div class="btn-submit">
+											<input type="button" id="youtubeBttn" class="btn btn-success" value="Ver video" tabindex="115">
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+			</div>
+			
+			
+		
+		<!-- **********************************   Plan Personalizado   **************************** -->
+			<div class="box span6">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Plan Personalizado
+					</h2>
+
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+
+				<div class="box-content">
+					<div class="form-horizontal">
+						<fieldset>
+							<div class="campos__form">
+								<label class="control-label"> Plan personalizado</label>
+								<div class="controls">
+									<label class="control-datarecord"><b>PORTAFOLIO TRANQUILIDAD EN VIDA</b></label>
+								</div>
+							</div>
+							
+							
+								
+								
+								
+									<div class="campos__form campo-select">
+										<label class="control-label"> Producto<span class="requiredMarkConductor"><font color="#BD4247">*</font></span></label>
+										<div class="controls riskDataC terceros">
+											<select id="planTypePortaFplio" name="planTypePortaFplio" class="input-large" tabindex="5">
+											
+											</select>
+										</div>
+									</div>
+								
+								
+							
+
+							
+							
+							<div class="campos__form campo-select" id="agentDiscount" style="display: none">
+
+								<label class="control-label" for="agenteDiscount">Descuento agente</label>
+
+
+								<div class="controls ">
+									<select id="agenteDiscount" name="descuentoAgente" class="input-large" disabled="disabled" tabindex="6">
+									</select><span id="agenteDiscountError" style="color: #BD4247;" class="error"></span>
+								</div>
+							</div>
+							
+							 <div class="campos__form campo-select" id="agentDiscount954Div" style="display: none">
+
+								<label class="control-label" for="agenteDiscount954">Descuento agente</label>
+
+
+								<div class="controls ">
+									<select id="agenteDiscount954" name="descuentoAgente954" class="input-large" disabled="disabled" tabindex="7">
+									</select><span id="agenteDiscountError954" style="color: #BD4247;" class="error"></span>
+								</div>
+							</div> 
+							
+						</fieldset>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>			
+
+	
+
+
+
+
+
+	<div id="vidaFormDiv">
+	
+		
+	
+		<!-- ****************************   DATOS DEL TOMADOR *************************************** -->
+	
+		<div class="row-fluid sortable ui-sortable">
+		
+			<div class="box span6" id="tomador954PrdSection" style="display: none;">
+				<div class="box-header well" id="tomador954PrdSectionHeaderDiv" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						<span id="tomador954PrdSectionHeading">  Datos del Tomador del Portafolio	</span>
+					</h2>
+				
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				
+					<p>&nbsp;</p>
+				
+				</div>
+				<div class="box-content" style="width: 100%;">
+					<div class="form-horizontal">
+							<fieldset>
+						
+								<div class="campos__form campo-select" id="">
+				
+									<label class="control-label" for="tipoDocumento954Tomador">Tipo documento<font color="#BD4247">*</font> </label>
+					
+									<div class="controls">
+					
+										<select id="tipoDocumento954Tomador" name="tipoDocumento954Tomador" class="" tabindex="9"><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="NT" title="NT - N.I.T.">NT - N.I.T.</option></select> <span id="tipoDocumento954TomadorErrorSpan" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+									</div>
+					
+								</div>
+								
+								<div class="campos__form campo-imput" id="">
+								
+									<label class="control-label" for="numeroDocumento954Tomador">Número de documento<font color="#BD4247">*</font> </label>
+										
+									<div class="controls">
+											
+										<input class="input-large focusedInput numbersOnly" id="numeroDocumento954Tomador" value="" name="numeroDocumento954Tomador" type="text" maxlength="16" data-rel="tooltip" required="" data-original-title="" tabindex="10">
+										
+										<span id="errorSpan954Tomador" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+										<div id="numeroDocumento954TomadorErrorSpan" style="color: #BD4247;display: none;width: 50%;" class="alert alert-danger"></div>
+									</div>
+							
+								</div>
+								
+								<div class="campos__form campo-imput" id="">
+
+									<label class="control-label" for="nombres954Tomador">Nombre(s)<font color="#BD4247">*</font></label>
+					
+									<div class="controls">
+										<input class="input-large nombre" id="nombres954Tomador" name="nombres954Tomador" value="" maxlength="50" type="text" required="" tabindex="11">
+									</div>
+					
+								</div>
+								
+								
+								<div class="campos__form campo-imput" id="">
+
+									<label class="control-label" for="apellidos954Tomador">Apellido(s)<span class="requiredMarkApellidos"><font color="#BD4247">*</font></span></label>
+					
+									<div class="controls">
+										<input type="text" id="apellidos954Tomador" name="apellidos954Tomador" value="" class="input-large nombre" required="" maxlength="50" tabindex="12">
+					
+									</div>
+					
+								</div>
+								
+								<div class="campos__form campo-imput" id="tomadorEmail954TomadorDiv">
+					
+									<label class="control-label" for="tomadorEmail954Tomador">Correo electrónico<span class="requiredMarkConductor"><font color="#BD4247">*</font></span>
+											</label>
+					
+									<div class="controls">
+										<input type="text" id="tomadorEmail954Tomador" name="tomadorEmail954Tomador" value="" maxlength="50" class="email input-large" required="true" tabindex="13">
+					
+									</div>
+					
+								</div>
+								
+								<div class="campos__form campo-imput" id="celular954TomadorDiv">
+									<label class="control-label" for="celular954Tomador">Teléfono celular</label>
+					
+					
+					
+									
+										
+										
+											
+										
+									
+					
+					
+					
+									<div class="controls">
+										<input type="text" id="celular954TomadorFormated" name="celular954TomadorFormated" value="" class="input-large numbersOnly" maxlength="10" tabindex="14">&nbsp;&nbsp; <a id="editar954Tomador" style="display: none"><!-- <i
+										 class="icon icon-blue icon-edit"/></i> --><img src="/SimonQuotation/images/icons/edit.png" width="30px" height="23px"> </a> <input type="hidden" id="celular954Tomador" name="celular954Tomador" value="">
+									</div>
+					
+								</div>
+								
+								
+								<div class="campos__form campo-select" id="sexoSelect954TomadorDiv">
+									<label class="control-label">Sexo</label>
+					
+									<div class="controls riskDataC terceros">
+										<select id="sexoSelect954Tomador" name="sexoSelect954Tomador" class="input-large" tabindex="15">
+											<option selected="selected" value="M">MASCULINO</option>
+											<option value="F">FEMENINO</option>
+										</select>
+					
+										
+											
+												<input type="hidden" id="sexo954Tomador" name="sexo954Tomador" value="M">
+											
+											
+										
+									</div>
+								</div>
+								
+								<div class="campos__form campo-imput" id="withDatepicker954Tomador" "="">
+									<label class="control-label">Fecha nacimiento <span class="requiredMarkConductor"><font color="#BD4247">*</font></span> </label>
+									<div class="controls">
+										<input type="text" class="input-large datepickerVida hasDatepicker" maxlength="10" id="ncmntoFecha954Tomador" name="ncmntoFecha954Tomador" value="" tabindex="16"><img class="ui-datepicker-trigger" src="images/icons/calendar.gif" alt="..." title="...">
+									</div>
+					
+								</div>
+								
+								<div class="campos__form campo-imput" id="codCiudadVida954TomadorDiv">
+									<label class="control-label" for="codCiudadVida954Tomador">Ciudad<font color="#BD4247">*</font>
+									</label>
+									<div class="controls">
+										<input id="codCiudadVida954Tomador" name="codCiudadVida954Tomador" type="text" value="" class=".ui-autocomplete citiesAutoComplete mandatoryAutocomplete ui-autocomplete-input" maxlength="100" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="17">
+			
+									</div>
+								</div>
+								
+								<div class="campos__form campo-radio-check" id="envMeasaje954Tomador" style="display: block;">
+
+									<label class="control-label" for="enviarMeasaje954Tomador">Autoriza enviar mensaje texto?</label>
+
+									<div class="checkbox">
+										<div class="checker" id="uniform-enviarMeasaje954Tomador"><span><input id="enviarMeasaje954Tomador" name="enviarMeasaje954Tomador" type="checkbox" value="1" tabindex="18" style="opacity: 0;"><label class="handle-cbx" for="enviarMeasaje954Tomador"> </label></span></div>
+									</div>
+
+								</div>
+								
+								<div class="campos__form campo-radio-check" id="autorizaDatosCheck954TomadorDiv">
+									<label class="control-label" for="">Autoriza uso de
+										datos?<font color="#BD4247">*</font></label>
+										<div class="checkbox">
+										<div class="checker" id="uniform-autorizaDatosCheck954Tomador"><span><input id="autorizaDatosCheck954Tomador" name="autorizaDatosCheck" style=" display: block;opacity:0;" type="checkbox" tabindex="19"><label class="handle-cbx" for="autorizaDatosCheck954Tomador"> </label></span></div>
+									</div>
+					            </div> 
+
+							
+							</fieldset>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+		
+
+
+			
+				
+			
+			
+			
+			<div class="box span6" id="tomadorDelPortfolioDiv" style="display: none;">
+				<div class="box-header well" id="" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						<span id="">Datos Tomador Del Portafolio </span>
+					</h2>
+				
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				
+					<p>&nbsp;</p>
+				
+				</div>
+				
+				<div class="box-content" style="width: 100%;">
+					<div class="form-horizontal">
+							<fieldset>
+						
+								<div class="campos__form campo-select" id="">
+				
+									<label class="control-label" for="tipoDocumentoTomador">Tipo documento<font color="#BD4247">*</font> </label>
+					
+									<div class="controls">
+					
+										<select id="tipoDocumentoTomador" name="tipoDocumentoTomador" class="" tabindex="21"><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="NT" title="NT - N.I.T.">NT - N.I.T.</option></select> <span id="tipoDocumentoTomadorErrorSpan" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+									</div>
+					
+								</div>
+								
+								<div class="campos__form campo-imput" id="">
+								
+									<label class="control-label" for="numeroDocumentoTomador">Número de documento<font color="#BD4247">*</font> </label>
+										
+									<div class="controls">
+											
+										<input class="input-large focusedInput numbersOnly" id="numeroDocumentoTomador" value="" name="numeroDocumentoTomador" type="text" maxlength="16" data-rel="tooltip" required="" data-original-title="" tabindex="22">
+										
+										<span id="errorSpanTomador" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+										<div id="numeroDocumentoTomadorErrorSpan" style="color: #BD4247;display: none;width: 50%;" class="alert alert-danger"></div>
+									</div>
+							
+								</div>
+								
+								<div class="campos__form campo-imput" id="">
+
+									<label class="control-label" for="nombresTomador">Nombre(s)<font color="#BD4247">*</font></label>
+					
+									<div class="controls">
+										<input class="input-large nombre" id="nombresTomador" name="nombresTomador" value="" maxlength="50" type="text" required="" tabindex="23">
+									</div>
+					
+								</div>
+								
+								
+								<div class="campos__form campo-imput" id="">
+
+									<label class="control-label" for="apellidosTomador">Apellido(s)<span class="requiredMarkApellidos"><font color="#BD4247">*</font></span></label>
+					
+									<div class="controls">
+										<input type="text" id="apellidosTomador" name="apellidosTomador" value="" class="input-large nombre" required="" maxlength="50" tabindex="24">
+					
+									</div>
+					
+								</div>
+								
+								<div class="campos__form campo-radio-check" id="envMeasaje" style="display: block;">
+
+									<label class="control-label" for="enviarMeasaje">Autoriza enviar mensaje texto?</label>
+					
+									<div class="checkbox">
+										<div class="checker" id="uniform-enviarMeasaje"><span><input id="enviarMeasaje" name="enviarMeasaje" type="checkbox" value="1" tabindex="25" style="opacity: 0;"><label class="handle-cbx" for="enviarMeasaje"> </label></span></div>
+									</div>
+					
+								</div>
+								
+								<div class="campos__form campo-radio-check" id="autorizaDatosCheckDiv">
+									<label class="control-label" for="">Autoriza uso de
+										datos?<font color="#BD4247">*</font></label>
+										<div class="checkbox">
+										<div class="checker" id="uniform-autorizaDatosCheck1"><span><input id="autorizaDatosCheck1" name="autorizaDatosCheck" style=" display: block;opacity:0;" type="checkbox" tabindex="26"><label class="handle-cbx" for="autorizaDatosCheck1"> </label></span></div>
+									</div>
+					            </div>
+										            
+							</fieldset>
+						</div>
+					</div>
+				</div>
+		
+		<div id="tomadorRiskSection" class="box span6 " style="margin-left:0px;">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box-header well" id="tomadorHeaderDiv" data-original-title="">
+
+	<h2>
+		<i class="icon-edit"></i>
+		<span id="tomadorSectionHeading"> Datos del Tomador y/o Asegurado	</span>
+	</h2>
+
+	<div class="box-icon">
+		<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+	</div>
+
+	<p>&nbsp;</p>
+
+</div>
+
+<div class="box-content" style="width: 104%;">
+
+	<div class="form-horizontal">
+		<span id="infoUpdatedMsg" style="color: GREEN; display: none;" class="info"><span class="icon icon-green icon-check"></span> Información actualizada en SARLAFT 
+		</span>
+		<div id="infoNotUpdatedMsg" style="color: #BD4247; display: none; margin-bottom:20px;" class="alert alert-danger ">
+			
+				
+				
+					Dar click en el lápiz para actualizar datos
+				
+			
+			 
+		</div>
+		<fieldset>
+			<input type="hidden" id="vida" value="true"> <input type="hidden" id="page" value=""> <input type="hidden" id="ciudad" name="ciudad" value=""> <input type="hidden" id="tipoDocumentoHidden" value=""> <input type="hidden" name="email" id="email" value=""> <input type="hidden" name="telefono" id="telefono" value=""> <input type="hidden" name="dirResidencial" id="dirResidencial" value=""><input type="hidden" id="processTypeQuotation" value="true">
+				<input type="hidden" name="terceroConsultable" id="terceroConsultable" value=""> 
+				
+<!-- 				el tomador es el mismo asegurado -->
+				
+
+			<div class="campos__form campo-radio-check" id="isTomadorAsegSameDiv" style="display: none;">
+
+				<label class="control-label" for="isTomadorAsegSame">El tomador es el mismo asegurado</label>
+
+				<div class="checkbox">
+					<div class="checker" id="uniform-isTomadorAsegSame"><span class="checked"><input id="isTomadorAsegSame" name="isTomadorAsegSame" type="checkbox" value="1" checked="checked" tabindex="28" style="opacity: 0;"><label class="handle-cbx" for="isTomadorAsegSame"> </label></span></div>
+				</div>
+
+			</div>
+			
+			<div class="campos__form campo-select" id="tipoDiv">
+<!-- mantis:55967 -->
+				<label class="control-label" for="tipoDocumento">Tipo documento<font color="#BD4247">*</font> </label>
+
+				<div class="controls">
+
+					<select id="tipoDocumento" name="tipoDocumento" class="" tabindex="29">
+						<option value="" selected="selected"></option>
+					</select> <span id="tipoDocumentoErrorSpan" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+				</div>
+
+			</div>
+
+			<div class="campos__form campo-imput" id="IdentificacionDiv" style="margin-top:25px;">
+				
+					
+						<label class="control-label" for="numeroDocumento">Número de documento<font color="#BD4247">*</font> </label>
+
+						<div class="controls">
+							<input class="input-large focusedInput numbersOnly" id="numeroDocumento" value="" name="numeroDocumento" type="text" maxlength="16" data-rel="tooltip" data-original-title="" tabindex="30">
+							<!-- 								link to add tomador -->
+							<a id="addTomador" href="#" class="addTabindexing" style="display: none" tabindex="31"><i class="icon icon-green icon-add"></i></a>
+							<!-- 								link to edit tomador  -->
+							<a id="editTomador" href="#" class="addTabindexing" style="display: none" tabindex="32"><!-- <i
+								class="icon icon-green icon-edit"></i> -->
+								<img src="/SimonQuotation/images/icons/editGreen.png" width="30px" height="23px"></a>
+							<!-- 								referesh tomador  -->
+							<a id="refreshTomador" href="#" class="addTabindexing" style="display: none" tabindex="33"><i class="icon icon-green icon-arrowrefresh-s"></i></a>
+							<!-- 								error span -->
+							<div id="errorSpan" style="color: #BD4247;display: none;width: 50%;" class="alert alert-danger"></div>
+							<div id="numeroDocumentoErrorSpan" style="color: #BD4247;display: none;width: 50%;" class="alert alert-danger"></div>
+						</div>
+					
+					
+				
+			</div>
+
+			<div class="campos__form campo-imput" id="NombreDiv">
+
+				<label class="control-label" for="nombres">Nombre(s)<font color="#BD4247">*</font></label>
+
+				<div class="controls">
+					<input class="input-large nombre" id="nombres" name="nombres" value="" maxlength="50" type="text" required="" tabindex="34">
+				</div>
+
+			</div>
+
+
+
+			<div class="campos__form campo-imput" id="ApellidoDiv">
+
+				<label class="control-label" for="apellidos">Apellido(s)<span class="requiredMarkApellidos"><font color="#BD4247">*</font></span></label>
+
+				<div class="controls">
+					<input type="text" id="apellidos" name="apellidos" value="" class="input-large nombre" required="" maxlength="50" tabindex="35">
+
+				</div>
+
+			</div>
+             
+					
+			<div class="campos__form campo-imput" id="emailDiv" style="display: none;">
+
+				<label class="control-label" for="email">Correo electrónico<span class="requiredMarkConductor"><font color="#BD4247">*</font></span>
+						</label>
+
+				<div class="controls">
+					<input type="text" id="tomadorEmail" name="tomadorEmail" value="" maxlength="50" class="email input-large" required="true" tabindex="36" style="display: none;">
+
+				</div>
+
+			</div>
+			
+			
+			
+
+
+
+			<div class="campos__form campo-imput" id="celularDiv" style="display: none;">
+				<label class="control-label" for="celular">Teléfono celular</label>
+
+
+
+				
+					
+					
+						
+					
+				
+
+
+
+				<div class="controls">
+					<input type="text" id="celularFormated" name="celularFormated" value="" class="input-large numbersOnly" maxlength="10" tabindex="37" style="display: none;">&nbsp;&nbsp; <a id="editar" style="display: none"><!-- <i
+					 class="icon icon-blue icon-edit"/></i> --><img src="/SimonQuotation/images/icons/edit.png" width="30px" height="23px"> </a> <input type="hidden" id="celular" name="celular" value="">
+				</div>
+
+			</div>
+
+			<!-- 	Sexo	 -->
+
+			<div class="campos__form campo-select" id="sexoDiv" style="">
+				<label class="control-label">Sexo</label>
+
+				<div class="controls riskDataC terceros">
+					<select id="sexoSelect" name="sexoSelect" class="input-large" tabindex="38">
+						<option selected="selected" value="M">MASCULINO</option>
+						<option value="F">FEMENINO</option>
+					</select>
+
+					
+						
+							<input type="hidden" id="sexo" name="sexo" value="M">
+						
+						
+					
+				</div>
+			</div>
+
+			<div class="campos__form campo-imput" id="withDatepicker" style="">
+				<label class="control-label">Fecha nacimiento <span class="requiredMarkConductor"><font color="#BD4247">*</font></span> </label>
+				<div class="controls">
+					<input type="text" class="input-large datepickerVida hasDatepicker" maxlength="10" id="ncmntoFecha" name="ncmntoFecha" value="" tabindex="39"><img class="ui-datepicker-trigger" src="images/icons/calendar.gif" alt="..." title="...">
+				</div>
+
+			</div>
+
+
+			<div class="campos__form campo-imput" id="withoutDatepicker" style="display: none">
+				<label class="control-label">Fecha nacimiento <span class="requiredMarkConductor"><font color="#BD4247">*</font></span> </label>
+				<div class="controls">
+					<input type="text" class="input-large" maxlength="10" id="ncmntoFechaWD" name="ncmntoFechaWD" value="" tabindex="40">
+				</div>
+
+			</div>
+
+			<!-- 	Edad	 -->
+
+			<div class="campos__form campo-imput" id="edadDiv" style="">
+				<label class="control-label">Edad</label>
+
+				<div class="controls riskDataC terceros">
+					<input type="text" id="edad" name="edad" value="" maxlength="2" class="input-large numbersOnly" readonly="readonly" tabindex="-1"> <br> <span id="edadWarning" class="warningmessage" title="Amparao Básico: entre 20 y 65.
+									Anexos de Accidentes Personales: menor a 60.
+									Anexos de ITP y EG: menor a 55"></span>
+
+				</div>
+			</div>
+			
+			<div class="campos__form campo-select" id="parentescoDiv" style="display: none;">
+
+						<label class="control-label" for="parentesco">Parentesco<span class="requiredMarkConductor"><font color="#BD4247">*</font></span></label>
+
+
+						<div class="controls ">
+							
+							<select id="parentesco" name="parentesco" class="input-large" required="true" tabindex="41">
+							</select> 
+							<span id="parentescoError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+						</div>
+			</div>
+			
+
+			<div class="campos__form campo-radio-check" id="spouse" style="display: none;">
+										<label class="control-label">Cónyuge </label>
+ 
+										<div class="controls" id="OpcionConyugeDiv">
+											<label class="radio inline"> <div class="radio" id="uniform-conyugeS"><span><input type="radio" name="conyuge" id="conyugeS" value="Si" tabindex="42" style="opacity: 0;"><label class="handle-cbx" for="conyugeS"> </label></span></div>
+												Si
+											</label>&nbsp;&nbsp;&nbsp; <label class="radio inline"> <div class="radio" id="uniform-conyugeN"><span class="checked"><input type="radio" name="conyuge" id="conyugeN" value="No" checked="" tabindex="43" style="opacity: 0;"><label class="handle-cbx" for="conyugeN"> </label></span></div>
+												No
+											</label>
+										</div>
+			</div>
+			
+			<div class="campos__form campo-imput" id="edadConyugeDiv" style="display: none;">
+
+				<label class="control-label" for="edadConyuge">  Edad del cónyuge</label>
+
+				<div class="controls">
+					<input type="text" id="edadConyuge" name="edadConyuge" maxlength="2" class="input-large numbersOnly error" tabindex="44"><div id="errorDiv" class="alert alert-danger" style="color: #BD4247;">  El campo es obligatorio </div>
+ 
+				</div>
+
+			</div>
+
+			
+			
+			
+			
+			
+			
+			
+				
+					<!-- 	Ciudad de Riesgo	 -->
+					<div class="campos__form campo-imput" id="ciudadofVidaDiv">
+						<label class="control-label" for="codCiudadVida">Ciudad<font color="#BD4247">*</font>
+						</label>
+						<div class="controls">
+							<input id="codCiudadVida" name="codCiudadVida" type="text" value="" class=".ui-autocomplete citiesAutoComplete mandatoryAutocomplete ui-autocomplete-input" maxlength="100" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="45">
+
+						</div>
+					</div>
+					<div class="campos__form campo-imput" id="direccionofVidaDiv">
+						<label class="control-label" for="direccionofVida">Dirección<span class="requiredMarkConductor"><font color="#BD4247">*</font></span>
+						</label>
+						<div class="controls">
+							<textarea id="direccionofVida" required="" name="direccion" cols="20" rows="3" maxlength="50" class="input-large" style="overflow-y: scroll; width: 188px;" tabindex="46"></textarea>
+							<i class="icon-info-sign hidden-phone showTab" data-original-title="Ingrese la dirección completa." data-rel="tooltip"></i>
+							<a id="addDireccion" class="showTab" onclick="openDireccionPopup('direccionofVida')" title="Incluir dirección">
+								<img src="/SimonQuotation/images/icons/edit.png" width="16px" height="16px">
+							</a> <a id="addDireccionMap" class="showTab" title="Incluir dirección"> <img src="/SimonQuotation/images/icons/iconGoogleMap.png" width="30px" height="23px">
+							</a> <a id="clearDireccion" class="showTab" onclick="clearDireccion('direccionofVida')" title="Borrar dirección">
+								<img src="/SimonQuotation/img/delete.png" width="16px" height="16px">
+							</a> <br>
+						</div>
+					</div>
+					
+				
+					<div class="campos__form campo-imput" id="SalarioTomadorDiv" style="">
+
+						<label class="control-label" for="SalarioTomador"> Salario Mensual
+							<font color="#BD4247">*</font>
+						</label>
+
+						<div class="controls">
+							<input type="text" id="salTomador" name="salTomador" class="input-large numbersOnly " maxlength="17" required="required" tabindex="47">
+
+						</div>
+
+					</div>
+		
+
+
+					<div class="campos__form campo-select" id="relacionControl">
+						<label class="control-label">Relación laboral<span class="requiredMarkConductor"><font color="#BD4247">*</font></span>
+						</label>
+
+						<div class="controls riskDataC terceros">
+							<select id="relacionR" name="relacionR" class="input-large" required="true" tabindex="48">
+								<option value="E">Empleado</option>
+								<option value="I">Independiente</option>
+								<option value="P">Servidor Publico</option>
+								
+							</select>
+							<br>
+						<span id="relacionLaboralMsg" align="left" style="display:none">
+						<i class="icon-info-sign" data-original-title="Debe anexar certificación de funciones emitida por el empleador" data-rel="tooltip"></i>Debe anexar certificación de funciones emitida por el empleador						
+						</span>
+						</div>
+					</div>
+					<!-- estrato -->
+
+					<div class="campos__form campo-imput" style="display:none">
+
+						<label class="control-label" for="estrato">Estrato</label>
+
+
+						<div class="controls riskDataC">
+						
+							<!-- <select id="estrato" name="estrato" class="input-large"
+								tabindex="16">
+							</select>  -->
+							 <input id="estrato" name="estrato" type="text" class=".ui-autocomplete" maxlength="100" tabindex="49">
+							<span id="estratoError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+						</div>
+
+					</div>
+					<div class="campos__form campo-imput" id="currentOccupacion">
+
+						<label class="control-label" for="currentOccupation">Ocupación actual<span class="requiredMarkConductor"><font color="#BD4247">*</font></span></label>
+
+
+						<div class="controls ">
+							
+							<input id="currentOccupation" name="ocupacionActual" type="text" class=".ui-autocomplete mandatoryAutocomplete requiredSubmit ui-autocomplete-input" maxlength="100" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="50">
+							<span id="currentOccupationError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+						</div>
+						</div>
+						<div class="campos__form campo-imput" id="anyOccupationDiv" style="display: none;">
+							<label class="control-label" for="anyOccupation">Cual<font color="#BD4247">*</font> </label>
+							<div class="controls">
+								<input id="anyOccupation" name="otraOcupacion" type="text" class="input-large" maxlength="50" value="" tabindex="51">
+
+							</div>
+						</div>
+					<div class="campos__form campo-select" id="actualActividad">
+
+						<label class="control-label" for="actividadActual">Actividad actual<span class="requiredMarkConductor"><font color="#BD4247">*</font></span></label>
+
+
+						<div class="controls ">
+							
+							<select id="actividadActual" name="actividadActual" class="input-large" required="true" tabindex="52">
+							</select> 
+							<span id="actividadActualError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+						</div>
+						</div>
+						<div class="campos__form campo-imput" id="anyActividadDiv" style="display: none;">
+							<label class="control-label" for="anyActividad">Detalle la actividad <font color="#BD4247">*</font> </label>
+							<div class="controls">
+								<!-- <textarea id="anyActividad" name="otraActividad" 
+									 tabindex="18" maxlength="40" required>
+									</textarea> --><textarea id="anyActividad" name="otraActividad" cols="20" rows="3" maxlength="150" required="" style="overflow-y: scroll;" tabindex="53"></textarea>
+
+							</div>
+						</div>
+					            
+						
+						<!-- <div class="control-group" id="cubiertaDiv" style="display: block">
+							<label class="control-label"> <span title=""
+								data-rel="tooltip"> Ingreso mensual actual </span></label>
+	
+							<div class="controls">
+								<input type="text" id="mensualActualVal" name="mensualActualVal"
+									class="input-large currency numbersOnly" maxlength="19" />
+							</div>
+						</div> -->
+				
+			
+
+			<!-- Conductor Habitual -->
+			
+				
+			
+			
+			
+			<!-- Autoriza Enviar Mensaje Texto -->
+			<div class="campos__form campo-radio-check" id="envMeasaje954AseguradoDiv" style="display: none;">
+
+				<label class="control-label" for="enviarMeasaje">Autoriza enviar mensaje texto?</label>
+
+				<div class="checkbox">
+					<div class="checker" id="uniform-enviarMeasaje954Asegurado"><span><input id="enviarMeasaje954Asegurado" name="enviarMeasaje954Asegurado" type="checkbox" value="1" tabindex="54" style="opacity: 0;"><label class="handle-cbx" for="enviarMeasaje954Asegurado"> </label></span></div>
+				</div>
+
+			</div> 
+ 
+ 
+ 			<div class="campos__form campo-radio-check" id="autorizaDatosCheck954AseguradoDiv" style="display: none;">
+				<label class="control-label" for="">Autoriza uso de
+					datos?<font color="#BD4247">*</font></label>
+					<div class="checkbox">
+					<div class="checker" id="uniform-autorizaDatosCheck954Asegurado"><span><input id="autorizaDatosCheck954Asegurado" name="autorizaDatosCheck" style=" display: block;opacity:0;" type="checkbox" tabindex="55"><label class="handle-cbx" for="autorizaDatosCheck954Asegurado"> </label></span></div>
+				</div>
+           </div>
+
+		</fieldset>
+	</div>
+</div>
+
+		</div>
+		
+			
+		</div>
+
+		<!-- ****************************   Negociacion  *************************************** -->
+
+		<div class="row-fluid" style="margin-left: 0px;">
+			<div class="box span12">
+
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i> Negociacion
+					</h2>
+
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="box-content">
+					<div class="form-horizontal">
+						<div id="rentaData" style="display: none">
+							
+
+
+
+<input type="hidden" id="totalRentaAseg" name="totalRentaAseg">
+	<div class="box-header well" data-original-title="">
+	<input type="hidden" id="vMensual">
+		<h2>
+			<i class="icon-edit"></i> Renta mensual
+		</h2>
+
+		<div class="box-icon">
+			<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+		</div>
+
+		<p>&nbsp;</p>
+
+	</div>
+
+	<div class="box-content">
+	<span id="tableRowSpan" class="warningmessage" style="display: none;"> <span class="icon icon-orange icon-info"></span>  No se puede agregar más de 5 filas.
+	</span>
+	<br>
+	<table id="table1" class="table table-striped table-bordered campos__form campo-imput campo-select">
+			<tbody>
+
+				<tr>
+					<th>Concepto gastos</th>
+					<th>Valor mensual</th>
+
+				</tr>
+					<!-- row added from js -->
+			
+				<tr>
+					<th height="10%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total</th>
+					<td height="20%"><div id="total12"></div></td>
+
+				</tr>
+
+
+			</tbody>
+		</table>
+	</div>
+
+						</div>
+						<fieldset>
+							<div class="span6">
+								<div class="campos__form campo-imput">
+									<label class="control-label"> <span id="amparoBasicoSpan" data-rel="tooltip" data-original-title="El Valor Asegurado debe ser como mÃ­nimo el aprobado por la entidad financiera."> Valor asegurado contratado <font color="#BD4247">*</font></span></label>
+
+									<div class="controls">
+										<input type="text" id="amparoBasico" name="amparoBasico" maxlength="17" onchange="amparoBasicoChange(this)" data-rel="tooltip" class="input-large  numbersOnly" required="required" data-original-title="El Valor Asegurado debe ser como mÃ­nimo el aprobado por la entidad financiera." tabindex="58">
+									</div>
+
+								</div>
+							</div>
+							<div class="span6"></div>
+							<input type="hidden" id="amparoAceptado" name="amparoAceptado" class="input-large  numbersOnly" maxlength="17" readonly="readonly">
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- start Mantis 55783 -->
+		<!--        ANEXOS (B)      -->
+		<div class="row-fluid" style="margin-left: 0px;" id="coberturaDiv">
+			<div class="box span12">
+
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Coberturas
+					</h2>
+
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+
+				<div class="box-content">
+				
+			   		<div id="tableCobertura954PrdDiv"> </div>	
+					<!-- mantis:-55783 -->
+					<table id="tableCobertura" width="100%" class="campos__form campo-imput campo-select">
+
+						<tbody class="campo-radio-check-vidaCob">
+							<tr>
+								<th></th>
+								<th valign="top">Coberturas</th>
+								<th valign="top">Valor asegurado</th>
+								<th valign="top">
+	
+										<div class="campos__form campo-select">
+											<label class="control-label"><b>Periodicidad prima básico y anexos</b> <br> <select id="planPeriodicidad" name="planPeriodicidad" class="input-small" tabindex="60">
+												<option value="360" style="font-weight: bold;">Anual</option>
+												<option value="180" style="font-weight: bold;">Semestral</option>
+												<option value="30" style="font-weight: bold;">Mensual</option>
+											</select> </label>
+										</div>
+
+								</th>
+
+							</tr>
+
+								<tr>
+									<td></td>
+									<td><label class="control-label"><b>(A)Amparo básico</b></label></td>
+									<td><input type="text" id="va901" name="va901" class="input-large   valCob decimalCurrency" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va901prima" name="va901Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								<tr id="tr932" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk932"><span><input id="chk932" name="chk932" type="checkbox" value="932" class="cobId" tabindex="61" style="opacity: 0;"><label class="handle-cbx" for="chk932"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Devolución de prima<span id="932Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va932" name="va932" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" style="display: none;" tabindex="-1"></td>
+									<td><input type="text" id="va932Prima" name="va932Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								<tr id="tr928" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk928"><span><input id="chk928" name="chk928" type="checkbox" value="928" class="cobId" tabindex="62" style="opacity: 0;"><label class="handle-cbx" for="chk928"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Asistencia funeraria<span id="928Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va928" name="va928" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td>SIN COSTO</td>
+								</tr>
+								
+								<tr id="tr930" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk930"><span><input id="chk930" name="chk930" type="checkbox" value="930" class="cobId" tabindex="63" style="opacity: 0;"><label class="handle-cbx" for="chk930"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Auxilio medicamentos, vacunas, lentes<span id="930Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va930" name="va930" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td>SIN COSTO</td>
+								</tr>
+								
+								<tr id="tr913" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk913"><span><input id="chk913" name="chk913" type="checkbox" value="913" class="cobId" tabindex="64" style="opacity: 0;"><label class="handle-cbx" for="chk913"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Exoneración de pago de primas<span id="913Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va913" name="va913" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" style="display: none;" tabindex="-1"></td>
+									<td>SIN COSTO</td>
+								</tr>
+								
+								<tr>
+									<td colspan="4"><br></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><label class="control-label"><b>(B) Anexos</b></label>
+									</td>
+									<td colspan="2"></td>
+								</tr>
+								<tr>
+									<td colspan="4"><br></td>
+								</tr>
+								
+								<tr id="tr922" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk922"><span><input id="chk922" name="chk922" type="checkbox" value="922" class="cobId" tabindex="65" style="opacity: 0;"><label class="handle-cbx" for="chk922"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Incapacidad Total y Permanente por Enfermedad como Suma Adicional<span id="922Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va922" name="va922" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va922Prima" name="va922Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								<tr id="tr924" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk924"><span><input id="chk924" name="chk924" type="checkbox" value="924" class="cobId" tabindex="66" style="opacity: 0;"><label class="handle-cbx" for="chk924"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Incapacidad Total y Permanente por Accidente como Suma Adicional <span id="924Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va924" name="va924" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va924Prima" name="va924Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								<tr id="tr908" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk908"><span><input id="chk908" name="chk908" type="checkbox" value="908" class="cobId" tabindex="67" style="opacity: 0;"><label class="handle-cbx" for="chk908"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Incapacidad Total y Permanente por Enfermedad o Accidente como Anticipo<span id="908Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va908" name="va908" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va908Prima" name="va908Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								<tr id="tr911" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk911"><span><input id="chk911" name="chk911" type="checkbox" value="911" class="cobId" tabindex="68" style="opacity: 0;"><label class="handle-cbx" for="chk911"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Enfermedades Graves como Suma Adicional<span id="911Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va911" name="va911" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va911Prima" name="va911Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								<tr id="tr917" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk917"><span><input id="chk917" name="chk917" type="checkbox" value="917" class="cobId" tabindex="69" style="opacity: 0;"><label class="handle-cbx" for="chk917"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Enfermedades Graves e Invalidez como anticipo al 50% <span id="917Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va917" name="va917" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va917Prima" name="va917Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+
+
+								<tr id="tr920" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk920"><span><input id="chk920" name="chk920" type="checkbox" value="920" class="cobId" tabindex="70" style="opacity: 0;"><label class="handle-cbx" for="chk920"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Renta Diaria por Incapacidad por Enfermedad<span id="920Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va920" name="va920" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va920Prima" name="va920Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								<tr id="tr902" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk902"><span><input id="chk902" name="chk902" type="checkbox" value="902" class="cobId" tabindex="71" style="opacity: 0;"><label class="handle-cbx" for="chk902"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">Anexo de accidentes personales: muerte accidental<span id="902Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va902" name="va902" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va902Prima" name="va902Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								<tr id="tr915" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk915"><span><input id="chk915" name="chk915" type="checkbox" value="915" class="cobId" tabindex="72" style="opacity: 0;"><label class="handle-cbx" for="chk915"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="18%"></td>
+												<td align="left"><label class="control-label">Muerte accidental por accidente de tránsito terrestre<span id="915Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va915" name="va915" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va915Prima" name="va915Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+									
+								<tr id="tr903" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk903"><span><input id="chk903" name="chk903" type="checkbox" value="903" class="cobId" tabindex="73" style="opacity: 0;"><label class="handle-cbx" for="chk903"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="18%"></td>
+												<td align="left"><label class="control-label">Desmembración<span id="903Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va903" name="va903" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va903Prima" name="va903Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								<tr id="tr904" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk904"><span><input id="chk904" name="chk904" type="checkbox" value="904" class="cobId" tabindex="74" style="opacity: 0;"><label class="handle-cbx" for="chk904"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">RENTA MENSUAL POR INCAPAC<span id="904Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va904" name="va904" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va904Prima" name="va904Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								<tr id="tr905" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk905"><span><input id="chk905" name="chk905" type="checkbox" value="905" class="cobId" tabindex="75" style="opacity: 0;"><label class="handle-cbx" for="chk905"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="18%"></td>
+												<td align="left"><label class="control-label">Gastos médicos por accidente<span id="905Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va905" name="va905" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va905Prima" name="va905Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								<tr id="tr906" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk906"><span><input id="chk906" name="chk906" type="checkbox" value="906" class="cobId" tabindex="76" style="opacity: 0;"><label class="handle-cbx" for="chk906"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">ENF GRAVE ANTICIPO 40%<span id="906Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va906" name="va906" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va906Prima" name="va906Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								
+								<tr id="tr910" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk910"><span><input id="chk910" name="chk910" type="checkbox" value="910" class="cobId" tabindex="77" style="opacity: 0;"><label class="handle-cbx" for="chk910"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">ENF GRAVE ANTIC 40% EXCLU<span id="910Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va910" name="va910" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va910Prima" name="va910Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								
+								
+								
+								<tr id="tr912" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk912"><span><input id="chk912" name="chk912" type="checkbox" value="912" class="cobId" tabindex="78" style="opacity: 0;"><label class="handle-cbx" for="chk912"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">ENF GRAVE ADIC 100% EXCLU<span id="912Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va912" name="va912" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va912Prima" name="va912Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								<tr id="tr914" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk914"><span><input id="chk914" name="chk914" type="checkbox" value="914" class="cobId" tabindex="79" style="opacity: 0;"><label class="handle-cbx" for="chk914"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">MUERTE ACCIDENTAL<span id="914Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va914" name="va914" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va914Prima" name="va914Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								
+								
+								
+								<tr id="tr916" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk916"><span><input id="chk916" name="chk916" type="checkbox" value="916" class="cobId" tabindex="80" style="opacity: 0;"><label class="handle-cbx" for="chk916"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">ITP SUMA ADICIONAL<span id="916Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va916" name="va916" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va916Prima" name="va916Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								
+								<tr id="tr918" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk918"><span><input id="chk918" name="chk918" type="checkbox" value="918" class="cobId" tabindex="81" style="opacity: 0;"><label class="handle-cbx" for="chk918"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="18%"></td>
+												<td align="left"><label class="control-label">Renta diaria por incapacidad por accidente<span id="918Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va918" name="va918" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va918Prima" name="va918Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								<tr id="tr919" class="trCobClass" style="display: none;">
+									<td class="checkbox tableCoberturaCbx"><div class="checker" id="uniform-chk919"><span><input id="chk919" name="chk919" type="checkbox" value="919" class="cobId" tabindex="82" style="opacity: 0;"><label class="handle-cbx" for="chk919"> </label></span></div></td>
+									<td><table width="100%">
+											<tbody><tr>
+												<td width="10%"></td>
+												<td align="left"><label class="control-label">INVALIDEZ ANTICIPO<span id="919Span"></span></label></td>
+											</tr>
+										</tbody></table></td>
+									<td><input type="text" id="va919" name="va919" class="input-large  decimalsOnly valCob decimalCurrency" maxlength="17" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="va919Prima" name="va919Prima" class="prima currency" readonly="readonly" tabindex="-1"></td>
+								</tr>
+								
+								
+								
+						
+								
+								
+								<tr>
+									<td colspan="4"><br></td>
+								</tr>
+		
+
+								<tr>
+									<td colspan="2"><label class="control-label" style="text-align: right;"><b> TOTAL ANEXOS (B)
+												:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</b></label></td>
+									<td><input type="text" id="anexosTotalValFormatted" name="anexosTotalValFormatted" class="input-large" readonly="readonly" tabindex="-1"></td>
+									<td><input type="text" id="anexosTotalPrima" name="anexosTotalPrima" readonly="readonly" tabindex="-1"></td>
+								</tr>
+						
+							
+
+								<tr>
+									<td colspan="2"><label class="control-label" id="primaMensual" style="text-align: right;"><b> TOTAL ( A + B)
+												:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</b></label><label class="control-label" id="primaSemestral" style="display: none; text-align: right;"><b> TOTAL ( A + B)
+												:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</b></label> <label class="control-label" id="primaAnual" style="display: none; text-align: right;"><b> TOTAL ( A + B)
+												:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</b></label></td>
+									<td><input type="text" id="cobTotalValFormatted" name="cobTotalValFormatted" class="input-large" readonly="readonly" tabindex="-1"></td>
+									<td><input type="hidden" id="cobTotalVal" name="cobTotalVal" value="0"> <input type="text" id="cobTotalPrima" name="cobTotalPrima" readonly="readonly" tabindex="-1"></td>
+								</tr>
+							
+
+						
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- finish Mantis 55783 -->
+
+
+		<!-- End -->
+
+		
+
+
+
+
+<div class="row-fluid sortable ui-sortable" id="ahorro" style="display: none;">
+	<div class="box span12" style="">
+		<div class="box-header well">
+			<h2>
+				<i class="icon-th"></i> Ahorro
+			</h2>
+			<div class="box-icon">
+				<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+			</div>
+		</div>
+		<div class="box-content">
+
+			<div class="form-horizontal">
+				<fieldset>
+
+					<!-- 	Periodicidad	 -->
+
+					<div class="campos__form campo-select" align="right">
+						<label class="control-label"></label>
+						<div class="controls">
+							<a class="selDocTypePopup" href="#" style="display: none" onclick="javascript: openImagePopup('/SimonQuotation/img/BrechaImagen3.jpg');">
+								<img src="/SimonQuotation/img/green-info-icon.png">
+							</a> <b>Periodicidad ahorro : </b> <select id="ahorroPeriodicidad" name="ahorroPeriodicidad" style="width: 28%;" class="input-large" tabindex="84">
+								<option value="30">Mensual</option>
+								<option value="180">Semestral</option>
+								<option value="360">Anual</option>
+							</select>
+						</div>
+					</div>
+
+				</fieldset>
+			</div>
+			<ul class="nav nav-tabs" id="myTab">
+				<li class="active"><a href="#ahorroC" class="addTabindexing" id="ahorroCTab" tabindex="85">(C) RENTAS COMPLEMENTARIAS<i class="icon-info-sign" data-rel="tooltip" data-original-title="Permite definir un esquema de ahorro, durante un tiempo y valor determinado, con el objetivo de recibir en el futuro un ingreso mensual por los años que el cliente determine."></i>
+				</a></li>
+				<li id="tabAhorroD"><a href="#ahorroD" id="ahorroDTab" tabindex="">(D) OTRAS NECESIDADES<i class="icon-info-sign" data-rel="tooltip" data-original-title="Permite construir un capital para cubrir una necesidad específica dentro de un tiempo determinado."></i></a></li>
+				<li id="eduSavings" style="display: none">
+						
+							<a href="#eduAhorro" id="eduAhorroTab" tabindex="">(E)UNIVERSIDAD<i class="icon-info-sign" data-rel="tooltip" data-original-title="Permite construir un capital para cubrir una necesidad específica dentro de un tiempo determinado."></i></a>
+
+						
+					</li>
+			</ul>
+
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane active" id="ahorroC">
+					<div class="box-content">
+
+						<a id="addRowsAhorroCbutton" class="addTabindexing" href="javascript:void(0)" tabindex="86"><span class="icon icon-color icon-add"></span>Agregar filas</a> <br> <br>
+						<table id="table2" class="table table-striped table-bordered campos__form campo-imput">
+
+							<tbody>
+
+								<tr><!-- mentis 55790 -->
+									<th data-rel="tooltip" data-original-title="¿Cuántos años quieres disfrutar tu renta?">Años duración renta (n)</th>
+									<!-- close mantis 55790 -->
+									<th>Aporte inicial de capital</th>
+									<th>Valor cuota de ahorro <span class="ahorroPeriodicidadSpan"> 
+												
+												
+     											  Anual
+												
+											
+									</span></th>
+									<th>Años ahorrando</th>
+									<th>Ahorro acumulado a futuro</th>
+									<th>Renta mensual complementaria por n años a precios de
+										HOY</th>
+
+									
+										
+										
+											<th>Renta mensual complementaria por n años a precios
+												del FUTURO</th>
+										
+									
+
+								</tr>
+								<!-- row added from js -->
+								
+
+							<tr><td><input type="text" id="anosRc1" name="anosRc[]" class="input-mini anosRc" maxlength="2" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroC(1,'ahorroCClass');validateAnos(this);setAnosRcValue(this.parentNode.parentNode.rowIndex);" tabindex="87"></td><td><input type="text" id="apoIniPen1" class="input-medium currency apoIniPenClass" name="apoIniPen[]" maxlength="17" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroC(1,'ahorroCClass');setNumAnosAhoValue(this.parentNode.parentNode.rowIndex);displayGrandTotalNew();validateCurrencyField(this);" tabindex="88"></td><td><input type="text" id="cuoAhoPer1" class="input-medium currency cuoAhoPerClass" name="cuoAhoPer[]" maxlength="17" onblur="replaceWithNumberOnBlur(this);setCuoAhoPerValue(this.parentNode.parentNode.rowIndex);validateCurrencyField(this);validateAhorroC(1, 'ahorroCClass')" onkeydown="validateNumberField(this,event);" tabindex="89"></td><td><input type="text" id="numAnosAho1" name="numAnosAho[]" class="input-mini numAnosAho" maxlength="2" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroC(1,'ahorroCClass');validateAnos(this);setNumAnosAhoValue(this.parentNode.parentNode.rowIndex);" tabindex="90"></td><td><input type="text" id="ahorroAcumFuturo1" name="ahorroAcumFuturo[]" class="input-medium currency" maxlength="17" onkeydown="validateNumberField(this,event);" readonly="readonly" tabindex="-1"></td><td><input type="text" id="rentaMenComp1" name="rentaMenComp[]" class="input-medium currency rentaMenCompClass" maxlength="17" onchange="setRentaMenCompValue(this.parentNode.parentNode.rowIndex);" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroC(1,'ahorroCClass');validateCurrencyField(this);" tabindex="91"></td><td><input type="text" id="rentaMenCompFutura1" name="rentaMenCompFutura[]" class="input-medium currency rentaMenCompFuturaClass" onkeydown="validateNumberField(this,event);" readonly="readonly" onblur="displayGrandTotalNew();" tabindex="-1"></td></tr><tr><td><input type="text" id="anosRc2" name="anosRc[]" class="input-mini anosRc" maxlength="2" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroC(2,'ahorroCClass');validateAnos(this);setAnosRcValue(this.parentNode.parentNode.rowIndex);" tabindex="92"></td><td><input type="text" id="apoIniPen2" class="input-medium currency apoIniPenClass" name="apoIniPen[]" maxlength="17" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroC(2,'ahorroCClass');setNumAnosAhoValue(this.parentNode.parentNode.rowIndex);displayGrandTotalNew();validateCurrencyField(this);" tabindex="93"></td><td><input type="text" id="cuoAhoPer2" class="input-medium currency cuoAhoPerClass" name="cuoAhoPer[]" maxlength="17" onblur="replaceWithNumberOnBlur(this);setCuoAhoPerValue(this.parentNode.parentNode.rowIndex);validateCurrencyField(this);validateAhorroC(2, 'ahorroCClass')" onkeydown="validateNumberField(this,event);" tabindex="94"></td><td><input type="text" id="numAnosAho2" name="numAnosAho[]" class="input-mini numAnosAho" maxlength="2" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroC(2,'ahorroCClass');validateAnos(this);setNumAnosAhoValue(this.parentNode.parentNode.rowIndex);" tabindex="95"></td><td><input type="text" id="ahorroAcumFuturo2" name="ahorroAcumFuturo[]" class="input-medium currency" maxlength="17" onkeydown="validateNumberField(this,event);" readonly="readonly" tabindex="-1"></td><td><input type="text" id="rentaMenComp2" name="rentaMenComp[]" class="input-medium currency rentaMenCompClass" maxlength="17" onchange="setRentaMenCompValue(this.parentNode.parentNode.rowIndex);" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroC(2,'ahorroCClass');validateCurrencyField(this);" tabindex="96"></td><td><input type="text" id="rentaMenCompFutura2" name="rentaMenCompFutura[]" class="input-medium currency rentaMenCompFuturaClass" onkeydown="validateNumberField(this,event);" readonly="readonly" onblur="displayGrandTotalNew();" tabindex="-1"></td></tr></tbody>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane" id="ahorroD">
+					<div class="box-content">
+						<a id="addRowsAhorroDbutton" class="addTabindexing" href="javascript:void(0)" tabindex="97"><span class="icon icon-color icon-add"></span>Agregar filas</a> <br> <br>
+						<table id="table3" class="table table-striped table-bordered campos__form campo-imput">
+
+							<tbody>
+
+								<tr>
+									<th>Descripción de la necesidad</th>
+									<th>Capital requerido a pesos de hoy</th>
+									<th>Años en los que necesitará el capital</th>
+									<th>Capital de ahorro a futuro</th>
+									<th>Cuota Ahorro <span class="ahorroPeriodicidadSpan">Anual</span></th>
+								</tr>
+								<!-- row added from js -->
+								
+							<tr><td><input type="text" id="desc1" name="desc[]" class="input-medium" maxlength="50" onblur="validateAhorroD(1, 'ahorroDClass');" onkeyup="upCase(this);resValidateAmount(this,alphaNumSpaceVal);" tabindex="98"></td><td><input type="text" id="vlrCap1" name="vlrCap[]" class="input-medium currency" maxlength="17" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);getVlrFuturo(this.parentNode.parentNode.rowIndex);displayGrandTotalNew();validateAhorroD(1, 'ahorroDClass');" tabindex="99"></td><td><input type="text" id="anosCap1" name="anosCap[]" class="input-mini anosCapClass" maxlength="2" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroD(1, 'ahorroDClass');validateAnos(this);getVlrFuturo(this.parentNode.parentNode.rowIndex);displayGrandTotalNew();" tabindex="100"></td><td><input type="text" id="vlrFuturo1" name="vlrFuturo[]" class="input-medium currency" maxlength="17" readonly="readonly" onkeydown="validateNumberField(this,event);" onblur="getCuotaAhorroProg(this.parentNode.parentNode.rowIndex);" tabindex="-1"></td><td><input type="text" id="cuotaAhorroProg1" name="cuotaAhorroProg[]" class="input-medium currency cuotaAhorroProgClass" maxlength="17" readonly="readonly" onkeydown="validateNumberField(this,event);" onblur="displayGrandTotalNew();" tabindex="-1"></td></tr><tr><td><input type="text" id="desc2" name="desc[]" class="input-medium" maxlength="50" onblur="validateAhorroD(2, 'ahorroDClass');" onkeyup="upCase(this);resValidateAmount(this,alphaNumSpaceVal);" tabindex="101"></td><td><input type="text" id="vlrCap2" name="vlrCap[]" class="input-medium currency" maxlength="17" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);getVlrFuturo(this.parentNode.parentNode.rowIndex);displayGrandTotalNew();validateAhorroD(2, 'ahorroDClass');" tabindex="102"></td><td><input type="text" id="anosCap2" name="anosCap[]" class="input-mini anosCapClass" maxlength="2" onkeydown="validateNumberField(this,event);" onblur="replaceWithNumberOnBlur(this);validateAhorroD(2, 'ahorroDClass');validateAnos(this);getVlrFuturo(this.parentNode.parentNode.rowIndex);displayGrandTotalNew();" tabindex="103"></td><td><input type="text" id="vlrFuturo2" name="vlrFuturo[]" class="input-medium currency" maxlength="17" readonly="readonly" onkeydown="validateNumberField(this,event);" onblur="getCuotaAhorroProg(this.parentNode.parentNode.rowIndex);" tabindex="-1"></td><td><input type="text" id="cuotaAhorroProg2" name="cuotaAhorroProg[]" class="input-medium currency cuotaAhorroProgClass" maxlength="17" readonly="readonly" onkeydown="validateNumberField(this,event);" onblur="displayGrandTotalNew();" tabindex="-1"></td></tr></tbody>
+						</table>
+					</div>
+				</div>
+
+				
+					
+						<div class="tab-pane" id="eduAhorro">
+							<div class="box-content">
+
+
+								<table id="table4" class="table table-striped table-bordered campos__form campo-imput">
+
+									<tbody>
+
+										<tr>
+											<th>Hijo</th>
+											<th>Capital requerido a pesos de hoy</th>
+											<th>Años en los que necesitará el capital</th>
+											<th>Semestres a financiar</th>
+											<th>Aporte inicial de capital</th>
+											<th>Cuota de ahorro <span class="ahorroPeriodicidadSpan"></span></th>
+
+										</tr>
+										<!-- row added from js -->
+										
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					
+				
+			</div>
+			<br><br>
+			<div class="form-horizontal">
+				<fieldset>
+					<div class="control-group" align="left">
+						<label><b>CUOTA DE AHORRO TOTAL <span class="ahorroPeriodicidadUpperCaseSpan">ANUAL</span><span id="anexoTextcd" style="display: none"> (C + D) : </span><span id="anexoTextcde" style="display: none"> (C + D + E) : </span><span id="totalCD"></span>
+						</b></label> <input type="hidden" id="totalAhorros" name="totalAhorros" value="0">
+					</div>
+				</fieldset>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--/span-->
+
+		
+			<div class="row-fluid" id="ahorroMsgDiv">
+				<div>
+					<p class="muted" style="margin-bottom: 10px; font-family: serif;">
+						<i class="icon-exclamation-sign"></i>
+						Supuestos:					
+						<br>
+						RENTABILIDAD FONDO DE AHORRO: 4%								
+						<br>
+						INFLACIÓN ESPERADA: 3%								
+						<br>
+						
+						Nota: Todos los cálculos son estimados prudentes, que se basan en la normatividad vigente,  la  información  suministrada  por  el  cliente, y  en  supuestos razonables  que  pueden  cambiar  sin  previo aviso. En  consecuencia, bajo ninguna  circunstancia  certifican  valores  garantizados o definitivos, ni obliga a cualquiera de las partes a suscribir contrato alguno de naturaleza pensional basado en estos resultados.								
+						<br>
+						
+
+					</p>
+				</div>
+			</div>
+		
+		
+		<!-- **********************************  Total   **************************** -->
+
+
+		<!-- buttons div -->
+	</div>
+	<div class="form-actions" align="center">
+
+		<!-- 55617 Change order of buttons -->
+		<input type="button" id="liquidarBtn954Prd" class="btn btn-success" value="Liquidar" style="display: none;" tabindex="116">
+
+		<input type="button" id="submitbutton" class="btn btn-success" value="Crear Cotización" tabindex="117">
+		
+		<input type="button" id="projectionButton" class="btn btn-success" value="Proyecciones" disabled="disabled" tabindex="118">&nbsp;
+
+		
+			
+				<a class="btn btn-primary" id="cancelButton" tabindex="5000" href="/SimonQuotation/agentHomeAction.do"> Cancelar</a>
+			
+			
+		
+
+		&nbsp; <br> <br> <span id="errorSubmit" style="color: #BD4247; display: none;" class="alert alert-danger"></span>
+
+	</div>
+	<input type="hidden" id="mensualActual" name="mensualActual">
+	
+
+
+
+<!-- MANTIS 44219 Add code for popup message on autorizosdatos --> 
+	<!--MANTIS 0045184: SOLICITUD PANTALLA COTIZACION - URL Change --> 
+<div id="overlayConfirmationPopup" class="overlay-md md-show" style="display: none;">
+		<div id="modalConfirmationPopup" class="modal-md md-effect-1 md-show">
+			<div id="contentConfirmationPopup" class="overlayContent">
+				<div class="row-fluid" id="confirmationPopupDiv">
+					<div class="box span12">
+						 
+						<div class="box-content">
+							<div class="form-horizontal">
+								<fieldset>
+								 <div class="form-actions visible-phone" align="center">
+								<input type="button" id="continuarUSOMobile" class="btn btn-primary" value="Continuar" tabindex="107">
+							   </div>
+								<i class="icon-info-sign" data-original-title="" data-rel="tooltip"></i>		
+										<span id="textMessage" style="color: black;">
+										Acepto que mis datos personales sean tratados conforme a la 
+										<a target="_blank" href="http://www.segurosbolivar.co/wps/portal?current=true&amp;urile=wcm:path:/bolivar_es/inicio/politicasdeprivacidad/avisoprivacidad/avisodeprivacidad" style="color:black;">
+										<u>política de tratamiento de información personal</u></a> de la compañía</span>								
+								</fieldset>
+								
+							</div>
+							 <div class="form-actions hidden-phone" align="center">
+								<input type="button" id="continuarUSO" class="btn btn-primary" value="Continuar" tabindex="108">
+							</div>  
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		</div>
+</form>
+
+<!--  mensual actual  popup  -->
+<div id="overlayemails" class="overlay-md md-show" style="display: none;">
+	<div id="modalemails" class="modal-md md-effect-1 md-show">
+		<div id="contentemails">
+
+			<div class="row-fluid">
+
+				<div class="box span12">
+					<header>
+						<h3>Ingreso mensual actual</h3>
+					</header>
+					<div class="box-content">
+						<div class="form-horizontal">
+							<fieldset>
+								<div class="campos__form campo-imput">
+									<label class="control-label">Ingreso mensual actual</label>
+									<div class="controls">
+										<input type="text" id="mensualActualVal" name="mensualActualVal" class="input-large currency " maxlength="16" tabindex="109">
+									</div>
+								</div>
+
+								<div class="form-actions" align="center">
+									<input type="button" id="mensualActualClose" class="btn btn-primary" value="Cerrar" tabindex="110"> <input type="button" id="mensualActualSubmit" class="btn btn-primary" value="Enviar" tabindex="111">
+								</div>
+							</fieldset>
+						</div>
+					</div>
+
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+</div>
+<div id="overlayAgendamiente" class="overlay-md md-show" style="display: none;">
+	<div id="modalAgendamiente" class="modal-md md-effect-1 md-show">
+		<header>
+			<h3>Alerta</h3>
+		</header>
+		<div id="contentAgendamiente">
+			<div class="row-fluid" id="agendeDiv">
+				<div class="box span12">
+					<div class="box-content">
+						<div class="form-horizontal">
+
+							<p align="center">
+								<span id="errorSubmitText" class="error" style="color: #BD4247;" align="center"></span>
+						</p></div>
+						<div id="terceroConsultaDiv" class="form-actions" align="center">
+							<a id="btnAcceptarIdDisplay" class="btn btn-primary" href="/SimonQuotation/agentHomeAction.do"> Aceptar</a>
+
+						</div>
+						<div id="terceroErrorDiv" class="form-actions" align="center" style="display: none">
+							<a class="btn btn-primary" href="/SimonQuotation/agentHomeAction.do"> Volver a la página principal</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="overlayselDocTypePopup" class="overlay-md md-show" style="display: none;">
+	<div id="modalselDocTypePopup" class="modal-md md-effect-1 md-show">
+		<div class="close-md" id="closeselDocTypePopup"></div>
+		<div class="row-fluid">
+			<div class="box span12">
+				<div class="box-content">
+					<img id="imageVida">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+.row-fluid-direccion [class*="span"] {
+	margin-left: 0.128%;
+}
+
+.span4-custom {
+	width: 24% !important;
+}
+
+.input-custom {
+	width: 120px !important;
+}
+.input-custom-comp {
+	width: 85% !important;
+}
+.input-text-comp {
+	width: 80px !important;
+}
+.control-label-custom {
+	float: left;
+	text-align: right;
+	width: 80%;
+}
+
+@media ( max-width : 767px) {
+	.span-checkbox {
+		width: 5.98% !important;
+		margin-top: -1%;
+	}
+	.span-text {
+		width: 24% !important;
+	}
+	.span-text-col1 {
+		width: 5.98% !important;
+	}
+	.span-text-col2 {
+		width: 91.48% !important;
+	}
+	.locText {
+		float: left;
+	}
+	.input-large-custom {
+		width: 99% !important;
+	}
+	.title-height {
+		height: 32px !important;
+	}
+	.input-verificar {
+		width: 99% !important;
+	}
+	.model-popup-custom {
+		width: 70% !important;
+		left: 25% !important;
+		height: 67% !important;
+	}
+	.box-content-custom {
+		margin-right: 5px !important;
+	}
+	.margin-custom {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	.span-custom{
+		width: 24% !important;
+	}
+}
+
+@media ( min-width : 768px) and (max-width: 1120px) {
+	.span-checkbox {
+		width: 24% !important;
+		margin-top: -1%;
+	}
+	.span-text {
+		width: 5.98% !important;
+	}
+	.span-text-col1 {
+		width: 23.40% !important;
+	}
+	.span-text-col2 {
+		width: 74.46% !important;
+	}
+	.input-large-custom {
+		width: 66% !important;
+	}
+	.title-height {
+		height: 12px !important;
+	}
+	.input-verificar {
+		width: 99% !important;
+	}
+	.span-input-verificar-col1 {
+		width: 16% !important;
+	}
+	.span-input-verificar-col2 {
+		width: 71.95% !important;
+	}
+	.model-popup-custom {
+		width: 75% !important;
+		left: 20% !important;
+		height: 42% !important;
+	}
+	.box-content-custom {
+		margin-right: 5px !important;
+	}
+	.margin-custom {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	.span-custom{
+		width: 24% !important;
+	}
+}
+
+@media ( min-width : 1121px) and (max-width: 1220px) {
+	.span-checkbox {
+		width: 5.98% !important;
+		margin-top: -1%;
+	}
+	.span-text {
+		width: 24% !important;
+	}
+	.span-text-col1 {
+		width: 5.98% !important;
+	}
+	.span-text-col2 {
+		width: 91.48% !important;
+	}
+	.locText {
+		float: right;
+		width: 55px !important;
+		margin-left: 5px;
+	}
+	.input-large-custom {
+		width: 88% !important;
+	}
+	.title-height {
+		height: 12px !important;
+	}
+	.input-verificar {
+		width: 92% !important;
+	}
+	.span-input-verificar-col1 {
+		width: 13.4% !important;
+	}
+	.span-input-verificar-col2 {
+		width: 83.97% !important;
+	}
+	.model-popup-custom {
+		width: 70% !important;
+		left: 25% !important;
+		height: 56% !important;
+	}
+	.box-content-custom {
+		margin-right: 5px !important;
+	}
+	.margin-custom {
+		margin-left: 5px !important;
+		margin-right: 5px !important;
+	}
+	.span-custom{
+		width: 20% !important;
+	}
+}
+
+@media ( min-width : 1221px) {
+	.span-checkbox {
+		width: 15.98% !important;
+		margin-top: -1%;
+	}
+	.span-text {
+		width: 24% !important;
+	}
+	.span-text-col1 {
+		width: 5.98% !important;
+	}
+	.span-text-col2 {
+		width: 91.48% !important;
+	}
+	.locText {
+		float: right;
+		width: 75px !important;
+		margin-left: 5px;
+	}
+	.input-large-custom {
+		width: 88% !important;
+	}
+	.title-height {
+		height: 12px !important;
+	}
+	.input-verificar {
+		width: 92% !important;
+	}
+	.span-input-verificar-col1 {
+		width: 11.4% !important;
+	}
+	.span-input-verificar-col2 {
+		width: 85.97% !important;
+	}
+	.model-popup-custom {
+		width: 70% !important;
+		left: 25% !important;
+		height: 56% !important;
+	}
+	.box-content-custom {
+		margin-right: 5px !important;
+	}
+	.margin-custom {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	.span-custom{
+		width: 12% !important;
+	}
+}
+</style>
+<div id="overlayDireccion" class="overlay-md md-show" style="display: none"> 
+<!-- Mantis 55875 -->
+<div id="modalDireccion" class="modal-md-dir md-effect-1-dir md-show" style="height: 75%;width: 95%;margin-left: -48%; overflow: scroll;">
+	<div class="close-md" id="closeDireccion" onclick="closeDireccionPopup()"></div>
+	<header style="height: 12%;">
+		<h3>Cambio dirección residencia</h3>
+	</header>
+	<div id="contentDireccion">
+		<div class="row-fluid row-fluid-direccion">
+			<div class="box span12">
+				<div class="box-content box-content-custom">
+					<div class="form-horizontal">
+						<div class="content">
+							<div class="control-group span6">
+								<div class="span4-custom campos__form">
+									<label class="control-label-custom">Via principal</label> <font color="#BD4247">*</font>
+								</div>
+								<div class="span4-custom campos__form campo-select">
+									<select id="viaPrincipal" name="viaPrincipal" class="input-custom mandatorySelectBoxDireccion skipTabIndex" onchange="changeDireccion()" tabindex="1">
+									</select>
+								</div>
+								<div class="span4-custom campos__form campo-imput">
+									<div class="span1">
+										<font color="#BD4247">*</font>
+									</div>
+									<div class="span11">
+										<input class="input-custom numbersOnly requiredSubmitDireccion skipTabIndex" id="viaPrincipalNo" name="viaPrincipalNo" maxlength="3" type="text" onblur="changeDireccion()" tabindex="2">
+									</div>
+								</div>
+								<div class="span4-custom margin-custom campos__form campo-select">
+									<div class="span1"></div>
+									<div class="span11">
+										<select id="viaPrincipalLetra" name="viaPrincipalLetra" class="input-custom skipTabIndex" onchange="changeDireccion()" tabindex="3">
+											<option value="-1">Letra</option>
+										<option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option></select>
+									</div>
+								</div>
+							</div>
+							<div class="control-group span6">
+								<div class="span4-custom campos__form">
+									<label class="control-label-custom">Bis</label>
+								</div>
+								<div class="span-checkbox campos__form campo-radio-check">
+									<div class="checkbox">
+										<div class="checker" id="uniform-principalBisCheck"><span><input id="principalBisCheck" name="bisPrincipalCheck" class="checkSI" type="checkbox" value="Bis" onchange="changeDireccion()" tabindex="112" style="opacity: 0;"><label class="handle-cbx" for="principalBisCheck"> </label></span></div>
+									</div>
+								</div>
+								<div class="span4-custom campos__form campo-select">
+									<div class="span1"></div>
+									<div class="span11">
+										<select id="principalBisLetra" name="principalBisLetra" class="input-custom skipTabIndex" onchange="changeDireccion()" tabindex="4">
+											<option value="-1">Letra</option>
+										<option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option></select>
+									</div>
+								</div>
+								<div class="span-text margin-custom campos__form campo-select">
+									<div class="span-text-col1"></div>
+									<div class="span-text-col2">
+										<select id="principalBisOrientacion" name="principalBisOrientacion" class="input-custom skipTabIndex" onchange="changeDireccion()" tabindex="5">
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="control-group span6">
+								<div class="span4-custom campos__form">
+									<label class="control-label-custom">No</label> <font color="#BD4247">*</font>
+								</div>
+								<div class="span4-custom campos__form campo-imput">
+									<input class="input-small numbersOnly requiredSubmitDireccion skipTabIndex" id="no" maxlength="3" name="no" type="text" onblur="changeDireccion()" tabindex="6">
+								</div>
+								<div class="span4-custom campos__form campo-select">
+									<div class="span1"></div>
+									<div class="span11">
+										<select id="noLetra" name="noLetra" class="input-custom skipTabIndex" onchange="changeDireccion()" tabindex="7">
+											<option value="-1">Letra</option>
+										<option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option></select>
+									</div>
+								</div>
+								<div class="span4-custom margin-custom campos__form campo-imput">
+									<div class="span1">
+										<font color="#BD4247">*</font>
+									</div>
+									<div class="span11">
+										<input class="input-custom numbersOnly requiredSubmitDireccion skipTabIndex" id="edificio" maxlength="4" name="edificio" type="text" onblur="changeDireccion()" tabindex="8" style="width: 115px;">
+									</div>
+								</div>
+							</div>
+							<div class="control-group span6">
+								<div class="span4-custom campos__form">
+									<label class="control-label-custom" style=" margin-top: 4px;">Bis</label>
+								</div>
+								<div class="span-checkbox campos__form campo-radio-check">
+									<div class="checkbox">
+										<div class="checker" id="uniform-noBisCheck"><span><input id="noBisCheck" name="noBisCheck" class="checkSI" type="checkbox" value="Bis" onchange="changeDireccion()" tabindex="113" style="opacity: 0;"><label class="handle-cbx" for="noBisCheck"> </label></span></div>
+									</div>
+								</div>
+								<div class="span4-custom campos__form campo-select">
+									<div class="span1"></div>
+									<div class="span11">
+										<select id="noBisLetra" name="noBisLetra" class="input-custom skipTabIndex" onchange="changeDireccion()" tabindex="9">
+											<option value="-1">Letra</option>
+										<option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option></select>
+									</div>
+								</div>
+								<div class="span-text margin-custom campos__form campo-select">
+									<div class="span-text-col1"></div>
+									<div class="span-text-col2">
+										<select id="noBisOrientacion" name="noBisOrientacion" class="input-custom skipTabIndex" onchange="changeDireccion()" tabindex="10">
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="span12 campos__form campo-imput " style="margin-bottom: 0px;">
+								<div class="span-input-verificar-col1">
+									<label></label>
+								</div>
+								<div class="span-input-verificar-col2">
+									<label style="text-align: center;">Verificar dirección</label>
+								</div>
+							</div>
+							<div class="span12 campos__form campo-imput">
+								<div class="span-input-verificar-col1">
+									<label></label>
+								</div>
+								<div class="span-input-verificar-col2">
+									<input class="input-verificar" id="verificarDireccion" name="verificarDireccion" type="text" readonly="readonly" tabindex="-1">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-actions" align="center">
+				<input type="button" id=" limpiarDireccion" class="btn btn-success skipTabIndex" value="Limpiar" onclick="limpiarDireccionPopup()" tabindex="11">
+					<input type="button" id="enviarDireccion" class="btn btn-success skipTabIndex" value="Enviar" tabindex="12"> <input type="button" id="cerrarDireccion" class="btn btn-success skipTabIndex" value="Cerrar" tabindex="13" onclick="closeDireccionPopup()">
+				</div>
+				<div align="center">
+					<span id="errorEnviarDireccion" style="color: #BD4247; display: none;" class="alert alert-danger"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- <div id="overlayComplementaria" class="overlayPopup" style="display: none"> -->
+<!--- 
+    width: 1039px;
+    background-color: white;
+    position: fixed;
+    top: 12.5%;
+    left: 43%;
+    margin-left: -445px;
+    z-index: 9999;
+
+--->
+<!--  start Mantis 55875 -->
+<div id="overlayComplementaria" class="overlay-md md-show" style="display: none"> 
+<div id="modalComplementaria" class="modal-md-dir md-effect-1-dir md-show" style="width: 95%; z-index: 9999; height: 75%;margin-left: -48%">
+	<div class="close-md" id="closeComplementaria" onclick="closeComplementariaPopup()" style="height: 62px;"></div>
+	<header style="height: 11%;">
+		<h3>Información complementaria</h3>
+	</header>
+	<div id="contentComplementaria" class="overlayContent">
+		<div class="row-fluid row-fluid-direccion">
+				<div class="box-content box-content-custom">
+					<div class="form-horizontal">
+						<div class="content">
+							<div class="span12">
+								<div class="control-group">
+									<!-- <div class="span-custom">
+										<label></label>
+									</div> -->
+									<div class="span4">
+										<div class="span6 campos__form campo-select">
+											<select id="loc1" name="loc1" class="input-custom-comp skipTabIndex" tabindex="1">
+												<option value="-1">Localización</option>
+											</select>
+										</div>
+										<div class="span6 campos__form campo-imput">
+													<input class="input-text-comp numbersOnly skipTabIndex" id="loc1Text" maxlength="5" name="loc1Text" type="text" onblur="changeComplementaria()" disabled="disabled" tabindex="2">
+											</div>
+									</div>
+									<div class="span4">
+										<div class="span6 campos__form campo-select">
+											<div class="span12">
+												<select id="loc2" name="loc2" class="input-custom-comp skipTabIndex" tabindex="3">
+													<option value="-1">Localización</option>
+												</select>
+											</div>
+										</div>
+							 
+										<div class="span6 campos__form campo-imput">
+												<input class="input-text-comp numbersOnly skipTabIndex" id="loc2Text" maxlength="5" name="loc2Text" type="text" tabindex="4" onblur="changeComplementaria()" disabled="disabled">
+										</div>
+									</div>
+									<div class="span4">
+										<div class="span6 campos__form campo-select">
+												<div class="span12">
+													<select id="loc3" name="loc3" class="input-custom-comp skipTabIndex" tabindex="5">
+														<option value="-1">Localización</option>
+													</select>
+												</div>
+										</div>
+										<div class="span6 campos__form campo-imput">
+												<input class="input-text-comp numbersOnly skipTabIndex" id="loc3Text" maxlength="5" disabled="disabled" name="loc3Text" type="text" tabindex="6" onblur="changeComplementaria()">
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="control-group span6">
+								<div class="span4-custom campos__form">
+									<label class="control-label-custom">Información
+										adicional</label>
+								</div>
+								<div class="span8 campos__form campo-imput">
+									<input class="input-large-custom skipTabIndex" id="addInformacion" name="addInformacion" type="text" tabindex="7" onblur="changeComplementaria()" maxlength="50">
+								</div>
+							</div>
+							<div class="control-group span6 ">
+								<div class="span4-custom campos__form">
+									<label class="control-label-custom">Barrio</label>
+								</div>
+								<div class="span8 campos__form campo-imput">
+									<input class="input-large-custom skipTabIndex" id="barrio" name="barrio" tabindex="8" type="text" onblur="changeComplementaria()" maxlength="50">
+								</div>
+							</div>
+							<div class="span12 campos__form" style="margin-bottom: 0px;">
+								<div class="span-input-verificar-col1">
+									<label></label>
+								</div>
+								<div class="span-input-verificar-col2">
+									<label style="text-align: center;">Verificar
+										Información complementaria</label>
+								</div>
+							</div>
+							<div class="span12 campos__form campo-imput">
+								<div class="span-input-verificar-col1">
+									<label></label>
+								</div>
+								<div class="span-input-verificar-col2">
+									<input class="input-verificar" id="verificarComplementaria" name="verificarComplementaria" type="text" readonly="readonly" tabindex="-1">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-actions" align="center">
+				<input type="button" id="limpiarComplementaria" class="btn btn-success skipTabIndex" value="Limpiar" tabindex="9" onclick="limpiarComplementariaPopup()">
+					<input type="button" id="enviarComplementaria" class="btn btn-success skipTabIndex" value="Enviar" tabindex="10"> <input type="button" id="cerrarComplementaria" class="btn btn-success skipTabIndex" value="Cerrar" onclick="closeComplementariaPopup()" tabindex="11">
+				</div>
+				<div align="center">
+					<span id="errorEnviarComplementaria" style="color: #BD4247; display: none;" class="alert alert-danger"></span>
+				</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- Mantis 55875 close -->
+
+
+<style>
+.modal-md, .modal-md-dir header {
+
+    height: 55%;
+
+}
+</style>
+<div id="overlayGoogleMap" class="overlay-md md-show" style="display: none">
+	<div id="modalGoogleMap" class="modal-md md-effect-1 md-show md-show-large">
+		<div class="close-md" id="closeGoogleMap"></div>
+		<header>
+			<h3>
+				Cambio dirección residencia
+			</h3>
+		</header>
+		<div class="overlayContent">
+			<div class="responsiveFloatLft">
+				<div class="row-fluid">
+					<div class="box span12">
+						<div class="box-content">
+							<div class="form-horizontal">
+								<div class="span10">
+									<div class="campos__form campo-imput">
+										<label class="control-label " for="addressGeocode">Dirección</label>
+										<div class="controls">
+											<input class="input-large" id="addressGeocode" value="" placeholder="Ingresa la direccion" name="addressGeocode" type="text" tabindex="114"><span id="buscarAddress" class="icon icon-color icon-search" style="" onclick="mapAddress()" title="Buscar"></span>
+										</div>
+									</div>
+								</div>
+								<div id="map_container" style="height: 350px; width: 100%;"></div>
+								<div style="margin-top: 15px;" align="center">
+									<a id="setDireccionFromMap" title="Continuar"> <img src="/SimonQuotation/images/icons/icon-check-location.png" width="30px" height="23px">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+						<!-- content ends -->
+					</div>
+				
+			
+
+			<!-- left menu ends -->
+		</div>
+	</div>
+		
+
+<footer>
+	<div class="footer">
+		<div class="content-footer">
+
+			Copyright © 2014 <a href="http://www.segurosbolivar.com">Seguros Bolivar</a>. Todos los derechos reservados.<span class="pleca-footer"> &nbsp;
+				&nbsp;|&nbsp; &nbsp; </span>
+				<span class="copiright-footer">Build:SimonQuotation_20230727</span>
+
+
+		</div>
+	</div>
+</footer>
+
+
+		
+	<div style="display: none;">
+		<button id="mandatoryNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Por favor diligencie los campos obligatorios&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+
+		<button id="pageLevelNoty" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Center
+		</button>
+
+		<button id="anosNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Entre años 1 y 70&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+	</div>
+
+	<!-- external javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<script src="/SimonQuotation/js/jquery/jquery.js?v=SimonQuotation_20230727"></script>
+
+	<!-- jQuery UI -->
+	 <script src="/SimonQuotation/js/jquery/jquery-ui-1.8.21.custom.min.js?v=SimonQuotation_20230727"></script> 
+
+	<!-- data table plugin -->
+	 <script src="/SimonQuotation/js/jquery/jquery.dataTables.min.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.dataTables.columnFilter.js?v=SimonQuotation_20230727"></script>
+
+	<!-- application script for Charisma demo -->
+	<script src="/SimonQuotation/js/charisma.js?v=SimonQuotation_20230727"></script>
+
+	<!-- custom js files -->
+	<script src="/SimonQuotation/js/common/dwr.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/dwr-common.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/common/ajax.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/validation.js?v=SimonQuotation_20230727"></script><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+	<script src="/SimonQuotation/js/common/commonUI.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/drop-down-search.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.formatCurrency-1.4.0.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.formatCurrency.es-CO.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.ui.datepicker-es.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.blockUI.js?v=SimonQuotation_20230727"></script>
+
+
+	<!-- transition / effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-transition.js?v=SimonQuotation_20230727"></script>
+
+	<!-- alert enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-alert.js?v=SimonQuotation_20230727"></script>
+
+	<!-- modal / dialog library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-modal.js?v=SimonQuotation_20230727"></script>
+
+	<!-- custom dropdown library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-dropdown.js?v=SimonQuotation_20230727"></script>
+
+	<!-- scrolspy library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-scrollspy.js?v=SimonQuotation_20230727"></script>
+
+	<!-- library for creating tabs -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tab.js?v=SimonQuotation_20230727"></script>
+
+	<!-- library for advanced tooltip -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tooltip.js?v=SimonQuotation_20230727"></script>
+
+	<!-- popover effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-popover.js?v=SimonQuotation_20230727"></script>
+
+	<!-- button enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-button.js?v=SimonQuotation_20230727"></script>
+
+	<!-- accordion library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-collapse.js?v=SimonQuotation_20230727"></script>
+
+	<!-- carousel slideshow library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-carousel.js?v=SimonQuotation_20230727"></script>
+
+	<!-- autocomplete library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-typeahead.js?v=SimonQuotation_20230727"></script>
+
+	<!-- tour library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tour.js?v=SimonQuotation_20230727"></script>
+
+	<!-- library for cookie management -->
+	<script src="/SimonQuotation/js/jquery/jquery.cookie.js?v=SimonQuotation_20230727"></script>
+
+	<!-- calander plugin -->
+	<script src="/SimonQuotation/js/fullcalendar.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- chart libraries start -->
+	
+    <!--Mail:Fwd:Performance-->
+	
+	<!-- chart libraries end -->
+
+	<!-- select or dropdown enhancer -->
+	<script src="/SimonQuotation/js/jquery/jquery.chosen.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- checkbox, radio, and file input styler -->
+	<script src="/SimonQuotation/js/jquery/jquery.uniform.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- plugin for gallery image view -->
+	<script src="/SimonQuotation/js/jquery/jquery.colorbox.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- rich text editor library -->
+	<script src="/SimonQuotation/js/jquery/jquery.cleditor.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- notification plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.noty.js?v=SimonQuotation_20230727"></script>
+
+	<!-- file manager library -->
+	<script src="/SimonQuotation/js/jquery/jquery.elfinder.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- star rating plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.raty.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- for iOS style toggle switch -->
+	<script src="/SimonQuotation/js/jquery/jquery.iphone.toggle.js?v=SimonQuotation_20230727"></script>
+
+	<!-- autogrowing textarea plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.autogrow-textarea.js?v=SimonQuotation_20230727"></script>
+
+	<!-- multiple file upload plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.uploadify-3.1.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- testing carousel-->
+	<script src="/SimonQuotation/js/jquery/jquery.ui.rcarousel.min.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.ui.widget.min.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/hammer.min.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/hammer.fakemultitouch.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/googleAnalytics/trzConsole.js"></script>	
+
+	<script src="/SimonQuotation/js/googleAnalytics/ScriptSeguimientoSimon.js"></script>	
+
+	<script src="/SimonQuotation/js/quotation/vidaQuoPortaFolio.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/quotation/vidaQuoteCommon.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.flot.min.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.flot.pie.min.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.flot.stack.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.flot.resize.min.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/popup/consultTercerosPopup.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/popup/direccionPopup.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/properties.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.masterblaster.js"></script>
+	<script src="/SimonQuotation/js/common/email.js"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomador.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomadorBasico.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/common/designRadioCbx.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/tmpl.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/load-image.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/canvas-to-blob.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/bootstrap.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/bootstrap-image-gallery.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/jquery.iframe-transport.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-fp.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-ui.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/locale.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/main.js?v=SimonQuotation_20230727"></script>
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBn8TQ8ANlkaa65XPY3rFyv_bU01HB7ezM"></script>
+		<script src="/SimonQuotation/js/common/app-feedback-popup.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/common/html2canvas.js?v=SimonQuotation_20230727"></script>
+<script src="/SimonQuotation/js/common/html2canvas.min.js?v=SimonQuotation_20230727"></script>
+<script src="/SimonQuotation/js/common/callAgendamiento.js?v=SimonQuotation_20230727"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- 	<script type="javascript"> -->
+	<!-- jQuery('.numbersOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/\D/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbersWithDecimalOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/[^0-9\.]/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbers1').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/^[1-9]\d*(\.\d+)?$/,''); -->
+	<!-- }); -->
+
+
+	<!-- </script> -->
+	<script type="text/javascript">
+	
+	var addedFilesCount=0;
+        $('#fileupload').bind('fileuploadadd', function (e, data) {
+		  addedFilesCount++;
+		  $('#addedFilesCount').val(addedFilesCount);
+		});
+		
+	$('#fileupload').bind('fileuploadfailed', function (e, data) {
+		    if($('#delSingleMultiple').val()=="multiple"){
+		        $(".template-download").remove();
+			    $("#overlayUploadDocPopup").hide();
+			    $("#modalUploadDocPopup").removeClass("md-show");
+				$("#modalUploadDocPopup").hide();
+			}
+	});
+		    
+	/* var inp = document.getElementById('fileElementId');
+	for (var i = 0; i < inp.files.length; ++i) {
+	  var name = inp.files.item(i).name;
+	  alert("here is a file name: " + name);
+	}*/
+	</script>
+	
+						        
+		<!-- The template to display files available for upload -->
+        <script id="template-upload" type="text/x-tmpl">
+            {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-upload fade">
+            <td class="preview"><span class="fade"></span></td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            {% if (file.error) { %}
+            <td class="error" colspan="2" style="display: none;"><span class="label label-important">Error</span> {%=file.error%}</td>
+            {% } else if (o.files.valid && !i) { %}
+            <td>
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" style="width:0%;"></div></div>
+            </td>
+            <td class="start" style="display: none;">{% if (!o.options.autoUpload) { %}
+                <button class="">
+                    <i class="icon-upload icon-white"></i>
+                    <span>Start</span>
+                </button>
+                {% } %}</td>
+            {% } else { %}
+            <td colspan="2"></td>
+            {% } %} 
+            <td colspan="2"></td>
+            <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+        </tr>
+        {% } %}
+    </script>
+    <!-- The template to display files available for download -->
+    <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade"">
+            {% if (file.error) { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            <td class="error" colspan="2"><span class="label label-important">Error</span> {%=file.error%}</td>
+           <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+           {% } else { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name">
+                {%=file.name%}
+            </td>
+            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+            <td colspan="2"></td>
+            <td>UPLOADED</td>
+            {% } %}
+        </tr>
+        {% } %}
+    </script>
+
+	<script>
+		/* setTimeout("window.location.reload()",(25000*60)); */
+
+		jQuery(function($) {
+
+			var ctx = "/SimonQuotation";
+
+			function generatePages() {
+				var _total, i, _link;
+
+				_total = $("#carousel").rcarousel("getTotalPages");
+
+				for (i = 0; i < _total; i++) {
+					_link = $("<a href='#'></a>");
+
+					$(_link).bind("click", {
+						page : i
+					}, function(event) {
+						$("#carousel").rcarousel("goToPage", event.data.page);
+						event.preventDefault();
+					}).addClass("bullet off").appendTo("#pages");
+				}
+
+				// mark first page as active
+				$("a:eq(0)", "#pages").removeClass("off").addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+
+			}
+
+			function pageLoaded(event, data) {
+				$("a.on", "#pages").removeClass("on").css("background-image",
+						"url(" + ctx + "/images/icons/page-off.png)");
+
+				$("a", "#pages").eq(data.page).addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+			}
+
+			$(".bullet").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+
+			function initializeCarousel() {
+				if ($(window).width() < 515) {
+					$("#carousel ").rcarousel({
+						visible : 1,
+						step : 1,
+						width : 214,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else if ($(window).width() > 515 && $(window).width() <= 979) {
+					$("#carousel ").rcarousel({
+						visible : 2,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else {
+					$("#carousel ").rcarousel({
+						visible : 3,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+
+				}
+			}
+
+			initializeCarousel();
+
+			//			$(window).bind('orientationchange', function(event) {
+			//				alert('new orientation:' + orientation);
+			//				$( "#carousel" ).rcarousel( "destroy" );
+
+			//				initializeCarousel();
+			//			});
+
+			$("#ui-carousel-next").add("#ui-carousel-prev").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+		});
+
+		$(document)
+				.ready(
+						function() {
+							$("#menuMy li > a")
+									.on(
+											'click',
+											function(e) {
+												$(this).siblings('ul').toggle(
+														'slow');
+												$(this)
+														.find("span")
+														.last()
+														.toggleClass(
+																'icon-triangle-n icon-triangle-s');
+											});
+
+							$('.ajax-link')
+									.click(
+											function() {
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+
+											});
+
+							$(document)
+									.ajaxStart(
+											function() {
+												if ($("#showBlockUI").val() == "N") {
+													return;
+												}
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+											});
+
+							// 		var isUnblockUI = true;
+
+							$(document).ajaxStop(function() {
+								// 			if (isUnblockUI) {
+								$.unblockUI();
+								// 			}
+								if ($.browser.msie && $.browser.version < 9) {
+									$(".blockUI").fadeOut("slow");
+								}
+
+								document.onselectstart = function(e) {
+									/* if (dragging) {
+										e.preventDefault();
+										return false;
+									} */
+								};
+								$(document).ready(function() {
+									$('input').on('drop', function(event) {
+										event.preventDefault();
+									});
+								});
+							});
+
+						});
+
+		$(document).click(function(e) {
+			//alert(e.button);
+			if (e.button == 2) {
+				return false;
+			} else {
+				$("#userInfo").hide();
+				//return false;
+			}
+
+		});
+
+		$("#userButton").click(function(e) {
+			e.stopPropagation();
+			$("#userInfo").toggle();
+			return false;
+
+		});
+		// 		$(".navbar").hover(function() {
+		// 			$("#userInfo").hide();
+		// 		});
+
+		$("#userInfo").click(function(e) {
+			e.stopPropagation();
+			return false;
+		});
+		$("#logout").click(function() {
+			var logoutAction = $(this).attr('name');
+			window.location.href = logoutAction;
+		});
+
+		function goToVidaPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/vidaHomeAgent/gi);
+			if (result) {
+				window.location.href = "vidaHomeAgent.do";
+			} else {
+				return false;
+			}
+		}
+		function goToHogarPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/hogar/gi);
+			if (result) {
+				window.location.href = "hogarHomeAgent.do?user=hogarOld";
+			} else {
+				return false;
+			}
+		}
+
+		function goToSaludPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/salud/gi);
+			if (result) {
+				window.location.href = "saludHomeNew.do?viewStyle=nuevaUI";
+			} else {
+				return false;
+			}
+		}
+
+		function goToAutosPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/autos/gi);
+			if (result) {
+				window.location.href = "autosHomeAgentNew.do";
+			} else {
+				return false;
+			}
+		}
+		function goToVidaGrupoPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/grupo/gi);
+			if (result) {
+				window.location.href = "vidaColectiva.do";
+			} else {
+				return false;
+			}
+		}
+		function goToPymesPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/pymes/gi);
+			if (result) {
+				window.location.href = "PymesHome.do";
+			} else {
+				return false;
+			}
+		}       
+		//Prevents backspace except in the case of textareas and text inputs to prevent user navigation.
+		$(document)
+				.keydown(
+						function(e) {
+							var preventKeyPress;
+							if (e.keyCode == 8) {
+								var d = e.srcElement || e.target;
+								switch (d.tagName.toUpperCase()) {
+								case 'TEXTAREA':
+									preventKeyPress = d.readOnly || d.disabled;
+									break;
+								case 'INPUT':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| (d.attributes["type"] && $
+													.inArray(
+															d.attributes["type"].value
+																	.toLowerCase(),
+															[ "radio",
+																	"checkbox",
+																	"submit",
+																	"button" ]) >= 0);
+									break;
+								case 'DIV':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| !(d.attributes["contentEditable"] && d.attributes["contentEditable"].value == "true");
+									break;
+								default:
+									preventKeyPress = true;
+									break;
+								}
+							} else
+								preventKeyPress = false;
+
+							if (preventKeyPress)
+								e.preventDefault();
+						});
+
+		$(function() {
+			$("textarea[maxlength]")
+					.bind(
+							'input propertychange',
+							function() {
+								var maxLength = $(this).attr('maxlength');
+								var newlines = ($(this).val().match(/\n/g) || []).length;
+								if ($(this).val().length + newlines > maxLength) {
+									$(this).val(
+											$(this).val().substring(0,
+													maxLength - newlines));
+								}
+							});
+		});
+
+		$(document)
+				.ready(
+						function() {
+
+							(function($) {
+
+								$
+										.extend({
+
+											APP : {
+
+												formatTimer : function(a) {
+													if (a < 10) {
+														a = '0' + a;
+													}
+													return a;
+												},
+
+												startTimer : function(dir) {
+
+													var a;
+
+													// save type
+													$.APP.dir = dir;
+
+													// get current date
+													$.APP.d1 = new Date();
+
+													switch ($.APP.state) {
+
+													case 'pause':
+
+														// resume timer
+														// get current timestamp (for calculations) and
+														// substract time difference between pause and now
+														$.APP.t1 = $.APP.d1
+																.getTime()
+																- $.APP.td;
+
+														break;
+
+													default:
+
+														// get current timestamp (for calculations)
+														$.APP.t1 = $.APP.d1
+																.getTime();
+
+														// if countdown add ms based on seconds in textfield
+														if ($.APP.dir === 'cd') {
+															$.APP.t1 += parseInt($(
+																	'#cd_seconds')
+																	.val()) * 1000;
+														}
+
+														break;
+
+													}
+
+													// reset state
+													$.APP.state = 'alive';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Running');
+
+													// start loop
+													$.APP.loopTimer();
+
+												},
+
+												pauseTimer : function() {
+
+													// save timestamp of pause
+													$.APP.dp = new Date();
+													$.APP.tp = $.APP.dp
+															.getTime();
+
+													// save elapsed time (until pause)
+													$.APP.td = $.APP.tp
+															- $.APP.t1;
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Resume');
+
+													// set state
+													$.APP.state = 'pause';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Paused');
+
+												},
+
+												stopTimer : function() {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'stop';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Stopped');
+
+												},
+
+												resetTimer : function() {
+
+													// reset display
+													$(
+															'#' + $.APP.dir
+																	+ '_ms,#'
+																	+ $.APP.dir
+																	+ '_s,#'
+																	+ $.APP.dir
+																	+ '_m,#'
+																	+ $.APP.dir
+																	+ '_h')
+															.html('00');
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Start');
+
+													// set state
+													$.APP.state = 'reset';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html(
+																	'Reset & Idle again');
+
+												},
+
+												endTimer : function(callback) {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'end';
+
+													// invoke callback
+													if (typeof callback === 'function') {
+														callback();
+													}
+
+												},
+
+												loopTimer : function() {
+
+													var td;
+													var d2, t2;
+
+													var ms = 0;
+													var s = 0;
+													var m = 0;
+													var h = 0;
+
+													if ($.APP.state === 'alive') {
+
+														// get current date and convert it into 
+														// timestamp for calculations
+														d2 = new Date();
+														t2 = d2.getTime();
+
+														// calculate time difference between
+														// initial and current timestamp
+														if ($.APP.dir === 'sw') {
+															td = t2 - $.APP.t1;
+															// reversed if countdown
+														} else {
+															td = $.APP.t1 - t2;
+															if (td <= 0) {
+																// if time difference is 0 end countdown
+																$.APP
+																		.endTimer(function() {
+																			$.APP
+																					.resetTimer();
+																			$(
+																					'#'
+																							+ $.APP.dir
+																							+ '_status')
+																					.html(
+																							'Ended & Reset');
+																		});
+															}
+														}
+
+														// calculate milliseconds
+														ms = td % 1000;
+														if (ms < 1) {
+															ms = 0;
+														} else {
+															// calculate seconds
+															s = (td - ms) / 1000;
+															if (s < 1) {
+																s = 0;
+															} else {
+																// calculate minutes   
+																var m = (s - (s % 60)) / 60;
+																if (m < 1) {
+																	m = 0;
+																} else {
+																	// calculate hours
+																	var h = (m - (m % 60)) / 60;
+																	if (h < 1) {
+																		h = 0;
+																	}
+																}
+															}
+														}
+
+														// substract elapsed minutes & hours
+														ms = Math
+																.round(ms / 100);
+														s = s - (m * 60);
+														m = m - (h * 60);
+
+														// update display
+														$(
+																'#' + $.APP.dir
+																		+ '_ms')
+																.html(
+																		$.APP
+																				.formatTimer(ms));
+														$(
+																'#' + $.APP.dir
+																		+ '_s')
+																.html(
+																		$.APP
+																				.formatTimer(s));
+														$(
+																'#' + $.APP.dir
+																		+ '_m')
+																.html(
+																		$.APP
+																				.formatTimer(m));
+														$(
+																'#' + $.APP.dir
+																		+ '_h')
+																.html(
+																		$.APP
+																				.formatTimer(h));
+
+														// loop
+														$.APP.t = setTimeout(
+																$.APP.loopTimer,
+																1);
+
+													} else {
+
+														// kill loop
+														clearTimeout($.APP.t);
+														return true;
+
+													}
+
+												}
+
+											}
+
+										});
+
+								
+									$.APP.startTimer('sw');
+								
+							})(jQuery);
+
+						});
+	</script>
+	<script src="/SimonQuotation/js/drum.js?v=SimonQuotation_20230727"></script>
+	<input type="hidden" name="showBlockUI" id="showBlockUI" value="">
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="blockUI" style="display:none"></div><div class="blockUI blockOverlay" style="z-index: 100000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: fixed;"></div><div class="blockUI blockMsg blockPage" style="z-index: 100011; position: fixed; padding: 20px; margin: 5px; width: 30%; top: 40%; left: 35%; text-align: center; color: rgb(0, 0, 0); border: none; background-color: rgb(255, 255, 255); cursor: wait;"><img src="img/loadajax.gif" title="Cargando..">Cargando...</div></body></html>

@@ -1,0 +1,4016 @@
+<html><head>
+
+<title>Emisión PortaFolio Vida</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+body {
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+/* #footer {
+	bottom: 0;
+	width: 100%;
+	background: #F5F5F5;
+} */
+/*Mantis: 0048613 disabled field not visible on ipad*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+		-webkit-text-fill-color:#000000;
+		-webkit-opacity: .7;
+   		 
+	}
+ }
+</style>
+
+
+<link href="/SimonQuotation/css/quotation-main.css?v=SimonQuotation_20230713" rel="stylesheet">
+
+<link href="/SimonQuotation/css/jquery.masterblaster.css" rel="stylesheet">
+
+<link href="/SimonQuotation/css/bootstrap-cerulean.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/bootstrap-responsive.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/charisma-app.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery-ui-1.8.21.custom.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.print.css?v=SimonQuotation_20230713" rel="stylesheet" media="print">
+<link href="/SimonQuotation/css/chosen.css?v=SimonQuotation_20230713" rel="stylesheet">
+
+<link href="/SimonQuotation/css/colorbox.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.cleditor.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.noty.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/noty_theme_default.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.min.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.theme.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.iphone.toggle.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/opa-icons.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/uploadify.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/consultas/headerPanel.css?v=SimonQuotation_20230713" rel="stylesheet">  
+	<link href="/SimonQuotation/css/consultas/plugins.css?v=SimonQuotation_20230713" rel="stylesheet">
+<link href="/SimonQuotation/css/rcarousel.css?v=SimonQuotation_20230713" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/main.css?v=SimonQuotation_20230713" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/drop-down-search.css?v=SimonQuotation_20230713" rel="stylesheet">
+
+<link rel="shortcut icon" href="/SimonQuotation/img/simon_Logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+
+<link href="/SimonQuotation/css/project.css?v=SimonQuotation_20230713" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/53/11/intl/es_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/53/11/intl/es_ALL/util.js"></script></head>
+<body>
+	
+
+
+
+<style>
+table.clockTable {
+    margin-left: auto;
+    margin-right: auto;
+	font-family: arial, sans-serif;
+	background-color: #048235;
+	width: 50%;
+	color:#ffcc00; !important;
+}
+
+ td.clockTable {
+	border: 1px solid #ffcc00;
+	text-align: center;
+	font-weight: bold;
+}
+</style>
+<!-- topbar starts -->
+<header>
+<div class="navbar">
+	<div class="">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+			</a> <a class="brand" tabindex="-1" href="agentHomeAction.do" style="margin-left: 30px;"> <img alt="Simon" src="/SimonQuotation/img/consultas/logo-seguros-bolivar.png">
+			</a>
+			 
+			<div class="btn-group pull-right theme-container">
+			
+<div>
+	<table class="clockTable">
+		<tbody><tr>
+			<td class="clockTable"><span id="sw_h">00</span></td>
+			<td class="clockTable"><span id="sw_m">00</span></td>
+			<td class="clockTable"><span id="sw_s">05</span></td>
+		</tr>
+	</tbody></table>
+</div>
+			
+				<a class="btn " href="#" id="userButton"> <i class="icon-user"></i><span class="hidden-phone">Wilson Enrique Sacristan Vaca</span> <span class="caret"></span>
+				</a>
+				
+				<input type="hidden" id="employeeType_analytic" name="employeeType_analytic" value="CC">
+				<input type="hidden" id="userName_analytic" name="userName_analytic" value="79468066">
+				
+				<ul class="dropdown-menu" id="userInfo">
+					<li><a><i class="icon-blank"></i> Número de Documento :
+							CC-79468066</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Nombre Completo : Wilson Enrique Sacristan Vaca</a></li>
+					
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Correo Electrónico :<b> hollmann.qvision@gmail.com</b></a></li>
+
+					<li><a><i class="icon-blank"></i> Celular :
+							<b>3028322544</b></a></li>
+					<li><a><i class="icon-blank"></i> Teléfono :
+							<b>3132538730</b></a></li>
+
+					 <li><a><i class="icon-blank"></i> Tipo de Usuario :
+							Empleado</a></li>
+					<li><a><i class="icon-blank"></i> Código de Empleado :
+							16659</a></li>
+					
+					<li><a><i class="icon-blank"></i> Actividad Comercial :
+							48 (Interno)</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Área/Localidad : <b>BOGOTA</b></a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Subtipo : 1 Empleado Administrativo</a></li>
+
+					<li>
+						<div class="form-actions">
+							<a class="btn pull-right" id="logout" name="/SimonQuotation/logoutAction.do"> <span>Log Out</span>
+							</a>
+
+						</div>
+
+					</li>
+				</ul>
+
+
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+</header>
+
+
+
+<!-- topbar ends -->
+
+
+<noscript>
+	<div class="alert alert-block span10">
+		<h4 class="alert-heading">Warning!</h4>
+		<p>
+			You need to have <a href="http://en.wikipedia.org/wiki/JavaScript"
+				target="_blank">JavaScript</a> enabled to use this site.
+		</p>
+	</div>
+</noscript>
+
+	<span> <input type="hidden" id="loginUserCompany" name="loginUserCompany" value="2"> <input type="hidden" id="loginUserCountry" name="loginUserCountry" value="CO"> <input type="hidden" id="contextProject" name="contextProject" value="/SimonQuotation"> <input type="hidden" id="userName" name="userName" value="79468066"> <input type="hidden" id="codProcesoQuotation" name="codProcesoQuotation" value="241"> <input type="hidden" id="codAgent" name="codAgent" value="16659"> <input type="hidden" id="info2" name="info2" value="16659">
+		<input type="hidden" id="info3" name="info3" value="48;1"> <input type="hidden" id="codProcessoFormalization" name="codProcessoFormalization" value="270"> <input type="hidden" id="codSubProcesoFormalization" name="codSubProcesoFormalization" value="260">
+		<!-- Added for Autos Collectiva -->
+		<input type="hidden" id="autosCollectiva" name="autosCollectiva" value="">
+		<input type="hidden" id="isTomadorBlock" name="isTomadorBlock" value="false">
+		<input type="hidden" id="isAseguradoBlock" name="isAseguradoBlock" value="false">
+		<input type="hidden" id="isConductorBlock" name="isConductorBlock" value="false">
+		<input type="hidden" id="isBeneficiarioBlock" name="isBeneficiarioBlock" value="false">
+		<input type="hidden" id="isRepLegBlock" name="isRepLegBlock" value="false">
+		<input type="hidden" id="isLocatarioBlock" name="isLocatarioBlock" value="false">
+		<input type="hidden" id="isOnerosoBlock" name="isOnerosoBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaBlock" name="isDebitoAutomaBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaAhorroBlock" name="isDebitoAutomaAhorroBlock" value="false">
+	</span>
+	<span id="inspectionNotRequired" style="display: none"> El solicitante ya cuenta con agendamiento activo.</span>
+
+	<span id="inspectionRequired" style="display: none"> El solicitante requiere exámenes médicos.</span>
+
+	<!-- --       Inspecion Message  For Autos  ajuste BRGH  -->
+	<span id="inspectionNotRequiredAutos" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionRequiredAutos" style="display: none"> Este riesgo  requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="quotationCanNotBeFormalizeCommonMsg" style="display: none">
+		Cotización NO valida para Formalizar.
+	</span>
+
+	<!-- mail: Fwd: Mantis 43543 -->
+	<span id="quotationNotValidForThisProcess" style="display: none">
+		COTIZACION NO VALIDA PARA ESTE PROCESO
+	</span>
+
+	<!-- --       Inspecion Message  For Hogar    -->
+	<span id="inspectionNotRequiredHogar" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionNotRequiredHogarConsultation" style="display: none">
+		Información de Agendamiento ya registrada. Puede continuar con el proceso de Emisión
+	</span>
+
+	<span id="inspectionRequiredHogar" style="display: none"> Esta cotización requiere agendamiento (o Inspección).</span>
+
+
+
+
+	<!-- --       Inspecion Message ends here                -->
+	<div class="container-fluid">
+		<div class="row-fluid">
+
+
+			<!-- left menu starts -->
+			
+				
+				
+					<div class="span2 main-menu-span">
+						
+
+<link href="/SimonQuotation/css/menuV2.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-7G044K4EYT&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NSL0NL569E&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/SimonQuotation/js/menuV2.js" type="text/javascript"></script>
+
+
+<!-- <div class="well nav-collapse sidebar-nav"> -->
+<!-- 	<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu"> -->
+
+<!-- 	</ul> -->
+<!-- 	<div>&nbsp;</div> -->
+<!-- </div> -->
+
+
+
+	
+	
+	
+		<div class="well nav-collapse sidebar-nav">
+			<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu">
+				
+							<li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones</span></a><ul class="sub" style="display: none; left: 158px; top: 0px;"><li><a href="quotationConsultation.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/consultaIcon.png">Consulta Cotización por Numero</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Autos</span></a><ul class="sub" style="display: none; left: 158px; top: 58px;"><li><a href="autosHomeAgentNew.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/autosIcon.png">Autos Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Hogar</span></a><ul class="sub" style="display: none; left: 158px; top: 96px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/user=hogarOld">Hogar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Salud</span></a><ul class="sub" style="display: none; left: 158px; top: 134px;"><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png">Salud</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Vida</span></a><ul class="sub" style="display: none; left: 158px; top: 172px;"><li><a href="vidaHomeAgentPortafolio.do"> Portafolio Tranquilidad en Vida</a></li><li><a href="vidaHomeAgent.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png">Vida Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion Pymes</span></a><ul class="sub" style="display: none; left: 158px; top: 210px;"><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Cotización nuevo riesgo</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Fuerza de Ventas</span></a><ul class="sub" style="display: none; left: 158px; top: 248px;"><li><a href="https://ambientepruebas.segurosbolivar.com/SimonQuotation/vidaColectivaCertificaciones.do"> Certificaciones</a></li><li><a href="https://stgfuerzaventas.bolnet.com.co/"> Gestión de Solicitudes</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Simulador Finanseguros</span></a><ul class="sub" style="display: none; left: 158px; top: 286px;"><li><a href="https://www.segurosbolivar.com/PrestamosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjg5MzA4MzkxLCJleHAiOjE2ODkzMjI3OTF9.h9wV6RpRURS-SGRyioz1Q7vjK_U14Hgyod2C1zhW0VIJsZDWHBviVQUPE7rQUqZ6Rkjhv57v8QJm6qjGRvBJ6w"> Prestamo Digital Bolivar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Agendamiento</span></a><ul class="sub" style="display: none; left: 158px; top: 344px;"><li><a href="consultAgendamiento.do"> Consulta Agendamiento Vida</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Colectivas Test</span></a><ul class="sub" style="display: none; left: 158px; top: 382px;"><li><a href="transmilinioUploadCSV.do"> Cargue Archivo Colectivas</a></li><li><a href="transmilinioNegociacionCreate.do"> Solicitud de Cotización Autos Colectivas</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Test autosIcon.png</span></a><ul class="sub" style="display: none; left: 158px; top: 440px;"><li><a href="autosImpresionPoliza.do"> Consulta Pólizas Autos</a></li><li><a href="autosHomeAgentNew.do"> Cotización Autos</a></li><li><a href="autosQuotationFromAnotherQuotation.do"> Cotización basada en otra Cotización Test</a></li><li><a href="autosFormalizationInicio.do"> Formalización Cotización Autos Test</a></li><li><a href="https://www.cdaautomas.co/virtualbolivar"> Inspecciones Autos Automas test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones Test</span></a><ul class="sub" style="display: none; left: 158px; top: 498px;"><li><a href="quotationConsultation.do"> Consulta Cotización por Rango de Fechas Test</a></li><li><a href="policyConsultation.do"> Consulta de Pólizas Provisorias por Rango de Fecha</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/hogarIcon.png"><span class="hidden-tablet"> Cotizadores Hogar Test</span></a><ul class="sub" style="display: none; left: 158px; top: 556px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> Hogar Test</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png"><span class="hidden-tablet"> Cotizadores Salud Test</span></a><ul class="sub" style="display: none; left: 158px; top: 615px;"><li><a href="accidentesEscolares.do"> Accidentes Escolares</a></li><li><a href="PolizaRiesgoCollection.do"> Actualización riesgos Clase U y Clase Feliz</a></li><li><a href="masivoRiesgosAsegurados.do"> Cargue Masivo Riesgos Asegurados</a></li><li><a href="consultationPolizaPrincipal.do"> Consulta Cotizacion Poliza principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Cotizacion Poliza Principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Creacion Formulario Colectivo</a></li><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> Salud Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion pymes</span></a><ul class="sub" style="display: none; left: 158px; top: 674px;"><li><a href="CoopropiedadesHome.do"> Cotización Coopropiedades</a></li><li><a href="PymesHome.do"> Expedicion Nuevos Negocios pymes</a></li><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Inclusión nuevo riesgo</a></li><li><a href="https://stage-mipymes.bolnet.com.co/seguro-pymes/redirect#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workForceId=16659&amp;usrSubTipo=1"> Tranquilidad Pymes + Digital</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/financiacionIcon.png"><span class="hidden-tablet"> Financiación de Primas Test</span></a><ul class="sub" style="display: none; left: 158px; top: 712px;"><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjg5MzA4MzkxLCJleHAiOjE2ODkzMjI3OTF9.h9wV6RpRURS-SGRyioz1Q7vjK_U14Hgyod2C1zhW0VIJsZDWHBviVQUPE7rQUqZ6Rkjhv57v8QJm6qjGRvBJ6w"> Finanseguros Digital</a></li><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzb3VyY2VJUEFkZHJcIjpcIjEwLjExLjQuNVwiLFwiVXNlcm5hbWVcIjpcIjc5NDY4MDY2XCIsXCJTaW11bGF0b3JcIjpcIlNcIn0iLCJpYXQiOjE2ODkzMDgzOTEsImV4cCI6MTY4OTMyMjc5MX0.u3yVxkMEtllo-Mkx4ow3tqWSQs3YGERwBJo0GJeiRMEvV-nbmlibcYfG4LrlBum9rfHgEvZK0M70uhXMESwpZA"> Simulación Finanseguros Davivienda Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Firma Electrónica</span></a><ul class="sub" style="display: none; left: 158px; top: 772px;"><li><a href="consultarFirma.do"> Consulta Firma Electronica</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Modificaciones</span></a><ul class="sub" style="display: none; left: 158px; top: 810px;"><li><a href="solicitudConsultation.do"> Consulta de Solicitudes</a></li><li><a href="autosPolicyModify.do"> Modificaciones</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Pólizas TUSEGURO Test</span></a><ul class="sub" style="display: none; left: 158px; top: 848px;"><li><a href="/tuseguros/#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobcode=E96160&amp;usrLocationCode=BOGOTA&amp;sbcodActBenef=48&amp;userName=79468066&amp;workfordeID=16659&amp;usrSubtipo=1"> Emisión TU SEGURO Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Seguros Agro</span></a><ul class="sub" style="display: none; left: 158px; top: 906px;"><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect?redirect_uri=individualizacion-caficultores#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/redirect_uri=individualizacion-caficultores">Individualización caficultores</a></li><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> Plataforma Agrícola</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Soat</span></a><ul class="sub" style="display: none; left: 158px; top: 944px;"><li><a href="soatQuoteAction.do"> Expedición Soat </a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Vida Grupo</span></a><ul class="sub" style="display: none; left: 158px; top: 982px;"><li><a href="vidaColectiva.do"> Cotización Póliza Hija</a></li><li><a href="polizaPrincipal.do"> Emisión Póliza Principal(GR)</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png"><span class="hidden-tablet"> Vida Test</span></a><ul class="sub" style="display: none; left: 158px; top: 1020px;"><li><a href="declarationCommonAction.do"> Administracion Declaracion de Asegurabilidad</a></li><li><a href="vidaSimilarQuotationConsultation.do"> Cotizacion Basada en Otra Cotizacion de Vida</a></li><li><a href="vidaFormalizationInicio.do"> Vida Formalizacion</a></li><li><a href="vidaHomeAgent.do"> Vida Individual Test</a></li></ul></li>
+			</ul>
+			<div>&nbsp;</div>
+		</div>
+	
+
+<br>
+
+
+
+
+
+					</div>
+					<div id="content" class="span10">
+
+						<div class="alert alert-error" id="pageError" style="display: none">
+							<button class="close" data-dismiss="alert" type="button">X</button>
+							<strong>Error ! </strong><span id="pageErrorSpan"></span>
+						</div>
+
+						<!-- content starts -->
+						
+
+
+
+
+
+
+
+
+
+
+<div id="popupObterner" class="overlay-md md-show" style="display: none;">
+	<div id="popupObternerMarcasConocimiento" class="modal-md md-effect-1 md-show">
+		<header>
+			<h3>
+				Alerta
+			</h3>
+		</header>
+		<div class="overlayContent">
+			<div class="responsiveFloatLft">
+				<div class="row-fluid">
+					<div class="box span12">
+						<div class="box-content">
+							<div class="form-horizontal">
+								<div class="colorOfMsg" id="mesaagePopup" style=" text-align: center;
+									display: none;">
+									
+								</div>
+								<div class="form-actions" align="center">
+									
+									<input type="button" id="popupObternerCancel" class="btn btn-primary" value="Aceptar" data-rel="tooltip" data-original-title="" tabindex="1">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+.radio {
+    min-height: 1px;
+    padding-left: 19px;
+}
+
+.disableLiTag {
+    pointer-events:none; 
+    opacity:0.6;        
+}
+</style>
+
+<form action="" method="post" name="formalization" novalidate="">
+	<input id="totalAseg" name="totalAseg" type="hidden">
+	
+		 
+	 
+	
+	<input id="totalPrima" name="totalPrima" type="hidden">
+	<input id="proceso" name="proceso" type="hidden" value="270"> <input id="subProceso" name="subProceso" type="hidden" value="260"> <input id="UUID" name="UUID" value="6e90fd00-467a-4427-8f85-72e05734ca20" type="hidden"> <input id="codCia" name="codCia" type="hidden" value="2"> <input type="hidden" name="codSecc" id="codSecc" value="118"> <input type="hidden" name="codProducto" id="codProducto" value="954"> <input id="claveAgente" name="claveAgente" type="hidden" value=""> 
+		<input type="hidden" id="codAgente" name="codAgente" value="">
+		<input id="agent" name="agent" type="hidden" value=""> <input id="fechaQuote" name="fechaQuote" type="hidden" value="">  <input type="hidden" id="value903" name="value903" value=""> <input type="hidden" id="asegSize" name="asegSize"> <input type="hidden" id="totalAhorro" name="totalAhorro"> <input type="hidden" id="tipoValues" name="tipoValues" value="">
+	<input type="hidden" id="currencyContainer" name="currencyContainer" value=""> <input type="hidden" id="subTipo" value="1" name="subTipo"> <input type="hidden" id="agentNombre" name="agentNombre" value="">
+	<!-- added info2 and info3 for sending in data header -->
+	<input type="hidden" id="info2" name="info2" value="16659">
+	<input type="hidden" id="info3" name="info3" value="48;1">
+	<input type="hidden" id="info5" name="info5" value="16659">
+	<input id="quotationNumber" name="quotationNumber" type="hidden" value="1017100404401">
+	<input id="numSecuPol" name="numSecuPol" type="hidden" value="">
+	<input type="hidden" id="claveAsesor" name="claveAsesor" value="79468066">	
+	<input type="hidden" id="planPersonalizado" name="planPersonalizado" value="">	
+	<input type="hidden" id="planDesc" name="planDesc" value="">	
+	<input type="hidden" id="isSavingsDone" name="isSavingsDone" value="N">	
+	<input type="hidden" id="isSavingsDoneR2" name="isSavingsDoneR2" value="N">	
+	<input type="hidden" id="ahorroPeriodicidad" name="ahorroPeriodicidad" value="">	
+	<input type="hidden" id="totalAhorros" name="totalAhorros" value="">
+	<input type="hidden" id="fechaNacimientoAsseg" name="fechaNacimientoAsseg" value="">
+	<input type="hidden" id="ncmntoFecha" name="ncmntoFecha" value="">
+	<input type="hidden" id="fechaNacimientoAsseg2" name="fechaNacimientoAsseg2" value="">	
+	<input id="UUID" name="UUID" value="6e90fd00-467a-4427-8f85-72e05734ca20" type="hidden">
+	<input type="hidden" id="agendamientoRespCod" value="">
+	<input type="hidden" id="inspeccionPage" value="">
+	<input type="hidden" id="pais" name="pais" value="CO">
+	<input type="hidden" id="ahorroPeriodicidad" name="ahorroPeriodicidad" value="">
+	<input type="hidden" id="directorComercial" name="directorComercial" value="">
+	<input type="hidden" id="tipoEnvioHidden" name="tipoEnvioHidden">
+	<input type="hidden" id="planType" name="planType" value="">	
+	<input type="hidden" id="onersoNotFillDiv948" name="onersoNotFillDiv948">
+	<input type="hidden" id="libreNotFillDiv" name="libreNotFillDiv">
+	<input type="hidden" id="edadAsseg" name="edadAsseg" value="">
+	<input type="hidden" id="sexoAsseg" name="sexoAsseg" value="">
+	<input type="hidden" id="ciudadAsseg" name="ciudadAsseg" value="">
+	<input type="hidden" id="direccionAseg" name="direccionAseg" value="">
+	<input type="hidden" id="nomAseg" name="nomAseg" value="">
+	<input type="hidden" id="apellidoAseg" name="apellidoAseg" value="">
+
+	<!-- ********************************** breadcrumb  **************************** -->
+	<ul class="breadcrumb hidden-phone">
+		<li><a href="/SimonQuotation/agentHomeAction.do">Inicio</a></li>
+		<span class="divider">/</span>
+		<li>Emisión</li>
+		<span class="divider">/</span>
+		<li>Emisión vida portfolio</li>
+
+	</ul>	
+	<h2 align="center">
+
+		EMISIÓN
+		
+	
+	</h2>
+
+
+	<span id="listaError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+
+	<!-- ********************************** page header **************************** -->
+	
+
+	<!-- ***************** info ********************-->
+	<p align="right"><span style="color: #BD4247;">( * )  indica los campos obligatorios</span></p>
+
+
+
+	<!-- ******************************* Information Generales *************************** -->
+
+
+
+	<div class="row-fluid sortable ui-sortable" id="informationGeneral">
+
+		<div class="box span12">
+
+			<div class="box-header well" data-original-title="">
+				<h2>
+					<i class="icon-edit"></i>
+					Información General
+				</h2>
+
+				<div class="box-icon">
+					<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+				</div>
+			</div>
+
+			<div class="box-content">
+				<div class="form-horizontal">
+					<table width="100%">
+						<tbody><tr>
+							<td width="50%">
+								<div class="campos__form campo-imput">
+									<label class="control-label"> Fecha vigencia
+									</label>
+									<div class="controls">
+										<input type="text" class="input-large datepickerAutos hasDatepicker" maxlength="10" id="fechaVigenc" name="fechaVigenc" disabled="" tabindex="3"><img class="ui-datepicker-trigger" src="images/icons/calendar.gif" alt="..." title="..." style="opacity: 0.5; cursor: default;"> <!--mantis:0043324  -->
+									</div>
+								</div>
+							</td> 
+							<td width="50%">
+								<div class="campos__form">
+									<label class="control-label"> Número de cotización
+									</label>
+									<div class="controls">
+										
+										<!-- pass 0 value to not view emitir button on popup page -->
+										
+										
+										
+											<label class="control-datarecord" tabindex=""> 
+											<a href="javascript:getCotizacionDetailVida(&quot;1017100404401&quot;,&quot;0&quot;)">1017100404401<b></b></a>
+											</label>
+										
+										
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="50%">
+								<div class="campos__form">
+									<label class="control-label"> Plan personalizado</label>
+									<div class="controls">
+										<label class="control-datarecord" id="planDescLbl"><b></b></label>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="campos__form">
+									<label class="control-label"> Producto</label>
+									<div class="controls">
+									
+										
+										
+											<label class="control-datarecord" id="productDescLb2"><b></b></label>
+										
+										
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- *-----------------------datos del Tomador------------------------------------------* -->
+	<div class="row-fluid sortable ui-sortable">
+		<div class="box span12">
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box-header well" id="tomadorHeaderDiv" data-original-title="">
+
+	<h2>
+		<i class="icon-edit"></i>
+		
+				
+			
+		Datos del Tomador
+		
+		
+	
+		
+		
+		
+
+	</h2>
+
+	<div class="box-icon">
+		<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+	</div>
+
+	<p>&nbsp;</p>
+
+</div>
+
+<div class="box-content" style="width: 196%;">
+
+	<div class="form-horizontal">
+		<fieldset>
+			<input type="hidden" id="vida" value="true"> <input type="hidden" id="page" value=""> <input type="hidden" id="ciudad" name="ciudad" value=""> <input type="hidden" id="tipoDocumentoHidden" value=""> <input type="hidden" name="email" id="email" value=""> <input type="hidden" name="telefono" id="telefono" value=""> <input type="hidden" name="dirResidencial" id="dirResidencial" value=""><input type="hidden" id="processTypeQuotation" value="">
+				<input type="hidden" name="terceroConsultable" id="terceroConsultable" value=""> 
+				
+<!-- 				el tomador es el mismo asegurado -->
+
+				<div class="row-fluid span6">
+				<span id="fatcaUpdatedMsg" style="color: GREEN; display: none;" class="info"> <span class="icon icon-green icon-check"></span>
+											Información actualiza en FATCA
+										</span>
+										<span id="fatcaNotUpdatedMsg" style="color: #BD4247; display: none;" class="alert alert-danger">
+
+											Información no actualiza en FATCA
+										</span><br><br>
+										
+				<span id="infoUpdatedMsg" style="color: GREEN; display: none;" class="info"><span class="icon icon-green icon-check"></span>
+					Información actualizada en SARLAFT  </span>
+				<div id="infoNotUpdatedMsg" style="color: #BD4247; display: none; margin-bottom: 20px;" class="alert alert-danger ">
+					
+						
+						
+							Dar click en el lápiz para actualizar datos
+						
+					
+
+				</div>
+				<div class="campos__form campo-radio-check" id="isTomadorAsegSameDiv" style="">
+
+				<label class="control-label" for="isTomadorAsegSame">El tomador es el mismo asegurado</label>
+
+				<div class="checkbox" id="isTomadorAsegSameCbxDiv">
+					<div class="checker" id="uniform-isTomadorAsegSame"><span class="checked"><input id="isTomadorAsegSame" name="isTomadorAsegSame" type="checkbox" value="1" checked="checked" disabled="disabled" tabindex="5" style="opacity: 0;"><label class="handle-cbx" for="isTomadorAsegSame"> </label></span></div>
+				</div>
+
+			</div>
+			
+			<div class="campos__form campo-select" id="tipoDiv">
+<!-- mantis:-55967 -->
+				<label class="control-label" for="tipoDocumento">Tipo documento<font color="#BD4247">*</font></label>
+
+				<div class="controls">
+
+					<select id="tipoDocumento" name="tipoDocumento" class="" disabled="disabled" tabindex="6"><option value="RE" title="RE - RUT PERSONA EXTRANJERA">RE - RUT PERSONA EXTRANJERA</option><option value="NC" title="NC - NIT CONVENCIONAL">NC - NIT CONVENCIONAL</option><option value="DR" title="DR - DEPURACION REGISTROS">DR - DEPURACION REGISTROS</option><option value="PT" title="PT - PERMISO POR PROTECCION TEMPORAL">PT - PERMISO POR PROTECCION TEMPORAL</option><option value="PU" title="PU - PRUEBAS QA">PU - PRUEBAS QA</option><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CD" title="CD - CARNET DIPLOMATICO">CD - CARNET DIPLOMATICO</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="NM" title="NM - NIT DE MENOR">NM - NIT DE MENOR</option><option value="RC" title="RC - REGISTRO CIVIL">RC - REGISTRO CIVIL</option><option value="TI" title="TI - TARJETA DE IDENTIDAD">TI - TARJETA DE IDENTIDAD</option><option value="TP" title="TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES">TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES</option><option value="ON" title="ON - RESTRINGIDOS ONU - NO UTILIZAR">ON - RESTRINGIDOS ONU - NO UTILIZAR</option><option value="PE" title="PE - PERMISO ESPECIAL DE PERMANENCIA">PE - PERMISO ESPECIAL DE PERMANENCIA</option><option value="CF" title="CF - CODIGO FISCAL">CF - CODIGO FISCAL</option><option value="CR" title="CR - CODIGO REASEGURADORA">CR - CODIGO REASEGURADORA</option><option value="NE" title="NE - NIT EXTRANJERIA">NE - NIT EXTRANJERIA</option><option value="NT" title="NT - N.I.T.">NT - N.I.T.</option></select> <span id="tipoDocumentoErrorSpan" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+				</div>
+
+			</div>
+
+			<div class="campos__form campo-imput" id="IdentificacionDiv" style="margin-top:25px;">
+				
+					
+						<label class="control-label" for="numeroDocumento">Número de documento<font color="#BD4247">*</font> </label>
+
+						<div class="controls">
+							<input class="input-large focusedInput numbersOnly" id="numeroDocumento" value="" name="numeroDocumento" type="text" maxlength="16" data-rel="tooltip" required="" data-original-title="" disabled="disabled" tabindex="7">
+							<!-- 								link to add tomador -->
+							<a id="addTomador" href="#" class="addTabindexing" style="display: none" tabindex="8"><i class="icon icon-green icon-add"></i></a>
+							<!-- 								link to edit tomador  -->
+							<a id="editTomador" href="#" class="addTabindexing" style="display: none" tabindex="9"><!-- <i
+								class="icon icon-green icon-edit"></i> -->
+								<img src="/SimonQuotation/images/icons/editGreen.png" width="30px" height="23px"></a>
+							<!-- 								referesh tomador  -->
+							<a id="refreshTomador" href="#" class="addTabindexing" style="display: none" tabindex="10"><i class="icon icon-green icon-arrowrefresh-s"></i></a>
+								<a id="addFatca" href="#" style="display: none"><i class="icon icon-orange icon-edit"></i></a> <span id="errorSpanFatca" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+							<!-- 								error span -->
+							<div id="errorSpan" style="color: #BD4247;display: none;width: 80%;" class="alert alert-danger"></div>
+						</div>
+					
+					
+				
+			</div>
+
+			<div class="campos__form campo-imput" id="NombreDiv">
+
+				<label class="control-label" for="nombres">Nombre(s)<font color="#BD4247">*</font></label>
+
+				<div class="controls">
+					<input class="input-large nombre" id="nombres" name="nombres" value="" maxlength="50" type="text" required="" tabindex="11">
+				</div>
+
+			</div>
+
+
+
+			<div class="campos__form campo-imput" id="ApellidoDiv">
+
+				<label class="control-label" for="apellidos">Apellido(s)<span class="requiredMarkApellidos"><font color="#BD4247">*</font></span></label>
+
+				<div class="controls">
+					<input type="text" id="apellidos" name="apellidos" value="" class="input-large nombre" required="" maxlength="50" tabindex="12">
+
+				</div>
+
+			</div>
+             
+					
+			<div class="campos__form campo-imput" id="emailDiv" style="display: none;">
+
+				<label class="control-label" for="email">Correo electrónico<span class="requiredMarkConductor"><font color="#BD4247">*</font></span>
+						</label>
+
+				<div class="controls">
+					<input type="text" id="tomadorEmail" name="tomadorEmail" value="" maxlength="50" class="email input-large" required="true" tabindex="13" style="display: none;">
+
+				</div>
+
+			</div>
+			
+			
+			
+
+
+
+			<div class="campos__form campo-imput" id="celularDiv" style="display: none;">
+				<label class="control-label" for="celular">Teléfono celular</label>
+
+
+
+				
+					
+					
+						
+					
+				
+
+
+
+				<div class="controls">
+					<input type="text" id="celularFormated" name="celularFormated" value="" class="input-large numbersOnly" maxlength="10" tabindex="14" style="display: none;">&nbsp;&nbsp; <a id="editar" style="display: none"><!-- <i
+					 class="icon icon-blue icon-edit"/></i> --><img src="/SimonQuotation/images/icons/edit.png" width="30px" height="23px"> </a> <input type="hidden" id="celular" name="celular" value="">
+				</div>
+
+			</div>
+
+			<!-- 	Sexo	 -->
+
+			<div class="control-group" id="sexoDiv" style="display: none;">
+				<label class="control-label">Sexo</label>
+
+				<div class="controls riskDataC terceros">
+					<select id="sexoSelect" name="sexoSelect" class="input-large" tabindex="15">
+						<option selected="selected" value="M">MASCULINO</option>
+						<option value="F">FEMENINO</option>
+					</select>
+
+					
+						
+							<input type="hidden" id="sexo" name="sexo" value="M">
+						
+						
+					
+				</div>
+			</div>
+
+			<div class="campos__form campo-imput" id="withDatepicker" style="display: none">
+				<label class="control-label">Fecha nacimiento <span class="requiredMarkConductor"><font color="#BD4247">*</font></span> </label>
+				<div class="controls">
+					<input type="text" class="input-large datepickerVida hasDatepicker" maxlength="10" id="ncmntoFecha" name="ncmntoFecha" value="" tabindex="16"><img class="ui-datepicker-trigger" src="images/icons/calendar.gif" alt="..." title="...">
+				</div>
+
+			</div>
+
+
+			<div class="campos__form campo-imput" id="withoutDatepicker" style="display: none">
+				<label class="control-label">Fecha nacimiento <span class="requiredMarkConductor"><font color="#BD4247">*</font></span> </label>
+				<div class="controls">
+					<input type="text" class="input-large" maxlength="10" id="ncmntoFechaWD" name="ncmntoFechaWD" value="" tabindex="17">
+				</div>
+
+			</div>
+
+			<!-- 	Edad	 -->
+
+			<div class="campos__form campo-imput" id="edadDiv" style="display: none;">
+				<label class="control-label">Edad</label>
+
+				<div class="controls riskDataC terceros">
+					<input type="text" id="edad" name="edad" value="" maxlength="2" class="input-large numbersOnly" tabindex="18"> <br> <span id="edadWarning" class="warningmessage" title="Amparao Básico: entre 20 y 65.
+									Anexos de Accidentes Personales: menor a 60.
+									Anexos de ITP y EG: menor a 55"></span>
+
+				</div>
+			</div>
+			
+			<!-- Change for mantis 0047435 Removed c:if condition -->
+			  
+			<div class="campos__form campo-radio-check" id="spouse">
+										<label class="control-label">Cónyuge </label>
+ 
+										<div class="controls" id="OpcionConyugeDiv">
+											<label class="radio inline"> <div class="radio" id="uniform-conyugeS"><span><input type="radio" name="conyuge" id="conyugeS" value="Si" tabindex="19" style="opacity: 0;"><label class="handle-cbx" for="conyugeS"> </label></span></div>
+												Si
+											</label>&nbsp;&nbsp;&nbsp; <label class="radio inline"> <div class="radio" id="uniform-conyugeN"><span class="checked"><input type="radio" name="conyuge" id="conyugeN" value="No" checked="" tabindex="20" style="opacity: 0;"><label class="handle-cbx" for="conyugeN"> </label></span></div>
+												No
+											</label>
+										</div>
+									</div>
+			
+			<div class="campos__form campo-imput" id="edadConyugeDiv" style="display: none;">
+
+				<label class="control-label" for="edadConyuge">  Edad del cónyuge</label>
+
+				<div class="controls">
+					<input type="text" id="edadConyuge" name="edadConyuge" maxlength="2" class="input-large numbersOnly" tabindex="21">
+ 
+				</div>
+
+			</div>
+			
+			<div class="campos__form campo-imput" id="SalarioTomadorDiv" style="display: none;">
+
+				<label class="control-label" for="SalarioTomador"> Salario <font color="#BD4247">*</font> </label>
+
+				<div class="controls">
+					<input type="text" id="salTomador" name="salTomador" class="input-large numbersOnly " maxlength="17" required="required" tabindex="22">
+ 
+				</div>
+
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+					<!-- 	Ciudad de Riesgo	 -->
+					<div class="campos__form campo-imput" id="ciudadofVidaDiv" style="display: none;">
+						<label class="control-label" for="codCiudadVida">Ciudad<font color="#BD4247">*</font>
+						</label>
+						<div class="controls">
+							<input id="codCiudadVida" name="codCiudadVida" type="text" value="" class=".ui-autocomplete citiesAutoComplete mandatoryAutocomplete ui-autocomplete-input" maxlength="100" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="23">
+
+						</div>
+					</div>
+					<div class="campos__form campo-imput" id="direccionofVidaDiv" style="display: none;">
+						<label class="control-label" for="direccionofVida">Dirección<span class="requiredMarkConductor"><font color="#BD4247">*</font></span>
+						</label>
+						<div class="controls">
+							<input id="direccionofVida" name="direccion" type="text" class="input-large" maxlength="50" value="" required="true" tabindex="24">
+
+						</div>
+					</div>
+
+					<div class="control-group" id="relacionControl" style="display: none;">
+						<label class="control-label">Relación laboral<span class="requiredMarkConductor"><font color="#BD4247">*</font></span>
+						</label>
+
+						<div class="controls riskDataC terceros">
+							<select id="relacionR" name="relacionR" class="input-large" required="true" tabindex="25">
+								<option value="E">Empleado</option>
+								<option value="I">Independiente</option>
+								<option value="P">Servidor Publico</option>
+								
+							</select>
+							<br>
+						<span id="relacionLaboralMsg" align="left" style="display:none">
+						<i class="icon-info-sign" data-original-title="Debe anexar certificación de funciones emitida por el empleador" data-rel="tooltip"></i>Debe anexar certificación de funciones emitida por el empleador						
+						</span>
+						</div>
+					</div>
+					<!-- estrato -->
+
+					<div class="campos__form campo-imput" style="display:none">
+
+						<label class="control-label" for="estrato">Estrato</label>
+
+
+						<div class="controls riskDataC">
+						
+							<!-- <select id="estrato" name="estrato" class="input-large"
+								tabindex="16">
+							</select>  -->
+							 <input id="estrato" name="estrato" type="text" class=".ui-autocomplete" maxlength="100" tabindex="26">
+							<span id="estratoError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+						</div>
+
+					</div>
+					<div class="campos__form campo-imput" id="currentOccupacion" style="display: none;">
+
+						<label class="control-label" for="currentOccupation">Ocupación actual<span class="requiredMarkConductor"><font color="#BD4247">*</font></span></label>
+
+
+						<div class="controls ">
+							
+							<input id="currentOccupation" name="ocupacionActual" type="text" class=".ui-autocomplete mandatoryAutocomplete requiredSubmit ui-autocomplete-input" maxlength="100" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="27">
+							<span id="currentOccupationError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+						</div>
+						</div>
+						<div class="campos__form campo-imput" id="anyOccupationDiv" style="display: none;">
+							<label class="control-label" for="anyOccupation">Cual<font color="#BD4247">*</font> </label>
+							<div class="controls">
+								<input id="anyOccupation" name="otraOcupacion" type="text" class="input-large" maxlength="50" value="" tabindex="28">
+
+							</div>
+						</div>
+					<div class="control-group" id="actualActividad" style="display: none;">
+
+						<label class="control-label" for="actividadActual">Actividad actual<span class="requiredMarkConductor"><font color="#BD4247">*</font></span></label>
+
+
+						<div class="controls ">
+							
+							<select id="actividadActual" name="actividadActual" class="input-large" required="true" tabindex="29">
+							</select> 
+							<span id="actividadActualError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+						</div>
+						</div>
+						<div class="control-group" id="anyActividadDiv" style="display: none;">
+							<label class="control-label" for="anyActividad">Detalle la actividad <font color="#BD4247">*</font> </label>
+							<div class="controls">
+								<!-- <textarea id="anyActividad" name="otraActividad" 
+									 tabindex="18" maxlength="40" required>
+									</textarea> --><textarea id="anyActividad" name="otraActividad" cols="20" rows="3" maxlength="150" required="" style="overflow-y: scroll;" tabindex="30"></textarea>
+
+							</div>
+						</div>
+						
+						<!-- <div class="control-group" id="cubiertaDiv" style="display: block">
+							<label class="control-label"> <span title=""
+								data-rel="tooltip"> Ingreso mensual actual </span></label>
+	
+							<div class="controls">
+								<input type="text" id="mensualActualVal" name="mensualActualVal"
+									class="input-large currency numbersOnly" maxlength="19" />
+							</div>
+						</div> -->
+				
+			
+
+
+			
+
+			<!-- Conductor Habitual -->
+			
+				
+			
+
+
+			<!-- Autoriza Enviar Mensaje Texto -->
+			<div class="campos__form campo-radio-check" id="envMeasaje" style="display: none;">
+					<label class="control-label" for="enviarMeasaje">Autoriza enviar mensaje texto?</label>
+					<div class="checkbox">
+						<div class="checker" id="uniform-enviarMeasaje"><span><input id="enviarMeasaje" name="enviarMeasaje" type="checkbox" value="1" tabindex="31" style="opacity: 0;"><label class="handle-cbx" for="enviarMeasaje"> </label></span></div>
+					</div>
+			</div>
+			<!-- Email: Requerimiento SARLAFT 16/8/2021  -->        
+            <div class="campos__form campo-imput" id="sarlaftCelularDiv" style="display: none;">
+				<label class="control-label" for="celular" id="sarlaftCelularLabel" style="width: 150px;">Confirme teléfono celular<font color="#BD4247">*</font></label>
+
+
+				<div class="controls">
+					<input type="text" id="sarlaftCelular" name="sarlaftCelular" class="input-large numbersOnly requiredCelular" maxlength="10" onblur="validateCelular(this.id)" tabindex="32">
+						
+				</div>
+
+			</div>
+			
+			<div class="campos__form campo-imput" id="telefonoCelularComercialDiv" style="display: none;">
+				<label class="control-label" for="celular">Teléfono celular comercial<font color="#BD4247">*</font></label>
+
+
+				<div class="controls">
+					<input type="text" id="telefonoCelularComercial" name="telefonoCelularComercial" class="input-large numbersOnly requiredCelular" maxlength="10" onblur="validateCelular(this.id)" tabindex="33">
+						
+				</div>
+
+			</div>
+			
+			<div class="campos__form campo-radio-check" id="certificoDiv" style="display: none;">
+				<label class="control-label" for="">Certifico que el teléfono de celular ingresado corresponde al tercero autorizado<font color="#BD4247">*</font></label>
+					<div class="checkbox">
+					<div class="checker" id="uniform-certificoCheck"><span><input id="certificoCheck" name="certificoCheck" style=" display: block;opacity:0;" required="required" type="checkbox" tabindex="34"><label class="handle-cbx" for="certificoCheck"> </label></span></div>
+				</div>
+            </div>
+            
+            <div class="campos__form campo-imput" id="adjustment" style="display: none;">
+				<label class="control-label" for=""></label>
+					<div class="checkbox">
+					
+				</div>
+            </div>
+			
+			<!-- Autoriza Uso de Datos?  -->
+			<div class="campos__form campo-radio-check" id="autorizaDatosCheckDiv">
+					<label class="control-label" for="">Autoriza uso de datos?<font color="#BD4247">*</font></label>
+					<div class="checkbox">
+						<div class="checker" id="uniform-autorizaDatosCheck1"><span><input id="autorizaDatosCheck1" name="autorizaDatosCheck" style="display: block; opacity: 0;" type="checkbox" tabindex="35"><label class="handle-cbx" for="autorizaDatosCheck1"> </label></span></div>
+					</div>
+			</div>
+			<!-- Med Confianza -->
+			
+			</div>
+			<div class="row-fluid span6">
+			</div>
+		</fieldset>
+	</div>
+</div>
+
+		</div>
+
+
+
+
+		<!-- ----------------------nomina beneficiar--------------------------------------- -->
+		<div class="row-fluid sortable ui-sortable">
+			<div class="box span12">
+				<div class="box-header well">
+					<h2>
+						<i class="icon-edit"></i> Informacion del Riesgo
+					</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="box-content">
+					<span style="color: #BD4247; display: none;width: 50%;" id="nominaBeneficiarioTableCheckMsgR2" class="alert alert-danger">Por favor, ingrese al menos una Nómina Beneficiario para el Riesgo 2</span><br>
+					<span style="color: #BD4247; display: none;width: 50%;" id="nominaBeneficiarioTableCheckMsg" class="alert alert-danger">Por favor, ingrese al menos una Nómina Beneficiario para el Riesgo 1</span><br>
+					<ul class="nav nav-tabs" id="myTab">
+
+						<li id="tab_contaNoElectrico" class="active"><a href="#panel_quotationfield" class="addTabindexing" id="quotation_field" tabindex="37">Riesgo
+								detalles 1</a></li>
+						<li id="tab_contaNoElectrico1"><a href="#panel_quotationfield1" id="quotation_field1" style="display: none;">Riesgo detalles 2</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane active" id="panel_quotationfield">
+							<!--  Datos Del Asegurado   -->
+
+
+							<div class="box span12" id="datosAseg">
+								<div class="box-header well" data-original-title="">
+									<h2>
+										<i class="icon-edit"></i>
+										Datos del Asegurado
+									</h2>
+
+									<div class="box-icon">
+										<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+									</div>
+								</div>
+
+								<div class="box-content">
+									<div class="form-horizontal">
+										<span id="infoUpdatedMsgAseg" style="color: GREEN; display: none;" class="info"> <span class="icon icon-green icon-check"></span> Información actualizada en SARLAFT 
+										</span> <span id="infoNotUpdatedMsgAseg" style="color: #BD4247; display: none;" class="alert alert-danger">Dar click en el lápiz para actualizar datos </span> <br> <span id="fatcaUpdatedMsg" style="color: GREEN; display: none;" class="info"> <span class="icon icon-green icon-check"></span>
+											Información actualiza en FATCA
+										</span><br> <span id="fatcaNotUpdatedMsg" style="color: #BD4247; display: none;" class="alert alert-danger">
+
+											Información no actualiza en FATCA
+										</span>
+
+										<table width="100%">
+											<tbody><tr>
+												<td width="50%">
+													<div class="campos__form campo-select">
+														<label class="control-label" for="tipoDocumentoAseg">Tipo documento<font color="#BD4247">*</font></label>
+														<div class="controls">
+															<select id="tipoDocumentoAseg" name="tipoDocumentoAseg" class="input-large" disabled="disabled" tabindex="39"><option value="RE" title="RE - RUT PERSONA EXTRANJERA">RE - RUT PERSONA EXTRANJERA</option><option value="NC" title="NC - NIT CONVENCIONAL">NC - NIT CONVENCIONAL</option><option value="DR" title="DR - DEPURACION REGISTROS">DR - DEPURACION REGISTROS</option><option value="PT" title="PT - PERMISO POR PROTECCION TEMPORAL">PT - PERMISO POR PROTECCION TEMPORAL</option><option value="PU" title="PU - PRUEBAS QA">PU - PRUEBAS QA</option><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CD" title="CD - CARNET DIPLOMATICO">CD - CARNET DIPLOMATICO</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="NM" title="NM - NIT DE MENOR">NM - NIT DE MENOR</option><option value="RC" title="RC - REGISTRO CIVIL">RC - REGISTRO CIVIL</option><option value="TI" title="TI - TARJETA DE IDENTIDAD">TI - TARJETA DE IDENTIDAD</option><option value="TP" title="TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES">TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES</option><option value="ON" title="ON - RESTRINGIDOS ONU - NO UTILIZAR">ON - RESTRINGIDOS ONU - NO UTILIZAR</option><option value="PE" title="PE - PERMISO ESPECIAL DE PERMANENCIA">PE - PERMISO ESPECIAL DE PERMANENCIA</option><option value="CF" title="CF - CODIGO FISCAL">CF - CODIGO FISCAL</option><option value="CR" title="CR - CODIGO REASEGURADORA">CR - CODIGO REASEGURADORA</option><option value="NE" title="NE - NIT EXTRANJERIA">NE - NIT EXTRANJERIA</option><option value="NT" title="NT - N.I.T.">NT - N.I.T.</option></select> <span id="tipoDocumentoAsegErrorSpan" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+														</div>
+													</div>
+												</td>
+												<td width="50%">
+													<div class="campos__form campo-imput">
+														<label class="control-label" for="numeroDocumentoAseg">Número de documento<font color="#BD4247">*</font> </label>
+
+														<div class="controls">
+															<input class="input-large focusedInput" id="numeroDocumentoAseg" value="" name="numeroDocumentoAseg" type="text" onkeyup="if(resValidateDocNum(this)){resValidateAmount(this,numval,'2')}" maxlength="16" required="" data-rel="tooltip" data-original-title="" disabled="disabled" tabindex="40">
+
+															<!-- Add Fatca -->
+
+															<!-- <a id="addFatca" href="#" style="display: block;"><i
+																class="icon icon-orange icon-edit"></i></a>
+																<span id="infoNotUpdatedMsgFatca" style="color: #BD4247; display: none;"
+																	class="error">InformaciÃ³n Desactualizado
+																</span>
+																 -->
+															<!-- <a id="addFatca" href="#" style="display: none"><i
+																class="icon icon-orange icon-edit"></i></a> <span
+																id="errorSpanFatca" style="color: #BD4247;display: none;"
+																class="alert alert-danger"></span> -->
+															<!--  -->
+															<!-- 	edit aseg  -->
+															<a id="editAseg" href="#" style="display: none" class="addTabindexing" tabindex="41"><!-- <i
+																class="icon icon-green icon-edit"></i> -->
+																<img src="/SimonQuotation/images/icons/editGreen.png" width="30px" height="23px"></a>
+															<!-- 	add aseg basico  -->
+															<a id="addAsegBasico" href="#" style="display: none" class="addTabindexing" data-original-title="Ingrese aquí para actualizar los datos del asegurado" data-rel="tooltip" tabindex="42"><i class="icon icon-green icon-add"></i></a>
+															<!-- 	add aseg  -->
+															<a id="addAseg" href="#" style="display: none" class="addTabindexing" tabindex="43"><i class="icon icon-green icon-add"></i></a>
+															<!-- 	referesh aseg  -->
+															<a id="refreshAseg" href="#" style="display: none" class="addTabindexing" tabindex="44"><i class="icon icon-green icon-arrowrefresh-s"></i></a> <span id="errorSpanAseg" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td width="50%">
+													<div class="campos__form campo-imput">
+														<label class="control-label" for="nombresAseg">Nombre(s)<font color="#BD4247">*</font></label>
+
+														<div class="controls">
+															<input class="input-large nombre" id="nombresAseg" name="nombresAseg" value="" maxlength="50" type="text" required="" readonly="" tabindex="-1">
+														</div>
+
+													</div>
+												</td>
+												<td width="50%">
+													<div class="campos__form campo-imput">
+														<label class="control-label" for="apellidosAseg">Apellido(s)<font color="#BD4247">*</font></label>
+
+														<div class="controls">
+															<input type="text" id="apellidosAseg" name="apellidosAseg" value="" class="input-large nombre" required="" readonly="" maxlength="50" tabindex="-1">
+
+														</div>
+													</div>
+												</td>
+											</tr><tr>
+												<td width="50%">
+													<div class="campos__form campo-imput" style="display: none">
+														<label class="control-label" for="emailAseg">Correo electrónico</label>
+
+														<div class="controls">
+															<input type="text" id="emailAseg" name="emailAseg" value="" maxlength="50" class="input-large email" tabindex="45">
+														</div>
+													</div>
+												</td>
+												<td width="50%">
+													<div class="campos__form campo-imput " style="display: none">
+														<label class="control-label" for="celularAseg">Teléfono celular</label>
+
+														<div class="controls">
+															<input type="text" id="celularFormatedAseg" name="celularFormatedAseg" value="" class="input-large numbersOnly" maxlength="10" tabindex="46"> &nbsp;&nbsp; <a id="editarAseg" style="display: none"><!-- <i
+																class="icon icon-blue icon-edit"></i> -->
+																<img src="/SimonQuotation/images/icons/edit.png" width="30px" height="23px">
+																</a> <input type="hidden" id="celularAseg" name="celularAseg" value=""> <input type="hidden" id="sexoAseg" name="sexoAseg" value=""> <input type="hidden" id="ciudadAseg" name="ciudadAseg" value="">
+															<input type="hidden" id="edadAseg" name="edadAseg" value="">
+														</div>
+
+													</div>
+												</td>
+											</tr>
+											
+											<!-- Email: Requerimiento SARLAFT 16/8/2021  -->
+											<tr>
+												<td width="50%">
+													<div class="campos__form campo-imput" id="sarlaftCelularAsegDiv" style="display: none;">
+														<label class="control-label" for="celular" id="sarlaftCelularAsegLabel" style="width: 150px;">Confirme teléfono celular<font color="#BD4247">*</font></label>
+														<div class="controls">
+															<input type="text" id="sarlaftCelularAseg" name="sarlaftCelularAseg" class="input-large numbersOnly requiredCelular" maxlength="10" onblur="validateCelular(this.id)" tabindex="47">
+														</div>
+
+													</div>
+												</td>
+												<td width="50%">
+													<div class="campos__form campo-imput" id="telefonoCelularComercialAsegDiv" style="display: none;">
+														<label class="control-label" for="celular">Teléfono celular comercial<font color="#BD4247">*</font></label>
+
+														<div class="controls">
+															<input type="text" id="telefonoCelularComercialAseg" name="telefonoCelularComercialAseg" class="input-large numbersOnly requiredCelular" maxlength="10" onblur="validateCelular(this.id)" tabindex="48">
+
+														</div>
+													</div>
+												</td>
+												</tr>
+												<tr>
+												<td width="50%">
+													<div class="campos__form campo-radio-check" id="certificoAsegDiv" style="display: none;">
+														<label class="control-label" for="">Certifico que el telÃ©fono de celular ingresado corresponde al tercero autorizado<font color="#BD4247">*</font></label>
+
+														<div class="checkbox">
+															<div class="checker" id="uniform-certificoCheckAseg"><span><input id="certificoCheckAseg" name="certificoCheckAseg" style=" display: block;opacity:0;" required="required" type="checkbox" tabindex="49"><label class="handle-cbx" for="certificoCheckAseg"> </label></span></div>
+
+														</div>
+													</div>
+												</td>
+												</tr>
+										</tbody></table>
+
+									</div>
+								</div>
+
+							</div>
+							<!-- end Datos Del Asegurado  -->
+							<!-- Nomina beneficiario -->
+							<div class="row-fluid" id="NominaBeneficiarioDivSection">
+								<div class="box span12 ">
+									<div class="box-header well" data-original-title="">
+										<h2>
+											<i class="icon-edit"></i>
+											Nomina Beneficiario
+										</h2>
+										<div class="box-icon">
+											<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up" tabindex=""></i></a>
+										</div>
+									</div>
+
+									<div class="box-content">
+										<span style="color: #BD4247; display: none; text-align: right;" align="right" id="nominaBeneficiarioTableCheckMsg" class="alert alert-danger">Por favor, añada al menos uno Nomina Beneficiario</span><br>
+										
+										<span style="color: #BD4247; display: none; text-align: right;" align="right" id="libreOnerosoErrorCheck" class="alert alert-danger"> El campo es obligatorio</span><br>
+											
+										<ul class="nav nav-tabs" id="myTab">
+
+											<li id="tab_libre" class="active"><a href="#panel_libreTable" class="addTabindexing" id="libre_table" tabindex="51">LIBRE</a></li>
+											<li id="tab_oneroso"><a href="#panel_onerosoTable" id="oneroso_table">ONEROSO</a></li>
+											<li id="tab_contingente" style="display: none"><a href="#panel_contingenteTable" id="contingente_table">CONTINGENTE</a></li>
+										</ul>
+										<div id="myTabContent" class="tab-content">
+											<div class="tab-pane" id="panel_libreTable" style="display: block;">
+
+												<div class="box-content">
+													<!-- <b>Calidad: </b> -->
+													<input id="calidadLibre" name="calidadLibre" type="hidden" maxlength="50" value="LIBRE" class="input-small" readonly="readonly"> <input id="addBtnLibre" name="addBtnLibre" class="input-xxmini numbersOnly" maxlength="2" type="hidden" value="1"> <a class="addTabindexing" href="javascript:void(0)" id="addRowsLibre" tabindex="52"><span class="icon icon-color icon-add"></span>Agregar</a>
+													<div class="beneLibre" style="display: none">
+														<table id="table_contiLibre" class="table table-striped table-bordered campos__form campo-imput campo-select">
+															<tbody><tr>
+
+																<th style="width:15%;">Tipo documento</th>
+																<th style="width: 15%;">Nro documento</th>
+																<th style="width:15%;">Nombre(s)</th>
+																<th style="width:15%;">Apellido(s)</th>
+																<th style="width:10%;">Sexo</th>
+																<th style="width:15%;">Parentesco</th>
+
+
+
+
+
+																<th style="width: 15%;" colspan="2">Porcentaje % </th>
+															</tr>
+															
+																<tr id="LibreRow1">
+																	<td><select id="tipoDocumentoLibre1" name="tipoDocumentoLibre[]" class="input-small codLibreClass agenteLibreRemove" tabindex="53"><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="RC" title="RC - REGISTRO CIVIL">RC - REGISTRO CIVIL</option><option value="TI" title="TI - TARJETA DE IDENTIDAD">TI - TARJETA DE IDENTIDAD</option></select><input id="calidad1" type="hidden" readonly="readonly" name="calidad[]" value="LIBRE" class="input-small"></td>
+
+																	<td><input id="nroDocumentoLibre1" name="nroDocumentoLibre" type="text" maxlength="16" class="input-small numbersOnly validateRequiredForLibre" required="required" onblur="showHideErrorMsgLibre(1)" tabindex="54">
+																	</td>
+																	<td><input id="nombreLibre1" name="nombreTab1[]" type="text" maxlength="30" class="input-medium alphaNumSpaceOnly validateRequiredForLibre" required="required" onblur="showHideErrorMsgLibre(1)" tabindex="55"></td>
+
+																	<td><input id="apellido1" name="apellido[]" type="text" maxlength="30" class="input-medium alphaNumSpaceOnly" tabindex="56">
+																		<span id="productoError" style="color: #BD4247;display: none;" class="alert alert-danger"></span></td>
+
+																	<td><select id="sexo1" name="sexo[]" class="input-mini" tabindex="57">
+																			<option value="M" style="font-weight: bold;">MASCULINO</option>
+																			<option value="F" style="font-weight: bold;">FEMENINO</option>
+
+																	</select></td>
+
+
+																	<td><select id="parentesco1" name="parentesco[]" type="text" maxlength="50" class="input-mini removeChosen" onblur="showHideErrorMsgLibre(1)" tabindex="58"><option value="select" title="Seleccionar">Seleccionar</option><option value="1" title="CONYUGE">CONYUGE</option><option value="2" title="COMPAÑERO PERMANENTE">COMPAÑERO PERMANENTE</option><option value="3" title="HIJO/A">HIJO/A</option><option value="4" title="PADRES">PADRES</option><option value="5" title="OTRO">OTRO</option></select></td>
+
+
+
+																	<td><input type="text" class="input-xmini numbersOnly benfi" id="participacionLibre1" name="participacionLibre[]" onchange="showHideErrorMsgLibre(1)" onblur="toAddParticipationRisk(1)" maxlength="3" tabindex="59"></td>
+
+																	<td style="border-left: none;"><span id="deleteButton1" onclick="removeLibreRow(this)" class="icon icon-color icon-remove removeLibreRowClass addTabindexing" tabindex="60"></span></td>
+
+																</tr>
+															
+															<tr>
+																<td colspan="6" style="vertical-align: left; text-align: right;"><b>Total
+																</b></td>
+																<td colspan="2"><input type="text" id="totalLibre" readonly="true" name="totalLibre" maxlength="50" class="input-xmini" tabindex="-1"></td>
+															</tr>
+
+														</tbody></table>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="panel_onerosoTable">
+												<div class="box-content">
+
+													<div id="nominaBeneficiarioTableCheckMsgDiv">
+														<span id="nominaBeneficiarioTableCheckMsgInfo" class="icon-info-sign" title="RECUERDE ANEXAR CERTIFICACION DE LA DEUDA EMITIDA POR LA ENTIDAD FINANCIERA, CLAUSULAS Y CONDICIONES QUE EXIGE LA ENTIDAD FINANCIERA PARA ACEPTAR LA POLIZA"></span>
+														RECUERDE ANEXAR CERTIFICACION DE LA DEUDA EMITIDA POR LA ENTIDAD FINANCIERA, CLAUSULAS Y CONDICIONES QUE EXIGE LA ENTIDAD FINANCIERA PARA ACEPTAR LA POLIZA
+													</div>
+													<br>
+													<!-- <b>Calidad: </b> -->
+													<input id="calidadsel" name="calidadsel" type="hidden" maxlength="50" value="ONEROSO" class="
+													input-small" readonly="readonly">
+													<input id="addBtnOneroso" name="addBtnOneroso" class="input-xxmini numbersOnly" maxlength="2" type="hidden" value="1"> <a class="showOneroso addTabindexing" href="javascript:void(0)" id="addRowsOnerosobutton" tabindex="61"><span class="icon icon-color icon-add"></span>Agregar</a>
+													<div class="bene" style="display: none">
+														<table id="table_Oneroso" class="table table-striped table-bordered campos__form campo-imput campo-select">
+															<tbody><tr>
+																<th>Tipo documento</th>
+																<th>Nro documento</th>
+
+																<th>Nombre(s)</th>
+																<th>Direccion</th>
+																<th>Ciudad</th>
+																<th>Sucursal</th>
+																<th>Telefono</th>
+																<th>Contacto</th>
+																<th colspan="2">Porcentaje % </th>
+															</tr>
+
+
+
+															
+																<tr id="OnerosoRow1">
+																	<td><select id="tipoDocumentoOneroso1" name="tipoDocumentoOneroso[]" class="input-small codOnerosoClass agenteFieldRemove" disabled="disabled" tabindex="62"><option value="NT" title="NT - N.I.T.">NT - N.I.T.</option></select><input id="calidadOneroso1" type="text" readonly="readonly" name="calidadOneroso[]" value="2-ONEROSO" class="input-small" style="display: none;" disabled="disabled" tabindex="-1"></td>
+
+																	<td><input id="nroDocumentoOneroso1" name="nroDocumentoOneroso[]" type="text" maxlength="16" required="required" onblur="showHideErrorMsgOneroso(this)" class="input-small numbersOnly validateRequiredForVida948" disabled="disabled" tabindex="63"></td>
+																	<td><input id="nombreOneroso1" name="nombreOneroso[]" type="text" maxlength="30" required="required" onblur="showHideErrorMsgOneroso(this)" class="input-medium alphaNumSpaceOnly validateRequiredForVida948" disabled="disabled" tabindex="64"></td>
+
+
+
+
+
+																	<td><input id="direccionOneroso1" name="direccionOneroso[]" type="text" onblur="showHideErrorMsgOneroso(this)" maxlength="50" class="input-small validateRequiredForVida948" disabled="disabled" tabindex="65"> <span id="productoError" style="color: #BD4247;display: none;" class="alert alert-danger"></span></td>
+
+																	<td><input id="ciudadOneroso1" name="ciudadOneroso[]" type="text" maxlength="50" onblur="showHideErrorMsgOneroso(this)" class=".ui-autocomplete validateRequiredForVida948 nonMandatoryAutocomplete citiesAutoComplete input-medium ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" disabled="disabled" tabindex="66">
+																	</td>
+
+																	<td><input type="text" class="input-mini validateRequiredForVida948" id="Sucural1" onblur="showHideErrorMsgOneroso(this)" name="Sucural[]" maxlength="20" disabled="disabled" tabindex="67"></td>
+																	<td><input id="telefonoOneroso1" name="telefonoOneroso[]" type="text" onblur="showHideErrorMsgOneroso(this)" maxlength="10" class="input-mini numbersOnly validateRequiredForVida948" disabled="disabled" tabindex="68"> </td>
+																	<td><input id="contactoOneroso1" name="contactoOneroso[]" type="text" onblur="showHideErrorMsgOneroso(this)" maxlength="30" class="input-medium validateRequiredForVida948" disabled="disabled" tabindex="69"></td>
+																	<td style="width: 10%;"><input id="participacionOneroso1" name="participacionOneroso[]" type="text" maxlength="3" onblur="toAddParticipationRisk1(1)" onchange="showHideErrorMsgOneroso(this)" class="input-xmini numbersOnly benfi2 validateRequiredForVida948" disabled="disabled" tabindex="70"></td>
+
+																	<td style="border-left: none;"><span id="deleteButtonOneroso1" onclick="removeOnerosoRow(this)" class="icon icon-color icon-remove validateRequiredForVida948 removeOnerosoRowClass addTabindexing" tabindex="71"></span></td>
+																</tr>
+															
+															<tr>
+																<td colspan="8" style="vertical-align: left; text-align: right;"><b>Total
+																</b></td>
+																<td colspan="2"><input type="text" id="totalOneroso" readonly="true" name="totalOneroso" maxlength="50" class="input-xmini" disabled="disabled" tabindex="-1"></td>
+															</tr>
+
+
+														</tbody></table>
+
+													</div>
+												</div>
+											</div>
+
+											
+
+											<div class="tab-pane" id="panel_contingenteTable">
+												<div class="box-content">
+													<!-- <b>Calidad: </b> -->
+													<input id="calidadselId" name="calidadselId" type="hidden" maxlength="50" value="CONTINGENTE" class="
+													input-medium" readonly="readonly">
+													<input id="addBtnContingente" name="addBtnContingente" class="input-xxmini numbersOnly" maxlength="2" type="hidden" value="1"> <a class="showContingente addTabindexing" href="javascript:void(0)" id="addRowsContingenteButton" tabindex="72"><span class="icon icon-color icon-add"></span>Agregar</a>
+													<div class="beneContingente" style="display: none">
+														<table id="table_contingente" class="table table-striped table-bordered campos__form campo-imput campo-select">
+															<tbody><tr>
+
+																<th>Tipo documento</th>
+																<th>Nro documento</th>
+																<th>Nombre(s)</th>
+																<th>Apellido(s)</th>
+																<th>Sexo</th>
+																<th>Parentesco</th>
+																<th colspan="2">Porcentaje % </th>
+															</tr>
+															
+																<tr id="ContingenteRow1">
+
+																	<td><select id="tipoDocumentoContingente1" name="tipoDocumentoLibre[]" class="input-small codContingenteClass" tabindex="73"><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="RC" title="RC - REGISTRO CIVIL">RC - REGISTRO CIVIL</option><option value="TI" title="TI - TARJETA DE IDENTIDAD">TI - TARJETA DE IDENTIDAD</option></select> <input id="calidad1" type="text" readonly="readonly" name="calidad[]" value="3-CONTINGENTE" class="input-small" style="display: none;" tabindex="-1"></td>
+
+																	<td><input id="nroDocumentoContingente1" name="nroDocumentoLibre" type="text" maxlength="16" class="input-small numbersOnly" onblur="showHideErrorMsgContingente(1)" tabindex="74">
+																	</td>
+																	<td><input id="nombreContingente1" name="nombreTab1[]" type="text" maxlength="30" class="input-medium alphaNumSpaceOnly" onblur="showHideErrorMsgContingente(1)" tabindex="75"></td>
+
+																	<td><input id="apellidoContingente1" name="apellido[]" type="text" maxlength="30" class="input-medium alphaNumSpaceOnly" tabindex="76">
+																		<span id="productoError" style="color: #BD4247;display: none;" class="alert alert-danger"></span></td>
+
+																	<td><select id="sexoContingente1" name="sexo[]" class="input-mini" tabindex="77">
+																			<option value="M" style="font-weight: bold;">MASCULINO</option>
+																			<option value="F" style="font-weight: bold;">FEMENINO</option>
+																	</select></td>
+
+
+																	<td><select id="parentescoContingente1" name="parentesco[]" type="text" maxlength="50" class="input-mini removeChosen" onblur="showHideErrorMsgContingente(1)" tabindex="78"><option value="select" title="Seleccionar">Seleccionar</option><option value="1" title="CONYUGE">CONYUGE</option><option value="2" title="COMPAÑERO PERMANENTE">COMPAÑERO PERMANENTE</option><option value="3" title="HIJO/A">HIJO/A</option><option value="4" title="PADRES">PADRES</option><option value="5" title="OTRO">OTRO</option></select></td>
+
+
+
+																	<td><input type="text" class="input-xmini numbersOnly benfiContingente" id="participacionContingente1" name="participacionLibre[]" onchange="showHideErrorMsgContingente(1)" onblur="toAddParticipationRiskContingente(1)" maxlength="3" tabindex="79"></td>
+																	<td style="border-left: none;"><span id="deleteButtonContingente1" onclick="removeContingenteRow(1)" class="icon icon-color icon-remove removeContingenteRowClass addTabindexing" tabindex="80"></span></td>
+
+
+																</tr>
+															
+															<tr>
+																<td colspan="6" style="vertical-align: left; text-align: right;"><b>Total
+																</b></td>
+																<td colspan="2"><input type="text" id="totalContingente" readonly="true" name="totalLibre" maxlength="50" class="input-xmini" tabindex="-1"></td>
+															</tr>
+
+														</tbody></table>
+
+													</div>
+												</div>
+											</div> 
+
+											<table class="campos__form campo-imput" id="totalLibreRow">
+												<tbody><tr>
+													<td width="90%" align="right">
+
+														
+															<label class="control-label" for="totalLibreOneroso">Libre:
+														
+														
+													
+													</label></td>
+													<td width="10%"><input id="totalLibreOneroso" type="text" name="totalLibreOneroso" readonly="true" class="input-xmini" tabindex="-1"></td>
+												</tr>
+											</tbody></table>
+
+										</div>
+									</div>
+								</div>
+
+
+								<!-- end  Nomina beneficiario -->
+
+
+
+
+
+
+
+								
+							</div>
+						</div>
+						<!-- end Riesgo1 Tab  -->
+						<!-- Riesgo2 Tab  -->
+						<div class="tab-pane" id="panel_quotationfield1">
+							
+
+
+<!-- ******************************** Datos Del Asegurado *********************************  -->
+
+
+<!-- ******************************** Datos Del Asegurado *********************************  -->
+
+
+<div class="box span12" id="datosAseg">
+	<div class="box-header well" data-original-title="">
+		<h2>
+			<i class="icon-edit"></i>
+			Datos del Asegurado
+		</h2>
+
+		<div class="box-icon">
+			<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+		</div>
+	</div>
+
+	<div class="box-content">
+		<div class="form-horizontal">
+			<span id="infoUpdatedMsgAsegR2" style="color: GREEN; display: none;" class="info"> 
+				<span class="icon icon-green icon-check"></span>
+				Información actualizada en SARLAFT 
+			</span>
+			<span id="infoNotUpdatedMsgAsegR2" style="color: #BD4247; display: none;" class="error">Dar click en el lápiz para actualizar datos 
+             </span>	
+			<br>
+			<span id="fatcaUpdatedMsgR2" style="color: GREEN; display: none;" class="info">
+				<span class="icon icon-green icon-check"></span>
+				Información actualiza en FATCA
+           </span><br>
+			<span id="fatcaNotUpdatedMsgR2" style="color: #BD4247; display: none;" class="error">
+				Información no actualiza en FATCA
+                           </span>	
+			<table width="100%">
+				<tbody><tr>
+					<td width="50%">
+						<div class="campos__form campo-select">
+							<label class="control-label" for="tipoDocumentoAsegR2">Tipo documento<font color="#BD4247">*</font></label>
+							<div class="controls">
+								<select id="tipoDocumentoAsegR2" name="tipoDocumentoAsegR2" class="input-large" tabindex="82"><option value="RE" title="RE - RUT PERSONA EXTRANJERA">RE - RUT PERSONA EXTRANJERA</option><option value="NC" title="NC - NIT CONVENCIONAL">NC - NIT CONVENCIONAL</option><option value="DR" title="DR - DEPURACION REGISTROS">DR - DEPURACION REGISTROS</option><option value="PT" title="PT - PERMISO POR PROTECCION TEMPORAL">PT - PERMISO POR PROTECCION TEMPORAL</option><option value="PU" title="PU - PRUEBAS QA">PU - PRUEBAS QA</option><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CD" title="CD - CARNET DIPLOMATICO">CD - CARNET DIPLOMATICO</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="NM" title="NM - NIT DE MENOR">NM - NIT DE MENOR</option><option value="RC" title="RC - REGISTRO CIVIL">RC - REGISTRO CIVIL</option><option value="TI" title="TI - TARJETA DE IDENTIDAD">TI - TARJETA DE IDENTIDAD</option><option value="TP" title="TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES">TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES</option><option value="ON" title="ON - RESTRINGIDOS ONU - NO UTILIZAR">ON - RESTRINGIDOS ONU - NO UTILIZAR</option><option value="PE" title="PE - PERMISO ESPECIAL DE PERMANENCIA">PE - PERMISO ESPECIAL DE PERMANENCIA</option><option value="CF" title="CF - CODIGO FISCAL">CF - CODIGO FISCAL</option><option value="CR" title="CR - CODIGO REASEGURADORA">CR - CODIGO REASEGURADORA</option><option value="NE" title="NE - NIT EXTRANJERIA">NE - NIT EXTRANJERIA</option><option value="NT" title="NT - N.I.T.">NT - N.I.T.</option></select> <span id="tipoDocumentoAsegR2ErrorSpan" style="color: #BD4247;" class="error"></span>
+							</div>
+						</div>
+					</td>
+					<td width="50%">
+						<div class="campos__form campo-imput">
+							<label class="control-label" for="numeroDocumentoAsegR2">Número de documento<font color="#BD4247">*</font> </label>
+
+							<div class="controls">
+								<input class="input-large" id="numeroDocumentoAsegR2" value="" name="numeroDocumentoAsegR2" type="text" maxlength="16" required="" data-rel="tooltip" data-original-title="" tabindex="83">
+									
+									<a id="addFatcaR2" href="#" style="display: none"><i class="icon icon-orange icon-edit"></i></a> <span id="errorSpanFatcaR2" style="color: #BD4247;" class="error"></span>
+								<!-- 	edit aseg  -->
+								<a id="editAsegR2" href="#" style="display: none"><i class="icon icon-green icon-edit"></i></a>
+								<!-- 	add aseg  -->
+								<a id="addAsegR2" href="#" style="display: none"><i class="icon icon-green icon-add"></i></a>
+								<!-- 	referesh aseg  -->
+								<a id="refreshAsegR2" href="#" style="display: none"><i class="icon icon-green icon-arrowrefresh-s"></i></a>
+							    <span id="errorSpanAsegR2" style="color: #BD4247;" class="error"></span>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%">
+						<div class="campos__form campo-imput">
+							<label class="control-label" for="nombresAsegR2">Nombre(s)<font color="#BD4247">*</font></label>
+
+							<div class="controls">
+								<input class="input-large nombre" id="nombresAsegR2" name="nombresAsegR2" value="" maxlength="50" type="text" required="" readonly="" tabindex="-1">
+							</div>
+
+						</div>
+					</td>
+					<td width="50%">
+						<div class="campos__form campo-imput">
+							<label class="control-label" for="apellidosAsegR2">Apellido(s)<font color="#BD4247">*</font></label>
+
+							<div class="controls">
+								<input type="text" id="apellidosAsegR2" name="apellidosAsegR2" value="" class="input-large nombre" required="" readonly="" maxlength="50" tabindex="-1">
+
+							</div>
+						</div>
+					</td>
+
+					</tr><tr>
+					<td width="50%">
+									<div class="campos__form campo-imput" style="display:none">
+														<label class="control-label" for="emailAsegR2">Correo electrónico</label>
+
+														<div class="controls">
+															<input type="text" id="emailAsegR2" name="emailAsegR2" value="" maxlength="50" class="input-large email" tabindex="84">
+														</div>
+													</div>
+												</td>
+												<td width="50%">
+													<div class="campos__form campo-imput" style="display:none">
+														<label class="control-label" for="celularAsegR2">Teléfono celular</label>
+
+														<div class="controls">
+															<input type="text" id="celularFormatedAsegR2" name="celularFormatedAsegR2" value="" class="input-large numbersOnly" maxlength="10" tabindex="85"> &nbsp;&nbsp; <a id="editarAsegR2" style="display: none"><i class="icon icon-blue icon-edit"></i></a> <input type="hidden" id="celularAsegR2" name="celularAsegR2" value="">
+									<input type="hidden" id="sexoAsegR2" name="sexoAsegR2" value="">
+									<input type="hidden" id="ciudadAsegR2" name="ciudadAsegR2" value="">
+									<input type="hidden" id="edadAsegR2" name="edadAsegR2" value="">
+														</div>
+
+													</div>
+												</td>
+											</tr>
+										<!-- Email: Requerimiento SARLAFT 16/8/2021  -->
+											<tr>
+												<td width="50%">
+													<div class="campos__form campo-imput" id="sarlaftCelularAsegDivR2" style="display: none;">
+														<label class="control-label" for="celular" id="sarlaftCelularAsegR2Label" style="width: 150px;">Confirme teléfono celular<font color="#BD4247">*</font></label>
+
+														<div class="controls">
+															<input type="text" id="sarlaftCelularAsegR2" name="sarlaftCelularAsegR2" class="input-large numbersOnly requiredCelular" maxlength="10" onblur="validateCelular(this.id)" tabindex="86">
+														</div>
+
+													</div>
+												</td>
+												<td width="50%">
+													<div class="campos__form campo-imput" id="telefonoCelularComercialAsegDivR2" style="display: none;">
+														<label class="control-label" for="celular">Teléfono celular comercial<font color="#BD4247">*</font></label>
+
+														<div class="controls">
+															<input type="text" id="telefonoCelularComercialAsegR2" name="telefonoCelularComercialAsegR2" class="input-large numbersOnly requiredCelular" maxlength="10" onblur="validateCelular(this.id)" tabindex="87">
+
+														</div>
+													</div>
+												</td>
+												</tr>
+												<tr>
+												<td width="50%">
+													<div class="campos__form campo-radio-check" id="certificoAsegDivR2" style="display: none;">
+														<label class="control-label" for="">Certifico que el teléfono de celular ingresado corresponde al tercero autorizado<font color="#BD4247">*</font></label>
+
+														<div class="checkbox">
+															<div class="checker" id="uniform-certificoCheckAsegR2"><span><input id="certificoCheckAsegR2" name="certificoCheckAsegR2" style=" display: block;opacity:0;" required="required" type="checkbox" tabindex="88"><label class="handle-cbx" for="certificoCheckAsegR2"> </label></span></div>
+
+														</div>
+													</div>
+												</td>
+												</tr>
+										</tbody></table>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="row-fluid" id="NominaBeneficiarioDivSectionR2">
+								<div class="box span12 ">
+									<div class="box-header well" data-original-title="">
+										<h2>
+											<i class="icon-edit"></i>
+											Nomina Beneficiario
+										</h2>
+										<div class="box-icon">
+											<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+										</div>
+									</div>
+
+									<div class="box-content">
+									<span style="color: #BD4247;display: none;text-align: right;" align="right" id="nominaBeneficiarioTableCheckMsgR2" class="error">Por favor, añada al menos uno Nomina Beneficiario</span><br>
+										<!-- <b>Calidad: </b><select id="calidadSelectR2"
+											name="calidadSelectR2" type="text" maxlength="50"
+											class="input-medium " tabindex="500">
+										</select> <input id="addBtnLibreR2" name="addBtnLibreR2"
+											class="input-xxmini numbersOnly" maxlength="2" type="hidden"
+											tabindex="27" /> <a class="showLibreR2"
+											href="javascript:void(0)" id="addRowsLibreR2" tabindex="501"><span
+											class="icon icon-color icon-add"></span>Agregar</a> <a
+											class="showOnerosoR2" href="javascript:void(0)"
+											id="addRowsOnerosobuttonR2" tabindex="631" style="display: none;"><span
+											class="icon icon-color icon-add"></span>Agregar</a>
+											<a class="showContingenteR2" href="javascript:void(0)"
+											id="addRowsContingenteButtonR2" style="display: none;" tabindex="781"><span
+											class="icon icon-color icon-add"></span>Agregar</a> -->
+										
+										<ul class="nav nav-tabs" id="myTab">
+
+											<li id="tab_libreR2" class="active"><a href="#panel_libreTableR2" class="addTabindexing" id="libre_tableR2" tabindex="90">LIBRE</a></li>
+											<li id="tab_onerosoR2"><a href="#panel_onerosoTableR2" id="oneroso_tableR2">ONEROSO</a></li>
+											<li id="tab_contingenteR2"><a href="#panel_contingenteTableR2" id="contingente_tableR2">CONTINGENTE</a></li>
+										</ul>
+			<div id="myTabContentR2" class="tab-content">
+				<div class="tab-pane active" id="panel_libreTableR2">
+					<div class="box-content">
+
+						<!-- <b>Calidad: </b> --><input id="calidadLibreR2" name="calidadLibreR2" type="hidden" maxlength="50" value="LIBRE" class="input-small" readonly="readonly">
+							<input id="addBtnLibreR2" name="addBtnLibreR2" class="input-xxmini numbersOnly" maxlength="2" type="hidden" value="1">
+											<a class="showLibreR2 addTabindexing" href="javascript:void(0)" id="addRowsLibreR2" tabindex="91"><span class="icon icon-color icon-add"></span>Agregar</a>
+						<div class="beneLibreR2" style="display:none">
+						<table id="table_contiLibreR2" class="table table-striped table-bordered campos__form campo-imput campo-select">
+							<tbody><tr>
+								<th>Tipo documento</th>
+								<th>Nro documento</th>
+								<th>Nombre(s)</th>
+								<th>Apellido(s)</th>
+								<th>Sexo</th>
+								<th>Parentesco</th>
+
+
+
+
+
+								<th colspan="2">Porcentaje % </th>
+							</tr>
+							
+								<tr id="LibreRowR21">
+									<td><select id="tipoDocumentoLibreR21" name="tipoDocumentoLibreR2[]" class="input-medium codLibreClass" tabindex="92">
+											<option value="" selected="selected"></option>
+									</select><input id="calidadR21" type="hidden" readonly="readonly" name="calidadR2[]" value="LIBRE" class="input-small"></td>
+
+									<td><input id="nroDocumentoLibreR21" name="nroDocumentoLibreR2" type="text" maxlength="16" onblur="showHideErrorMsgLibreR2(1)" class="input-small numbersOnly" tabindex="93"></td>
+
+
+									<td><input id="nombreLibreR21" name="nombreR2[]" type="text" maxlength="30" onblur="showHideErrorMsgLibreR2(1)" class="input-medium alphaNumSpaceOnly" tabindex="94"> <span id="productoError" style="color: #BD4247;" class="error"></span></td>
+
+									<td><input id="apellidoR21" name="apellidoR2[]" type="text" maxlength="30" class="input-medium alphaNumSpaceOnly" tabindex="95"> <span id="productoError" style="color: #BD4247;" class="error"></span></td>
+
+									<td><select id="sexoR21" name="sexoR2[]" class="input-mini" tabindex="96">
+											<option value="M" style="font-weight: bold;">MASCULINO</option>
+											<option value="F" style="font-weight: bold;">FEMENINO</option>
+
+									</select></td>
+
+
+									<td><select id="parentescoR21" onchange="showHideErrorMsgLibreR2(1)" name="parentescoR2[]" type="text" maxlength="50" class="input-mini codParentescoClass" tabindex="97"><option value="select" title="Seleccionar">Seleccionar</option><option value="1" title="CONYUGE">CONYUGE</option><option value="2" title="COMPAÑERO PERMANENTE">COMPAÑERO PERMANENTE</option><option value="3" title="HIJO/A">HIJO/A</option><option value="4" title="PADRES">PADRES</option><option value="5" title="OTRO">OTRO</option></select></td>
+
+
+									<td><input type="text" class="input-xmini numbersOnly benfiR2" id="participacionLibreR21" name="participacionLibreR2[]" onblur="toAddParticipationRisk2(1)" onchange="showHideErrorMsgLibreR2(1)" maxlength="3" tabindex="98"></td>
+										<td style="border-left: none;"><span id="deleteButtonLibreR21" onclick="removeLibreRowR2(1)" class="icon icon-color icon-remove addTabindexing" tabindex="99"></span></td>
+
+
+
+								</tr>
+							
+							<tr>
+								<td colspan="6" style="vertical-align: left; text-align: right;"><b>Total
+								</b></td>
+								<td colspan="2"><input type="text" id="totalLibreR2" readonly="true" name="totalLibreR2" maxlength="50" class="input-xmini" tabindex="-1"></td>
+							</tr>
+
+						</tbody></table>
+					</div>
+					</div>
+					</div>
+					<div class="tab-pane active" id="panel_onerosoTableR2">
+					<div class="box-content">
+						<div id="nominaBeneficiarioTableCheckMsgDivR2">
+							<span id="nominaBeneficiarioTableCheckMsgInfoR2" class="icon-info-sign" title="RECUERDE ANEXAR CERTIFICACION DE LA DEUDA EMITIDA POR LA ENTIDAD FINANCIERA, CLAUSULAS Y CONDICIONES QUE EXIGE LA ENTIDAD FINANCIERA PARA ACEPTAR LA POLIZA"></span>
+							RECUERDE ANEXAR CERTIFICACION DE LA DEUDA EMITIDA POR LA ENTIDAD FINANCIERA, CLAUSULAS Y CONDICIONES QUE EXIGE LA ENTIDAD FINANCIERA PARA ACEPTAR LA POLIZA
+						</div><br>
+							<!-- <b>Calidad: </b> --><input id="calidadselR2" name="calidadselR2" type="hidden" maxlength="50" value="2-ONEROSO" class="input-small" readonly="readonly"> <input id="addBtnOnerosoR2" name="addBtnOnerosoR2" class="input-xxmini numbersOnly" maxlength="2" type="hidden" value="1">
+								 <a class="showOnerosoR2 addTabindexing" href="javascript:void(0)" id="addRowsOnerosobuttonR2" tabindex="100"><span class="icon icon-color icon-add"></span>Agregar</a>
+				    <div class="beneR2" style="display:none">
+							<table id="table_OnerosoR2" class="table table-striped table-bordered campos__form campo-imput campo-select">
+								<tbody><tr>
+									<th>Tipo documento</th>
+									<th>Nro documento</th>
+									<th>Nombre(s)</th>
+									<th>Direccion</th>
+									<th>Ciudad</th>
+									<th>Sucursal</th>
+									<th>Telefono</th>
+									<th>Contacto</th>
+									<th colspan="2">Porcentaje % </th>
+								</tr>
+
+
+
+								
+									<tr id="OnerosoRowR21">
+
+
+										<td><select id="tipoDocumentoOnerosoR21" name="tipoDocumentoOnerosoR2[]" class="input-small codOnerosoClass" tabindex="101">
+												<option value="" selected="selected"></option>
+										</select></td>
+
+										<td><input id="nroDocumentoOnerosoR21" onblur="showHideErrorMsgOnerosoR2(1)" name="nroDocumentoOnerosoR2[]" type="text" maxlength="16" class="input-small numbersOnly" tabindex="102"></td>
+
+										<td><input id="nombreOnerosoR21" onblur="showHideErrorMsgOnerosoR2(1)" name="nombreOnerosoR2" class="input-medium alphaNumSpaceOnly" type="text" maxlength="30" tabindex="103"></td>
+										<td><input id="direccionOnerosoR21" name="direccionOnerosoR2[]" type="text" maxlength="50" class="input-medium" tabindex="104"> <span id="productoError" style="color: #BD4247;" class="error"></span></td>
+
+										<td><input id="ciudadOnerosoR21" name="ciudadOnerosoR2" type="text" maxlength="50" class=".ui-autocomplete nonMandatoryAutocomplete citiesAutoComplete input-medium ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="105">
+										</td>
+
+										<td><input type="text" class="input-mini " id="SucuralR21" name="SucuralR2[]" maxlength="4" tabindex="106"></td>
+										<td><input id="telefonoOnerosoR21" name="telefonoOnerosoR2[]" type="text" maxlength="10" class="input-mini numbersOnly" tabindex="107"> </td>
+										<td><input id="contactoOnerosoR21" name="contactoOnerosoR2[]" type="text" maxlength="30" class="input-medium" tabindex="108"></td>
+										<td style="width: 5%;"><input id="participacionOnerosoR21" name="participacionOnerosoR2[]" type="text" maxlength="3" onblur="toAddParticipationRiskOnerosoR2(1)" onchange="showHideErrorMsgOnerosoR2(1)" class="input-xmini numbersOnly benfiOneroso" tabindex="109"> <span id="productoError" style="color: #BD4247;" class="error"></span></td>
+
+										<td style="border-left: none;"><span id="deleteButtonOnerosoR21" onclick="removeOnerosoRowR2(1)" class="icon icon-color icon-remove addTabindexing" tabindex="110"></span></td>
+									</tr>
+								
+								<tr>
+									<td colspan="8" style="vertical-align: left; text-align: right;"><b>Total
+									</b></td>
+									<td colspan="2"><input type="text" id="totalOnerosoR2" readonly="true" name="totalOnerosoR2" maxlength="50" class="input-xmini" tabindex="-1"></td>
+								</tr>
+
+
+							</tbody></table>
+
+						</div>
+					</div>
+					</div>
+					
+						<div class="tab-pane active" id="panel_contingenteTableR2">
+							<div class="box-content">
+									<!-- <b>Calidad: </b> --><input id="calidadselIdR2" name="calidadselIdR2" type="hidden" maxlength="50" value="CONTINGENTE" class="
+													input-medium" readonly="readonly"> <input id="addBtnContingenteR2" name="addBtnContingenteR2" class="input-xxmini numbersOnly" maxlength="2" type="hidden" value="1">
+										<a class="showContingenteR2 addTabindexing" href="javascript:void(0)" id="addRowsContingenteButtonR2" tabindex="111"><span class="icon icon-color icon-add"></span>Agregar</a>
+								<div class="beneContingenteR2" style="display:none">
+									<table id="table_contingenteR2" class="table table-striped table-bordered campos__form campo-imput campo-select">
+										<tbody><tr>
+
+											<th>Tipo documento</th>
+											<th>Nro documento</th>
+											<th>Nombre(s)</th>
+											<th>Apellido(s)</th>
+											<th>Sexo</th>
+											<th>Parentesco</th>
+											<th colspan="2">Porcentaje % </th>
+										</tr>
+										
+											<tr id="ContingenteRowR21">
+
+												<td><select id="tipoDocumentoContingenteR21" name="tipoDocumentoLibreR2[]" class="input-small codContingenteClass" tabindex="112">
+														<option value="" selected="selected"></option>
+												</select> <input id="calidadR21" type="text" readonly="readonly" name="calidadR2[]" value="3-CONTINGENTE" class="input-small" style="display: none;" tabindex="-1"></td>
+
+												<td><input id="nroDocumentoContingenteR21" name="nroDocumentoLibreR2" type="text" maxlength="16" class="input-small numbersOnly" onblur="showHideErrorMsgContigenteR2(1)" tabindex="113">
+												</td>
+												<td><input id="nombreContingenteR21" name="nombreR2[]" type="text" maxlength="30" class="input-medium alphaNumSpaceOnly" onblur="showHideErrorMsgContigenteR2(1)" tabindex="114"></td>
+
+												<td><input id="apellidoContingenteR21" name="apellidoR2[]" type="text" maxlength="30" class="input-medium alphaNumSpaceOnly" tabindex="115"> <span id="productoError" style="color: #BD4247;" class="error"></span></td>
+
+												<td><select id="sexoContingenteR21" name="sexoR2[]" class="input-mini" tabindex="116">
+														<option value="M" style="font-weight: bold;">MASCULINO</option>
+														<option value="F" style="font-weight: bold;">FEMENINO</option>
+												</select></td>
+
+
+												<td><select id="parentescoContingenteR21" name="parentescoR2[]" type="text" maxlength="50" class="input-mini" onblur="showHideErrorMsgContigenteR2(1)" tabindex="117"><option value="select" title="Seleccionar">Seleccionar</option><option value="1" title="CONYUGE">CONYUGE</option><option value="2" title="COMPAÑERO PERMANENTE">COMPAÑERO PERMANENTE</option><option value="3" title="HIJO/A">HIJO/A</option><option value="4" title="PADRES">PADRES</option><option value="5" title="OTRO">OTRO</option></select></td>
+
+
+
+												<td><input type="text" class="input-xmini numbersOnly benfiContingenteR2" id="participacionContingenteR21" name="participacionLibreR2[]" onchange="showHideErrorMsgContigenteR2(1)" onblur="toAddParticipationRiskContingenteR2(1)" maxlength="3" tabindex="118"></td>
+												<td style="border-left: none;"><span id="deleteButtonContingenteR21" onclick="removeContingenteRowR2(1)" class="icon icon-color icon-remove addTabindexing" tabindex="119"></span></td>
+
+
+											</tr>
+										
+										<tr>
+											<td colspan="6" style="vertical-align: left; text-align: right;"><b>Total
+											</b></td>
+											<td colspan="2"><input type="text" id="totalContingenteR2" readonly="true" name="totalLibreR2" maxlength="50" class="input-xmini" tabindex="-1"></td>
+										</tr>
+
+									</tbody></table>
+								</div>
+							</div>
+                           </div>
+<table class="campos__form campo-imput campo-select">
+						<tbody><tr>
+							<td width="90%" align="right"><label class="control-label" for="totalLibreOnerosoR2">Libre+Oneroso:</label></td>
+							<td width="4%"><input id="totalLibreOnerosoR2" type="text" name="totalLibreOnerosoR2" readonly="true" class="input-xmini" tabindex="-1"></td>
+						</tr>
+					</tbody></table>
+						</div>
+					</div>
+		</div>
+		</div>
+							<!--        ANEXOS (B)      -->
+					
+			
+
+							
+						</div>
+						<!-- end Riesgo2 Tab  -->
+					</div>
+					<!-- end tab-content -->
+				</div>
+				<!--  end box-content -->
+			</div>
+			<!--  end box span12   -->
+		</div>
+		<!-- 	 end row-fluid -->
+
+
+
+
+		<!-- ------------------*****************FIDUCIA******************************************************** -->
+		<div class="row-fluid" id="fiduciaDiv" style="display: none;">
+			<div class="box span12 ">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Fiducia
+					</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+
+				<div class="box-content">
+					<div id="" class="form-horizontal">
+					<div class="span6">
+						<table id="table_Fiducia" class="content" width="100%">
+							<tbody><tr>
+								<td width="100%" colspan="2">
+									<div class="campos__form campo-radio-check">
+										<label class="control-label">Fiducia?</label>
+										<div class="checkbox">
+											<div class="checker" id="uniform-fiducia"><span><input type="checkbox" id="fiducia" name="fiducia" value="S" tabindex="121" style="opacity: 0;"><label class="handle-cbx" for="fiducia"> </label></span></div>
+										</div>
+									</div>
+									<div id="fiduciaMsgDiv" style="display: none;">
+										<span id="fiduciaMsgSpan" class="icon-info-sign" title="ENVIAR CONTRATO DE FIDUCIA"></span>
+										ENVIAR CONTRATO DE FIDUCIA
+									</div>
+								</td>
+							</tr>
+							<tr id="nomreFudeciaDiv" style="display: none;">
+								<td>
+									<div class="campos__form campo-imput">
+										<label class="control-label">Nombre de la entidad
+											financiera</label>
+										<div class="controls">
+											<input class="input-large " id="nombreFid" name="nombreFid" value="" maxlength="50" data-rel="tooltip" type="text" onblur="showErrorMessagefiducia()" data-original-title="Enviar contrato de fiducia" tabindex="122">
+										</div>
+									</div>
+								</td>
+								<td id="nitFidDiv" style="display: none;">
+									<div class="campos__form campo-imput">
+										<label class="control-label">NIT</label>
+										<div class="controls">
+											<input class="input-large numbersOnly " id="nitFid" name="nitFid" value="" maxlength="10" onblur="showErrorMessagefiducia()" type="text" tabindex="123">
+										</div>
+									</div>
+								</td>
+
+							</tr>
+							<tr id="numeroContratoDiv" style="display: none;">
+								<td>
+									<div class="campos__form campo-imput">
+										<label class="control-label">Número de contrato</label>
+										<div class="controls">
+											<input class="input-large numbersOnly " id="numeroContrato" name="numeroContrato" value="" maxlength="17" type="text" onblur="showErrorMessagefiducia();" tabindex="124">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody></table>
+						</div>
+						<div class="span6">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- ---********************************Referencias Personales ****************************************************** -->
+		
+		
+
+		<!-- *-----------------------Agentes------------------------------------------* -->
+		<div class="row-fluid">
+			<div class="box span12 ">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Agentes
+					</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="box-content">
+					<div id="">
+						<input id="addBtnagentes" name="addBtnaddBtnagentes" class="input-xxmini numbersOnly " maxlength="2" type="hidden" value="1">
+						<a href="#" id="addRowsAgentebutton" class="addTabindexing" tabindex="126"><span class="icon icon-color icon-add addRowsAgentebutton"></span>Agregar</a>
+						<br> <br>
+						<table id="table_acces" class="table table-striped table-bordered campos__form campo-imput">
+							<tbody><tr>
+								<th>Clave</th>
+								<th>Nombre(s)</th>
+								<th colspan="2">Participación %</th>
+
+							</tr>
+							
+								<tr id="agentesRow1">
+									<td><input class="input-xlarge agentes AgenteField" id="claveAgente1" name="claveAgente1" required="" value="" readonly="readonly" maxlength="50" type="text" tabindex="-1"> <div id="errorSpan1" class="alert alert-danger" style="color: #BD4247; display: none;">No existe El
+											agente.</div><br> <div id="codAgenteError" style="color: #BD4247; display: none;" class="alert alert-danger"> No hay productos
+											parametrizados para este Agente</div></td>
+									<td><input class="input-xlarge nombre agentes AgenteField" id="nombre1" name="nombreAgente[]" required="" readonly="readonly" maxlength="50" type="text" tabindex="-1"> <span id="nombreErrorSpan" style="color: #BD4247;display: none;" class="alert alert-danger"></span></td>
+
+									<td width="20%"><input class="input-mini agentes campo-imput-mini numbersOnly" readonly="readonly" id="participacion1" name="participacion[]" value=" 100" required="" maxlength="3" type="text" onblur="toAddParticipation(1)" tabindex="-1">
+									</td>
+
+
+									<td style="border-left: none;"></td>
+								</tr>
+							
+
+						</tbody></table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- FormaCorba  Riesgo-->
+		<div class="row-fluid">
+			<div class="box span12 ">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Forma de Cobro Riesgo
+					</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+
+				<div class="box-content">
+					<div id="" class="form-horizontal">
+						<table id="table_forma" class="content" width="100%">
+							<tbody><tr>
+								<td>
+									<div class="campos__form campo-select">
+										<label class="control-label" for="formcobro">Forma de cobro riesgo	<font color="#BD4247">*</font></label>
+										<div class="controls">
+											<select id="formcobraselect" name="formaCobro" class="input-large" tabindex="128"><option value="CC" title="CAJA DE LA COMPANIA">CC - CAJA DE LA COMPANIA</option><option value="DB" title="DEBITO AUTOMATICO">DB - DEBITO AUTOMATICO</option><option value="RE" title="RECAUDO EMPRESARIAL">RE - RECAUDO EMPRESARIAL</option></select>
+
+										</div>
+									</div>
+								</td>
+								<td width="50%">
+									<div id="ipcDiv" style="display: none;" class="campos__form campo-select">
+										<label class="control-label" for="ipc">Incremento adicional del IPC<font color="#BD4247">*</font></label>
+										<div class="controls">
+											<select id="ipc" name="ipc" class="input-large" tabindex="129"><option value="0" title="0">0 - 0</option><option value="1" title="1">1 - 1</option><option value="2" title="2">2 - 2</option><option value="3" title="3">3 - 3</option><option value="4" title="4">4 - 4</option><option value="5" title="5">5 - 5</option></select>
+
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- DebiteoAutomatico -->
+		<div id="debiteoautomatico" class="row-fluid" style="display: none;">
+			<div class="box span12 ">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Débito Automático Riesgo
+					</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+
+				<div class="box-content">
+					<div id="" class="form-horizontal">
+						<span id="infoUpdatedMsgAsegDebitoAutomatica" style="color: #GREEN; display: none;" class="info"> Información actualizada en SARLAFT 
+						</span>
+
+						<table id="table_automatico" class="content" width="100%">
+							<tbody><tr>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="entidaddebito">Entidad<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<!-- <select id="entidaddebito" name="entidad"
+												class="input-large" tabindex="21"> -->
+											<input type="text" id="entidaddebito" name="entidad" autocomplete="off" class="input-large mandatoryAutocomplete alphaNumSpaceHyphenOnly requiredSubmit ui-autocomplete-input" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="131">
+
+										</div>
+
+									</div>
+								</td>
+								
+							</tr>
+							<tr>
+								<td width="50%">
+
+									<div class="campos__form campo-select">
+										<label class="control-label" for="canaldescuento">Canal descuento<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<select id="canaldescuento" name="canalDescuento" class="input-large" tabindex="132">
+											</select>
+										</div>
+									</div>
+								</td>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="numerocuenta">Número de cuenta<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large nombre numbersOnly" id="numerocuenta" name="numeroCuenta" value="" maxlength="20" required="required" type="text" tabindex="133">
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr id="tarjetaCreditoDiv">
+								<td>
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="numerocuenta">Número de cuotas<font color="#BD4247">*</font>
+										</label>
+
+										<div class="controls">
+											<input class="input-large nombre numbersOnly" id="numeroCuotas" name="numeroCuotas" value="" maxlength="2" required="required" type="text" tabindex="134">
+										</div>
+
+									</div>
+								</td>
+								<td>
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="numerocuenta">Fecha de vencimiento
+										<font color="#BD4247">*</font>
+										</label>
+
+										<div class="controls">
+
+											<input class="input-large datepickerVidaFormalization conductor dateValidate hasDatepicker" id="fechaVencimiento" name="fechaVencimiento" value="" maxlength="50" type="text" tabindex="135"><img class="ui-datepicker-trigger" src="images/icons/calendar.gif" alt="..." title="...">
+										</div>
+
+									</div>
+								</td>
+
+							</tr>
+							<tr>
+								<td width="50%">
+
+
+									<div class="campos__form campo-select">
+										<label class="control-label" for="tipoDocumentoAutoma">Tipo documento<font color="#BD4247">*</font></label>
+										<div class="controls">
+											<select id="tipoDocumentoAutoma" name="tipoDocumentoAutoma" class="input-large" tabindex="136"><option value="RE" title="RE - RUT PERSONA EXTRANJERA">RE - RUT PERSONA EXTRANJERA</option><option value="NC" title="NC - NIT CONVENCIONAL">NC - NIT CONVENCIONAL</option><option value="DR" title="DR - DEPURACION REGISTROS">DR - DEPURACION REGISTROS</option><option value="PT" title="PT - PERMISO POR PROTECCION TEMPORAL">PT - PERMISO POR PROTECCION TEMPORAL</option><option value="PU" title="PU - PRUEBAS QA">PU - PRUEBAS QA</option><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CD" title="CD - CARNET DIPLOMATICO">CD - CARNET DIPLOMATICO</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="NM" title="NM - NIT DE MENOR">NM - NIT DE MENOR</option><option value="RC" title="RC - REGISTRO CIVIL">RC - REGISTRO CIVIL</option><option value="TI" title="TI - TARJETA DE IDENTIDAD">TI - TARJETA DE IDENTIDAD</option><option value="TP" title="TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES">TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES</option><option value="ON" title="ON - RESTRINGIDOS ONU - NO UTILIZAR">ON - RESTRINGIDOS ONU - NO UTILIZAR</option><option value="PE" title="PE - PERMISO ESPECIAL DE PERMANENCIA">PE - PERMISO ESPECIAL DE PERMANENCIA</option><option value="CF" title="CF - CODIGO FISCAL">CF - CODIGO FISCAL</option><option value="CR" title="CR - CODIGO REASEGURADORA">CR - CODIGO REASEGURADORA</option><option value="NE" title="NE - NIT EXTRANJERIA">NE - NIT EXTRANJERIA</option><option value="NT" title="NT - N.I.T.">NT - N.I.T.</option></select>
+
+										</div>
+									</div>
+								</td>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="identificacion">Identificación<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large numbersOnly  " id="identificacion" required="" name="identificacion" value="" maxlength="16" type="text" tabindex="137">
+											<!-- 	Debito Automatica  -->
+											<a id="editDebitoAutoaticaId" href="#" style="display: none"><!-- <i
+												class="icon icon-green icon-edit"></i> -->
+												<img src="/SimonQuotation/images/icons/editGreen.png" width="30px" height="23px"></a>
+											<!-- 	add aseg  -->
+											<a id="addDebitoAutoaticaId" href="#" style="display: none"><i class="icon icon-green icon-add"></i></a>
+											<!-- 	referesh aseg  -->
+											<a id="refreshDebitoAutoaticaId" href="#" style="display: none"><i class="icon icon-green icon-arrowrefresh-s"></i></a> <span id="errorSpanDebitoAutoaticaId" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="nombresDebito">Nombre(s)<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large nombre alphaNumSpaceOnly" id="nombresDebito" required="" name="nombresDebito" value="" readonly="readonly" maxlength="35" type="text" tabindex="-1">
+											<!-- mantis Id:0037486 -->
+										</div>
+
+									</div>
+								</td>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="telefonoDebito">Teléfono</label>
+
+										<div class="controls">
+											<input class="input-large nombre numbersOnly" id="telefonoDebito" name="telefonoDebito" value="" readonly="readonly" maxlength="10" type="text" tabindex="-1">
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="direccionDebito">Dirección</label>
+
+										<div class="controls">
+											<input class="input-large nombre alphaNumSpaceOnly" id="direccionDebito" name="direccionDebito" value="" maxlength="35" readonly="readonly" type="text" tabindex="-1">
+											<!-- mantis Id:0037486 -->
+										</div>
+
+									</div>
+								</td>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="emailDebito">Correo electrónico</label>
+
+										<div class="controls">
+											<input class=" input-large email" id="emailDebito" name="emaildebito" value="" style="text-transform: uppercase;" maxlength="50" readonly="readonly" type="text" tabindex="-1">
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+
+								<td>
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="ciudadDebito">Ciudad</label>
+
+										<div class="controls">
+											<input class="input-large alphaNumSpaceHyphenOnly nonMandatoryAutocomplete ui-autocomplete-input" id="ciudadDebito" name="ciudadDebito" value="" maxlength="50" type="text" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="138">
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr id="formaCobroRiesgoDiv" style="display: none;">
+								<td>
+									<div class="campos__form campo-radio-check">
+										<label class="control-label" for="ciudadDebito">Copiar forma de pago para el ahorro</label>
+
+										<div class="checkbox">
+											<div class="checker" id="uniform-formaCobroRiesgo"><span><input type="checkbox" name="formaCobroRiesgo" id="formaCobroRiesgo" tabindex="139" style="opacity: 0;"><label class="handle-cbx" for="formaCobroRiesgo"> </label></span></div>
+										</div>
+
+									</div>
+
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- FormaCorba Ahorro  -->
+		<div class="row-fluid" id="formaCobroAhorroDiv" style="display: none;">
+			<div class="box span12 ">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Forma de Cobro Ahorro
+					</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+
+				<div class="box-content">
+					<div id="" class="form-horizontal">
+						<table id="table_automatico" class="content" width="100%">
+							<tbody><tr>
+								<td>
+									<div class="campos__form campo-select">
+										<label class="control-label" for="formcobra">Forma de Cobro Ahorro<font color="#BD4247">*</font></label>
+										<div class="controls">
+											<select id="formcobraselectahorro" name="formcobraSelectAhorro" class="input-large" tabindex="141"><option value="CC" title="CAJA DE LA COMPANIA">CC - CAJA DE LA COMPANIA</option><option value="DB" title="DEBITO AUTOMATICO">DB - DEBITO AUTOMATICO</option></select>
+										</div>
+									</div>
+								</td>
+								<td><input id="tipodocumentoahorro" name="tipoDocumentoAhorro" class="input-small" type="hidden" value="NT">
+
+									<div id="nithorrodiv" class="campos__form campo-imput" style="display: none;">
+										<label class="control-label" for="nit">NIT<font color="#BD4247">*</font></label>
+										<div class="controls">
+											<input id="nit" name="nit" type="text" required="" class="input-large" tabindex="142"> <span id="errorNitSpan" style="color: #BD4247; display: none;" '="">No
+												existe Elagente.</span>
+
+										</div>
+									</div></td>
+
+							</tr>
+							<tr>
+								<td width="50%">
+									<div class="campos__form campo-radio-check">
+										<label class="control-label">Incremento anual</label>
+
+										<div class="controls radioclass" id="incrementoanualDiv">
+											<label class="radio inline"> <div class="radio" id="uniform-incrementoanualY"><span><input type="radio" id="incrementoanualY" name="incrementoanual" value="Y" tabindex="143" style="opacity: 0;"><label class="handle-cbx" for="incrementoanualY"> </label></span></div> SI
+
+											</label> <label class="radio inline"> <div class="radio" id="uniform-incrementoanualN"><span><input type="radio" id="incrementoanualN" name="incrementoanual" value="N" tabindex="144" style="opacity: 0;"><label class="handle-cbx" for="incrementoanualN"> </label></span></div> NO
+											</label>
+										</div>
+									</div>
+								</td>
+
+								<td width="50%">
+									<div id="percentageahorrodiv" class="campos__form campo-imput" style="display: none;">
+										<label class="control-label" for="percentage">Porcentaje % <font color="#BD4247">*</font></label>
+										<div class="controls">
+											<input id="percentageahorro" name="participacionahorro" class="input-large two-digits percentageahorro" type="text" maxlength="6" tabindex="145">
+
+
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--   end FormaCorba  -->
+		<!--   DebiteoAutomatico  for FormaCorba Ahorro -->
+		<div id="debiteoautomaticoR" class="row-fluid" style="display: none;">
+			<div class="box span12 ">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Débito automático ahorro
+					</h2>
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+				</div>
+
+				<div class="box-content">
+					<div id="" class="form-horizontal">
+						<span id="infoUpdatedMsgAsegR" style="color: #GREEN; display: none;" class="info"> Información actualizada en SARLAFT 
+						</span>
+						<table id="table_automaticoR" class="content" width="100%">
+							<tbody><tr>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="entidaDebitoR">Entidad<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<!-- <select id="entidaddebitoR" name="entidadDebitoR"
+																	class="input-large" tabindex="21">
+																</select>  -->
+											<input type="text" id="entidaddebitoR" name="entidadDebitoR" autocomplete="off" class="input-large mandatoryAutocomplete alphaNumSpaceHyphenOnly requiredSubmit ui-autocomplete-input" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="147">
+										</div>
+
+									</div>
+								</td>
+								
+							</tr>
+							<tr>
+								<td width="50%">
+
+									<div class="campos__form campo-select">
+										<label class="control-label" for="canalDescuentoR">Canal descuento<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<select id="canaldescuentoR" name="canalDescuentoR" class="input-large" tabindex="148">
+											</select> <span id="estratoError" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+										</div>
+									</div>
+								</td>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="numeroCuentaR">Número de cuenta<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large nombre numbersOnly" id="numeroCuentaR" name="numeroCuentaR" value="" maxlength="20" required="required" type="text" tabindex="149">
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%">
+
+
+									<div class="campos__form campo-select">
+										<label class="control-label" for="tipoDocumentoAutomaR">Tipo documento<font color="#BD4247">*</font></label>
+										<div class="controls">
+											<select id="tipoDocumentoAutomaR" name="tipoDocumentoAutomaR" class="input-large" tabindex="150"><option value="RE" title="RE - RUT PERSONA EXTRANJERA">RE - RUT PERSONA EXTRANJERA</option><option value="NC" title="NC - NIT CONVENCIONAL">NC - NIT CONVENCIONAL</option><option value="DR" title="DR - DEPURACION REGISTROS">DR - DEPURACION REGISTROS</option><option value="PT" title="PT - PERMISO POR PROTECCION TEMPORAL">PT - PERMISO POR PROTECCION TEMPORAL</option><option value="PU" title="PU - PRUEBAS QA">PU - PRUEBAS QA</option><option value="PP" title="PP - PASAPORTE">PP - PASAPORTE</option><option value="CC" title="CC - CEDULA DE CIUDADANIA">CC - CEDULA DE CIUDADANIA</option><option value="CD" title="CD - CARNET DIPLOMATICO">CD - CARNET DIPLOMATICO</option><option value="CE" title="CE - CEDULA EXTRANJERIA">CE - CEDULA EXTRANJERIA</option><option value="NM" title="NM - NIT DE MENOR">NM - NIT DE MENOR</option><option value="RC" title="RC - REGISTRO CIVIL">RC - REGISTRO CIVIL</option><option value="TI" title="TI - TARJETA DE IDENTIDAD">TI - TARJETA DE IDENTIDAD</option><option value="TP" title="TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES">TP - TARJETA PROFESIONAL APLICA SOLO PARA DOCUMENTOS ADICIONALES</option><option value="ON" title="ON - RESTRINGIDOS ONU - NO UTILIZAR">ON - RESTRINGIDOS ONU - NO UTILIZAR</option><option value="PE" title="PE - PERMISO ESPECIAL DE PERMANENCIA">PE - PERMISO ESPECIAL DE PERMANENCIA</option><option value="CF" title="CF - CODIGO FISCAL">CF - CODIGO FISCAL</option><option value="CR" title="CR - CODIGO REASEGURADORA">CR - CODIGO REASEGURADORA</option><option value="NE" title="NE - NIT EXTRANJERIA">NE - NIT EXTRANJERIA</option><option value="NT" title="NT - N.I.T.">NT - N.I.T.</option></select> <span id="tipoDocumentoAsegErrorSpan" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+										</div>
+									</div>
+								</td>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="identificacionR">Identificación<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large numbersOnly " id="identificacionR" required="" name="identificacionR" value="" maxlength="16" type="text" tabindex="151">
+											<!-- 	Debito Automatica  -->
+											<a id="editDebitoAutoaticaIdR" href="#" style="display: none" tabindex="1252"><!-- <i class="icon icon-green icon-edit"></i> -->
+												<img src="/SimonQuotation/images/icons/editGreen.png" width="30px" height="23px"></a>
+											<!-- 	add aseg  -->
+											<a id="addDebitoAutoaticaIdR" href="#" style="display: none" tabindex="1253"><i class="icon icon-green icon-add"></i></a>
+											<!-- 	referesh aseg  -->
+											<a id="refreshDebitoAutoaticaIdR" href="#" style="display: none" tabindex="1254"><i class="icon icon-green icon-arrowrefresh-s"></i></a> <span id="errorSpanDebitoAutoaticaIdR" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="nombresDebitoR">Nombre(s)<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large nombre alphaNumSpaceOnly " id="nombresDebitoR" name="nombresDebitoR" value="" maxlength="35" required="" type="text" tabindex="152">
+											<!-- mantis Id:0037486 -->
+										</div>
+
+									</div>
+								</td>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="telefonoDebitoR">Teléfono</label>
+
+										<div class="controls">
+											<input class="input-large nombre numbersOnly" id="telefonoDebitoR" name="telefonoDebitoR" value="" maxlength="10" type="text" tabindex="153">
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="direccionDebitoR">Dirección</label>
+
+										<div class="controls">
+											<input class="input-large nombre alphaNumSpaceOnly" id="direccionDebitoR" name="direccionDebitoR" value="" maxlength="35" type="text" tabindex="154">
+											<!-- mantis Id:0037486 -->
+										</div>
+
+									</div>
+								</td>
+								<td width="50%">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="emailDebitoR">Correo electrónico</label>
+
+										<div class="controls">
+											<input class=" input-large email" id="emailDebitoR" name="emailDebitoR" value="" style="text-transform: uppercase;" maxlength="50" type="text" tabindex="155">
+										</div>
+
+									</div>
+								</td>
+							</tr>
+							<tr>
+
+								<td>
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="ciudadDebitoR">Ciudad</label>
+
+										<div class="controls">
+											<input class="input-large alphaNumSpaceHyphenOnly nonMandatoryAutocomplete ui-autocomplete-input" id="ciudadDebitoR" name="ciudadDebitoR" value="" maxlength="50" type="text" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" tabindex="156">
+										</div>
+
+									</div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 	end debita automatica  -->
+
+		<!-- -    *******************RECLAMACIONES*********************************************************** -->
+		<!-- code is commented against mantis id:34876 -->
+		
+
+		<!-- --      Totales    -->
+
+
+		<div class="row-fluid sortable ui-sortable">
+			<div class="box span12">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						
+						Totales
+					</h2>
+
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+					<p>&nbsp;</p>
+				</div>
+				<div class="box-content">
+					<table width="100%">
+						<tbody>
+							<tr>
+								<td id="totalAmparoBasico" width="50%"><label class="control-label"> Total
+										(A)prima amparo basico + (B) anexos 
+								</label></td>
+								<td id="totalAmparoBasicoForCreditos" width="50%"><label class="control-label"> Total
+										prima amparo basico 
+								</label></td>
+								<td width="25%"><label class="control-label" id="cobTotalPrimaDisplay"><b></b></label></td>
+								<td width="25%"><label class="control-label" id="periodicidadDisplay"><b></b></label></td>
+							</tr>
+							
+							<tr id="annualDisplay">
+								<td width="50%"><label class="control-label"> GRAN
+										TOTAL 
+								</label></td>
+								<td width="25%"><label class="control-label" id="totalAhorrosAnualDisplay"><b></b></label></td>
+								<td width="25%" align="left"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--  ***************************** Condition general *********************** -->
+		<div class="row-fluid sortable ui-sortable" id="coberturas">
+			<div class="box span12">
+
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>
+						Condiciones Generales
+					</h2>
+
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round" tabindex="-1"><i class="icon-chevron-up"></i></a>
+					</div>
+					<p>&nbsp;</p>
+
+				</div>
+
+				<div class="box-content">
+					<div class="form-horizontal">
+						<fieldset>
+							<br> <input type="hidden" name="companiaAseguradora" id="companiaAseguradora" value=""> <input type="hidden" name="certificado" id="certificado" value="">
+							<div class="span12">
+								<div class="span6">
+									<div class="campos__form campo-select" id="tipoEnvioDiv" style="display: none;">
+										<label class="control-label" for="tipoEnvio">Tipo envío de la póliza<font color="#BD4247">*</font></label>
+										<div class="controls">
+											<select id="tipoEnvio" name="tipoEnvio" required="" disabled="disabled" class="input-large" tabindex="159">
+											<option value="PE" title="POLIZA ELECTRONICA">PE - POLIZA ELECTRONICA</option>
+											</select> <span id="tipoEnvioError" style="color: #BD4247;" class="error"></span>
+										</div>
+									</div>
+
+									<div id="emailGenrales" class="campos__form campo-imput">
+
+										<label class="control-label" for="emailE">Correo electrónico <font color="#BD4247">*</font>
+										</label>
+										<div class="controls">
+											<input class="email input-large" id="emailE" name="emailE" type="text" data-rel="tooltip" required="required" data-original-title="" tabindex="160">
+										</div>
+									</div>
+									
+								</div>
+								<div class="span6" id="observationDiv" style="display: none;">
+									<div class="campos__form campo-imput">
+										<label class="control-label" for="observaciones">Observaciones </label>
+										<div class="controls">
+											<textarea id="observaciones" name="observaciones" class="autogrow input-large" maxlength="60" tabindex="161" style="height: 18px;"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ************  div for add tomador popp  **************  -->
+		
+
+
+
+
+<!-- ************  div for add tomador popp  **************  -->
+<div class="overlay-md" style="z-index: 4;"></div>
+<!-- <div id="overlay" style="display: none"> -->
+	<div id="modal" class="modal-md md-effect-1" style="display: none;">
+	<div class="close-md" id="close"></div>	
+					<header>
+						<h3>Seleccionar tipo de documento</h3>
+					</header>
+		<div id="content">
+			<div class="row-fluid">
+				<div class="box span12" id="updateTomador">
+					<div class="box-content">
+						<div class="form-horizontal">
+							<fieldset>
+								<br>
+								<div id="tomadorNatural">
+
+									<div class="campos__form campo-imput">
+
+										<label class="control-label">Tipo documento<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large" readonly="readonly" id="tipoDocumentoN" name="tipoDocumentoN" type="text" tabindex="-1">
+
+										</div>
+
+									</div>
+
+									<div class="campos__form campo-imput">
+										<label class="control-label">Número de documento<font color="#BD4247">*</font> </label>
+
+										<div class="controls">
+											<input class="input-large focusedInput numbersOnly addTomadorRequired" id="numeroDocumentoN" name="numeroDocumentoN" type="text" maxlength="16" data-rel="tooltip" data-original-title="" tabindex="162">
+										</div>
+									</div>
+
+									<div class="campos__form campo-imput">
+
+										<label class="control-label">Primer nombre<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large nombre addTomadorRequired" id="primerNombre" name="primerNombre" maxlength="50" type="text" tabindex="163">
+										</div>
+
+									</div>
+
+									<div class="campos__form campo-imput">
+
+										<label class="control-label">Primer apellido<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large nombre addTomadorRequired" id="primerApellido" name="primerApellido" maxlength="50" type="text" tabindex="164">
+										</div>
+
+									</div>
+
+									<div class="campos__form campo-radio-check">
+										<label class="control-label">Género <font color="#BD4247">*</font> </label>
+
+										<div class="controls radioclass" id="sexoNoDiv">
+											<label class="radio inline"> <div class="radio" id="uniform-sexoN1"><span><input type="radio" id="sexoN1" name="sexoN" value="F" class="updateTomador" tabindex="165" style="opacity: 0;"><label class="handle-cbx" for="sexoN1"> </label></span></div> Femenino
+ 
+											</label> <label class="radio inline"> <div class="radio" id="uniform-sexoN2"><span><input type="radio" id="sexoN2" name="sexoN" value="M" class="updateTomador" tabindex="166" style="opacity: 0;"><label class="handle-cbx" for="sexoN2"> </label></span></div> Masculino
+											</label>
+											<div id="sexoNoDivError" class="error" style="color: #BD4247;"></div>
+										</div>
+									</div>
+
+									<div class="campos__form campo-imput">
+
+										<label class="control-label">Dirección residencia<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<textarea id="dirResidencial" name="dirResidencial" rows="10" maxlength="50" class="autogrow addTomadorRequired" tabindex="167" style="height: 18px;"></textarea>
+										</div>
+
+									</div>
+
+
+
+									<div class="campos__form campo-imput">
+										<label class="control-label">Ciudad residencia <font color="#BD4247">*</font>
+										</label>
+
+										<div class="controls">
+											<input id="dirResCiudad" name="dirResCiudad" type="text" maxlength="17" class=".ui-autocomplete citiesAutoComplete mandatoryAutocompleteCiudadTomador addTomadorRequired " tabindex="168"> <span id="dirResCiudadError" style="color: #BD4247;" class="error"></span>
+										</div>
+									</div>
+
+									<div class="campos__form campo-imput">
+
+										<label class="control-label">Teléfono residencia<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input type="text" id="dirResTelefono" name="dirResTelefono" class="input-large numbersOnly addTomadorRequired" maxlength="10" tabindex="169">
+										</div>
+									</div>
+								</div>
+
+
+								<!-- 							****************** 		tomadorJuridico   *********   -->
+								<div id="tomadorJuridico" style="display: none">
+									<div class="campos__form campo-imput">
+
+										<label class="control-label">Tipo documento<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input class="input-large" readonly="readonly" id="tipoDocumentoJ" name="tipoDocumentoJ" type="text" tabindex="-1">
+										</div>
+
+									</div>
+
+									<div class="campos__form campo-imput">
+										<label class="control-label">NIT<font color="#BD4247">*</font> </label>
+
+										<div class="controls">
+											<input class="input-large numbersOnly addTomadorJRequired" id="numeroDocumentoJ" name="numeroDocumentoJ" type="text" maxlength="16" data-rel="tooltip" data-original-title="" tabindex="170">
+										</div>
+									</div>
+
+									<div class="campos__form campo-imput">
+										<label class="control-label">Razón social<font color="#BD4247">*</font>
+										</label>
+
+										<div class="controls">
+											<input class="input-large addTomadorJRequired" id="razonSocial" name="razonSocial" type="text" maxlength="60" data-rel="tooltip" data-original-title="" tabindex="171">
+										</div>
+									</div>
+
+									<div class="campos__form campo-imput">
+										<label class="control-label">Dirección of. principal<font color="#BD4247">*</font>
+										</label>
+
+										<div class="controls">
+											<input class="input-large addTomadorJRequired" id="direccionPpal" name="direccionPpal" type="text" maxlength="100" data-rel="tooltip" data-original-title="" tabindex="172">
+										</div>
+									</div>
+
+									<div class="campos__form campo-imput">
+										<label class="control-label">Ciudad residencia <font color="#BD4247">*</font>
+										</label>
+
+										<div class="controls">
+											<input id="dirPpalCiudad" name="dirPpalCiudad" type="text" class=".ui-autocomplete citiesAutoComplete addTomadorJRequired" maxlength="17" tabindex="173"> <span id="dirPpalCiudadError" style="color: #BD4247;" class="error"></span>
+										</div>
+									</div>
+
+									<div class="campos__form campo-imput">
+
+										<label class="control-label">Teléfono of. principal<font color="#BD4247">*</font></label>
+
+										<div class="controls">
+											<input type="text" id="dirPpalTelefono" name="dirPpalTelefono" class="input-large numbersOnly addTomadorJRequired" maxlength="10" tabindex="174">
+										</div>
+									</div>
+
+
+								</div>
+
+
+								<div class="form-actions">
+									<input type="button" id="cancelTomador" class="btn btn-primary" value="Cancelar" tabindex="175">&nbsp;&nbsp; <input type="button" id="submitTomador" class="btn btn-success" value="Continuar" tabindex="201"> <br> <br> <span id="errorSaveTomador" style="color: #BD4247;" class="error"></span>
+
+								</div>
+
+							</fieldset>
+						</div>
+						<!--  div end for  form -->
+					</div>
+					<!--  div end for box-content  -->
+				</div>
+			</div>
+	</div>
+</div>
+
+		
+
+
+
+
+<!-- ************  div for add tomador popp  **************  -->
+<div class="overlay-md" style="z-index: 4;"></div>
+<!-- <div id="overlay" style="display: none"> -->
+<div id="modal" class="modal-md md-effect-1" style="display: none;">
+    <div class="close-md" id="close"></div>
+    <header>
+        <h3>Seleccionar tipo de documento</h3>
+    </header>
+    <div id="content">
+        <div class="row-fluid">
+            <div class="box span12" id="updateTomador">
+                <div class="box-content">
+                    <div class="form-horizontal">
+                        <fieldset>
+                            <br>
+                            <div id="tomadorNatural">
+
+                                <div class="campos__form campo-imput">
+
+                                    <label class="control-label">Tipo documento<font color="#BD4247">*</font></label>
+
+                                    <div class="controls">
+                                        <input class="input-large" readonly="readonly" id="tipoDocumentoN" name="tipoDocumentoN" type="text" tabindex="-1">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="campos__form campo-imput">
+                                    <label class="control-label">Número de documento<font color="#BD4247">*</font> </label>
+
+                                    <div class="controls">
+                                        <input class="input-large focusedInput numbersOnly addTomadorRequired" id="numeroDocumentoN" name="numeroDocumentoN" type="text" maxlength="16" data-rel="tooltip" data-original-title="" tabindex="177">
+                                    </div>
+                                </div>
+
+                                <div class="campos__form campo-imput">
+
+                                    <label class="control-label">Primer nombre<font color="#BD4247">*</font></label>
+
+                                    <div class="controls">
+                                        <input class="input-large nombre addTomadorRequired" id="primerNombre" name="primerNombre" maxlength="50" type="text" tabindex="178">
+                                    </div>
+
+                                </div>
+
+                                <div class="campos__form campo-imput">
+
+                                    <label class="control-label">Primer apellido<font color="#BD4247">*</font></label>
+
+                                    <div class="controls">
+                                        <input class="input-large nombre addTomadorRequired" id="primerApellido" name="primerApellido" maxlength="50" type="text" tabindex="179">
+                                    </div>
+
+                                </div>
+
+                                <div class="campos__form campo-radio-check">
+                                    <label class="control-label">Género <font color="#BD4247">*</font> </label>
+
+                                    <div class="controls radioclass" id="sexoNoDiv">
+                                        <label class="radio inline"> <div class="radio" id="uniform-sexoN1"><span><input type="radio" id="sexoN1" name="sexoN" value="F" class="updateTomador" tabindex="180" style="opacity: 0;"><label class="handle-cbx" for="sexoN1"> </label></span></div> Femenino
+
+                                        </label> <label class="radio inline"> <div class="radio" id="uniform-sexoN2"><span><input type="radio" id="sexoN2" name="sexoN" value="M" class="updateTomador" tabindex="181" style="opacity: 0;"><label class="handle-cbx" for="sexoN2"> </label></span></div> Masculino
+                                    </label>
+                                        <div id="sexoNoDivError" class="error" style="color: #BD4247;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="campos__form campo-imput">
+
+                                    <label class="control-label">Dirección residencia<font color="#BD4247">*</font></label>
+
+                                    <div class="controls">
+											<textarea id="dirResidencial" name="dirResidencial" rows="10" maxlength="50" class="autogrow addTomadorRequired" tabindex="182" style="height: 18px;"></textarea>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="campos__form campo-imput">
+                                    <label class="control-label">Ciudad residencia <font color="#BD4247">*</font>
+                                    </label>
+
+                                    <div class="controls">
+                                        <input id="dirResCiudad" name="dirResCiudad" type="text" maxlength="17" class=".ui-autocomplete citiesAutoComplete mandatoryAutocompleteCiudadTomador addTomadorRequired " tabindex="183"> <span id="dirResCiudadError" style="color: #BD4247;" class="error"></span>
+                                    </div>
+                                </div>
+
+                                <div class="campos__form campo-imput">
+
+                                    <label class="control-label">Teléfono residencia<font color="#BD4247">*</font></label>
+
+                                    <div class="controls">
+                                        <input type="text" id="dirResTelefono" name="dirResTelefono" class="input-large numbersOnly addTomadorRequired" maxlength="10" tabindex="184">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- 							****************** 		tomadorJuridico   *********   -->
+                            <div id="tomadorJuridico" style="display: none">
+                                <div class="campos__form campo-imput">
+
+                                    <label class="control-label">Tipo documento<font color="#BD4247">*</font></label>
+
+                                    <div class="controls">
+                                        <input class="input-large" readonly="readonly" id="tipoDocumentoJ" name="tipoDocumentoJ" type="text" tabindex="-1">
+                                    </div>
+
+                                </div>
+
+                                <div class="campos__form campo-imput">
+                                    <label class="control-label">NIT<font color="#BD4247">*</font> </label>
+
+                                    <div class="controls">
+                                        <input class="input-large numbersOnly addTomadorJRequired" id="numeroDocumentoJ" name="numeroDocumentoJ" type="text" maxlength="16" data-rel="tooltip" data-original-title="" tabindex="185">
+                                    </div>
+                                </div>
+
+                                <div class="campos__form campo-imput">
+                                    <label class="control-label">Razón social<font color="#BD4247">*</font>
+                                    </label>
+
+                                    <div class="controls">
+                                        <input class="input-large addTomadorJRequired" id="razonSocial" name="razonSocial" type="text" maxlength="60" data-rel="tooltip" data-original-title="" tabindex="186">
+                                    </div>
+                                </div>
+
+                                <div class="campos__form campo-imput">
+                                    <label class="control-label">Dirección of. principal<font color="#BD4247">*</font>
+                                    </label>
+
+                                    <div class="controls">
+                                        <input class="input-large addTomadorJRequired" id="direccionPpal" name="direccionPpal" type="text" maxlength="100" data-rel="tooltip" data-original-title="" tabindex="187">
+                                    </div>
+                                </div>
+
+                                <div class="campos__form campo-imput">
+                                    <label class="control-label">Ciudad residencia <font color="#BD4247">*</font>
+                                    </label>
+
+                                    <div class="controls">
+                                        <input id="dirPpalCiudad" name="dirPpalCiudad" type="text" class=".ui-autocomplete citiesAutoComplete addTomadorJRequired" maxlength="17" tabindex="188"> <span id="dirPpalCiudadError" style="color: #BD4247;" class="error"></span>
+                                    </div>
+                                </div>
+
+                                <div class="campos__form campo-imput">
+
+                                    <label class="control-label">Teléfono of. principal<font color="#BD4247">*</font></label>
+
+                                    <div class="controls">
+                                        <input type="text" id="dirPpalTelefono" name="dirPpalTelefono" class="input-large numbersOnly addTomadorJRequired" maxlength="10" tabindex="189">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="form-actions">
+                                <input type="button" id="cancelTomador" class="btn btn-primary" value="Cancelar" tabindex="190">&nbsp;&nbsp; <input type="button" id="submitTomador" class="btn btn-success" value="Continuar" tabindex="202"> <br> <br> <span id="errorSaveTomador" style="color: #BD4247;" class="error"></span>
+
+                            </div>
+
+                        </fieldset>
+                    </div>
+                    <!--  div end for  form -->
+                </div>
+                <!--  div end for box-content  -->
+            </div>
+        </div>
+    </div>
+</div>
+
+		<div align="center">
+			<a id="cancelBtn" class="btn btn-primary" tabindex="1001" href="/SimonQuotation/agentHomeAction.do">
+				Cancelar
+			</a> <input type="button" id="submitbutton" class="btn btn-success removeTabindexing skipTabIndex" tabindex="1000" value="Generar póliza" disabled="disabled">
+				<input type="button" id="enviarURL" class="btn btn-success" value="Enviar URL" data-rel="tooltip" style="display: none;" data-original-title="" tabindex="203">
+				<input type="button" id="enviarURLAseg" class="btn btn-success" value="Enviar URL" data-rel="tooltip" style="display: none;" data-original-title="" tabindex="204">
+				<input type="button" id="enviarURLAsegR2" class="btn btn-success" value="Enviar URL" data-rel="tooltip" style="display: none;" data-original-title="" tabindex="205">	
+												
+
+		</div>
+		<div align="center">
+			<span id="errorSubmit" style="color: rgb(189, 66, 71);" class="alert alert-danger">
+Required request parameter 'pNumeroDocumto' for method parameter type BigDecimal is present but converted to null</span>
+		</div>
+	</div>
+	
+		
+
+
+	<!-- ************   cotizacion detail popp  **************  -->
+	<div id="overlayQuoteVida" class="overlay-md md-show" style="display: none;">
+<div id="modalQuoteVida" class="modal-md md-effect-1 md-show md-show-large">
+	<header>
+		<h3 id="headerId">Cotización de vida</h3>
+	</header>
+	<div class="close-md" id="closeQuoteVida"></div>
+	<div class="overlayContent">
+		<div class="box">
+			<div class="form-horizontal">
+				<!-- 							<fieldset> -->
+				<p align="center">
+					<label id="subProducto_vida" style="font-weight: bold; color: #048235; margin-top: 5px;">
+				</label></p>
+				<div class="box-content">
+					<table width="100%" class="table">
+						<!-- 								first row  -->
+						<tbody><tr bgcolor="#E3E3E3">
+							<th colspan="2"><b>Condiciones Generales</b></th>
+						</tr>
+
+						<tr>
+							<td width="50%"><label class="control-label">Número de cotización:</label>
+								<div class="controls">
+									<label id="numLiquidacion_vida" class="tdLabel control-datarecord"></label>
+								</div></td>
+
+						</tr>
+						<!-- 								next row  -->
+						<tr>
+							<td><label class="control-label">Clave asesor:</label>
+
+								<div class="controls">
+									<label id="claveAsesor_vida" class="tdLabel control-datarecord"></label>
+								</div></td>
+							<!-- <td><label class="control-label">N&uacutemero de documento:</label>
+									<div class="controls">
+										<label id="aseguradoDoc_vida" class="tdLabel control-datarecord"></label>
+									</div></td> -->
+
+						</tr>
+						<tr id="descuentoDiv" style="display: none;">
+							<td><label class="control-label">Descuento agente:</label>
+
+								<div class="controls">
+									<label id="descuentoAgente_vida" class="tdLabel control-datarecord"></label>
+								</div></td>
+							<!-- <td><label class="control-label">N&uacutemero de documento:</label>
+									<div class="controls">
+										<label id="aseguradoDoc_vida" class="tdLabel control-datarecord"></label>
+									</div></td> -->
+
+						</tr>
+						<tr>
+							<td width="50%"><label class="control-label">Plan personalizado:</label>
+								<div class="controls">
+									<label id="planPersonalizado_vida" class="tdLabel control-datarecord"></label>
+								</div></td>
+
+						</tr>
+					</tbody></table>
+				</div>
+
+				<div id="reisgosVida"></div>
+				<span id="901_text" style="display: none"> Prima amparo básico </span> <span id="902_text" style="display: none"> Anexo de accidentes personales:muerte accidental</span> <span id="903_text" style="display: none"> Desmembración</span> <span id="904_text" style="display: none"> Renta mensual por incapacidad por accidente</span>
+				<span id="905_text" style="display: none"> Gastos	médicos por accidente</span><span id="918_text" style="display: none"> Renta diaria por incapacidad por accidente</span>
+				<span id="906_text" style="display: none"> Incapacidad total y permanente - Anticipo 40%</span> <span id="908_text" style="display: none"> Anexo de enfermedades graves - Anticipo 100%</span> <span id="910_text" style="display: none"> Incapacidad total y permanente - Anticipo 40%</span> <span id="911_text" style="display: none"> Incapacidad total y permanente - Suma adicional</span> <span id="912_text" style="display: none"> Anexo de enfermedades graves-Suma adicional</span> <span id="915_text" style="display: none"> Muerte	accidental por accidente de tránsito terrestre</span>
+				<span id="916_text" style="display: none"> Incapacidad total y permanente - Suma adicional</span><span id="901_text_Credito" style="display: none"> Prima amparo básico </span><span id="908_text_Credito" style="display: none"> Incapacidad total y permanente</span>
+				<span id="901_text_CreditoNew" style="display: none"> Amparo básico de vida</span>
+				<span id="928_text_CreditoNew" style="display: none"> Asistencia funeraria</span>
+				<span id="922_text_CreditoNew" style="display: none"> Incapacidad Total y Permanente por Enfermedad como Suma Adicional</span>
+				<span id="924_text_CreditoNew" style="display: none"> Incapacidad Total y Permanente por Accidente como Suma Adicional </span>
+				<span id="911_text_CreditoNew" style="display: none"> Enfermedades Graves como Suma Adicional</span>
+
+				<span id="901_text_Credito960" style="display: none"> Amparo básico de vida</span>
+				<span id="932_text_Credito960" style="display: none"> Devolución de prima</span>
+				<span id="928_text_Credito960" style="display: none"> Asistencia funeraria</span>
+				<span id="930_text_Credito960" style="display: none"> Auxilio medicamentos, vacunas, lentes</span>
+				<span id="922_text_Credito960" style="display: none"> Incapacidad Total y Permanente por Enfermedad como Suma Adicional</span>
+				<span id="924_text_Credito960" style="display: none"> Incapacidad Total y Permanente por Accidente como Suma Adicional </span>
+				<span id="908_text_Credito960" style="display: none"> Incapacidad Total y Permanente por Enfermedad o Accidente como Anticipo</span>
+				<span id="911_text_Credito960" style="display: none"> Enfermedades Graves como Suma Adicional</span>
+				<span id="917_text_Credito960" style="display: none"> Enfermedades Graves e Invalidez como anticipo al 50%</span>
+				<span id="920_text_Credito960" style="display: none"> Renta Diaria por Incapacidad por Enfermedad</span>
+				<span id="902_text_Credito960" style="display: none"> Anexo de accidentes personales: muerte accidental</span>
+				<span id="915_text_Credito960" style="display: none"> Muerte accidental por accidente de tránsito terrestre</span>
+				<span id="903_text_Credito960" style="display: none"> Desmembración</span>
+				<span id="905_text_Credito960" style="display: none"> Gastos médicos por accidente</span>
+				<span id="918_text_Credito960" style="display: none"> Renta diaria por incapacidad por accidente</span>
+
+				<div id="detVida"></div>
+
+				<table width="100%" class="table">
+					<tbody><tr bgcolor="#E3E3E3">
+						<th colspan="2"><b>Cuadro Resumen</b></th>
+					</tr>
+
+					<tr>
+						<td colspan="2">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<td>Valor de la prima</td>
+										<td style="text-align: right;"><span id="prima_vida" class="control-datarecord"></span></td>
+									</tr>
+									<tr>
+										<td>IVA</td>
+										<td style="text-align: right;"><span id="impuestoPrima_vida" class="control-datarecord"></span></td>
+
+									</tr>
+									<tr>
+										<td><strong>Total prima </strong></td>
+										<td style="text-align: right;"><span id="totalPrima_vida" class="control-datarecord" style="font-weight: bold"></span></td>
+									</tr>
+
+								</tbody>
+							</table>
+						</td>
+					</tr>
+
+				</tbody></table>
+			</div>
+			<div align="center">
+				<input class="btn btn-success" id="formalizationButton" type="button" value="Emitir" tabindex="206" disabled="disabled" style="display: none;">
+				<input class="btn btn-success" style="display: none;" id="formalizationButtonDisable" disabled="disabled" type="button" value="Emitir" tabindex="207">
+			</div>
+		</div>
+
+	</div>
+</div>
+</div>
+<div id="overlayAgendamienteVidaPopup" class="overlay-md md-show" style="display: none;">
+<div id="modalAgendamienteVidaPopup" class="modal-md md-effect-1 md-show">
+	<div class="close-md" id="closeInspVidaPopup"></div>
+	<header>
+		<h3>Alerta</h3>
+	</header>
+	<div id="contentAgendamienteVidaPopup">
+		<div class="row-fluid" id="agendeDiv">
+			<div class="box span12">
+				<div class="box-content">
+					<div class="form-horizontal">
+						<fieldset>
+							<span class="icon icon-orange icon-alert"></span> <span id="errorSubmitTextVidaPopup" class="warningmessage"></span>
+								<div id="warningListDivId"></div>
+						</fieldset>
+					</div>
+					<div class="form-actions" align="center">
+						<input type="button" id="continueFormalization" class="btn btn-primary" value="Continuar" tabindex="197">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	
+	<div id="overlayAgendamiente" class="overlay-md md-show" style="display: none;">
+<div id="modalAgendamiente" class="modal-md md-effect-1 md-show">
+	<div class="close-md" id="closeselDocTypePopup"></div>	
+	<header><h3>
+								Alerta
+							</h3></header>
+			<div id="contentAgendamiente">
+				<div class="row-fluid" id="agendeDiv">
+					<div class="box span12">
+						<div class="box-content">
+							<div class="form-horizontal">
+								<fieldset>									
+										<span id="warningImage" class="icon icon-orange icon-alert"></span>	
+										<span id="errorSubmitText" class="warningmessage"></span>	
+									 <p align="center">	<span id="errorSubmitTerceroConsulta" class="alert alert-danger" style="color: #BD4247;display: none;" align="center"></span>								
+								</p></fieldset>
+							</div>
+							<div id="contDeclarationDiv" class="form-actions" align="center">
+								<input type="button" id="contDeclaration" class="btn btn-primary" value="Continuar" tabindex="198">
+							</div>
+							<div id="terceroErrorDiv" class="form-actions" align="center" style="display:none">
+							<a class="btn btn-primary" href="/SimonQuotation/agentHomeAction.do"> Volver a la página principal</a>
+								
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- Popup page for validate Autoriza Uso de Datos -->
+	
+
+
+
+<!-- MANTIS 44219 Add code for popup message on autorizosdatos --> 
+	<!--MANTIS 0045184: SOLICITUD PANTALLA COTIZACION - URL Change --> 
+<div id="overlayConfirmationPopup" class="overlay-md md-show" style="display: none;">
+		<div id="modalConfirmationPopup" class="modal-md md-effect-1 md-show">
+			<div id="contentConfirmationPopup" class="overlayContent">
+				<div class="row-fluid" id="confirmationPopupDiv">
+					<div class="box span12">
+						 
+						<div class="box-content">
+							<div class="form-horizontal">
+								<fieldset>
+								 <div class="form-actions visible-phone" align="center">
+								<input type="button" id="continuarUSOMobile" class="btn btn-primary" value="Continuar" tabindex="199">
+							   </div>
+								<i class="icon-info-sign" data-original-title="" data-rel="tooltip"></i>		
+										<span id="textMessage" style="color: black;">
+										Acepto que mis datos personales sean tratados conforme a la 
+										<a target="_blank" href="http://www.segurosbolivar.co/wps/portal?current=true&amp;urile=wcm:path:/bolivar_es/inicio/politicasdeprivacidad/avisoprivacidad/avisodeprivacidad" style="color:black;">
+										<u>política de tratamiento de información personal</u></a> de la compañía</span>								
+								</fieldset>
+								
+							</div>
+							 <div class="form-actions hidden-phone" align="center">
+								<input type="button" id="continuarUSO" class="btn btn-primary" value="Continuar" tabindex="200">
+							</div>  
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		</div> 
+</form>
+
+<form id="ConocimientoForm" name="ConocimientoForm" method="post" target="ConocimientoWindow" action="">
+	<input type="hidden" name="usuario" value="79468066">
+	<input type="hidden" name="sistema" value="8000">
+	<input type="hidden" name="direccionIp" value="10.1.1.1">
+	<input type="hidden" name="codPais" value="CO">
+	<input type="hidden" name="consecutivo" value="">
+	<input type="hidden" name="numeroDocumento" value="">
+	<input type="hidden" name="tipoDocumento" value="">
+</form>
+
+<form id="ConocimientoBasicoForm" name="ConocimientoBasicoForm" method="post" target="ConocimientoWindow" action="">
+	<input type="hidden" name="usuario" value="79468066">
+	<input type="hidden" name="sistema" value="8000">
+	<input type="hidden" name="direccionIp" value="10.1.0.76">
+	<input type="hidden" name="codPais" value="CO">
+	<input type="hidden" name="consecutivo" value="1">
+	<input type="hidden" name="numeroDocumento" value="">
+	<input type="hidden" name="tipoDocumento" value="">
+	<input type="hidden" name="viewType" value="popup">
+	<input type="hidden" name="primerNombre" value="">
+	<input type="hidden" name="primerApellido" value="">
+	<input type="hidden" name="sexo" value="">
+	<input type="hidden" name="dirResidencia" value="">
+	<input type="hidden" name="ciudadResi" value="">
+	<input type="hidden" name="fechaNcmntAseg" value="">
+</form>
+						<!-- content ends -->
+					</div>
+				
+			
+
+			<!-- left menu ends -->
+		</div>
+	</div>
+		
+
+<footer>
+	<div class="footer">
+		<div class="content-footer">
+
+			Copyright © 2014 <a href="http://www.segurosbolivar.com">Seguros Bolivar</a>. Todos los derechos reservados.<span class="pleca-footer"> &nbsp;
+				&nbsp;|&nbsp; &nbsp; </span>
+				<span class="copiright-footer">Build:SimonQuotation_20230713</span>
+
+
+		</div>
+	</div>
+</footer>
+
+
+		
+	<div style="display: none;">
+		<button id="mandatoryNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Por favor diligencie los campos obligatorios&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+
+		<button id="pageLevelNoty" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Center
+		</button>
+
+		<button id="anosNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Entre años 1 y 70&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+	</div>
+
+	<!-- external javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<script src="/SimonQuotation/js/jquery/jquery.js?v=SimonQuotation_20230713"></script>
+
+	<!-- jQuery UI -->
+	 <script src="/SimonQuotation/js/jquery/jquery-ui-1.8.21.custom.min.js?v=SimonQuotation_20230713"></script> 
+
+	<!-- data table plugin -->
+	 <script src="/SimonQuotation/js/jquery/jquery.dataTables.min.js?v=SimonQuotation_20230713"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.dataTables.columnFilter.js?v=SimonQuotation_20230713"></script>
+
+	<!-- application script for Charisma demo -->
+	<script src="/SimonQuotation/js/charisma.js?v=SimonQuotation_20230713"></script>
+
+	<!-- custom js files -->
+	<script src="/SimonQuotation/js/common/dwr.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/common/dwr-common.js?v=SimonQuotation_20230713"></script>
+
+	<script src="/SimonQuotation/js/common/ajax.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/common/validation.js?v=SimonQuotation_20230713"></script><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+	<script src="/SimonQuotation/js/common/commonUI.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/common/drop-down-search.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.formatCurrency-1.4.0.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.formatCurrency.es-CO.js?v=SimonQuotation_20230713"></script>
+
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.ui.datepicker-es.js?v=SimonQuotation_20230713"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.blockUI.js?v=SimonQuotation_20230713"></script>
+
+
+	<!-- transition / effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-transition.js?v=SimonQuotation_20230713"></script>
+
+	<!-- alert enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-alert.js?v=SimonQuotation_20230713"></script>
+
+	<!-- modal / dialog library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-modal.js?v=SimonQuotation_20230713"></script>
+
+	<!-- custom dropdown library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-dropdown.js?v=SimonQuotation_20230713"></script>
+
+	<!-- scrolspy library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-scrollspy.js?v=SimonQuotation_20230713"></script>
+
+	<!-- library for creating tabs -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tab.js?v=SimonQuotation_20230713"></script>
+
+	<!-- library for advanced tooltip -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tooltip.js?v=SimonQuotation_20230713"></script>
+
+	<!-- popover effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-popover.js?v=SimonQuotation_20230713"></script>
+
+	<!-- button enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-button.js?v=SimonQuotation_20230713"></script>
+
+	<!-- accordion library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-collapse.js?v=SimonQuotation_20230713"></script>
+
+	<!-- carousel slideshow library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-carousel.js?v=SimonQuotation_20230713"></script>
+
+	<!-- autocomplete library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-typeahead.js?v=SimonQuotation_20230713"></script>
+
+	<!-- tour library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tour.js?v=SimonQuotation_20230713"></script>
+
+	<!-- library for cookie management -->
+	<script src="/SimonQuotation/js/jquery/jquery.cookie.js?v=SimonQuotation_20230713"></script>
+
+	<!-- calander plugin -->
+	<script src="/SimonQuotation/js/fullcalendar.min.js?v=SimonQuotation_20230713"></script>
+
+	<!-- chart libraries start -->
+	
+    <!--Mail:Fwd:Performance-->
+	
+	<!-- chart libraries end -->
+
+	<!-- select or dropdown enhancer -->
+	<script src="/SimonQuotation/js/jquery/jquery.chosen.min.js?v=SimonQuotation_20230713"></script>
+
+	<!-- checkbox, radio, and file input styler -->
+	<script src="/SimonQuotation/js/jquery/jquery.uniform.min.js?v=SimonQuotation_20230713"></script>
+
+	<!-- plugin for gallery image view -->
+	<script src="/SimonQuotation/js/jquery/jquery.colorbox.min.js?v=SimonQuotation_20230713"></script>
+
+	<!-- rich text editor library -->
+	<script src="/SimonQuotation/js/jquery/jquery.cleditor.min.js?v=SimonQuotation_20230713"></script>
+
+	<!-- notification plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.noty.js?v=SimonQuotation_20230713"></script>
+
+	<!-- file manager library -->
+	<script src="/SimonQuotation/js/jquery/jquery.elfinder.min.js?v=SimonQuotation_20230713"></script>
+
+	<!-- star rating plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.raty.min.js?v=SimonQuotation_20230713"></script>
+
+	<!-- for iOS style toggle switch -->
+	<script src="/SimonQuotation/js/jquery/jquery.iphone.toggle.js?v=SimonQuotation_20230713"></script>
+
+	<!-- autogrowing textarea plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.autogrow-textarea.js?v=SimonQuotation_20230713"></script>
+
+	<!-- multiple file upload plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.uploadify-3.1.min.js?v=SimonQuotation_20230713"></script>
+
+	<!-- testing carousel-->
+	<script src="/SimonQuotation/js/jquery/jquery.ui.rcarousel.min.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.ui.widget.min.js?v=SimonQuotation_20230713"></script>
+
+	<script src="/SimonQuotation/js/hammer.min.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/hammer.fakemultitouch.js?v=SimonQuotation_20230713"></script>
+
+	<script src="/SimonQuotation/js/googleAnalytics/trzConsole.js"></script>	
+
+	<script src="/SimonQuotation/js/googleAnalytics/ScriptSeguimientoSimon.js"></script>	
+
+	<script src="/SimonQuotation/js/formalization/vidaFormalizationCreatePortaFolio.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/popup/vidaQuotePopup.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/common/sarlaftNew.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/common/properties.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.masterblaster.js"></script>
+	<script src="/SimonQuotation/js/common/email.js"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomador.js?v=SimonQuotation_20230713"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomadorBasico.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/common/designRadioCbx.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/tmpl.min.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/load-image.min.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/canvas-to-blob.min.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/bootstrap.min.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/bootstrap-image-gallery.min.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/jquery.iframe-transport.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-fp.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-ui.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/locale.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/main.js?v=SimonQuotation_20230713"></script>
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBn8TQ8ANlkaa65XPY3rFyv_bU01HB7ezM"></script>
+		<script src="/SimonQuotation/js/common/app-feedback-popup.js?v=SimonQuotation_20230713"></script>
+		<script src="/SimonQuotation/js/common/html2canvas.js?v=SimonQuotation_20230713"></script>
+<script src="/SimonQuotation/js/common/html2canvas.min.js?v=SimonQuotation_20230713"></script>
+<script src="/SimonQuotation/js/common/callAgendamiento.js?v=SimonQuotation_20230713"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- 	<script type="javascript"> -->
+	<!-- jQuery('.numbersOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/\D/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbersWithDecimalOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/[^0-9\.]/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbers1').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/^[1-9]\d*(\.\d+)?$/,''); -->
+	<!-- }); -->
+
+
+	<!-- </script> -->
+	<script type="text/javascript">
+	
+	var addedFilesCount=0;
+        $('#fileupload').bind('fileuploadadd', function (e, data) {
+		  addedFilesCount++;
+		  $('#addedFilesCount').val(addedFilesCount);
+		});
+		
+	$('#fileupload').bind('fileuploadfailed', function (e, data) {
+		    if($('#delSingleMultiple').val()=="multiple"){
+		        $(".template-download").remove();
+			    $("#overlayUploadDocPopup").hide();
+			    $("#modalUploadDocPopup").removeClass("md-show");
+				$("#modalUploadDocPopup").hide();
+			}
+	});
+		    
+	/* var inp = document.getElementById('fileElementId');
+	for (var i = 0; i < inp.files.length; ++i) {
+	  var name = inp.files.item(i).name;
+	  alert("here is a file name: " + name);
+	}*/
+	</script>
+	
+						        
+		<!-- The template to display files available for upload -->
+        <script id="template-upload" type="text/x-tmpl">
+            {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-upload fade">
+            <td class="preview"><span class="fade"></span></td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            {% if (file.error) { %}
+            <td class="error" colspan="2" style="display: none;"><span class="label label-important">Error</span> {%=file.error%}</td>
+            {% } else if (o.files.valid && !i) { %}
+            <td>
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" style="width:0%;"></div></div>
+            </td>
+            <td class="start" style="display: none;">{% if (!o.options.autoUpload) { %}
+                <button class="">
+                    <i class="icon-upload icon-white"></i>
+                    <span>Start</span>
+                </button>
+                {% } %}</td>
+            {% } else { %}
+            <td colspan="2"></td>
+            {% } %} 
+            <td colspan="2"></td>
+            <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+        </tr>
+        {% } %}
+    </script>
+    <!-- The template to display files available for download -->
+    <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade"">
+            {% if (file.error) { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            <td class="error" colspan="2"><span class="label label-important">Error</span> {%=file.error%}</td>
+           <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+           {% } else { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name">
+                {%=file.name%}
+            </td>
+            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+            <td colspan="2"></td>
+            <td>UPLOADED</td>
+            {% } %}
+        </tr>
+        {% } %}
+    </script>
+
+	<script>
+		/* setTimeout("window.location.reload()",(25000*60)); */
+
+		jQuery(function($) {
+
+			var ctx = "/SimonQuotation";
+
+			function generatePages() {
+				var _total, i, _link;
+
+				_total = $("#carousel").rcarousel("getTotalPages");
+
+				for (i = 0; i < _total; i++) {
+					_link = $("<a href='#'></a>");
+
+					$(_link).bind("click", {
+						page : i
+					}, function(event) {
+						$("#carousel").rcarousel("goToPage", event.data.page);
+						event.preventDefault();
+					}).addClass("bullet off").appendTo("#pages");
+				}
+
+				// mark first page as active
+				$("a:eq(0)", "#pages").removeClass("off").addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+
+			}
+
+			function pageLoaded(event, data) {
+				$("a.on", "#pages").removeClass("on").css("background-image",
+						"url(" + ctx + "/images/icons/page-off.png)");
+
+				$("a", "#pages").eq(data.page).addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+			}
+
+			$(".bullet").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+
+			function initializeCarousel() {
+				if ($(window).width() < 515) {
+					$("#carousel ").rcarousel({
+						visible : 1,
+						step : 1,
+						width : 214,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else if ($(window).width() > 515 && $(window).width() <= 979) {
+					$("#carousel ").rcarousel({
+						visible : 2,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else {
+					$("#carousel ").rcarousel({
+						visible : 3,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+
+				}
+			}
+
+			initializeCarousel();
+
+			//			$(window).bind('orientationchange', function(event) {
+			//				alert('new orientation:' + orientation);
+			//				$( "#carousel" ).rcarousel( "destroy" );
+
+			//				initializeCarousel();
+			//			});
+
+			$("#ui-carousel-next").add("#ui-carousel-prev").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+		});
+
+		$(document)
+				.ready(
+						function() {
+							$("#menuMy li > a")
+									.on(
+											'click',
+											function(e) {
+												$(this).siblings('ul').toggle(
+														'slow');
+												$(this)
+														.find("span")
+														.last()
+														.toggleClass(
+																'icon-triangle-n icon-triangle-s');
+											});
+
+							$('.ajax-link')
+									.click(
+											function() {
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+
+											});
+
+							$(document)
+									.ajaxStart(
+											function() {
+												if ($("#showBlockUI").val() == "N") {
+													return;
+												}
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+											});
+
+							// 		var isUnblockUI = true;
+
+							$(document).ajaxStop(function() {
+								// 			if (isUnblockUI) {
+								$.unblockUI();
+								// 			}
+								if ($.browser.msie && $.browser.version < 9) {
+									$(".blockUI").fadeOut("slow");
+								}
+
+								document.onselectstart = function(e) {
+									/* if (dragging) {
+										e.preventDefault();
+										return false;
+									} */
+								};
+								$(document).ready(function() {
+									$('input').on('drop', function(event) {
+										event.preventDefault();
+									});
+								});
+							});
+
+						});
+
+		$(document).click(function(e) {
+			//alert(e.button);
+			if (e.button == 2) {
+				return false;
+			} else {
+				$("#userInfo").hide();
+				//return false;
+			}
+
+		});
+
+		$("#userButton").click(function(e) {
+			e.stopPropagation();
+			$("#userInfo").toggle();
+			return false;
+
+		});
+		// 		$(".navbar").hover(function() {
+		// 			$("#userInfo").hide();
+		// 		});
+
+		$("#userInfo").click(function(e) {
+			e.stopPropagation();
+			return false;
+		});
+		$("#logout").click(function() {
+			var logoutAction = $(this).attr('name');
+			window.location.href = logoutAction;
+		});
+
+		function goToVidaPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/vidaHomeAgent/gi);
+			if (result) {
+				window.location.href = "vidaHomeAgent.do";
+			} else {
+				return false;
+			}
+		}
+		function goToHogarPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/hogar/gi);
+			if (result) {
+				window.location.href = "hogarHomeAgent.do?user=hogarOld";
+			} else {
+				return false;
+			}
+		}
+
+		function goToSaludPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/salud/gi);
+			if (result) {
+				window.location.href = "saludHomeNew.do?viewStyle=nuevaUI";
+			} else {
+				return false;
+			}
+		}
+
+		function goToAutosPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/autos/gi);
+			if (result) {
+				window.location.href = "autosHomeAgentNew.do";
+			} else {
+				return false;
+			}
+		}
+		function goToVidaGrupoPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/grupo/gi);
+			if (result) {
+				window.location.href = "vidaColectiva.do";
+			} else {
+				return false;
+			}
+		}
+		function goToPymesPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/pymes/gi);
+			if (result) {
+				window.location.href = "PymesHome.do";
+			} else {
+				return false;
+			}
+		}       
+		//Prevents backspace except in the case of textareas and text inputs to prevent user navigation.
+		$(document)
+				.keydown(
+						function(e) {
+							var preventKeyPress;
+							if (e.keyCode == 8) {
+								var d = e.srcElement || e.target;
+								switch (d.tagName.toUpperCase()) {
+								case 'TEXTAREA':
+									preventKeyPress = d.readOnly || d.disabled;
+									break;
+								case 'INPUT':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| (d.attributes["type"] && $
+													.inArray(
+															d.attributes["type"].value
+																	.toLowerCase(),
+															[ "radio",
+																	"checkbox",
+																	"submit",
+																	"button" ]) >= 0);
+									break;
+								case 'DIV':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| !(d.attributes["contentEditable"] && d.attributes["contentEditable"].value == "true");
+									break;
+								default:
+									preventKeyPress = true;
+									break;
+								}
+							} else
+								preventKeyPress = false;
+
+							if (preventKeyPress)
+								e.preventDefault();
+						});
+
+		$(function() {
+			$("textarea[maxlength]")
+					.bind(
+							'input propertychange',
+							function() {
+								var maxLength = $(this).attr('maxlength');
+								var newlines = ($(this).val().match(/\n/g) || []).length;
+								if ($(this).val().length + newlines > maxLength) {
+									$(this).val(
+											$(this).val().substring(0,
+													maxLength - newlines));
+								}
+							});
+		});
+
+		$(document)
+				.ready(
+						function() {
+
+							(function($) {
+
+								$
+										.extend({
+
+											APP : {
+
+												formatTimer : function(a) {
+													if (a < 10) {
+														a = '0' + a;
+													}
+													return a;
+												},
+
+												startTimer : function(dir) {
+
+													var a;
+
+													// save type
+													$.APP.dir = dir;
+
+													// get current date
+													$.APP.d1 = new Date();
+
+													switch ($.APP.state) {
+
+													case 'pause':
+
+														// resume timer
+														// get current timestamp (for calculations) and
+														// substract time difference between pause and now
+														$.APP.t1 = $.APP.d1
+																.getTime()
+																- $.APP.td;
+
+														break;
+
+													default:
+
+														// get current timestamp (for calculations)
+														$.APP.t1 = $.APP.d1
+																.getTime();
+
+														// if countdown add ms based on seconds in textfield
+														if ($.APP.dir === 'cd') {
+															$.APP.t1 += parseInt($(
+																	'#cd_seconds')
+																	.val()) * 1000;
+														}
+
+														break;
+
+													}
+
+													// reset state
+													$.APP.state = 'alive';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Running');
+
+													// start loop
+													$.APP.loopTimer();
+
+												},
+
+												pauseTimer : function() {
+
+													// save timestamp of pause
+													$.APP.dp = new Date();
+													$.APP.tp = $.APP.dp
+															.getTime();
+
+													// save elapsed time (until pause)
+													$.APP.td = $.APP.tp
+															- $.APP.t1;
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Resume');
+
+													// set state
+													$.APP.state = 'pause';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Paused');
+
+												},
+
+												stopTimer : function() {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'stop';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Stopped');
+
+												},
+
+												resetTimer : function() {
+
+													// reset display
+													$(
+															'#' + $.APP.dir
+																	+ '_ms,#'
+																	+ $.APP.dir
+																	+ '_s,#'
+																	+ $.APP.dir
+																	+ '_m,#'
+																	+ $.APP.dir
+																	+ '_h')
+															.html('00');
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Start');
+
+													// set state
+													$.APP.state = 'reset';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html(
+																	'Reset & Idle again');
+
+												},
+
+												endTimer : function(callback) {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'end';
+
+													// invoke callback
+													if (typeof callback === 'function') {
+														callback();
+													}
+
+												},
+
+												loopTimer : function() {
+
+													var td;
+													var d2, t2;
+
+													var ms = 0;
+													var s = 0;
+													var m = 0;
+													var h = 0;
+
+													if ($.APP.state === 'alive') {
+
+														// get current date and convert it into 
+														// timestamp for calculations
+														d2 = new Date();
+														t2 = d2.getTime();
+
+														// calculate time difference between
+														// initial and current timestamp
+														if ($.APP.dir === 'sw') {
+															td = t2 - $.APP.t1;
+															// reversed if countdown
+														} else {
+															td = $.APP.t1 - t2;
+															if (td <= 0) {
+																// if time difference is 0 end countdown
+																$.APP
+																		.endTimer(function() {
+																			$.APP
+																					.resetTimer();
+																			$(
+																					'#'
+																							+ $.APP.dir
+																							+ '_status')
+																					.html(
+																							'Ended & Reset');
+																		});
+															}
+														}
+
+														// calculate milliseconds
+														ms = td % 1000;
+														if (ms < 1) {
+															ms = 0;
+														} else {
+															// calculate seconds
+															s = (td - ms) / 1000;
+															if (s < 1) {
+																s = 0;
+															} else {
+																// calculate minutes   
+																var m = (s - (s % 60)) / 60;
+																if (m < 1) {
+																	m = 0;
+																} else {
+																	// calculate hours
+																	var h = (m - (m % 60)) / 60;
+																	if (h < 1) {
+																		h = 0;
+																	}
+																}
+															}
+														}
+
+														// substract elapsed minutes & hours
+														ms = Math
+																.round(ms / 100);
+														s = s - (m * 60);
+														m = m - (h * 60);
+
+														// update display
+														$(
+																'#' + $.APP.dir
+																		+ '_ms')
+																.html(
+																		$.APP
+																				.formatTimer(ms));
+														$(
+																'#' + $.APP.dir
+																		+ '_s')
+																.html(
+																		$.APP
+																				.formatTimer(s));
+														$(
+																'#' + $.APP.dir
+																		+ '_m')
+																.html(
+																		$.APP
+																				.formatTimer(m));
+														$(
+																'#' + $.APP.dir
+																		+ '_h')
+																.html(
+																		$.APP
+																				.formatTimer(h));
+
+														// loop
+														$.APP.t = setTimeout(
+																$.APP.loopTimer,
+																1);
+
+													} else {
+
+														// kill loop
+														clearTimeout($.APP.t);
+														return true;
+
+													}
+
+												}
+
+											}
+
+										});
+
+								
+									$.APP.startTimer('sw');
+								
+							})(jQuery);
+
+						});
+	</script>
+	<script src="/SimonQuotation/js/drum.js?v=SimonQuotation_20230713"></script>
+	<input type="hidden" name="showBlockUI" id="showBlockUI" value="">
+
+
+
+<div style="position: absolute; top: -10000px; left: -10000px; width: 210px; font-size: 14px; font-family: Verdana, sans-serif; font-weight: 400; line-height: 18px; resize: none;"></div><div style="position: absolute; top: -10000px; left: -10000px; width: 210px; font-size: 14px; font-family: Verdana, sans-serif; font-weight: 400; line-height: 18px; resize: none;"></div><div style="position: absolute; top: -10000px; left: -10000px; width: 210px; font-size: 14px; font-family: Verdana, sans-serif; font-weight: 400; line-height: 18px; resize: none;"></div><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="blockUI" style="display:none"></div><div class="blockUI blockOverlay" style="z-index: 100000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: fixed;"></div><div class="blockUI blockMsg blockPage" style="z-index: 100011; position: fixed; padding: 20px; margin: 5px; width: 30%; top: 40%; left: 35%; text-align: center; color: rgb(0, 0, 0); border: none; background-color: rgb(255, 255, 255); cursor: wait;"><img src="img/loadajax.gif" title="Cargando..">Cargando...</div></body></html>

@@ -1,0 +1,36 @@
+com/Pages/emisionthPage.java
+ com.Pages.emisionthPage
+com/Steps/stepSuscribirCotizacionTh.java
+ com.Steps.stepSuscribirCotizacionTh
+com/Pages/LoginPage.java
+ com.Pages.LoginPage
+com/Steps/stepEmisionTH.java
+ com.Steps.stepEmisionTH
+com/Pages/suscribirCotizacionThPage.java
+ com.Pages.suscribirCotizacionThPage
+com/Steps/stepHome.java
+ com.Steps.stepHome
+com/Models/datosBeneficiarios.java
+ com.Models.datosBeneficiarios
+com/Models/datosDeclaracionAsegurabilidad.java
+ com.Models.datosDeclaracionAsegurabilidad
+com/Pages/cotizacionThPage.java
+ com.Pages.cotizacionThPage
+com/Steps/stepCotizacionTh.java
+ com.Steps.stepCotizacionTh
+com/Steps/stepFormularioDeclaracionAsegurabilidad.java
+ com.Steps.stepFormularioDeclaracionAsegurabilidad
+com/Pages/formulariodeclaracionAsegurabilidadPage.java
+ com.Pages.formulariodeclaracionAsegurabilidadPage
+com/Pages/daPage.java
+ com.Pages.daPage
+com/Pages/homePage.java
+ com.Pages.homePage
+com/Models/datosConsultaCotizacion.java
+ com.Models.datosConsultaCotizacion
+com/Steps/stepLogin.java
+ com.Steps.stepLogin
+com/Pages/consultaCotizacionPage.java
+ com.Pages.consultaCotizacionPage
+com/Steps/stepConsultaCotizacion.java
+ com.Steps.stepConsultaCotizacion

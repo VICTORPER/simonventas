@@ -1,0 +1,1557 @@
+<html><head>
+
+<title>Declaracion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+body {
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+/* #footer {
+	bottom: 0;
+	width: 100%;
+	background: #F5F5F5;
+} */
+/*Mantis: 0048613 disabled field not visible on ipad*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+		-webkit-text-fill-color:#000000;
+		-webkit-opacity: .7;
+   		 
+	}
+ }
+</style>
+
+
+<link href="/SimonQuotation/css/quotation-main.css?v=SimonQuotation_20230706" rel="stylesheet">
+
+<link href="/SimonQuotation/css/jquery.masterblaster.css" rel="stylesheet">
+
+<link href="/SimonQuotation/css/bootstrap-cerulean.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/bootstrap-responsive.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/charisma-app.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery-ui-1.8.21.custom.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.print.css?v=SimonQuotation_20230706" rel="stylesheet" media="print">
+<link href="/SimonQuotation/css/chosen.css?v=SimonQuotation_20230706" rel="stylesheet">
+
+<link href="/SimonQuotation/css/colorbox.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.cleditor.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.noty.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/noty_theme_default.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.min.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.theme.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.iphone.toggle.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/opa-icons.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/uploadify.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/consultas/headerPanel.css?v=SimonQuotation_20230706" rel="stylesheet">  
+	<link href="/SimonQuotation/css/consultas/plugins.css?v=SimonQuotation_20230706" rel="stylesheet">
+<link href="/SimonQuotation/css/rcarousel.css?v=SimonQuotation_20230706" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/main.css?v=SimonQuotation_20230706" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/drop-down-search.css?v=SimonQuotation_20230706" rel="stylesheet">
+
+<link rel="shortcut icon" href="/SimonQuotation/img/simon_Logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+
+<link href="/SimonQuotation/css/project.css?v=SimonQuotation_20230706" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/53/11/intl/es_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/53/11/intl/es_ALL/util.js"></script></head>
+<body style="">
+	
+
+
+
+<style>
+table.clockTable {
+    margin-left: auto;
+    margin-right: auto;
+	font-family: arial, sans-serif;
+	background-color: #048235;
+	width: 50%;
+	color:#ffcc00; !important;
+}
+
+ td.clockTable {
+	border: 1px solid #ffcc00;
+	text-align: center;
+	font-weight: bold;
+}
+</style>
+<!-- topbar starts -->
+<header>
+<div class="navbar">
+	<div class="">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+			</a> <a class="brand" tabindex="-1" href="agentHomeAction.do" style="margin-left: 30px;"> <img alt="Simon" src="/SimonQuotation/img/consultas/logo-seguros-bolivar.png">
+			</a>
+			 
+			<div class="btn-group pull-right theme-container">
+			
+<div>
+	<table class="clockTable">
+		<tbody><tr>
+			<td class="clockTable"><span id="sw_h">00</span></td>
+			<td class="clockTable"><span id="sw_m">00</span></td>
+			<td class="clockTable"><span id="sw_s">21</span></td>
+		</tr>
+	</tbody></table>
+</div>
+			
+				<a class="btn " href="#" id="userButton"> <i class="icon-user"></i><span class="hidden-phone">Wilson Enrique Sacristan Vaca</span> <span class="caret"></span>
+				</a>
+				
+				<input type="hidden" id="employeeType_analytic" name="employeeType_analytic" value="CC">
+				<input type="hidden" id="userName_analytic" name="userName_analytic" value="79468066">
+				
+				<ul class="dropdown-menu" id="userInfo" style="display: none;">
+					<li><a><i class="icon-blank"></i> Número de Documento :
+							CC-79468066</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Nombre Completo : Wilson Enrique Sacristan Vaca</a></li>
+					
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Correo Electrónico :<b> hollmann.qvision@gmail.com</b></a></li>
+
+					<li><a><i class="icon-blank"></i> Celular :
+							<b>3028322544</b></a></li>
+					<li><a><i class="icon-blank"></i> Teléfono :
+							<b>3132538730</b></a></li>
+
+					 <li><a><i class="icon-blank"></i> Tipo de Usuario :
+							Empleado</a></li>
+					<li><a><i class="icon-blank"></i> Código de Empleado :
+							16659</a></li>
+					
+					<li><a><i class="icon-blank"></i> Actividad Comercial :
+							48 (Interno)</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Área/Localidad : <b>BOGOTA</b></a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Subtipo : 1 Empleado Administrativo</a></li>
+
+					<li>
+						<div class="form-actions">
+							<a class="btn pull-right" id="logout" name="/SimonQuotation/logoutAction.do"> <span>Log Out</span>
+							</a>
+
+						</div>
+
+					</li>
+				</ul>
+
+
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+</header>
+
+
+
+<!-- topbar ends -->
+
+
+<noscript>
+	<div class="alert alert-block span10">
+		<h4 class="alert-heading">Warning!</h4>
+		<p>
+			You need to have <a href="http://en.wikipedia.org/wiki/JavaScript"
+				target="_blank">JavaScript</a> enabled to use this site.
+		</p>
+	</div>
+</noscript>
+
+	<span> <input type="hidden" id="loginUserCompany" name="loginUserCompany" value="2"> <input type="hidden" id="loginUserCountry" name="loginUserCountry" value="CO"> <input type="hidden" id="contextProject" name="contextProject" value="/SimonQuotation"> <input type="hidden" id="userName" name="userName" value="79468066"> <input type="hidden" id="codProcesoQuotation" name="codProcesoQuotation" value="241"> <input type="hidden" id="codAgent" name="codAgent" value="16659"> <input type="hidden" id="info2" name="info2" value="16659">
+		<input type="hidden" id="info3" name="info3" value="48;1"> <input type="hidden" id="codProcessoFormalization" name="codProcessoFormalization" value="270"> <input type="hidden" id="codSubProcesoFormalization" name="codSubProcesoFormalization" value="260">
+		<!-- Added for Autos Collectiva -->
+		<input type="hidden" id="autosCollectiva" name="autosCollectiva" value="">
+		<input type="hidden" id="isTomadorBlock" name="isTomadorBlock" value="false">
+		<input type="hidden" id="isAseguradoBlock" name="isAseguradoBlock" value="false">
+		<input type="hidden" id="isConductorBlock" name="isConductorBlock" value="false">
+		<input type="hidden" id="isBeneficiarioBlock" name="isBeneficiarioBlock" value="false">
+		<input type="hidden" id="isRepLegBlock" name="isRepLegBlock" value="false">
+		<input type="hidden" id="isLocatarioBlock" name="isLocatarioBlock" value="false">
+		<input type="hidden" id="isOnerosoBlock" name="isOnerosoBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaBlock" name="isDebitoAutomaBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaAhorroBlock" name="isDebitoAutomaAhorroBlock" value="false">
+	</span>
+	<span id="inspectionNotRequired" style="display: none"> El solicitante ya cuenta con agendamiento activo.</span>
+
+	<span id="inspectionRequired" style="display: none"> El solicitante requiere exámenes médicos.</span>
+
+	<!-- --       Inspecion Message  For Autos  ajuste BRGH  -->
+	<span id="inspectionNotRequiredAutos" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionRequiredAutos" style="display: none"> Este riesgo  requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="quotationCanNotBeFormalizeCommonMsg" style="display: none">
+		Cotización NO valida para Formalizar.
+	</span>
+
+	<!-- mail: Fwd: Mantis 43543 -->
+	<span id="quotationNotValidForThisProcess" style="display: none">
+		COTIZACION NO VALIDA PARA ESTE PROCESO
+	</span>
+
+	<!-- --       Inspecion Message  For Hogar    -->
+	<span id="inspectionNotRequiredHogar" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionNotRequiredHogarConsultation" style="display: none">
+		Información de Agendamiento ya registrada. Puede continuar con el proceso de Emisión
+	</span>
+
+	<span id="inspectionRequiredHogar" style="display: none"> Esta cotización requiere agendamiento (o Inspección).</span>
+
+
+
+
+	<!-- --       Inspecion Message ends here                -->
+	<div class="container-fluid">
+		<div class="row-fluid">
+
+
+			<!-- left menu starts -->
+			
+				
+				
+					<div class="span2 main-menu-span">
+						
+
+<link href="/SimonQuotation/css/menuV2.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NSL0NL569E&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-7G044K4EYT&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/SimonQuotation/js/menuV2.js" type="text/javascript"></script>
+
+
+<!-- <div class="well nav-collapse sidebar-nav"> -->
+<!-- 	<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu"> -->
+
+<!-- 	</ul> -->
+<!-- 	<div>&nbsp;</div> -->
+<!-- </div> -->
+
+
+
+	
+	
+	
+		<div class="well nav-collapse sidebar-nav">
+			<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu">
+				
+							<li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones</span></a><ul class="sub" style="display: none; left: 158px; top: 0px;"><li><a href="quotationConsultation.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/consultaIcon.png">Consulta Cotización por Numero</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Autos</span></a><ul class="sub" style="display: none; left: 158px; top: 58px;"><li><a href="autosHomeAgentNew.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/autosIcon.png">Autos Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Hogar</span></a><ul class="sub" style="display: none; left: 158px; top: 96px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/user=hogarOld">Hogar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Salud</span></a><ul class="sub" style="display: none; left: 158px; top: 134px;"><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png">Salud</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Vida</span></a><ul class="sub" style="display: none; left: 158px; top: 172px;"><li><a href="vidaHomeAgentPortafolio.do"> Portafolio Tranquilidad en Vida</a></li><li><a href="vidaHomeAgent.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png">Vida Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion Pymes</span></a><ul class="sub" style="display: none; left: 158px; top: 210px;"><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Cotización nuevo riesgo</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Fuerza de Ventas</span></a><ul class="sub" style="display: none; left: 158px; top: 248px;"><li><a href="SimonQuotation/vidaColectivaCertificaciones.do"> Certificaciones</a></li><li><a href="https://stgfuerzaventas.bolnet.com.co/"> Gestión de Solicitudes</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Simulador Finanseguros</span></a><ul class="sub" style="display: none; left: 158px; top: 286px;"><li><a href="https://www.segurosbolivar.com/PrestamosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjg5MTEzODIyLCJleHAiOjE2ODkxMjgyMjJ9.-ZUYWAacdXwNjBwl0jbi6Pqxga1kxUWEqfpu4DBjYXTZlSPPw4SFwMAdXHHB30AM5x_DdcOvz2Z4a7b9u1ZUXQ"> Prestamo Digital Bolivar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Agendamiento</span></a><ul class="sub" style="display: none; left: 158px; top: 344px;"><li><a href="consultAgendamiento.do"> Consulta Agendamiento Vida</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Colectivas Test</span></a><ul class="sub" style="display: none; left: 158px; top: 382px;"><li><a href="transmilinioUploadCSV.do"> Cargue Archivo Colectivas</a></li><li><a href="transmilinioNegociacionCreate.do"> Solicitud de Cotización Autos Colectivas</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Test autosIcon.png</span></a><ul class="sub" style="display: none; left: 158px; top: 440px;"><li><a href="autosImpresionPoliza.do"> Consulta Pólizas Autos</a></li><li><a href="autosHomeAgentNew.do"> Cotización Autos</a></li><li><a href="autosQuotationFromAnotherQuotation.do"> Cotización basada en otra Cotización Test</a></li><li><a href="autosFormalizationInicio.do"> Formalización Cotización Autos Test</a></li><li><a href="https://www.cdaautomas.co/virtualbolivar"> Inspecciones Autos Automas test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones Test</span></a><ul class="sub" style="display: none; left: 158px; top: 498px;"><li><a href="quotationConsultation.do"> Consulta Cotización por Rango de Fechas Test</a></li><li><a href="policyConsultation.do"> Consulta de Pólizas Provisorias por Rango de Fecha</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/hogarIcon.png"><span class="hidden-tablet"> Cotizadores Hogar Test</span></a><ul class="sub" style="display: none; left: 158px; top: 556px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> Hogar Test</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png"><span class="hidden-tablet"> Cotizadores Salud Test</span></a><ul class="sub" style="display: none; left: 158px; top: 615px;"><li><a href="accidentesEscolares.do"> Accidentes Escolares</a></li><li><a href="PolizaRiesgoCollection.do"> Actualización riesgos Clase U y Clase Feliz</a></li><li><a href="masivoRiesgosAsegurados.do"> Cargue Masivo Riesgos Asegurados</a></li><li><a href="consultationPolizaPrincipal.do"> Consulta Cotizacion Poliza principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Cotizacion Poliza Principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Creacion Formulario Colectivo</a></li><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> Salud Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion pymes</span></a><ul class="sub" style="display: none; left: 158px; top: 674px;"><li><a href="CoopropiedadesHome.do"> Cotización Coopropiedades</a></li><li><a href="PymesHome.do"> Expedicion Nuevos Negocios pymes</a></li><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Inclusión nuevo riesgo</a></li><li><a href="https://stage-mipymes.bolnet.com.co/seguro-pymes/redirect#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workForceId=16659&amp;usrSubTipo=1"> Tranquilidad Pymes + Digital</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/financiacionIcon.png"><span class="hidden-tablet"> Financiación de Primas Test</span></a><ul class="sub" style="display: none; left: 158px; top: 712px;"><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjg5MTEzODIyLCJleHAiOjE2ODkxMjgyMjJ9.-ZUYWAacdXwNjBwl0jbi6Pqxga1kxUWEqfpu4DBjYXTZlSPPw4SFwMAdXHHB30AM5x_DdcOvz2Z4a7b9u1ZUXQ"> Finanseguros Digital</a></li><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzb3VyY2VJUEFkZHJcIjpcIjEwLjExLjQuNVwiLFwiVXNlcm5hbWVcIjpcIjc5NDY4MDY2XCIsXCJTaW11bGF0b3JcIjpcIlNcIn0iLCJpYXQiOjE2ODkxMTM4MjIsImV4cCI6MTY4OTEyODIyMn0.7G11A0te5awDFsTYYADYJkv_ZyD3NzWIYMamH3txnAjxgpiHwoz-i4mG0536LjrJBVVyzcO0eOAd61QEB5XreA"> Simulación Finanseguros Davivienda Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Firma Electrónica</span></a><ul class="sub" style="display: none; left: 158px; top: 772px;"><li><a href="consultarFirma.do"> Consulta Firma Electronica</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Modificaciones</span></a><ul class="sub" style="display: none; left: 158px; top: 810px;"><li><a href="solicitudConsultation.do"> Consulta de Solicitudes</a></li><li><a href="autosPolicyModify.do"> Modificaciones</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Pólizas TUSEGURO Test</span></a><ul class="sub" style="display: none; left: 158px; top: 848px;"><li><a href="/tuseguros/#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobcode=E96160&amp;usrLocationCode=BOGOTA&amp;sbcodActBenef=48&amp;userName=79468066&amp;workfordeID=16659&amp;usrSubtipo=1"> Emisión TU SEGURO Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Seguros Agro</span></a><ul class="sub" style="display: none; left: 158px; top: 906px;"><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect?redirect_uri=individualizacion-caficultores#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/redirect_uri=individualizacion-caficultores">Individualización caficultores</a></li><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> Plataforma Agrícola</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Soat</span></a><ul class="sub" style="display: none; left: 158px; top: 944px;"><li><a href="soatQuoteAction.do"> Expedición Soat </a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Vida Grupo</span></a><ul class="sub" style="display: none; left: 158px; top: 982px;"><li><a href="vidaColectiva.do"> Cotización Póliza Hija</a></li><li><a href="polizaPrincipal.do"> Emisión Póliza Principal(GR)</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png"><span class="hidden-tablet"> Vida Test</span></a><ul class="sub" style="display: none; left: 158px; top: 1020px;"><li><a href="declarationCommonAction.do"> Administracion Declaracion de Asegurabilidad</a></li><li><a href="vidaSimilarQuotationConsultation.do"> Cotizacion Basada en Otra Cotizacion de Vida</a></li><li><a href="vidaFormalizationInicio.do"> Vida Formalizacion</a></li><li><a href="vidaHomeAgent.do"> Vida Individual Test</a></li></ul></li>
+			</ul>
+			<div>&nbsp;</div>
+		</div>
+	
+
+<br>
+
+
+
+
+
+					</div>
+					<div id="content" class="span10">
+
+						<div class="alert alert-error" id="pageError" style="display: none">
+							<button class="close" data-dismiss="alert" type="button">X</button>
+							<strong>Error ! </strong><span id="pageErrorSpan"></span>
+						</div>
+
+						<!-- content starts -->
+						
+
+
+
+<script type="text/javascript">
+
+</script>
+
+<style>
+input[type="radio"], input[type="checkbox"] {
+    display: block;
+}
+.ui-widget-header{
+	background-color: green;
+    border: 1px solid #aaaaaa;
+    color: white;
+    font-weight: bold;
+    background:green;
+}
+@media only screen and (max-width: 411px) and (min-width: 320px){
+.box-header h2 {
+    width: 100%;
+}
+}
+ 
+.icon-info-sign-msg {
+	background-image : url("../SimonQuotation/img/opa-icons-color16.png");
+	width: 17px;
+    height: 14px;
+	background-position: -65px -129px;
+}
+
+.icon-info-sign-msg1 {
+	background-image : url("../SimonQuotation/img/opa-icons-color16.png");
+	width: 17px;
+    height: 14px;
+	background-position: -47px -129px;
+}
+ 
+</style>
+
+<form action="" method="post" name="saludQuestions" id="saludQuestions" novalidate="" enctype="application/x-www-form-urlencoded">
+
+		<input type="hidden" id="UUID" name="UUID" value="">
+		<input id="agentCode" name="agentCode" type="hidden" value="">
+		<input id="agentName" name="agentName" type="hidden" value=""> 
+		<input id="codCia" name="codCia" type="hidden" value="2"> 
+		<input id="codSecc" name="codSecc" type="hidden" value="47"> 
+		<input id="codProducto" name="codProducto" type="hidden" value="948">
+		<input id="tipoDoc" name="tipoDoc" type="hidden"> 
+		<input id="plan" name="plan" type="hidden" value="">
+		<input id="tipoDoc" name="tipoDoc" type="hidden">		
+		<input id="amparoBasico" name="amparoBasico" type="hidden" value="70000000"> 
+		<input id="quotationNo" name="quotationNo" type="hidden" value="1003000937101"> 
+		<input id="mode" name="mode" type="hidden" value="consultation"> 
+		<input id="num" type="hidden" value="29861305481"> 
+		<input type="hidden" id="numSecuPolPort" value="">
+		<input id="codRies" name="codRies" type="hidden" value="1">
+		
+		<!-- added space for showing $ at decl extra-prima popup,20201022 -->
+		<input id="extraPrimaPopCurrrency" name="extraPrimaPopCurrrency" type="hidden" value="">
+		
+		<!--  Hidden textfield for send value into request to remove the url parameter issue -->
+		<input type="hidden" name="parameter" id="parameter"> 
+		<input type="hidden" name="saveQuestion" id="saveQuestion"> 
+		
+		<!--  For Common Declaration-->
+		<input id="redirectFrom" name="redirectFrom" type="hidden" value="">
+	
+	
+		
+		
+			
+			
+		
+	
+
+	<span id="listaError" style="color: #BD4247;" class="error"></span>
+
+	<!-- ***************** warning ********************-->
+	
+	
+			<center><h2>DECLARACIÓN DE ASEGURABILIDAD</h2>	 
+	
+	<!-- ***************** info ********************-->
+	<div id="requiredInfoDiv" style="">
+		<p align="right"><span style="color: #BD4247;">( * )  indica los campos obligatorios</span></p>
+	</div>
+
+	<div class="row-fluid">
+		<!-- <div class="box span12"> -->
+			<div class="box-content">
+				<div class="form-horizontal">
+					<table>
+						<tbody>
+							<tr>
+								<td width="50%">
+									<div class="control-group">
+										<!-- <label class="control-label" style="padding-top: 0px">NumSecuPol<font color="#BD4247">*</font>
+										</label> -->
+										<div class="controls">
+											
+											
+																						
+											        											     
+											        	
+														<input id="numSecuPol" class="input-large numbersOnly error" type="hidden" required="required" maxlength="11" minlength="3" value="29861305481" data-rel="tooltip" name="numSecuPol" size="50" data-original-title="">
+														
+														
+														
+														
+															
+										</div>										
+									</div>
+								</td>
+								<td>
+							</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		<!-- </div> -->
+	</div>
+	
+	<div class="row-fluid sortable ui-sortable">
+		<div class="box span12">
+			<div class="box-header well">
+				<h2>
+					<i class="icon-edit"></i><!-- Mantis 0055803--> INFORMACIÓN DEL ASEGURADO
+				</h2>
+			<!-- 	<div class="box-icon">
+					<a href="#" class="btn btn-minimize btn-round"><i
+						class="icon-chevron-up"></i></a>
+				</div> -->
+			</div>
+			<div class="box-content">
+				<div id="myTabContent" class="tab-content">					
+						<div class="box-content">
+							<div class="form-horizontal">							
+								<div style="display:none;" id="coberturasSelected" class="controls">
+										
+											<b>901,</b>	
+										
+											<b>908,</b>	
+										
+									</div><table width="100%">									
+									<tbody><tr>
+										<td width="50%">
+											<div class="control-group">
+												<label class="control-label">Número de documento:</label> 
+
+												<div class="controls">
+												<label class="control-datarecord"><b>CC - 1102858302</b></label>	
+													<input type="hidden" id="tipoDocumento" name="tipoDocumentoAseg" value="CC">	
+													<input type="hidden" id="numeroDocumento" name="numeroDocumentoAseg" value="1102858302">	
+													<input type="hidden" id="sexo" name="sexo" value="F">
+													<input type="hidden" id="edadRiesgo" name="edadRiesgo" value="29">
+													<input type="hidden" id="amparoBasicoRiesgo" name="amparoBasicoRiesgo" value="70000000">																			
+													<input type="hidden" id="fechaNacimientoR" name="fechaNacimientoR" value="16/11/1993">																			
+													<input type="hidden" id="checkedCoberturas" name="checkedCoberturas" value="901,908,">
+												</div>
+
+											</div>
+										</td>
+										<td width="50%">
+											<div class="control-group">
+									
+												<label class="control-label">Nombre(s):</label>
+												<div class="controls">
+													
+														
+														
+														<label class="control-datarecord"><b>ESTEFANY SOFIA
+																	SIERRA SALAZAR</b></label>
+														
+															
+													<input type="hidden" id="nombres" name="nombresAseg" value="ESTEFANY SOFIA">	
+													<input type="hidden" id="apellidos" name="apellidosAseg" value="SIERRA SALAZAR">																							
+												</div>
+											</div>
+										</td>
+									</tr>	
+															
+				<!-- Added to take the coverages selected by the user on the Quotation create page to the declaration - (20200729-Saalik)
+				Jira Project - Eficiencias Tácticas de Operaciones , User Story - EF-6 , subTask - EF-29  -->
+									
+									
+									
+									<!-- Ends Here EF-29 -->
+															
+									</tbody></table>
+									</div>
+								</div>
+							
+						  </div>
+					 </div>
+				</div>
+			</div>
+
+
+
+	<div class="row-fluid sortable ui-sortable" id="saludQuestionDiv_0"><div class="box span12"><div class="box-header well"><h2><i class="icon-edit"></i>  10 - DECLARACION DE ASEGURABILIDAD</h2></div><div class="box-content" id="box-content0"><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><table class="table  table-striped"><thead><tr><th width="75%"> </th><th width="25%"> </th></tr></thead><tbody><tr id="preguentaRowId30000965"><td><label class="control-label" align="left">1 - ï¿½Sus actividades, profesiï¿½n u oficio han sido y son lï¿½citos y los ha ejercido y ejerce dentro de los marcos legales?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000965Si" class="success focus"><span id="span30000965Si" class="checked"> <input type="radio" class="conductor" id="30000965Si" name="30000965" onchange="getValueOfPreguentaOnChange(30000965,10,'Si','parent');" value="Si" required="required" tabindex="1"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000965No" class="success"> <span id="span30000965No" class=""><input type="radio" class="conductor" id="30000965No" name="30000965" onchange="getValueOfPreguentaOnChange(30000965,10,'No','parent');" value="No" required="required" tabindex="2"></span></div> </label> No </div> <div id="30000965errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000966"><td><label class="control-label" align="left">2 - ¿Usted ha sido sindicado, indiciado, denunciante, víctima o condenado por algún proceso penal?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000966Si" class="success"><span id="span30000966Si" class=""> <input type="radio" class="conductor" id="30000966Si" name="30000966" onchange="getValueOfPreguentaOnChange(30000966,10,'Si','parent');" value="Si" required="required" tabindex="3"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000966No" class="success focus"> <span id="span30000966No" class="checked"><input type="radio" class="conductor" id="30000966No" name="30000966" onchange="getValueOfPreguentaOnChange(30000966,10,'No','parent');" value="No" required="required" tabindex="4"></span></div> </label> No </div> <div id="30000966errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000967"><td><label class="control-label" align="left">3 - ¿Usted ha sido secuestrado y/o extorsionado?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000967Si" class="success"><span id="span30000967Si" class=""> <input type="radio" class="conductor" id="30000967Si" name="30000967" onchange="getValueOfPreguentaOnChange(30000967,10,'Si','parent');" value="Si" required="required" tabindex="5"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000967No" class="success focus"> <span id="span30000967No" class="checked"><input type="radio" class="conductor" id="30000967No" name="30000967" onchange="getValueOfPreguentaOnChange(30000967,10,'No','parent');" value="No" required="required" tabindex="6"></span></div> </label> No </div> <div id="30000967errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000968"><td><label class="control-label" align="left">4 - ¿Usted ha recibido amenazas de secuestro o muerte?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000968Si" class="success"><span id="span30000968Si" class=""> <input type="radio" class="conductor" id="30000968Si" name="30000968" onchange="getValueOfPreguentaOnChange(30000968,10,'Si','parent');" value="Si" required="required" tabindex="7"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000968No" class="success focus"> <span id="span30000968No" class="checked"><input type="radio" class="conductor" id="30000968No" name="30000968" onchange="getValueOfPreguentaOnChange(30000968,10,'No','parent');" value="No" required="required" tabindex="8"></span></div> </label> No </div> <div id="30000968errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001036"><td><label class="control-label" align="left">5 - ¿Presentó o presenta en la actualidad limitaciones físicas anatómicas o funcionales? <font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001036Si" class="success"><span id="span30001036Si" class=""> <input type="radio" class="conductor" id="30001036Si" name="30001036" onchange="getValueOfPreguentaOnChange(30001036,10,'Si','parent');" value="Si" required="required" tabindex="9"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001036No" class="success focus"> <span id="span30001036No" class="checked"><input type="radio" class="conductor" id="30001036No" name="30001036" onchange="getValueOfPreguentaOnChange(30001036,10,'No','parent');" value="No" required="required" tabindex="10"></span></div> </label> No </div> <div id="30001036errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   </tbody></table></div></div></div><div class="row-fluid sortable ui-sortable" id="saludQuestionDiv_1"><div class="box span12"><div class="box-header well"><h2><i class="icon-edit"></i>  20 - INFORMACION MEDICA</h2></div><div class="box-content" id="box-content5"><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><div class="control-group" id="riskTitles"></div><table class="table  table-striped"><thead><tr><th width="75%"> </th><th width="25%"> </th></tr></thead><tbody><tr id="preguentaRowId30001175"><td><label class="control-label" align="left">1 - ¿Ha contraído usted el coronavirus o está en aislamiento sanitario debido a sospecha de contagio con el coronavirus?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001175Si" class="success"><span id="span30001175Si" class=""> <input type="radio" class="conductor" id="30001175Si" name="30001175" onchange="getValueOfPreguentaOnChange(30001175,20,'Si','parent');" value="Si" required="required" tabindex="11"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001175No" class="success focus"> <span id="span30001175No" class="checked"><input type="radio" class="conductor" id="30001175No" name="30001175" onchange="getValueOfPreguentaOnChange(30001175,20,'No','parent');" value="No" required="required" tabindex="12"></span></div> </label> No </div> <div id="30001175errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001174"><td><label class="control-label" align="left">2 - ¿Sufre usted de enfermedades crónicas del corazón, de los pulmones, Cáncer, diabetes o recibe tratamiento con inmunosupresores?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001174Si" class="success"><span id="span30001174Si" class=""> <input type="radio" class="conductor" id="30001174Si" name="30001174" onchange="getValueOfPreguentaOnChange(30001174,20,'Si','parent');" value="Si" required="required" tabindex="13"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001174No" class="success focus"> <span id="span30001174No" class="checked"><input type="radio" class="conductor" id="30001174No" name="30001174" onchange="getValueOfPreguentaOnChange(30001174,20,'No','parent');" value="No" required="required" tabindex="14"></span></div> </label> No </div> <div id="30001174errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001176"><td><label class="control-label" align="left">3 - ¿Ha experimentado en los últimos 14 días de manera repentina tos o dolor de garganta junto con fiebre?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001176Si" class="success"><span id="span30001176Si" class=""> <input type="radio" class="conductor" id="30001176Si" name="30001176" onchange="getValueOfPreguentaOnChange(30001176,20,'Si','parent');" value="Si" required="required" tabindex="15"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001176No" class="success focus"> <span id="span30001176No" class="checked"><input type="radio" class="conductor" id="30001176No" name="30001176" onchange="getValueOfPreguentaOnChange(30001176,20,'No','parent');" value="No" required="required" tabindex="16"></span></div> </label> No </div> <div id="30001176errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000893"><td><label class="control-label" align="left">4 - ¿Cuál es su peso (Kilogramos)?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td><input id="30000893" name="30000893" size="15" type="tel" class="input-medium alphaNumeric" max="50" required="required" maxlength="3" title="" onblur="getValueOfPreguentaOnBlur(30000893,20,'parent');" data-rel="tooltip" value="" tabindex="17"></td></tr>   <tr id="preguentaRowId30000894"><td><label class="control-label" align="left">5 - ¿Está usted embarazada en este momento?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000894Si"><span id="span30000894Si" class=""> <input type="radio" class="conductor" id="30000894Si" name="30000894" onchange="getValueOfPreguentaOnChange(30000894,20,'Si','parent');" value="Si" required="required" tabindex="18"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000894No"> <span id="span30000894No" class=""><input type="radio" class="conductor" id="30000894No" name="30000894" onchange="getValueOfPreguentaOnChange(30000894,20,'No','parent');" value="No" required="required" tabindex="19"></span></div> </label> No </div> <div id="30000894errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000895"><td><label class="control-label" align="left">6 - ¿Le han diagnosticado Hipertensión arterial?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000895Si"><span id="span30000895Si" class=""> <input type="radio" class="conductor" id="30000895Si" name="30000895" onchange="getValueOfPreguentaOnChange(30000895,20,'Si','parent');" value="Si" required="required" tabindex="20"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000895No"> <span id="span30000895No" class=""><input type="radio" class="conductor" id="30000895No" name="30000895" onchange="getValueOfPreguentaOnChange(30000895,20,'No','parent');" value="No" required="required" tabindex="21"></span></div> </label> No </div> <div id="30000895errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId20000903"><td><label class="control-label" align="left">7 - Colesterol o triglicéridos elevados?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform20000903Si"><span id="span20000903Si" class=""> <input type="radio" class="conductor" id="20000903Si" name="20000903" onchange="getValueOfPreguentaOnChange(20000903,20,'Si','parent');" value="Si" required="required" tabindex="22"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform20000903No"> <span id="span20000903No" class=""><input type="radio" class="conductor" id="20000903No" name="20000903" onchange="getValueOfPreguentaOnChange(20000903,20,'No','parent');" value="No" required="required" tabindex="23"></span></div> </label> No </div> <div id="20000903errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId20000904"><td><label class="control-label" align="left">8 - ¿Ha salido POSITIVA alguna prueba de VIH que le hayan practicado?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform20000904Si"><span id="span20000904Si" class=""> <input type="radio" class="conductor" id="20000904Si" name="20000904" onchange="getValueOfPreguentaOnChange(20000904,20,'Si','parent');" value="Si" required="required" tabindex="24"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform20000904No"> <span id="span20000904No" class=""><input type="radio" class="conductor" id="20000904No" name="20000904" onchange="getValueOfPreguentaOnChange(20000904,20,'No','parent');" value="No" required="required" tabindex="25"></span></div> </label> No </div> <div id="20000904errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001127"><td><label class="control-label" align="left">9 - ¿Un médico le ha diagnosticado alguna enfermedad?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001127Si"><span id="span30001127Si" class=""> <input type="radio" class="conductor" id="30001127Si" name="30001127" onchange="getValueOfPreguentaOnChange(30001127,20,'Si','parent');" value="Si" required="required" tabindex="26"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001127No"> <span id="span30001127No" class=""><input type="radio" class="conductor" id="30001127No" name="30001127" onchange="getValueOfPreguentaOnChange(30001127,20,'No','parent');" value="No" required="required" tabindex="27"></span></div> </label> No </div> <div id="30001127errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000923"><td><label class="control-label" align="left">10 - ¿Le han prescrito tratamiento para alcoholismo o alucinógenos?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000923Si"><span id="span30000923Si" class=""> <input type="radio" class="conductor" id="30000923Si" name="30000923" onchange="getValueOfPreguentaOnChange(30000923,20,'Si','parent');" value="Si" required="required" tabindex="28"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000923No"> <span id="span30000923No" class=""><input type="radio" class="conductor" id="30000923No" name="30000923" onchange="getValueOfPreguentaOnChange(30000923,20,'No','parent');" value="No" required="required" tabindex="29"></span></div> </label> No </div> <div id="30000923errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000924"><td><label class="control-label" align="left">11 - ¿Ha fumado alguna vez?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000924Si"><span id="span30000924Si" class=""> <input type="radio" class="conductor" id="30000924Si" name="30000924" onchange="getValueOfPreguentaOnChange(30000924,20,'Si','parent');" value="Si" required="required" tabindex="30"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000924No"> <span id="span30000924No" class=""><input type="radio" class="conductor" id="30000924No" name="30000924" onchange="getValueOfPreguentaOnChange(30000924,20,'No','parent');" value="No" required="required" tabindex="31"></span></div> </label> No </div> <div id="30000924errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId20000926"><td><label class="control-label" align="left">12 - ¿En los últimos dos años ha consumido alucinógenos o sustancias psicoactivas?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform20000926Si"><span id="span20000926Si" class=""> <input type="radio" class="conductor" id="20000926Si" name="20000926" onchange="getValueOfPreguentaOnChange(20000926,20,'Si','parent');" value="Si" required="required" tabindex="32"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform20000926No"> <span id="span20000926No" class=""><input type="radio" class="conductor" id="20000926No" name="20000926" onchange="getValueOfPreguentaOnChange(20000926,20,'No','parent');" value="No" required="required" tabindex="33"></span></div> </label> No </div> <div id="20000926errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId20000927"><td><label class="control-label" align="left">13 - ¿Le han practicado alguna cirugía?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform20000927Si"><span id="span20000927Si" class=""> <input type="radio" class="conductor" id="20000927Si" name="20000927" onchange="getValueOfPreguentaOnChange(20000927,20,'Si','parent');" value="Si" required="required" tabindex="34"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform20000927No"> <span id="span20000927No" class=""><input type="radio" class="conductor" id="20000927No" name="20000927" onchange="getValueOfPreguentaOnChange(20000927,20,'No','parent');" value="No" required="required" tabindex="35"></span></div> </label> No </div> <div id="20000927errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000936"><td><label class="control-label" align="left">14 - ¿Tiene alguna cirugía programada?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000936Si"><span id="span30000936Si" class=""> <input type="radio" class="conductor" id="30000936Si" name="30000936" onchange="getValueOfPreguentaOnChange(30000936,20,'Si','parent');" value="Si" required="required" tabindex="36"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000936No"> <span id="span30000936No" class=""><input type="radio" class="conductor" id="30000936No" name="30000936" onchange="getValueOfPreguentaOnChange(30000936,20,'No','parent');" value="No" required="required" tabindex="37"></span></div> </label> No </div> <div id="30000936errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001032"><td><label class="control-label" align="left">15 - ¿Sus padres y/o hermanos antes de los 60 años han sufrido o sufrieron de cáncer, enfermedad coronaria (infarto), diabetes, trombosis o derrame cerebral?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001032Si"><span id="span30001032Si" class=""> <input type="radio" class="conductor" id="30001032Si" name="30001032" onchange="getValueOfPreguentaOnChange(30001032,20,'Si','parent');" value="Si" required="required" tabindex="38"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001032No"> <span id="span30001032No" class=""><input type="radio" class="conductor" id="30001032No" name="30001032" onchange="getValueOfPreguentaOnChange(30001032,20,'No','parent');" value="No" required="required" tabindex="39"></span></div> </label> No </div> <div id="30001032errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001622"><td><label class="control-label" align="left">16 - ¿Ha viajado durante los últimos 14 días al exterior o tiene planificado algún viaje al exterior?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001622Si"><span id="span30001622Si" class=""> <input type="radio" class="conductor" id="30001622Si" name="30001622" onchange="getValueOfPreguentaOnChange(30001622,20,'Si','parent');" value="Si" required="required" tabindex="40"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001622No"> <span id="span30001622No" class=""><input type="radio" class="conductor" id="30001622No" name="30001622" onchange="getValueOfPreguentaOnChange(30001622,20,'No','parent');" value="No" required="required" tabindex="41"></span></div> </label> No </div> <div id="30001622errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001107"><td><label class="control-label" align="left">17 - ¿Ha sufrido un Accidente Cerebro vascular?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001107Si"><span id="span30001107Si" class=""> <input type="radio" class="conductor" id="30001107Si" name="30001107" onchange="getValueOfPreguentaOnChange(30001107,20,'Si','parent');" value="Si" required="required" tabindex="42"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001107No"> <span id="span30001107No" class=""><input type="radio" class="conductor" id="30001107No" name="30001107" onchange="getValueOfPreguentaOnChange(30001107,20,'No','parent');" value="No" required="required" tabindex="43"></span></div> </label> No </div> <div id="30001107errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30000680"><td><label class="control-label" align="left">18 - ¿Le han diagnosticado epilepsia?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30000680Si"><span id="span30000680Si" class=""> <input type="radio" class="conductor" id="30000680Si" name="30000680" onchange="getValueOfPreguentaOnChange(30000680,20,'Si','parent');" value="Si" required="required" tabindex="44"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30000680No"> <span id="span30000680No" class=""><input type="radio" class="conductor" id="30000680No" name="30000680" onchange="getValueOfPreguentaOnChange(30000680,20,'No','parent');" value="No" required="required" tabindex="45"></span></div> </label> No </div> <div id="30000680errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001081"><td><label class="control-label" align="left">19 - ¿Tiene alguna secuela o problemas para movilizar alguna parte del cuerpo, para hablar o coordinar?</label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001081Si"><span id="span30001081Si" class=""> <input type="radio" class="conductor" id="30001081Si" name="30001081" onchange="getValueOfPreguentaOnChange(30001081,20,'Si','parent');" value="Si" tabindex="46"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001081No"> <span id="span30001081No" class=""><input type="radio" class="conductor" id="30001081No" name="30001081" onchange="getValueOfPreguentaOnChange(30001081,20,'No','parent');" value="No" tabindex="47"></span></div> </label> No </div> <div id="30001081errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   <tr id="preguentaRowId30001302"><td><label class="control-label" align="left">20 - ¿Ha sufrido alguna fractura?<font color="#BD4247">*</font></label><div class="controls"></div></td> <td> <div class="controls radioclass"> <label style="padding-left:20px" class="radio inline"><div id="uniform30001302Si"><span id="span30001302Si" class=""> <input type="radio" class="conductor" id="30001302Si" name="30001302" onchange="getValueOfPreguentaOnChange(30001302,20,'Si','parent');" value="Si" required="required" tabindex="48"></span></div>  </label> Si <label style="padding-left:20px" class="radio inline"><div id="uniform30001302No"> <span id="span30001302No" class=""><input type="radio" class="conductor" id="30001302No" name="30001302" onchange="getValueOfPreguentaOnChange(30001302,20,'No','parent');" value="No" required="required" tabindex="49"></span></div> </label> No </div> <div id="30001302errorDiv" style="color: #BD4247;display:none;" class="alert alert-danger"></div></td></tr>   </tbody></table></div></div></div><input type="hidden" id="length" value="25"><div align="center" id="contentDiv"></div>
+	
+	<!-- Fields required for Common Declaration begin -->
+	
+	<!-- Fields required for Common Declaration end -->
+		
+	<div align="center" id="buttonDiv" style="">
+		<a id="cancelBtn" class="btn btn-primary" tabindex="500" href="/SimonQuotation/agentHomeAction.do"> Cancelar</a>			
+	
+		 <input type="button" id="submitbutton" class="btn btn-success" value="Presentar" tabindex="56">
+
+	</div>
+
+	<div align="center">
+		<span id="errorSubmit" style="color: #BD4247;" class="error"></span>
+	</div>
+
+
+
+	<input type="hidden" id="company" name="companyId" value="2"> <input type="hidden" id="quotationNo" name="quotationNo" value="">
+
+		
+			
+				<input type="hidden" id="codUsr" name="codUsr" value="79468066">
+			
+			
+		
+    
+	
+	<input type="hidden" id="numSecuPol" name="numSecuPol" value=""> <input type="hidden" id="riskSize" name="riskSize" value="">
+	<input type="hidden" name="email" value="">
+		
+		<input type="hidden" name="questionError" value="">
+
+	<div id="overlayAgendamiente" class="overlay-md md-show" style="display: none;">
+<div id="modalAgendamiente" class="modal-md md-effect-1 md-show">
+				<header>
+					<h3>Alerta</h3>
+				</header>
+			<div id="contentAgendamiente">
+				<div class="row-fluid" id="agendeDiv">
+					<div class="box span12">
+						<div class="box-content">
+							<div class="form-horizontal">
+								<fieldset>									
+										<span class="icon icon-orange icon-alert"></span>	
+										<span id="errorSubmitText" class="warningmessage"></span>								
+								</fieldset>
+							</div>
+							<div class="form-actions" align="center">
+								<input type="button" id="contDeclaration" class="btn btn-primary" value="Continuar" tabindex="51">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	
+	<!-- Add code for popup message--> 
+	
+		<div id="overlayConfirmationPopup" class="overlay-md md-show" style="display: none;">
+<div id="modalConfirmationPopup" class="modal-md md-effect-1 md-show">
+			<div id="contentConfirmationPopup" class="overlayContent">
+			<header>
+					<h3><i class="icon-bullhorn"></i>
+								Declaración de Asegurabilidad</h3>
+				</header>
+				<div class="row-fluid" id="confirmationPopupDiv">
+					<div class="box span12">
+						<div class="box-content">
+							<div class="form-horizontal">
+								<fieldset>
+								<i class="icon-info-sign" data-original-title="" data-rel="tooltip"></i>									
+										<span id="textMessage" style="color: green;"></span>								
+								</fieldset>
+							</div>
+							<div class="form-actions" align="center" id="continuarDeclarationDiv" style="display:none">
+								<input type="button" id="continuarDeclaration" class="btn btn-primary" value="Continuar" tabindex="52">
+							</div>
+							<div class="form-actions" align="center" id="commonDeclarationDiv" style="display: none">
+									<a class="btn btn-primary" id="newDeclaration" href="/SimonQuotation/declarationCommonAction.do">Crear
+										Nueva Declaracion</a> <input type="button" id="generatePdf" class="btn btn-success" value="Generar PDF" tabindex="57">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	
+	<!--  Change for mantis 47436 confirmation popup on presentar in declaration -->
+	
+<div id="overlayConfirmationPopupDeclaration" class="overlay-md md-show" style="display: none;">
+<div id="modalConfirmationPopupDeclaration" class="modal-md md-effect-1 md-show">
+		<header>
+		<!--  Change for mantis 55804 (Change message) -->
+					<h3>¿Está seguro de guardar la declaración de asegurabilidad?</h3>
+				</header>
+			<div id="contentConfirmationPopupDeclaration" class="overlayContent">
+				<div class="row-fluid" id="confirmationPopupDivDeclaration">
+					<div class="box span12">
+							<div class="form-actions" align="center">
+					<!-- Mantis 55621 Si button should be on right (UMAR) -->
+							<input type="button" id="cancelDeclaration" class="btn btn-primary" value="No" tabindex="54"> 
+								
+								<input type="button" id="confirmDeclaration" class="btn btn-primary" value="Si" tabindex="55">
+
+
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			</div>		
+
+<!--  declaration.do?company=' quotationMap_vida[0]
+					+ $('#company').val() + '&quotationNo='
+					+ $('#numCotizacion').val() + '&codProducto='
+					+ $('#codProducto').val() + '&codSecc='
+					+ $('#codSecc').val() + '&codUsr='
+					+ $('#codUsr').val() + '&numSecuPol='
+					+ $('#numSecuPol').val() + '&UUID='
+					+ $('#UUID').val() + '&quotationMap_medical='
+			    	+ $('#quotationMapUUID').val() +
+					'&parameter=download  -->
+
+
+
+<!-- <div id="inputEmailDiV"></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!-- content ends -->
+					</center></form></div>
+				
+			
+
+			<!-- left menu ends -->
+		</div>
+	</div>
+		
+
+<footer>
+	<div class="footer">
+		<div class="content-footer">
+
+			Copyright © 2014 <a href="http://www.segurosbolivar.com">Seguros Bolivar</a>. Todos los derechos reservados.<span class="pleca-footer"> &nbsp;
+				&nbsp;|&nbsp; &nbsp; </span>
+				<span class="copiright-footer">Build:SimonQuotation_20230706</span>
+
+
+		</div>
+	</div>
+</footer>
+
+
+		
+	<div style="display: none;">
+		<button id="mandatoryNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Por favor diligencie los campos obligatorios&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+
+		<button id="pageLevelNoty" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Center
+		</button>
+
+		<button id="anosNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Entre años 1 y 70&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+	</div>
+
+	<!-- external javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<script src="/SimonQuotation/js/jquery/jquery.js?v=SimonQuotation_20230706"></script>
+
+	<!-- jQuery UI -->
+	 <script src="/SimonQuotation/js/jquery/jquery-ui-1.8.21.custom.min.js?v=SimonQuotation_20230706"></script> 
+
+	<!-- data table plugin -->
+	 <script src="/SimonQuotation/js/jquery/jquery.dataTables.min.js?v=SimonQuotation_20230706"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.dataTables.columnFilter.js?v=SimonQuotation_20230706"></script>
+
+	<!-- application script for Charisma demo -->
+	<script src="/SimonQuotation/js/charisma.js?v=SimonQuotation_20230706"></script>
+
+	<!-- custom js files -->
+	<script src="/SimonQuotation/js/common/dwr.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/common/dwr-common.js?v=SimonQuotation_20230706"></script>
+
+	<script src="/SimonQuotation/js/common/ajax.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/common/validation.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/common/commonUI.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/common/drop-down-search.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.formatCurrency-1.4.0.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.formatCurrency.es-CO.js?v=SimonQuotation_20230706"></script>
+
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.ui.datepicker-es.js?v=SimonQuotation_20230706"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.blockUI.js?v=SimonQuotation_20230706"></script>
+
+
+	<!-- transition / effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-transition.js?v=SimonQuotation_20230706"></script>
+
+	<!-- alert enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-alert.js?v=SimonQuotation_20230706"></script>
+
+	<!-- modal / dialog library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-modal.js?v=SimonQuotation_20230706"></script>
+
+	<!-- custom dropdown library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-dropdown.js?v=SimonQuotation_20230706"></script>
+
+	<!-- scrolspy library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-scrollspy.js?v=SimonQuotation_20230706"></script>
+
+	<!-- library for creating tabs -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tab.js?v=SimonQuotation_20230706"></script>
+
+	<!-- library for advanced tooltip -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tooltip.js?v=SimonQuotation_20230706"></script>
+
+	<!-- popover effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-popover.js?v=SimonQuotation_20230706"></script>
+
+	<!-- button enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-button.js?v=SimonQuotation_20230706"></script>
+
+	<!-- accordion library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-collapse.js?v=SimonQuotation_20230706"></script>
+
+	<!-- carousel slideshow library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-carousel.js?v=SimonQuotation_20230706"></script>
+
+	<!-- autocomplete library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-typeahead.js?v=SimonQuotation_20230706"></script>
+
+	<!-- tour library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tour.js?v=SimonQuotation_20230706"></script>
+
+	<!-- library for cookie management -->
+	<script src="/SimonQuotation/js/jquery/jquery.cookie.js?v=SimonQuotation_20230706"></script>
+
+	<!-- calander plugin -->
+	<script src="/SimonQuotation/js/fullcalendar.min.js?v=SimonQuotation_20230706"></script>
+
+	<!-- chart libraries start -->
+	
+    <!--Mail:Fwd:Performance-->
+	
+	<!-- chart libraries end -->
+
+	<!-- select or dropdown enhancer -->
+	<script src="/SimonQuotation/js/jquery/jquery.chosen.min.js?v=SimonQuotation_20230706"></script>
+
+	<!-- checkbox, radio, and file input styler -->
+	<script src="/SimonQuotation/js/jquery/jquery.uniform.min.js?v=SimonQuotation_20230706"></script>
+
+	<!-- plugin for gallery image view -->
+	<script src="/SimonQuotation/js/jquery/jquery.colorbox.min.js?v=SimonQuotation_20230706"></script>
+
+	<!-- rich text editor library -->
+	<script src="/SimonQuotation/js/jquery/jquery.cleditor.min.js?v=SimonQuotation_20230706"></script>
+
+	<!-- notification plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.noty.js?v=SimonQuotation_20230706"></script>
+
+	<!-- file manager library -->
+	<script src="/SimonQuotation/js/jquery/jquery.elfinder.min.js?v=SimonQuotation_20230706"></script>
+
+	<!-- star rating plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.raty.min.js?v=SimonQuotation_20230706"></script>
+
+	<!-- for iOS style toggle switch -->
+	<script src="/SimonQuotation/js/jquery/jquery.iphone.toggle.js?v=SimonQuotation_20230706"></script>
+
+	<!-- autogrowing textarea plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.autogrow-textarea.js?v=SimonQuotation_20230706"></script>
+
+	<!-- multiple file upload plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.uploadify-3.1.min.js?v=SimonQuotation_20230706"></script>
+
+	<!-- testing carousel-->
+	<script src="/SimonQuotation/js/jquery/jquery.ui.rcarousel.min.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.ui.widget.min.js?v=SimonQuotation_20230706"></script>
+
+	<script src="/SimonQuotation/js/hammer.min.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/hammer.fakemultitouch.js?v=SimonQuotation_20230706"></script>
+
+	<script src="/SimonQuotation/js/googleAnalytics/trzConsole.js"></script>	
+
+	<script src="/SimonQuotation/js/googleAnalytics/ScriptSeguimientoSimon.js"></script>	
+
+	<script src="/SimonQuotation/js/declaration/declaration.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/common/properties.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.masterblaster.js"></script>
+	<script src="/SimonQuotation/js/common/email.js"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomador.js?v=SimonQuotation_20230706"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomadorBasico.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/common/designRadioCbx.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/tmpl.min.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/load-image.min.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/canvas-to-blob.min.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/bootstrap.min.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/bootstrap-image-gallery.min.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/jquery.iframe-transport.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-fp.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-ui.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/locale.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/main.js?v=SimonQuotation_20230706"></script>
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBn8TQ8ANlkaa65XPY3rFyv_bU01HB7ezM"></script>
+		<script src="/SimonQuotation/js/common/app-feedback-popup.js?v=SimonQuotation_20230706"></script>
+		<script src="/SimonQuotation/js/common/html2canvas.js?v=SimonQuotation_20230706"></script>
+<script src="/SimonQuotation/js/common/html2canvas.min.js?v=SimonQuotation_20230706"></script>
+<script src="/SimonQuotation/js/common/callAgendamiento.js?v=SimonQuotation_20230706"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- 	<script type="javascript"> -->
+	<!-- jQuery('.numbersOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/\D/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbersWithDecimalOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/[^0-9\.]/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbers1').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/^[1-9]\d*(\.\d+)?$/,''); -->
+	<!-- }); -->
+
+
+	<!-- </script> -->
+	<script type="text/javascript">
+	
+	var addedFilesCount=0;
+        $('#fileupload').bind('fileuploadadd', function (e, data) {
+		  addedFilesCount++;
+		  $('#addedFilesCount').val(addedFilesCount);
+		});
+		
+	$('#fileupload').bind('fileuploadfailed', function (e, data) {
+		    if($('#delSingleMultiple').val()=="multiple"){
+		        $(".template-download").remove();
+			    $("#overlayUploadDocPopup").hide();
+			    $("#modalUploadDocPopup").removeClass("md-show");
+				$("#modalUploadDocPopup").hide();
+			}
+	});
+		    
+	/* var inp = document.getElementById('fileElementId');
+	for (var i = 0; i < inp.files.length; ++i) {
+	  var name = inp.files.item(i).name;
+	  alert("here is a file name: " + name);
+	}*/
+	</script>
+	
+						        
+		<!-- The template to display files available for upload -->
+        <script id="template-upload" type="text/x-tmpl">
+            {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-upload fade">
+            <td class="preview"><span class="fade"></span></td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            {% if (file.error) { %}
+            <td class="error" colspan="2" style="display: none;"><span class="label label-important">Error</span> {%=file.error%}</td>
+            {% } else if (o.files.valid && !i) { %}
+            <td>
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" style="width:0%;"></div></div>
+            </td>
+            <td class="start" style="display: none;">{% if (!o.options.autoUpload) { %}
+                <button class="">
+                    <i class="icon-upload icon-white"></i>
+                    <span>Start</span>
+                </button>
+                {% } %}</td>
+            {% } else { %}
+            <td colspan="2"></td>
+            {% } %} 
+            <td colspan="2"></td>
+            <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+        </tr>
+        {% } %}
+    </script>
+    <!-- The template to display files available for download -->
+    <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade"">
+            {% if (file.error) { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            <td class="error" colspan="2"><span class="label label-important">Error</span> {%=file.error%}</td>
+           <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+           {% } else { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name">
+                {%=file.name%}
+            </td>
+            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+            <td colspan="2"></td>
+            <td>UPLOADED</td>
+            {% } %}
+        </tr>
+        {% } %}
+    </script>
+
+	<script>
+		/* setTimeout("window.location.reload()",(25000*60)); */
+
+		jQuery(function($) {
+
+			var ctx = "/SimonQuotation";
+
+			function generatePages() {
+				var _total, i, _link;
+
+				_total = $("#carousel").rcarousel("getTotalPages");
+
+				for (i = 0; i < _total; i++) {
+					_link = $("<a href='#'></a>");
+
+					$(_link).bind("click", {
+						page : i
+					}, function(event) {
+						$("#carousel").rcarousel("goToPage", event.data.page);
+						event.preventDefault();
+					}).addClass("bullet off").appendTo("#pages");
+				}
+
+				// mark first page as active
+				$("a:eq(0)", "#pages").removeClass("off").addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+
+			}
+
+			function pageLoaded(event, data) {
+				$("a.on", "#pages").removeClass("on").css("background-image",
+						"url(" + ctx + "/images/icons/page-off.png)");
+
+				$("a", "#pages").eq(data.page).addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+			}
+
+			$(".bullet").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+
+			function initializeCarousel() {
+				if ($(window).width() < 515) {
+					$("#carousel ").rcarousel({
+						visible : 1,
+						step : 1,
+						width : 214,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else if ($(window).width() > 515 && $(window).width() <= 979) {
+					$("#carousel ").rcarousel({
+						visible : 2,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else {
+					$("#carousel ").rcarousel({
+						visible : 3,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+
+				}
+			}
+
+			initializeCarousel();
+
+			//			$(window).bind('orientationchange', function(event) {
+			//				alert('new orientation:' + orientation);
+			//				$( "#carousel" ).rcarousel( "destroy" );
+
+			//				initializeCarousel();
+			//			});
+
+			$("#ui-carousel-next").add("#ui-carousel-prev").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+		});
+
+		$(document)
+				.ready(
+						function() {
+							$("#menuMy li > a")
+									.on(
+											'click',
+											function(e) {
+												$(this).siblings('ul').toggle(
+														'slow');
+												$(this)
+														.find("span")
+														.last()
+														.toggleClass(
+																'icon-triangle-n icon-triangle-s');
+											});
+
+							$('.ajax-link')
+									.click(
+											function() {
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+
+											});
+
+							$(document)
+									.ajaxStart(
+											function() {
+												if ($("#showBlockUI").val() == "N") {
+													return;
+												}
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+											});
+
+							// 		var isUnblockUI = true;
+
+							$(document).ajaxStop(function() {
+								// 			if (isUnblockUI) {
+								$.unblockUI();
+								// 			}
+								if ($.browser.msie && $.browser.version < 9) {
+									$(".blockUI").fadeOut("slow");
+								}
+
+								document.onselectstart = function(e) {
+									/* if (dragging) {
+										e.preventDefault();
+										return false;
+									} */
+								};
+								$(document).ready(function() {
+									$('input').on('drop', function(event) {
+										event.preventDefault();
+									});
+								});
+							});
+
+						});
+
+		$(document).click(function(e) {
+			//alert(e.button);
+			if (e.button == 2) {
+				return false;
+			} else {
+				$("#userInfo").hide();
+				//return false;
+			}
+
+		});
+
+		$("#userButton").click(function(e) {
+			e.stopPropagation();
+			$("#userInfo").toggle();
+			return false;
+
+		});
+		// 		$(".navbar").hover(function() {
+		// 			$("#userInfo").hide();
+		// 		});
+
+		$("#userInfo").click(function(e) {
+			e.stopPropagation();
+			return false;
+		});
+		$("#logout").click(function() {
+			var logoutAction = $(this).attr('name');
+			window.location.href = logoutAction;
+		});
+
+		function goToVidaPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/vidaHomeAgent/gi);
+			if (result) {
+				window.location.href = "vidaHomeAgent.do";
+			} else {
+				return false;
+			}
+		}
+		function goToHogarPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/hogar/gi);
+			if (result) {
+				window.location.href = "hogarHomeAgent.do?user=hogarOld";
+			} else {
+				return false;
+			}
+		}
+
+		function goToSaludPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/salud/gi);
+			if (result) {
+				window.location.href = "saludHomeNew.do?viewStyle=nuevaUI";
+			} else {
+				return false;
+			}
+		}
+
+		function goToAutosPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/autos/gi);
+			if (result) {
+				window.location.href = "autosHomeAgentNew.do";
+			} else {
+				return false;
+			}
+		}
+		function goToVidaGrupoPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/grupo/gi);
+			if (result) {
+				window.location.href = "vidaColectiva.do";
+			} else {
+				return false;
+			}
+		}
+		function goToPymesPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/pymes/gi);
+			if (result) {
+				window.location.href = "PymesHome.do";
+			} else {
+				return false;
+			}
+		}       
+		//Prevents backspace except in the case of textareas and text inputs to prevent user navigation.
+		$(document)
+				.keydown(
+						function(e) {
+							var preventKeyPress;
+							if (e.keyCode == 8) {
+								var d = e.srcElement || e.target;
+								switch (d.tagName.toUpperCase()) {
+								case 'TEXTAREA':
+									preventKeyPress = d.readOnly || d.disabled;
+									break;
+								case 'INPUT':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| (d.attributes["type"] && $
+													.inArray(
+															d.attributes["type"].value
+																	.toLowerCase(),
+															[ "radio",
+																	"checkbox",
+																	"submit",
+																	"button" ]) >= 0);
+									break;
+								case 'DIV':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| !(d.attributes["contentEditable"] && d.attributes["contentEditable"].value == "true");
+									break;
+								default:
+									preventKeyPress = true;
+									break;
+								}
+							} else
+								preventKeyPress = false;
+
+							if (preventKeyPress)
+								e.preventDefault();
+						});
+
+		$(function() {
+			$("textarea[maxlength]")
+					.bind(
+							'input propertychange',
+							function() {
+								var maxLength = $(this).attr('maxlength');
+								var newlines = ($(this).val().match(/\n/g) || []).length;
+								if ($(this).val().length + newlines > maxLength) {
+									$(this).val(
+											$(this).val().substring(0,
+													maxLength - newlines));
+								}
+							});
+		});
+
+		$(document)
+				.ready(
+						function() {
+
+							(function($) {
+
+								$
+										.extend({
+
+											APP : {
+
+												formatTimer : function(a) {
+													if (a < 10) {
+														a = '0' + a;
+													}
+													return a;
+												},
+
+												startTimer : function(dir) {
+
+													var a;
+
+													// save type
+													$.APP.dir = dir;
+
+													// get current date
+													$.APP.d1 = new Date();
+
+													switch ($.APP.state) {
+
+													case 'pause':
+
+														// resume timer
+														// get current timestamp (for calculations) and
+														// substract time difference between pause and now
+														$.APP.t1 = $.APP.d1
+																.getTime()
+																- $.APP.td;
+
+														break;
+
+													default:
+
+														// get current timestamp (for calculations)
+														$.APP.t1 = $.APP.d1
+																.getTime();
+
+														// if countdown add ms based on seconds in textfield
+														if ($.APP.dir === 'cd') {
+															$.APP.t1 += parseInt($(
+																	'#cd_seconds')
+																	.val()) * 1000;
+														}
+
+														break;
+
+													}
+
+													// reset state
+													$.APP.state = 'alive';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Running');
+
+													// start loop
+													$.APP.loopTimer();
+
+												},
+
+												pauseTimer : function() {
+
+													// save timestamp of pause
+													$.APP.dp = new Date();
+													$.APP.tp = $.APP.dp
+															.getTime();
+
+													// save elapsed time (until pause)
+													$.APP.td = $.APP.tp
+															- $.APP.t1;
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Resume');
+
+													// set state
+													$.APP.state = 'pause';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Paused');
+
+												},
+
+												stopTimer : function() {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'stop';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Stopped');
+
+												},
+
+												resetTimer : function() {
+
+													// reset display
+													$(
+															'#' + $.APP.dir
+																	+ '_ms,#'
+																	+ $.APP.dir
+																	+ '_s,#'
+																	+ $.APP.dir
+																	+ '_m,#'
+																	+ $.APP.dir
+																	+ '_h')
+															.html('00');
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Start');
+
+													// set state
+													$.APP.state = 'reset';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html(
+																	'Reset & Idle again');
+
+												},
+
+												endTimer : function(callback) {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'end';
+
+													// invoke callback
+													if (typeof callback === 'function') {
+														callback();
+													}
+
+												},
+
+												loopTimer : function() {
+
+													var td;
+													var d2, t2;
+
+													var ms = 0;
+													var s = 0;
+													var m = 0;
+													var h = 0;
+
+													if ($.APP.state === 'alive') {
+
+														// get current date and convert it into 
+														// timestamp for calculations
+														d2 = new Date();
+														t2 = d2.getTime();
+
+														// calculate time difference between
+														// initial and current timestamp
+														if ($.APP.dir === 'sw') {
+															td = t2 - $.APP.t1;
+															// reversed if countdown
+														} else {
+															td = $.APP.t1 - t2;
+															if (td <= 0) {
+																// if time difference is 0 end countdown
+																$.APP
+																		.endTimer(function() {
+																			$.APP
+																					.resetTimer();
+																			$(
+																					'#'
+																							+ $.APP.dir
+																							+ '_status')
+																					.html(
+																							'Ended & Reset');
+																		});
+															}
+														}
+
+														// calculate milliseconds
+														ms = td % 1000;
+														if (ms < 1) {
+															ms = 0;
+														} else {
+															// calculate seconds
+															s = (td - ms) / 1000;
+															if (s < 1) {
+																s = 0;
+															} else {
+																// calculate minutes   
+																var m = (s - (s % 60)) / 60;
+																if (m < 1) {
+																	m = 0;
+																} else {
+																	// calculate hours
+																	var h = (m - (m % 60)) / 60;
+																	if (h < 1) {
+																		h = 0;
+																	}
+																}
+															}
+														}
+
+														// substract elapsed minutes & hours
+														ms = Math
+																.round(ms / 100);
+														s = s - (m * 60);
+														m = m - (h * 60);
+
+														// update display
+														$(
+																'#' + $.APP.dir
+																		+ '_ms')
+																.html(
+																		$.APP
+																				.formatTimer(ms));
+														$(
+																'#' + $.APP.dir
+																		+ '_s')
+																.html(
+																		$.APP
+																				.formatTimer(s));
+														$(
+																'#' + $.APP.dir
+																		+ '_m')
+																.html(
+																		$.APP
+																				.formatTimer(m));
+														$(
+																'#' + $.APP.dir
+																		+ '_h')
+																.html(
+																		$.APP
+																				.formatTimer(h));
+
+														// loop
+														$.APP.t = setTimeout(
+																$.APP.loopTimer,
+																1);
+
+													} else {
+
+														// kill loop
+														clearTimeout($.APP.t);
+														return true;
+
+													}
+
+												}
+
+											}
+
+										});
+
+								
+									$.APP.startTimer('sw');
+								
+							})(jQuery);
+
+						});
+	</script>
+	<script src="/SimonQuotation/js/drum.js?v=SimonQuotation_20230706"></script>
+	<input type="hidden" name="showBlockUI" id="showBlockUI" value="">
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>

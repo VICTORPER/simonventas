@@ -1,0 +1,1436 @@
+<html><head>
+
+<title>Bienvenido a Seguros Bolívar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+body {
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+/* #footer {
+	bottom: 0;
+	width: 100%;
+	background: #F5F5F5;
+} */
+/*Mantis: 0048613 disabled field not visible on ipad*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+		-webkit-text-fill-color:#000000;
+		-webkit-opacity: .7;
+   		 
+	}
+ }
+</style>
+
+
+<link href="/SimonQuotation/css/quotation-main.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+<link href="/SimonQuotation/css/jquery.masterblaster.css" rel="stylesheet">
+
+<link href="/SimonQuotation/css/bootstrap-cerulean.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/bootstrap-responsive.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/charisma-app.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery-ui-1.8.21.custom.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.print.css?v=SimonQuotation_20230727" rel="stylesheet" media="print">
+<link href="/SimonQuotation/css/chosen.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+<link href="/SimonQuotation/css/colorbox.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.cleditor.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.noty.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/noty_theme_default.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.min.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.theme.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.iphone.toggle.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/opa-icons.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/uploadify.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/consultas/headerPanel.css?v=SimonQuotation_20230727" rel="stylesheet">  
+	<link href="/SimonQuotation/css/consultas/plugins.css?v=SimonQuotation_20230727" rel="stylesheet">
+<link href="/SimonQuotation/css/rcarousel.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/main.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/drop-down-search.css?v=SimonQuotation_20230727" rel="stylesheet">
+
+<link rel="shortcut icon" href="/SimonQuotation/img/simon_Logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+
+<link href="/SimonQuotation/css/project.css?v=SimonQuotation_20230727" rel="stylesheet" type="text/css">
+
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/53/13/intl/es_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/53/13/intl/es_ALL/util.js"></script></head>
+<body style="">
+	
+
+
+
+<style>
+table.clockTable {
+    margin-left: auto;
+    margin-right: auto;
+	font-family: arial, sans-serif;
+	background-color: #048235;
+	width: 50%;
+	color:#ffcc00; !important;
+}
+
+ td.clockTable {
+	border: 1px solid #ffcc00;
+	text-align: center;
+	font-weight: bold;
+}
+</style>
+<!-- topbar starts -->
+<header>
+<div class="navbar">
+	<div class="">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+			</a> <a class="brand" tabindex="-1" href="agentHomeAction.do" style="margin-left: 30px;"> <img alt="Simon" src="/SimonQuotation/img/consultas/logo-seguros-bolivar.png">
+			</a>
+			 
+			<div class="btn-group pull-right theme-container">
+			
+<div>
+	<table class="clockTable">
+		<tbody><tr>
+			<td class="clockTable"><span id="sw_h">00</span></td>
+			<td class="clockTable"><span id="sw_m">00</span></td>
+			<td class="clockTable"><span id="sw_s">05</span></td>
+		</tr>
+	</tbody></table>
+</div>
+			
+				<a class="btn " href="#" id="userButton"> <i class="icon-user"></i><span class="hidden-phone">Wilson Enrique Sacristan Vaca</span> <span class="caret"></span>
+				</a>
+				
+				<input type="hidden" id="employeeType_analytic" name="employeeType_analytic" value="CC">
+				<input type="hidden" id="userName_analytic" name="userName_analytic" value="79468066">
+				
+				<ul class="dropdown-menu" id="userInfo">
+					<li><a><i class="icon-blank"></i> Número de Documento :
+							CC-79468066</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Nombre Completo : Wilson Enrique Sacristan Vaca</a></li>
+					
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Correo Electrónico :<b> Wilson.Sacristan@segurosbolivar.com</b></a></li>
+
+					<li><a><i class="icon-blank"></i> Celular :
+							<b>----</b></a></li>
+					<li><a><i class="icon-blank"></i> Teléfono :
+							<b>----</b></a></li>
+
+					 <li><a><i class="icon-blank"></i> Tipo de Usuario :
+							Empleado</a></li>
+					<li><a><i class="icon-blank"></i> Código de Empleado :
+							16659</a></li>
+					
+					<li><a><i class="icon-blank"></i> Actividad Comercial :
+							48 (Interno)</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Área/Localidad : <b></b></a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Subtipo : 1 Empleado Administrativo</a></li>
+
+					<li>
+						<div class="form-actions">
+							<a class="btn pull-right" id="logout" name="/SimonQuotation/logoutAction.do"> <span>Log Out</span>
+							</a>
+
+						</div>
+
+					</li>
+				</ul>
+
+
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+</header>
+
+
+
+<!-- topbar ends -->
+
+
+<noscript>
+	<div class="alert alert-block span10">
+		<h4 class="alert-heading">Warning!</h4>
+		<p>
+			You need to have <a href="http://en.wikipedia.org/wiki/JavaScript"
+				target="_blank">JavaScript</a> enabled to use this site.
+		</p>
+	</div>
+</noscript>
+
+	<span> <input type="hidden" id="loginUserCompany" name="loginUserCompany" value="2"> <input type="hidden" id="loginUserCountry" name="loginUserCountry" value="CO"> <input type="hidden" id="contextProject" name="contextProject" value="/SimonQuotation"> <input type="hidden" id="userName" name="userName" value="79468066"> <input type="hidden" id="codProcesoQuotation" name="codProcesoQuotation" value="241"> <input type="hidden" id="codAgent" name="codAgent" value="16659"> <input type="hidden" id="info2" name="info2" value="16659">
+		<input type="hidden" id="info3" name="info3" value="48;1"> <input type="hidden" id="codProcessoFormalization" name="codProcessoFormalization" value="270"> <input type="hidden" id="codSubProcesoFormalization" name="codSubProcesoFormalization" value="260">
+		<!-- Added for Autos Collectiva -->
+		<input type="hidden" id="autosCollectiva" name="autosCollectiva" value="">
+		<input type="hidden" id="isTomadorBlock" name="isTomadorBlock" value="false">
+		<input type="hidden" id="isAseguradoBlock" name="isAseguradoBlock" value="false">
+		<input type="hidden" id="isConductorBlock" name="isConductorBlock" value="false">
+		<input type="hidden" id="isBeneficiarioBlock" name="isBeneficiarioBlock" value="false">
+		<input type="hidden" id="isRepLegBlock" name="isRepLegBlock" value="false">
+		<input type="hidden" id="isLocatarioBlock" name="isLocatarioBlock" value="false">
+		<input type="hidden" id="isOnerosoBlock" name="isOnerosoBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaBlock" name="isDebitoAutomaBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaAhorroBlock" name="isDebitoAutomaAhorroBlock" value="false">
+	</span>
+	<span id="inspectionNotRequired" style="display: none"> El solicitante ya cuenta con agendamiento activo.</span>
+
+	<span id="inspectionRequired" style="display: none"> El solicitante requiere exámenes médicos.</span>
+
+	<!-- --       Inspecion Message  For Autos  ajuste BRGH  -->
+	<span id="inspectionNotRequiredAutos" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionRequiredAutos" style="display: none"> Este riesgo  requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="quotationCanNotBeFormalizeCommonMsg" style="display: none">
+		Cotización NO valida para Formalizar.
+	</span>
+
+	<!-- mail: Fwd: Mantis 43543 -->
+	<span id="quotationNotValidForThisProcess" style="display: none">
+		COTIZACION NO VALIDA PARA ESTE PROCESO
+	</span>
+
+	<!-- --       Inspecion Message  For Hogar    -->
+	<span id="inspectionNotRequiredHogar" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionNotRequiredHogarConsultation" style="display: none">
+		Información de Agendamiento ya registrada. Puede continuar con el proceso de Emisión
+	</span>
+
+	<span id="inspectionRequiredHogar" style="display: none"> Esta cotización requiere agendamiento (o Inspección).</span>
+
+
+
+
+	<!-- --       Inspecion Message ends here                -->
+	<div class="container-fluid">
+		<div class="row-fluid">
+
+
+			<!-- left menu starts -->
+			
+				
+				
+					<div class="span2 main-menu-span">
+						
+
+<link href="/SimonQuotation/css/menuV2.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NSL0NL569E&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-7G044K4EYT&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/SimonQuotation/js/menuV2.js" type="text/javascript"></script>
+
+
+<!-- <div class="well nav-collapse sidebar-nav"> -->
+<!-- 	<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu"> -->
+
+<!-- 	</ul> -->
+<!-- 	<div>&nbsp;</div> -->
+<!-- </div> -->
+
+
+
+	
+	
+	
+		<div class="well nav-collapse sidebar-nav">
+			<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu">
+				
+							<li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones</span></a><ul class="sub" style="display: none; left: 146px; top: 0px;"><li><a href="quotationConsultation.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/consultaIcon.png">Consulta Cotización por Numero</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Autos</span></a><ul class="sub" style="display: none; left: 146px; top: 57px;"><li><a href="autosHomeAgentNew.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/autosIcon.png">Autos Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Hogar</span></a><ul class="sub" style="display: none; left: 146px; top: 115px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/user=hogarOld">Hogar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Salud</span></a><ul class="sub" style="display: none; left: 146px; top: 172px;"><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png">Salud</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Vida</span></a><ul class="sub" style="display: none; left: 146px; top: 229px;"><li><a href="vidaHomeAgentPortafolio.do"> Portafolio Tranquilidad en Vida</a></li><li><a href="vidaHomeAgent.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png">Vida Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion Pymes</span></a><ul class="sub" style="display: none; left: 146px; top: 267px;"><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Cotización nuevo riesgo</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Fuerza de Ventas</span></a><ul class="sub" style="display: none; left: 146px; top: 324px;"><li><a href="https://ambientepruebas.segurosbolivar.com/SimonQuotation/vidaColectivaCertificaciones.do"> Certificaciones</a></li><li><a href="https://stgfuerzaventas.bolnet.com.co/"> Gestión de Solicitudes</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Simulador Finanseguros</span></a><ul class="sub" style="display: none; left: 146px; top: 381px;"><li><a href="https://www.segurosbolivar.com/PrestamosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjkwNTE1NjMzLCJleHAiOjE2OTA1MzAwMzN9.y5IW4W9Jwmjqg2W6XDxBoWsNfWvyn_v3hVxI3Qu1wUt-YsJmMUFZ2KA5oYBAlb1hWECupGEuj5U8vDCBKOQI6g"> Prestamo Digital Bolivar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Agendamiento</span></a><ul class="sub" style="display: none; left: 146px; top: 439px;"><li><a href="consultAgendamiento.do"> Consulta Agendamiento Vida</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Colectivas Test</span></a><ul class="sub" style="display: none; left: 146px; top: 476px;"><li><a href="transmilinioUploadCSV.do"> Cargue Archivo Colectivas</a></li><li><a href="transmilinioNegociacionCreate.do"> Solicitud de Cotización Autos Colectivas</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Test autosIcon.png</span></a><ul class="sub" style="display: none; left: 146px; top: 533px;"><li><a href="autosImpresionPoliza.do"> Consulta Pólizas Autos</a></li><li><a href="autosHomeAgentNew.do"> Cotización Autos</a></li><li><a href="autosQuotationFromAnotherQuotation.do"> Cotización basada en otra Cotización Test</a></li><li><a href="autosFormalizationInicio.do"> Formalización Cotización Autos Test</a></li><li><a href="https://www.cdaautomas.co/virtualbolivar"> Inspecciones Autos Automas test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones Test</span></a><ul class="sub" style="display: none; left: 146px; top: 591px;"><li><a href="quotationConsultation.do"> Consulta Cotización por Rango de Fechas Test</a></li><li><a href="policyConsultation.do"> Consulta de Pólizas Provisorias por Rango de Fecha</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/hogarIcon.png"><span class="hidden-tablet"> Cotizadores Hogar Test</span></a><ul class="sub" style="display: none; left: 146px; top: 648px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> Hogar Test</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png"><span class="hidden-tablet"> Cotizadores Salud Test</span></a><ul class="sub" style="display: none; left: 146px; top: 707px;"><li><a href="accidentesEscolares.do"> Accidentes Escolares</a></li><li><a href="PolizaRiesgoCollection.do"> Actualización riesgos Clase U y Clase Feliz</a></li><li><a href="masivoRiesgosAsegurados.do"> Cargue Masivo Riesgos Asegurados</a></li><li><a href="consultationPolizaPrincipal.do"> Consulta Cotizacion Poliza principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Cotizacion Poliza Principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Creacion Formulario Colectivo</a></li><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> Salud Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion pymes</span></a><ul class="sub" style="display: none; left: 146px; top: 766px;"><li><a href="CoopropiedadesHome.do"> Cotización Coopropiedades</a></li><li><a href="PymesHome.do"> Expedicion Nuevos Negocios pymes</a></li><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Inclusión nuevo riesgo</a></li><li><a href="https://stage-mipymes.bolnet.com.co/seguro-pymes/redirect#/?company=2&amp;country=CO&amp;email=Wilson.Sacristan@segurosbolivar.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workForceId=16659&amp;usrSubTipo=1"> Tranquilidad Pymes + Digital</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/financiacionIcon.png"><span class="hidden-tablet"> Financiación de Primas Test</span></a><ul class="sub" style="display: none; left: 146px; top: 823px;"><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjkwNTE1NjMzLCJleHAiOjE2OTA1MzAwMzN9.y5IW4W9Jwmjqg2W6XDxBoWsNfWvyn_v3hVxI3Qu1wUt-YsJmMUFZ2KA5oYBAlb1hWECupGEuj5U8vDCBKOQI6g"> Finanseguros Digital</a></li><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzb3VyY2VJUEFkZHJcIjpcIjEwLjExLjQuNVwiLFwiVXNlcm5hbWVcIjpcIjc5NDY4MDY2XCIsXCJTaW11bGF0b3JcIjpcIlNcIn0iLCJpYXQiOjE2OTA1MTU2MzMsImV4cCI6MTY5MDUzMDAzM30.c8z44MMYvI8HB0DPllPKt9QeombMUFazSUhdH7KltNtwjuxpYhOlPiep5b9I6M86Ro7nYq_vdk-f86aUZzyu1w"> Simulación Finanseguros Davivienda Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Firma Electrónica</span></a><ul class="sub" style="display: none; left: 146px; top: 882px;"><li><a href="consultarFirma.do"> Consulta Firma Electronica</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Modificaciones</span></a><ul class="sub" style="display: none; left: 146px; top: 939px;"><li><a href="solicitudConsultation.do"> Consulta de Solicitudes</a></li><li><a href="autosPolicyModify.do"> Modificaciones</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Pólizas TUSEGURO Test</span></a><ul class="sub" style="display: none; left: 146px; top: 977px;"><li><a href="/tuseguros/#/?company=2&amp;country=CO&amp;email=Wilson.Sacristan@segurosbolivar.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobcode=E96160&amp;usrLocationCode=&amp;sbcodActBenef=48&amp;userName=79468066&amp;workfordeID=16659&amp;usrSubtipo=1"> Emisión TU SEGURO Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Seguros Agro</span></a><ul class="sub" style="display: none; left: 146px; top: 1034px;"><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect?redirect_uri=individualizacion-caficultores#/?company=2&amp;country=CO&amp;email=Wilson.Sacristan@segurosbolivar.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/redirect_uri=individualizacion-caficultores">Individualización caficultores</a></li><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect#/?company=2&amp;country=CO&amp;email=Wilson.Sacristan@segurosbolivar.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> Plataforma Agrícola</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Soat</span></a><ul class="sub" style="display: none; left: 146px; top: 1071px;"><li><a href="soatQuoteAction.do"> Expedición Soat </a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Vida Grupo</span></a><ul class="sub" style="display: none; left: 146px; top: 1109px;"><li><a href="vidaColectiva.do"> Cotización Póliza Hija</a></li><li><a href="polizaPrincipal.do"> Emisión Póliza Principal(GR)</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png"><span class="hidden-tablet"> Vida Test</span></a><ul class="sub" style="display: none; left: 146px; top: 1146px;"><li><a href="declarationCommonAction.do"> Administracion Declaracion de Asegurabilidad</a></li><li><a href="vidaSimilarQuotationConsultation.do"> Cotizacion Basada en Otra Cotizacion de Vida</a></li><li><a href="vidaFormalizationInicio.do"> Vida Formalizacion</a></li><li><a href="vidaHomeAgent.do"> Vida Individual Test</a></li></ul></li>
+			</ul>
+			<div>&nbsp;</div>
+		</div>
+	
+
+<br>
+
+
+
+
+
+					</div>
+					<div id="content" class="span10">
+
+						<div class="alert alert-error" id="pageError" style="display: none">
+							<button class="close" data-dismiss="alert" type="button">X</button>
+							<strong>Error ! </strong><span id="pageErrorSpan"></span>
+						</div>
+
+						<!-- content starts -->
+						
+<style>
+
+
+
+.alert-orangeComment {
+	background-color: bisque;
+    border-color: bisque;
+    color: black;
+}
+
+.top-block-custom {
+	font-size: 13px;
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	line-height: 22px;
+	width: 40px;
+    float: right;
+    height: 35px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#331e5799',
+		endColorstr='#007db9e8', GradientType=0 );
+}
+</style>
+<div id="hiddenFields" style="display: none">
+<input type="hidden" id="param" name="param" value="fromMenuAction">
+<textarea type="hidden" id="menuListText" name="menuListText" value="<?xml version=" 1.0"="" encoding="ISO-8859-1" ?="">&lt;Modulos codigoPerfil="CDSICAPI01" nombrePerfil="Capitalización"  codigoPais="CO" FechaUltimoIngreso="2023/07/27"&gt;&lt;Modulo label="Consulta Cotizaciones"&gt;&lt;Transaccion label="Consulta Cotización por Numero" idTarea="226" breadcrumb="/Consulta Cotizaciones/Consulta Cotización por Numero" transaccion="quotationConsultation.do?consultaIcon.png" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="CONFIDENCIAL" criticidad="ALTA" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Cotizadores Autos"&gt;&lt;Transaccion label="Autos Individual" idTarea="222" breadcrumb="/Cotizadores Autos/Autos Individual" transaccion="autosHomeAgentNew.do?autosIcon.png" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="CONFIDENCIAL" criticidad="ALTA" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Cotizadores Hogar"&gt;&lt;Transaccion label="Hogar" idTarea="225" breadcrumb="/Cotizadores Hogar/Hogar" transaccion="hogarHomeAgent.do?user=hogarOld?hogarIcon.png" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="CONFIDENCIAL" criticidad="ALTA" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Cotizadores Salud"&gt;&lt;Transaccion label="Salud" idTarea="224" breadcrumb="/Cotizadores Salud/Salud" transaccion="saludHomeNew.do?saludIcon.png" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="CONFIDENCIAL" criticidad="ALTA" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Cotizadores Vida"&gt;&lt;Transaccion label="Portafolio Tranquilidad en Vida" idTarea="142610016" breadcrumb="/Cotizadores Vida/Portafolio Tranquilidad en Vida" transaccion="vidaHomeAgentPortafolio.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Vida Individual" idTarea="223" breadcrumb="/Cotizadores Vida/Vida Individual" transaccion="vidaHomeAgent.do?vidaIcon.png" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="CONFIDENCIAL" criticidad="ALTA" /&gt;&lt;/Modulo&gt;&lt;Transaccion label="Emisión de títulos de capitalización" idTarea="1079" breadcrumb="/Emisión de títulos de capitalización" transaccion="null" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="S" clasificacion="USO INTERNO" criticidad="ALTA" /&gt;&lt;Modulo label="Expedicion Pymes"&gt;&lt;Transaccion label="Cotización nuevo riesgo" idTarea="1473" breadcrumb="/Expedicion Pymes/Cotización nuevo riesgo" transaccion="PymesHome.do?reqType=nuevoRiesgo" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Transaccion label="Financiacion Primas" idTarea="716" breadcrumb="/Financiacion Primas" transaccion="null" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Modulo label="Fuerza de Ventas"&gt;&lt;Transaccion label="Certificaciones" idTarea="142610034" breadcrumb="/Fuerza de Ventas/Certificaciones" transaccion="https://ambientepruebas.segurosbolivar.com/SimonQuotation/vidaColectivaCertificaciones.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Gestión de Solicitudes" idTarea="142610023" breadcrumb="/Fuerza de Ventas/Gestión de Solicitudes" transaccion="https://stgfuerzaventas.bolnet.com.co/" actualiza="N" adiciona="N" consulta="S" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Transaccion label="Modificaciones" idTarea="806" breadcrumb="/Modificaciones" transaccion="null" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Modulo label="Simulador Finanseguros"&gt;&lt;Transaccion label="Prestamo Digital Bolivar" idTarea="704" breadcrumb="/Simulador Finanseguros/Prestamo Digital Bolivar" transaccion="https://www.segurosbolivar.com/PrestamosDigital/securityServlet" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Agendamiento"&gt;&lt;Transaccion label="Consulta Agendamiento Vida" idTarea="1976" breadcrumb="/Agendamiento/Consulta Agendamiento Vida" transaccion="consultAgendamiento.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="S" imprime="S" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Autos Colectivas Test"&gt;&lt;Transaccion label="Cargue Archivo Colectivas" idTarea="1635" breadcrumb="/Autos Colectivas Test/Cargue Archivo Colectivas" transaccion="transmilinioUploadCSV.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Solicitud de Cotización Autos Colectivas" idTarea="1634" breadcrumb="/Autos Colectivas Test/Solicitud de Cotización Autos Colectivas" transaccion="transmilinioNegociacionCreate.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Autos Test autosIcon.png"&gt;&lt;Transaccion label="Consulta Pólizas Autos" idTarea="1402" breadcrumb="/Autos Test autosIcon.png/Consulta Pólizas Autos" transaccion="autosImpresionPoliza.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Cotización Autos" idTarea="1396" breadcrumb="/Autos Test autosIcon.png/Cotización Autos" transaccion="autosHomeAgentNew.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Cotización basada en otra Cotización Test" idTarea="744" breadcrumb="/Autos Test autosIcon.png/Cotización basada en otra Cotización Test" transaccion="autosQuotationFromAnotherQuotation.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Formalización Cotización Autos Test" idTarea="741" breadcrumb="/Autos Test autosIcon.png/Formalización Cotización Autos Test" transaccion="autosFormalizationInicio.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Inspecciones Autos Automas test" idTarea="1459" breadcrumb="/Autos Test autosIcon.png/Inspecciones Autos Automas test" transaccion="https://www.cdaautomas.co/virtualbolivar" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Consulta Cotizaciones Test"&gt;&lt;Transaccion label="Consulta Cotización por Rango de Fechas Test" idTarea="625" breadcrumb="/Consulta Cotizaciones Test/Consulta Cotización por Rango de Fechas Test" transaccion="quotationConsultation.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Consulta de Pólizas Provisorias por Rango de Fecha" idTarea="1403" breadcrumb="/Consulta Cotizaciones Test/Consulta de Pólizas Provisorias por Rango de Fecha" transaccion="policyConsultation.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Cotizadores Hogar Test?hogarIcon.png"&gt;&lt;Transaccion label="Hogar Test" idTarea="624" breadcrumb="/Cotizadores Hogar Test?hogarIcon.png/Hogar Test" transaccion="hogarHomeAgent.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Cotizadores Salud Test?saludIcon.png"&gt;&lt;Transaccion label="Accidentes Escolares" idTarea="1912" breadcrumb="/Cotizadores Salud Test?saludIcon.png/Accidentes Escolares" transaccion="accidentesEscolares.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Actualización riesgos Clase U y Clase Feliz" idTarea="1802" breadcrumb="/Cotizadores Salud Test?saludIcon.png/Actualización riesgos Clase U y Clase Feliz" transaccion="PolizaRiesgoCollection.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Cargue Masivo Riesgos Asegurados" idTarea="142610015" breadcrumb="/Cotizadores Salud Test?saludIcon.png/Cargue Masivo Riesgos Asegurados" transaccion="masivoRiesgosAsegurados.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Consulta Cotizacion Poliza principal" idTarea="142610014" breadcrumb="/Cotizadores Salud Test?saludIcon.png/Consulta Cotizacion Poliza principal" transaccion="consultationPolizaPrincipal.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Cotizacion Poliza Principal" idTarea="142610013" breadcrumb="/Cotizadores Salud Test?saludIcon.png/Cotizacion Poliza Principal" transaccion="https://stage-firmacolectivos.segurosbolivar.com/" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Creacion Formulario Colectivo" idTarea="142610018" breadcrumb="/Cotizadores Salud Test?saludIcon.png/Creacion Formulario Colectivo" transaccion="https://stage-firmacolectivos.segurosbolivar.com/" actualiza="N" adiciona="N" consulta="S" ejecuta="N" elimina="N" imprime="N" clasificacion="PUBLICA" criticidad="ALTA" /&gt;&lt;Transaccion label="Salud Test" idTarea="622" breadcrumb="/Cotizadores Salud Test?saludIcon.png/Salud Test" transaccion="saludHomeNew.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Expedicion pymes"&gt;&lt;Transaccion label="Cotización Coopropiedades" idTarea="1948" breadcrumb="/Expedicion pymes/Cotización Coopropiedades" transaccion="CoopropiedadesHome.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Expedicion Nuevos Negocios pymes" idTarea="1630" breadcrumb="/Expedicion pymes/Expedicion Nuevos Negocios pymes" transaccion="PymesHome.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Inclusión nuevo riesgo" idTarea="1851" breadcrumb="/Expedicion pymes/Inclusión nuevo riesgo" transaccion="PymesHome.do?reqType=nuevoRiesgo" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Tranquilidad Pymes + Digital" idTarea="142610031" breadcrumb="/Expedicion pymes/Tranquilidad Pymes + Digital" transaccion="https://stage-mipymes.bolnet.com.co/seguro-pymes/redirect" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Financiación de Primas Test?financiacionIcon.png"&gt;&lt;Transaccion label="Finanseguros Digital" idTarea="1765" breadcrumb="/Financiación de Primas Test?financiacionIcon.png/Finanseguros Digital" transaccion="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Simulación Finanseguros Davivienda Test" idTarea="627" breadcrumb="/Financiación de Primas Test?financiacionIcon.png/Simulación Finanseguros Davivienda Test" transaccion="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Firma Electrónica"&gt;&lt;Transaccion label="Consulta Firma Electronica" idTarea="142610003" breadcrumb="/Firma Electrónica/Consulta Firma Electronica" transaccion="consultarFirma.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Transaccion label="Modificaciones y Solicitudes de Modificación Test" idTarea="1430" breadcrumb="/Modificaciones y Solicitudes de Modificación Test" transaccion="autosPolicyModify.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Modulo label="Modificaciones"&gt;&lt;Transaccion label="Consulta de Solicitudes" idTarea="1427" breadcrumb="/Modificaciones/Consulta de Solicitudes" transaccion="solicitudConsultation.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Modificaciones" idTarea="1425" breadcrumb="/Modificaciones/Modificaciones" transaccion="autosPolicyModify.do" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Pólizas TUSEGURO Test"&gt;&lt;Transaccion label="Emisión TU SEGURO Test" idTarea="2492" breadcrumb="/Pólizas TUSEGURO Test/Emisión TU SEGURO Test" transaccion="/tuseguros/" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PUBLICA" criticidad="MEDIA" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Seguros Agro"&gt;&lt;Transaccion label="Individualización caficultores" idTarea="142610026" breadcrumb="/Seguros Agro/Individualización caficultores" transaccion="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect?redirect_uri=individualizacion-caficultores" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Plataforma Agrícola" idTarea="142610029" breadcrumb="/Seguros Agro/Plataforma Agrícola" transaccion="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect" actualiza="N" adiciona="N" consulta="N" ejecuta="N" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Soat"&gt;&lt;Transaccion label="Expedición Soat " idTarea="1399" breadcrumb="/Soat/Expedición Soat " transaccion="soatQuoteAction.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Vida Grupo"&gt;&lt;Transaccion label="Cotización Póliza Hija" idTarea="1417" breadcrumb="/Vida Grupo/Cotización Póliza Hija" transaccion="vidaColectiva.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Emisión Póliza Principal(GR)" idTarea="1524" breadcrumb="/Vida Grupo/Emisión Póliza Principal(GR)" transaccion="polizaPrincipal.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;Modulo label="Vida Test?vidaIcon.png"&gt;&lt;Transaccion label="Administracion Declaracion de Asegurabilidad" idTarea="889" breadcrumb="/Vida Test?vidaIcon.png/Administracion Declaracion de Asegurabilidad" transaccion="declarationCommonAction.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Cotizacion Basada en Otra Cotizacion de Vida" idTarea="1019" breadcrumb="/Vida Test?vidaIcon.png/Cotizacion Basada en Otra Cotizacion de Vida" transaccion="vidaSimilarQuotationConsultation.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Vida Formalizacion" idTarea="1018" breadcrumb="/Vida Test?vidaIcon.png/Vida Formalizacion" transaccion="vidaFormalizationInicio.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;Transaccion label="Vida Individual Test" idTarea="621" breadcrumb="/Vida Test?vidaIcon.png/Vida Individual Test" transaccion="vidaHomeAgent.do" actualiza="S" adiciona="S" consulta="S" ejecuta="S" elimina="N" imprime="N" clasificacion="PENDIENTE" criticidad="PENDIENTE" /&gt;&lt;/Modulo&gt;&lt;/Modulos&gt;"&gt;</textarea>
+
+</div>
+<input type="hidden" id="param" name="param" value="fromMenuAction">
+
+<div align="right">
+    <a href="#" onclick="getCtrlTecNoticias()" data-toggle="tooltip" title="" class="top-block-custom">
+		<img src="/SimonQuotation/images/icons/bell.jpeg" width="31" height="30" title="Control Técnica Noticias">
+		<span id="controlTecnica" class="notification red">0</span>
+	</a>
+    <a href="#" onclick="getNoticias()" data-toggle="tooltip" title="" class="top-block-custom">
+		<img src="/SimonQuotation/images/icons/icon.png" width="31" height="30" title="Noticias">
+		<span id="notificationSize" class="notification red">0</span>
+	</a>
+	
+	<a href="/SimonQuotation/userManual/ManualCotizadoresV1.pdf" target="_blank" download="">
+		<img src="/SimonQuotation/images/cs-manual-icon.png" width="35" height="35" title="Ayuda">
+	</a>
+	<a href="#" onclick="getGraphPopUp('1')" data-toggle="tooltip" title="" class="top-block-custom">
+		<img src="/SimonQuotation/images/icons/graphIcon.png" width="31" height="30" title="Mi actividad">
+	</a>
+</div>
+<input type="hidden" id="param" name="param" value="fromMenuAction">
+<div class="row-fluid">	
+	<div class="box span12">		
+		<div id="container">			
+			<div id="carousel" class="ui-carousel" style="width: 660px; overflow: hidden; height: 183px;">
+				
+
+                  <div class="wrapper"><a style="width: 220px; height: 183px; margin-right: 0px;"><img src="/SimonQuotation/images/logosSection/Cuadritos4_new.png" alt="Hogar" onclick="goToHogarPage()"></a><a style="width: 220px; height: 183px; margin-right: 0px;"><img src="/SimonQuotation/images/logosSection/Cuadritos3_new.png" alt="Salud" onclick="goToSaludPage()"></a><a style="width: 220px; height: 183px; margin-right: 0px;"><img src="/SimonQuotation/images/logosSection/Cuadritos1_new.png" alt="Automoviles" onclick="goToAutosPage()"></a></div>    
+					 
+				      
+					 
+			</div>
+			<a href="#" id="ui-carousel-next"><span>next</span></a> <a href="#" id="ui-carousel-prev"><span>prev</span></a>
+			<!-- 				<div id="pages"></div> -->
+		</div>
+	</div>
+
+</div>
+
+
+
+<div id="OverlayNotificacions" class="overlay-md md-show" style="display: none">
+	<div id="modalNotificacions" class="modal-md md-effect-1 md-show">
+	<div class="close-md" id="notificacionClosePopup"></div>
+	<header>
+		<h3>
+			<i class="icon-bullhorn"></i> Noticias
+		</h3>
+	</header>
+	<div class="overlayContent">
+		<div class="responsiveFloatLft">
+			<div class="row-fluid">
+				<div class="box span12">
+					<div class="box-content">
+						<div class="form-horizontal">
+							<div id="notificacionsDiv"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ******************************** -->
+		</div>
+		<!--/span-->
+	</div>
+</div>
+</div>
+
+<div id="OverlayCtrlTecNotificacions" class="overlay-md md-show" style="display: none">
+	<div id="modalCtrlTecNotificacions" class="modal-md md-effect-1 md-show md-show-large">
+		<div class="close-md" id="ctrlTecNotificacionClosePopup"></div>
+		<header>
+			<h3 style="text-transform: none;">
+				<i class="icon-bullhorn"></i> Notificaciones Pendientes de Lectura
+			</h3>
+		</header>
+		<div class="overlayContent">
+			<div class="responsiveFloatLft">
+				<div class="row-fluid">
+					<div class="box span12">
+						<div class="tab-pane box-content">
+							<div class="box-content">
+							<div class="campos__form-table campo-select campo-imput">
+								<table class="table table-bordered" id="ctrlTecNoticiatable">
+									<thead>
+										<tr>
+											<th style="width: 25%;">Compañía</th>
+
+											<th style="width: 25%">Ramo</th>
+											<th style="width: 25%">Numero Póliza</th>
+											<th style="width: 25%">Cantidad</th>
+										</tr>
+									</thead>
+								</table>
+                               </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="overlayDireccion1" class="overlay-md md-show" style="display: none">
+	<div id="modalMensaje" class="modal-md md-effect-1 md-show">
+	<div class="close-md" id="mensajeClosePopup"></div>
+	<header>
+		<h3>
+			<i class="icon icon-color icon-messages"></i> Mensaje
+		</h3>
+	</header>
+
+	<div class="overlayContent">
+		<div class="responsiveFloatLft">
+			<div class="row-fluid">
+				<div class="box span12">
+					<!-- 							<div class="box-header well" data-original-title> -->
+					<!-- 								<h2> -->
+					<!-- 									<i class="icon icon-color icon-messages"></i> Mensaje -->
+					<!-- 								</h2> -->
+
+					<!-- 							</div> -->
+
+					<div class="box-content">
+						<div class="form-horizontal">
+							<div id="mensajeDiv"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ******************************** -->
+		</div>
+		<!--/span-->
+	</div>
+</div>
+</div>
+<!-- content ends -->
+
+<div id="graphPopUpOverlay" class="overlay-md md-show" style="display: none">
+	<div id="modalGraph" class="modal-md md-effect-1 md-show md-show-large">
+	<div class="close-md" id="closeGraphPopUp"></div>
+	<header>
+		<h3>
+			<i class="icon icon-color icon-messages"></i>Mi actividad de Ventas
+		</h3>
+	</header>
+
+	<div class="overlayContent">
+	
+	<div id="graphErrorDiv" style="color: #BD4247; display: none;">
+			<b>No hay datos disponibles para esta clave</b>
+	</div>
+	
+	<div class="campos__form campo-select" id="numeroMesesDiv" style="display: none;">
+		<div class="span8"> 
+			<div class="span4"> 
+				<label class="control-label" for="numeroMeses">Actividad de los últimos</label>
+			</div>
+			<div class="span2"> 
+				<select id="numeroMeses" name="numeroMeses" class="input-large success" style="width: 100%">
+									<option value="1" selected="selected">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+				</select>
+			</div>
+			<div class="span1"> 
+				<label class="control-label">meses</label>
+			</div>
+		</div>
+	</div>
+			<div class="row-fluid">
+				<div class="box span12" id="graphDivBox">
+				
+					<div class="box-content">
+							<div class="span12"> 
+								<div class="span6">
+									<div id="emptyDiv1"></div>
+								</div>
+							
+								<div class="span6">
+										<div id="emptyDiv"></div>
+								</div>
+							
+							</div>
+						
+					</div>
+				</div>
+			</div>
+
+		
+	</div>
+</div>
+</div>
+						<!-- content ends -->
+					</div>
+				
+			
+
+			<!-- left menu ends -->
+		</div>
+	</div>
+		
+
+<footer>
+	<div class="footer">
+		<div class="content-footer">
+
+			Copyright © 2014 <a href="http://www.segurosbolivar.com">Seguros Bolivar</a>. Todos los derechos reservados.<span class="pleca-footer"> &nbsp;
+				&nbsp;|&nbsp; &nbsp; </span>
+				<span class="copiright-footer">Build:SimonQuotation_20230727</span>
+
+
+		</div>
+	</div>
+</footer>
+
+
+		
+	<div style="display: none;">
+		<button id="mandatoryNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Por favor diligencie los campos obligatorios&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+
+		<button id="pageLevelNoty" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Center
+		</button>
+
+		<button id="anosNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Entre años 1 y 70&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+	</div>
+
+	<!-- external javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<script src="/SimonQuotation/js/jquery/jquery.js?v=SimonQuotation_20230727"></script>
+
+	<!-- jQuery UI -->
+	 <script src="/SimonQuotation/js/jquery/jquery-ui-1.8.21.custom.min.js?v=SimonQuotation_20230727"></script> 
+
+	<!-- data table plugin -->
+	 <script src="/SimonQuotation/js/jquery/jquery.dataTables.min.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.dataTables.columnFilter.js?v=SimonQuotation_20230727"></script>
+
+	<!-- application script for Charisma demo -->
+	<script src="/SimonQuotation/js/charisma.js?v=SimonQuotation_20230727"></script>
+
+	<!-- custom js files -->
+	<script src="/SimonQuotation/js/common/dwr.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/dwr-common.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/common/ajax.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/validation.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/commonUI.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/drop-down-search.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.formatCurrency-1.4.0.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.formatCurrency.es-CO.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.ui.datepicker-es.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.blockUI.js?v=SimonQuotation_20230727"></script>
+
+
+	<!-- transition / effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-transition.js?v=SimonQuotation_20230727"></script>
+
+	<!-- alert enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-alert.js?v=SimonQuotation_20230727"></script>
+
+	<!-- modal / dialog library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-modal.js?v=SimonQuotation_20230727"></script>
+
+	<!-- custom dropdown library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-dropdown.js?v=SimonQuotation_20230727"></script>
+
+	<!-- scrolspy library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-scrollspy.js?v=SimonQuotation_20230727"></script>
+
+	<!-- library for creating tabs -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tab.js?v=SimonQuotation_20230727"></script>
+
+	<!-- library for advanced tooltip -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tooltip.js?v=SimonQuotation_20230727"></script>
+
+	<!-- popover effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-popover.js?v=SimonQuotation_20230727"></script>
+
+	<!-- button enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-button.js?v=SimonQuotation_20230727"></script>
+
+	<!-- accordion library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-collapse.js?v=SimonQuotation_20230727"></script>
+
+	<!-- carousel slideshow library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-carousel.js?v=SimonQuotation_20230727"></script>
+
+	<!-- autocomplete library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-typeahead.js?v=SimonQuotation_20230727"></script>
+
+	<!-- tour library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tour.js?v=SimonQuotation_20230727"></script>
+
+	<!-- library for cookie management -->
+	<script src="/SimonQuotation/js/jquery/jquery.cookie.js?v=SimonQuotation_20230727"></script>
+
+	<!-- calander plugin -->
+	<script src="/SimonQuotation/js/fullcalendar.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- chart libraries start -->
+	
+    <!--Mail:Fwd:Performance-->
+	
+	<!-- chart libraries end -->
+
+	<!-- select or dropdown enhancer -->
+	<script src="/SimonQuotation/js/jquery/jquery.chosen.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- checkbox, radio, and file input styler -->
+	<script src="/SimonQuotation/js/jquery/jquery.uniform.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- plugin for gallery image view -->
+	<script src="/SimonQuotation/js/jquery/jquery.colorbox.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- rich text editor library -->
+	<script src="/SimonQuotation/js/jquery/jquery.cleditor.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- notification plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.noty.js?v=SimonQuotation_20230727"></script>
+
+	<!-- file manager library -->
+	<script src="/SimonQuotation/js/jquery/jquery.elfinder.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- star rating plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.raty.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- for iOS style toggle switch -->
+	<script src="/SimonQuotation/js/jquery/jquery.iphone.toggle.js?v=SimonQuotation_20230727"></script>
+
+	<!-- autogrowing textarea plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.autogrow-textarea.js?v=SimonQuotation_20230727"></script>
+
+	<!-- multiple file upload plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.uploadify-3.1.min.js?v=SimonQuotation_20230727"></script>
+
+	<!-- testing carousel-->
+	<script src="/SimonQuotation/js/jquery/jquery.ui.rcarousel.min.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.ui.widget.min.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/hammer.min.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/hammer.fakemultitouch.js?v=SimonQuotation_20230727"></script>
+
+	<script src="/SimonQuotation/js/googleAnalytics/trzConsole.js"></script>	
+
+	<script src="/SimonQuotation/js/googleAnalytics/ScriptSeguimientoSimon.js"></script>	
+
+	<script src="/SimonQuotation/js/googleAnalytics/googleAnalytic.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/popup/notificacionPopup.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/Chart.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/graph.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/properties.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.masterblaster.js"></script>
+	<script src="/SimonQuotation/js/common/email.js"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomador.js?v=SimonQuotation_20230727"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomadorBasico.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/common/designRadioCbx.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/tmpl.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/load-image.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/canvas-to-blob.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/bootstrap.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/bootstrap-image-gallery.min.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/jquery.iframe-transport.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-fp.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-ui.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/locale.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/main.js?v=SimonQuotation_20230727"></script>
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBn8TQ8ANlkaa65XPY3rFyv_bU01HB7ezM"></script>
+		<script src="/SimonQuotation/js/common/app-feedback-popup.js?v=SimonQuotation_20230727"></script>
+		<script src="/SimonQuotation/js/common/html2canvas.js?v=SimonQuotation_20230727"></script>
+<script src="/SimonQuotation/js/common/html2canvas.min.js?v=SimonQuotation_20230727"></script>
+<script src="/SimonQuotation/js/common/callAgendamiento.js?v=SimonQuotation_20230727"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- 	<script type="javascript"> -->
+	<!-- jQuery('.numbersOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/\D/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbersWithDecimalOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/[^0-9\.]/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbers1').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/^[1-9]\d*(\.\d+)?$/,''); -->
+	<!-- }); -->
+
+
+	<!-- </script> -->
+	<script type="text/javascript">
+	
+	var addedFilesCount=0;
+        $('#fileupload').bind('fileuploadadd', function (e, data) {
+		  addedFilesCount++;
+		  $('#addedFilesCount').val(addedFilesCount);
+		});
+		
+	$('#fileupload').bind('fileuploadfailed', function (e, data) {
+		    if($('#delSingleMultiple').val()=="multiple"){
+		        $(".template-download").remove();
+			    $("#overlayUploadDocPopup").hide();
+			    $("#modalUploadDocPopup").removeClass("md-show");
+				$("#modalUploadDocPopup").hide();
+			}
+	});
+		    
+	/* var inp = document.getElementById('fileElementId');
+	for (var i = 0; i < inp.files.length; ++i) {
+	  var name = inp.files.item(i).name;
+	  alert("here is a file name: " + name);
+	}*/
+	</script>
+	
+						        
+		<!-- The template to display files available for upload -->
+        <script id="template-upload" type="text/x-tmpl">
+            {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-upload fade">
+            <td class="preview"><span class="fade"></span></td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            {% if (file.error) { %}
+            <td class="error" colspan="2" style="display: none;"><span class="label label-important">Error</span> {%=file.error%}</td>
+            {% } else if (o.files.valid && !i) { %}
+            <td>
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" style="width:0%;"></div></div>
+            </td>
+            <td class="start" style="display: none;">{% if (!o.options.autoUpload) { %}
+                <button class="">
+                    <i class="icon-upload icon-white"></i>
+                    <span>Start</span>
+                </button>
+                {% } %}</td>
+            {% } else { %}
+            <td colspan="2"></td>
+            {% } %} 
+            <td colspan="2"></td>
+            <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+        </tr>
+        {% } %}
+    </script>
+    <!-- The template to display files available for download -->
+    <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade"">
+            {% if (file.error) { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            <td class="error" colspan="2"><span class="label label-important">Error</span> {%=file.error%}</td>
+           <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+           {% } else { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name">
+                {%=file.name%}
+            </td>
+            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+            <td colspan="2"></td>
+            <td>UPLOADED</td>
+            {% } %}
+        </tr>
+        {% } %}
+    </script>
+
+	<script>
+		/* setTimeout("window.location.reload()",(25000*60)); */
+
+		jQuery(function($) {
+
+			var ctx = "/SimonQuotation";
+
+			function generatePages() {
+				var _total, i, _link;
+
+				_total = $("#carousel").rcarousel("getTotalPages");
+
+				for (i = 0; i < _total; i++) {
+					_link = $("<a href='#'></a>");
+
+					$(_link).bind("click", {
+						page : i
+					}, function(event) {
+						$("#carousel").rcarousel("goToPage", event.data.page);
+						event.preventDefault();
+					}).addClass("bullet off").appendTo("#pages");
+				}
+
+				// mark first page as active
+				$("a:eq(0)", "#pages").removeClass("off").addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+
+			}
+
+			function pageLoaded(event, data) {
+				$("a.on", "#pages").removeClass("on").css("background-image",
+						"url(" + ctx + "/images/icons/page-off.png)");
+
+				$("a", "#pages").eq(data.page).addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+			}
+
+			$(".bullet").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+
+			function initializeCarousel() {
+				if ($(window).width() < 515) {
+					$("#carousel ").rcarousel({
+						visible : 1,
+						step : 1,
+						width : 214,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else if ($(window).width() > 515 && $(window).width() <= 979) {
+					$("#carousel ").rcarousel({
+						visible : 2,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else {
+					$("#carousel ").rcarousel({
+						visible : 3,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+
+				}
+			}
+
+			initializeCarousel();
+
+			//			$(window).bind('orientationchange', function(event) {
+			//				alert('new orientation:' + orientation);
+			//				$( "#carousel" ).rcarousel( "destroy" );
+
+			//				initializeCarousel();
+			//			});
+
+			$("#ui-carousel-next").add("#ui-carousel-prev").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+		});
+
+		$(document)
+				.ready(
+						function() {
+							$("#menuMy li > a")
+									.on(
+											'click',
+											function(e) {
+												$(this).siblings('ul').toggle(
+														'slow');
+												$(this)
+														.find("span")
+														.last()
+														.toggleClass(
+																'icon-triangle-n icon-triangle-s');
+											});
+
+							$('.ajax-link')
+									.click(
+											function() {
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+
+											});
+
+							$(document)
+									.ajaxStart(
+											function() {
+												if ($("#showBlockUI").val() == "N") {
+													return;
+												}
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+											});
+
+							// 		var isUnblockUI = true;
+
+							$(document).ajaxStop(function() {
+								// 			if (isUnblockUI) {
+								$.unblockUI();
+								// 			}
+								if ($.browser.msie && $.browser.version < 9) {
+									$(".blockUI").fadeOut("slow");
+								}
+
+								document.onselectstart = function(e) {
+									/* if (dragging) {
+										e.preventDefault();
+										return false;
+									} */
+								};
+								$(document).ready(function() {
+									$('input').on('drop', function(event) {
+										event.preventDefault();
+									});
+								});
+							});
+
+						});
+
+		$(document).click(function(e) {
+			//alert(e.button);
+			if (e.button == 2) {
+				return false;
+			} else {
+				$("#userInfo").hide();
+				//return false;
+			}
+
+		});
+
+		$("#userButton").click(function(e) {
+			e.stopPropagation();
+			$("#userInfo").toggle();
+			return false;
+
+		});
+		// 		$(".navbar").hover(function() {
+		// 			$("#userInfo").hide();
+		// 		});
+
+		$("#userInfo").click(function(e) {
+			e.stopPropagation();
+			return false;
+		});
+		$("#logout").click(function() {
+			var logoutAction = $(this).attr('name');
+			window.location.href = logoutAction;
+		});
+
+		function goToVidaPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/vidaHomeAgent/gi);
+			if (result) {
+				window.location.href = "vidaHomeAgent.do";
+			} else {
+				return false;
+			}
+		}
+		function goToHogarPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/hogar/gi);
+			if (result) {
+				window.location.href = "hogarHomeAgent.do?user=hogarOld";
+			} else {
+				return false;
+			}
+		}
+
+		function goToSaludPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/salud/gi);
+			if (result) {
+				window.location.href = "saludHomeNew.do?viewStyle=nuevaUI";
+			} else {
+				return false;
+			}
+		}
+
+		function goToAutosPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/autos/gi);
+			if (result) {
+				window.location.href = "autosHomeAgentNew.do";
+			} else {
+				return false;
+			}
+		}
+		function goToVidaGrupoPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/grupo/gi);
+			if (result) {
+				window.location.href = "vidaColectiva.do";
+			} else {
+				return false;
+			}
+		}
+		function goToPymesPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/pymes/gi);
+			if (result) {
+				window.location.href = "PymesHome.do";
+			} else {
+				return false;
+			}
+		}       
+		//Prevents backspace except in the case of textareas and text inputs to prevent user navigation.
+		$(document)
+				.keydown(
+						function(e) {
+							var preventKeyPress;
+							if (e.keyCode == 8) {
+								var d = e.srcElement || e.target;
+								switch (d.tagName.toUpperCase()) {
+								case 'TEXTAREA':
+									preventKeyPress = d.readOnly || d.disabled;
+									break;
+								case 'INPUT':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| (d.attributes["type"] && $
+													.inArray(
+															d.attributes["type"].value
+																	.toLowerCase(),
+															[ "radio",
+																	"checkbox",
+																	"submit",
+																	"button" ]) >= 0);
+									break;
+								case 'DIV':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| !(d.attributes["contentEditable"] && d.attributes["contentEditable"].value == "true");
+									break;
+								default:
+									preventKeyPress = true;
+									break;
+								}
+							} else
+								preventKeyPress = false;
+
+							if (preventKeyPress)
+								e.preventDefault();
+						});
+
+		$(function() {
+			$("textarea[maxlength]")
+					.bind(
+							'input propertychange',
+							function() {
+								var maxLength = $(this).attr('maxlength');
+								var newlines = ($(this).val().match(/\n/g) || []).length;
+								if ($(this).val().length + newlines > maxLength) {
+									$(this).val(
+											$(this).val().substring(0,
+													maxLength - newlines));
+								}
+							});
+		});
+
+		$(document)
+				.ready(
+						function() {
+
+							(function($) {
+
+								$
+										.extend({
+
+											APP : {
+
+												formatTimer : function(a) {
+													if (a < 10) {
+														a = '0' + a;
+													}
+													return a;
+												},
+
+												startTimer : function(dir) {
+
+													var a;
+
+													// save type
+													$.APP.dir = dir;
+
+													// get current date
+													$.APP.d1 = new Date();
+
+													switch ($.APP.state) {
+
+													case 'pause':
+
+														// resume timer
+														// get current timestamp (for calculations) and
+														// substract time difference between pause and now
+														$.APP.t1 = $.APP.d1
+																.getTime()
+																- $.APP.td;
+
+														break;
+
+													default:
+
+														// get current timestamp (for calculations)
+														$.APP.t1 = $.APP.d1
+																.getTime();
+
+														// if countdown add ms based on seconds in textfield
+														if ($.APP.dir === 'cd') {
+															$.APP.t1 += parseInt($(
+																	'#cd_seconds')
+																	.val()) * 1000;
+														}
+
+														break;
+
+													}
+
+													// reset state
+													$.APP.state = 'alive';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Running');
+
+													// start loop
+													$.APP.loopTimer();
+
+												},
+
+												pauseTimer : function() {
+
+													// save timestamp of pause
+													$.APP.dp = new Date();
+													$.APP.tp = $.APP.dp
+															.getTime();
+
+													// save elapsed time (until pause)
+													$.APP.td = $.APP.tp
+															- $.APP.t1;
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Resume');
+
+													// set state
+													$.APP.state = 'pause';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Paused');
+
+												},
+
+												stopTimer : function() {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'stop';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Stopped');
+
+												},
+
+												resetTimer : function() {
+
+													// reset display
+													$(
+															'#' + $.APP.dir
+																	+ '_ms,#'
+																	+ $.APP.dir
+																	+ '_s,#'
+																	+ $.APP.dir
+																	+ '_m,#'
+																	+ $.APP.dir
+																	+ '_h')
+															.html('00');
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Start');
+
+													// set state
+													$.APP.state = 'reset';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html(
+																	'Reset & Idle again');
+
+												},
+
+												endTimer : function(callback) {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'end';
+
+													// invoke callback
+													if (typeof callback === 'function') {
+														callback();
+													}
+
+												},
+
+												loopTimer : function() {
+
+													var td;
+													var d2, t2;
+
+													var ms = 0;
+													var s = 0;
+													var m = 0;
+													var h = 0;
+
+													if ($.APP.state === 'alive') {
+
+														// get current date and convert it into 
+														// timestamp for calculations
+														d2 = new Date();
+														t2 = d2.getTime();
+
+														// calculate time difference between
+														// initial and current timestamp
+														if ($.APP.dir === 'sw') {
+															td = t2 - $.APP.t1;
+															// reversed if countdown
+														} else {
+															td = $.APP.t1 - t2;
+															if (td <= 0) {
+																// if time difference is 0 end countdown
+																$.APP
+																		.endTimer(function() {
+																			$.APP
+																					.resetTimer();
+																			$(
+																					'#'
+																							+ $.APP.dir
+																							+ '_status')
+																					.html(
+																							'Ended & Reset');
+																		});
+															}
+														}
+
+														// calculate milliseconds
+														ms = td % 1000;
+														if (ms < 1) {
+															ms = 0;
+														} else {
+															// calculate seconds
+															s = (td - ms) / 1000;
+															if (s < 1) {
+																s = 0;
+															} else {
+																// calculate minutes   
+																var m = (s - (s % 60)) / 60;
+																if (m < 1) {
+																	m = 0;
+																} else {
+																	// calculate hours
+																	var h = (m - (m % 60)) / 60;
+																	if (h < 1) {
+																		h = 0;
+																	}
+																}
+															}
+														}
+
+														// substract elapsed minutes & hours
+														ms = Math
+																.round(ms / 100);
+														s = s - (m * 60);
+														m = m - (h * 60);
+
+														// update display
+														$(
+																'#' + $.APP.dir
+																		+ '_ms')
+																.html(
+																		$.APP
+																				.formatTimer(ms));
+														$(
+																'#' + $.APP.dir
+																		+ '_s')
+																.html(
+																		$.APP
+																				.formatTimer(s));
+														$(
+																'#' + $.APP.dir
+																		+ '_m')
+																.html(
+																		$.APP
+																				.formatTimer(m));
+														$(
+																'#' + $.APP.dir
+																		+ '_h')
+																.html(
+																		$.APP
+																				.formatTimer(h));
+
+														// loop
+														$.APP.t = setTimeout(
+																$.APP.loopTimer,
+																1);
+
+													} else {
+
+														// kill loop
+														clearTimeout($.APP.t);
+														return true;
+
+													}
+
+												}
+
+											}
+
+										});
+
+								
+									$.APP.startTimer('sw');
+								
+							})(jQuery);
+
+						});
+	</script>
+	<script src="/SimonQuotation/js/drum.js?v=SimonQuotation_20230727"></script>
+	<input type="hidden" name="showBlockUI" id="showBlockUI" value="">
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>

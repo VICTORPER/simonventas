@@ -1,0 +1,2735 @@
+<html><head>
+
+<title>Cotizacion Consultation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+body {
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+/* #footer {
+	bottom: 0;
+	width: 100%;
+	background: #F5F5F5;
+} */
+/*Mantis: 0048613 disabled field not visible on ipad*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+		-webkit-text-fill-color:#000000;
+		-webkit-opacity: .7;
+   		 
+	}
+ }
+</style>
+
+
+<link href="/SimonQuotation/css/quotation-main.css?v=SimonQuotation_20230628" rel="stylesheet">
+
+<link href="/SimonQuotation/css/jquery.masterblaster.css" rel="stylesheet">
+
+<link href="/SimonQuotation/css/bootstrap-cerulean.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/bootstrap-responsive.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/charisma-app.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery-ui-1.8.21.custom.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/fullcalendar.print.css?v=SimonQuotation_20230628" rel="stylesheet" media="print">
+<link href="/SimonQuotation/css/chosen.css?v=SimonQuotation_20230628" rel="stylesheet">
+
+<link href="/SimonQuotation/css/colorbox.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.cleditor.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.noty.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/noty_theme_default.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.min.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/elfinder.theme.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/jquery.iphone.toggle.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/opa-icons.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/uploadify.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/consultas/headerPanel.css?v=SimonQuotation_20230628" rel="stylesheet">  
+	<link href="/SimonQuotation/css/consultas/plugins.css?v=SimonQuotation_20230628" rel="stylesheet">
+<link href="/SimonQuotation/css/rcarousel.css?v=SimonQuotation_20230628" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/main.css?v=SimonQuotation_20230628" rel="stylesheet">
+
+	<link href="/SimonQuotation/css/consultas/drop-down-search.css?v=SimonQuotation_20230628" rel="stylesheet">
+
+<link rel="shortcut icon" href="/SimonQuotation/img/simon_Logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+
+<link href="/SimonQuotation/css/project.css?v=SimonQuotation_20230628" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/53/8/intl/es_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/53/8/intl/es_ALL/util.js"></script></head>
+<body style="">
+	
+
+
+
+<style>
+table.clockTable {
+    margin-left: auto;
+    margin-right: auto;
+	font-family: arial, sans-serif;
+	background-color: #048235;
+	width: 50%;
+	color:#ffcc00; !important;
+}
+
+ td.clockTable {
+	border: 1px solid #ffcc00;
+	text-align: center;
+	font-weight: bold;
+}
+</style>
+<!-- topbar starts -->
+<header>
+<div class="navbar">
+	<div class="">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+			</a> <a class="brand" tabindex="-1" href="agentHomeAction.do" style="margin-left: 30px;"> <img alt="Simon" src="/SimonQuotation/img/consultas/logo-seguros-bolivar.png">
+			</a>
+			 
+			<div class="btn-group pull-right theme-container">
+			
+<div>
+	<table class="clockTable">
+		<tbody><tr>
+			<td class="clockTable"><span id="sw_h">00</span></td>
+			<td class="clockTable"><span id="sw_m">00</span></td>
+			<td class="clockTable"><span id="sw_s">25</span></td>
+		</tr>
+	</tbody></table>
+</div>
+			
+				<a class="btn " href="#" id="userButton"> <i class="icon-user"></i><span class="hidden-phone">Wilson Enrique Sacristan Vaca</span> <span class="caret"></span>
+				</a>
+				
+				<input type="hidden" id="employeeType_analytic" name="employeeType_analytic" value="CC">
+				<input type="hidden" id="userName_analytic" name="userName_analytic" value="79468066">
+				
+				<ul class="dropdown-menu" id="userInfo" style="display: none;">
+					<li><a><i class="icon-blank"></i> Número de Documento :
+							CC-79468066</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Nombre Completo : Wilson Enrique Sacristan Vaca</a></li>
+					
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Correo Electrónico :<b> hollmann.qvision@gmail.com</b></a></li>
+
+					<li><a><i class="icon-blank"></i> Celular :
+							<b>3028322544</b></a></li>
+					<li><a><i class="icon-blank"></i> Teléfono :
+							<b>3132538730</b></a></li>
+
+					 <li><a><i class="icon-blank"></i> Tipo de Usuario :
+							Empleado</a></li>
+					<li><a><i class="icon-blank"></i> Código de Empleado :
+							16659</a></li>
+					
+					<li><a><i class="icon-blank"></i> Actividad Comercial :
+							48 (Interno)</a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Área/Localidad : <b>BOGOTA</b></a></li>
+					<li><a class="hidden-phone"><i class="icon-blank"></i>
+							Subtipo : 1 Empleado Administrativo</a></li>
+
+					<li>
+						<div class="form-actions">
+							<a class="btn pull-right" id="logout" name="/SimonQuotation/logoutAction.do"> <span>Log Out</span>
+							</a>
+
+						</div>
+
+					</li>
+				</ul>
+
+
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+</header>
+
+
+
+<!-- topbar ends -->
+
+
+<noscript>
+	<div class="alert alert-block span10">
+		<h4 class="alert-heading">Warning!</h4>
+		<p>
+			You need to have <a href="http://en.wikipedia.org/wiki/JavaScript"
+				target="_blank">JavaScript</a> enabled to use this site.
+		</p>
+	</div>
+</noscript>
+
+	<span> <input type="hidden" id="loginUserCompany" name="loginUserCompany" value="2"> <input type="hidden" id="loginUserCountry" name="loginUserCountry" value="CO"> <input type="hidden" id="contextProject" name="contextProject" value="/SimonQuotation"> <input type="hidden" id="userName" name="userName" value="79468066"> <input type="hidden" id="codProcesoQuotation" name="codProcesoQuotation" value="241"> <input type="hidden" id="codAgent" name="codAgent" value="16659"> <input type="hidden" id="info2" name="info2" value="16659">
+		<input type="hidden" id="info3" name="info3" value="48;1"> <input type="hidden" id="codProcessoFormalization" name="codProcessoFormalization" value="270"> <input type="hidden" id="codSubProcesoFormalization" name="codSubProcesoFormalization" value="260">
+		<!-- Added for Autos Collectiva -->
+		<input type="hidden" id="autosCollectiva" name="autosCollectiva" value="">
+		<input type="hidden" id="isTomadorBlock" name="isTomadorBlock" value="false">
+		<input type="hidden" id="isAseguradoBlock" name="isAseguradoBlock" value="false">
+		<input type="hidden" id="isConductorBlock" name="isConductorBlock" value="false">
+		<input type="hidden" id="isBeneficiarioBlock" name="isBeneficiarioBlock" value="false">
+		<input type="hidden" id="isRepLegBlock" name="isRepLegBlock" value="false">
+		<input type="hidden" id="isLocatarioBlock" name="isLocatarioBlock" value="false">
+		<input type="hidden" id="isOnerosoBlock" name="isOnerosoBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaBlock" name="isDebitoAutomaBlock" value="false">
+		<input type="hidden" id="isDebitoAutomaAhorroBlock" name="isDebitoAutomaAhorroBlock" value="false">
+	</span>
+	<span id="inspectionNotRequired" style="display: none"> El solicitante ya cuenta con agendamiento activo.</span>
+
+	<span id="inspectionRequired" style="display: none"> El solicitante requiere exámenes médicos.</span>
+
+	<!-- --       Inspecion Message  For Autos  ajuste BRGH  -->
+	<span id="inspectionNotRequiredAutos" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionRequiredAutos" style="display: none"> Este riesgo  requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="quotationCanNotBeFormalizeCommonMsg" style="display: none">
+		Cotización NO valida para Formalizar.
+	</span>
+
+	<!-- mail: Fwd: Mantis 43543 -->
+	<span id="quotationNotValidForThisProcess" style="display: none">
+		COTIZACION NO VALIDA PARA ESTE PROCESO
+	</span>
+
+	<!-- --       Inspecion Message  For Hogar    -->
+	<span id="inspectionNotRequiredHogar" style="display: none"> Este riesgo no requiere inspección. Puede proceder a la expedición de la póliza.</span>
+
+	<span id="inspectionNotRequiredHogarConsultation" style="display: none">
+		Información de Agendamiento ya registrada. Puede continuar con el proceso de Emisión
+	</span>
+
+	<span id="inspectionRequiredHogar" style="display: none"> Esta cotización requiere agendamiento (o Inspección).</span>
+
+
+
+
+	<!-- --       Inspecion Message ends here                -->
+	<div class="container-fluid">
+		<div class="row-fluid">
+
+
+			<!-- left menu starts -->
+			
+				
+				
+					<div class="span2 main-menu-span">
+						
+
+<link href="/SimonQuotation/css/menuV2.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-7G044K4EYT&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-NSL0NL569E&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/SimonQuotation/js/menuV2.js" type="text/javascript"></script>
+
+
+<!-- <div class="well nav-collapse sidebar-nav"> -->
+<!-- 	<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu"> -->
+
+<!-- 	</ul> -->
+<!-- 	<div>&nbsp;</div> -->
+<!-- </div> -->
+
+
+
+	
+	
+	
+		<div class="well nav-collapse sidebar-nav">
+			<ul id="menuV2" class="nav nav-tabs nav-stacked main-menu">
+				
+							<li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones</span></a><ul class="sub" style="display: none; left: 158px; top: 0px;"><li><a href="quotationConsultation.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/consultaIcon.png">Consulta Cotización por Numero</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Autos</span></a><ul class="sub" style="display: none; left: 158px; top: 58px;"><li><a href="autosHomeAgentNew.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/autosIcon.png">Autos Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Hogar</span></a><ul class="sub" style="display: none; left: 158px; top: 96px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/user=hogarOld">Hogar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Salud</span></a><ul class="sub" style="display: none; left: 158px; top: 134px;"><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png">Salud</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Cotizadores Vida</span></a><ul class="sub" style="display: none; left: 158px; top: 172px;"><li><a href="vidaHomeAgentPortafolio.do"> Portafolio Tranquilidad en Vida</a></li><li><a href="vidaHomeAgent.do"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png">Vida Individual</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion Pymes</span></a><ul class="sub" style="display: none; left: 158px; top: 210px;"><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Cotización nuevo riesgo</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Fuerza de Ventas</span></a><ul class="sub" style="display: none; left: 158px; top: 248px;"><li><a href="https://stgfuerzaventas.bolnet.com.co/"> Gestión de Solicitudes</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Simulador Finanseguros</span></a><ul class="sub" style="display: none; left: 158px; top: 286px;"><li><a href="https://www.segurosbolivar.com/PrestamosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjg4MzU2NzgwLCJleHAiOjE2ODgzNzExODB9.iuq5uGKAvaz5OUS8vmRXxX8w9TpvLjLOktcOrAd1ln-WvOQinuN5qogRw0jmaFll1g3lUJjfBdTVLu5RgSjg4A"> Prestamo Digital Bolivar</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Agendamiento</span></a><ul class="sub" style="display: none; left: 158px; top: 344px;"><li><a href="consultAgendamiento.do"> Consulta Agendamiento Vida</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Colectivas Test</span></a><ul class="sub" style="display: none; left: 158px; top: 382px;"><li><a href="transmilinioUploadCSV.do"> Cargue Archivo Colectivas</a></li><li><a href="transmilinioNegociacionCreate.do"> Solicitud de Cotización Autos Colectivas</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Autos Test autosIcon.png</span></a><ul class="sub" style="display: none; left: 158px; top: 440px;"><li><a href="autosImpresionPoliza.do"> Consulta Pólizas Autos</a></li><li><a href="autosHomeAgentNew.do"> Cotización Autos</a></li><li><a href="autosQuotationFromAnotherQuotation.do"> Cotización basada en otra Cotización Test</a></li><li><a href="autosFormalizationInicio.do"> Formalización Cotización Autos Test</a></li><li><a href="https://www.cdaautomas.co/virtualbolivar"> Inspecciones Autos Automas test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Consulta Cotizaciones Test</span></a><ul class="sub" style="display: none; left: 158px; top: 498px;"><li><a href="quotationConsultation.do"> Consulta Cotización por Rango de Fechas Test</a></li><li><a href="policyConsultation.do"> Consulta de Pólizas Provisorias por Rango de Fecha</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/hogarIcon.png"><span class="hidden-tablet"> Cotizadores Hogar Test</span></a><ul class="sub" style="display: none; left: 158px; top: 556px;"><li><a href="hogarHomeAgent.do?user=hogarOld"> Hogar Test</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/saludIcon.png"><span class="hidden-tablet"> Cotizadores Salud Test</span></a><ul class="sub" style="display: none; left: 158px; top: 615px;"><li><a href="accidentesEscolares.do"> Accidentes Escolares</a></li><li><a href="PolizaRiesgoCollection.do"> Actualización riesgos Clase U y Clase Feliz</a></li><li><a href="masivoRiesgosAsegurados.do"> Cargue Masivo Riesgos Asegurados</a></li><li><a href="consultationPolizaPrincipal.do"> Consulta Cotizacion Poliza principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Cotizacion Poliza Principal</a></li><li><a href="https://stage-firmacolectivos.segurosbolivar.com/"> Creacion Formulario Colectivo</a></li><li><a href="saludHomeNew.do?viewStyle=nuevaUI"> Salud Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Expedicion pymes</span></a><ul class="sub" style="display: none; left: 158px; top: 674px;"><li><a href="CoopropiedadesHome.do"> Cotización Coopropiedades</a></li><li><a href="PymesHome.do"> Expedicion Nuevos Negocios pymes</a></li><li><a href="PymesHome.do?reqType=nuevoRiesgo"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/reqType=nuevoRiesgo">Inclusión nuevo riesgo</a></li><li><a href="https://stage-mipymes.bolnet.com.co/seguro-pymes/redirect#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workForceId=16659&amp;usrSubTipo=1"> Tranquilidad Pymes + Digital</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/financiacionIcon.png"><span class="hidden-tablet"> Financiación de Primas Test</span></a><ul class="sub" style="display: none; left: 158px; top: 712px;"><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzYmNvZEFjdEJlbmVmXCI6XCI0OFwiLFwidXNyU3VidGlwb1wiOlwiMVwiLFwic291cmNlSVBBZGRyXCI6XCIxMC4xMS40LjVcIixcIlVzZXJuYW1lXCI6XCI3OTQ2ODA2NlwiLFwid29ya2ZvcmRlSURcIjpcIjE2NjU5XCJ9IiwiaWF0IjoxNjg4MzU2NzgwLCJleHAiOjE2ODgzNzExODB9.iuq5uGKAvaz5OUS8vmRXxX8w9TpvLjLOktcOrAd1ln-WvOQinuN5qogRw0jmaFll1g3lUJjfBdTVLu5RgSjg4A"> Finanseguros Digital</a></li><li><a href="https://ambientepruebas.segurosbolivar.com/FinansegurosDigital/securityServlet?sessionId=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3OTQ2ODA2NiIsImRhdGEiOiJ7XCJzb3VyY2VJUEFkZHJcIjpcIjEwLjExLjQuNVwiLFwiVXNlcm5hbWVcIjpcIjc5NDY4MDY2XCIsXCJTaW11bGF0b3JcIjpcIlNcIn0iLCJpYXQiOjE2ODgzNTY3ODAsImV4cCI6MTY4ODM3MTE4MH0.-lPjXqUpXCcUD1b3ZS791aHo32RthcBELDV7Kkz_-ikpsVH320m9WTIZctRaRxDk6hmCoj3xu6CR_RE2_Dh8xw"> Simulación Finanseguros Davivienda Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Firma Electrónica</span></a><ul class="sub" style="display: none; left: 158px; top: 772px;"><li><a href="consultarFirma.do"> Consulta Firma Electronica</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Modificaciones</span></a><ul class="sub" style="display: none; left: 158px; top: 810px;"><li><a href="solicitudConsultation.do"> Consulta de Solicitudes</a></li><li><a href="autosPolicyModify.do"> Modificaciones</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Pólizas TUSEGURO Test</span></a><ul class="sub" style="display: none; left: 158px; top: 848px;"><li><a href="/tuseguros/#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobcode=E96160&amp;usrLocationCode=BOGOTA&amp;sbcodActBenef=48&amp;userName=79468066&amp;workfordeID=16659&amp;usrSubtipo=1"> Emisión TU SEGURO Test</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Seguros Agro</span></a><ul class="sub" style="display: none; left: 158px; top: 906px;"><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect?redirect_uri=individualizacion-caficultores#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> <img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/redirect_uri=individualizacion-caficultores">Individualización caficultores</a></li><li><a href="https://stg-agricola.bolnet.com.co/seguro-agricola/redirect#/?company=2&amp;country=CO&amp;email=hollmann.qvision@gmail.com&amp;employeeType=CC&amp;fullName=Wilson Enrique Sacristan Vaca&amp;jobCode=E96160&amp;usrLocationcode=BOGOTA&amp;sbCodeActBenef=48&amp;userName=79468066&amp;workFordeId=16659&amp;usrSubTipo=1"> Plataforma Agrícola</a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Soat</span></a><ul class="sub" style="display: none; left: 158px; top: 944px;"><li><a href="soatQuoteAction.do"> Expedición Soat </a></li></ul></li><li><a href="#" class="arrow"><span class="hidden-tablet"> Vida Grupo</span></a><ul class="sub" style="display: none; left: 158px; top: 982px;"><li><a href="vidaColectiva.do"> Cotización Póliza Hija</a></li><li><a href="polizaPrincipal.do"> Emisión Póliza Principal(GR)</a></li></ul></li><li><a href="#" class="arrow"><img width="20px" height="20px" src="/SimonQuotation/images/sectionIcons/vidaIcon.png"><span class="hidden-tablet"> Vida Test</span></a><ul class="sub" style="display: none; left: 158px; top: 1020px;"><li><a href="declarationCommonAction.do"> Administracion Declaracion de Asegurabilidad</a></li><li><a href="vidaSimilarQuotationConsultation.do"> Cotizacion Basada en Otra Cotizacion de Vida</a></li><li><a href="vidaFormalizationInicio.do"> Vida Formalizacion</a></li><li><a href="vidaHomeAgent.do"> Vida Individual Test</a></li></ul></li>
+			</ul>
+			<div>&nbsp;</div>
+		</div>
+	
+
+<br>
+
+
+
+
+
+					</div>
+					<div id="content" class="span10">
+
+						<div class="alert alert-error" id="pageError" style="display: none">
+							<button class="close" data-dismiss="alert" type="button">X</button>
+							<strong>Error ! </strong><span id="pageErrorSpan"></span>
+						</div>
+
+						<!-- content starts -->
+						
+
+
+
+
+<form action="" method="post" name="quotation" id="quotation" novalidate="">
+	<!-- Hidden fields -->
+	<input type="hidden" id="seguridadCompany" name="seguridadCompany" value=" 2">
+	<input type="hidden" id="seguridadCountry" name="seguridadCountry" value=" CO">
+	<input type="hidden" id="seguridadEmail" name="seguridadEmail" value=" hollmann.qvision@gmail.com">
+	
+	<input type="hidden" id="seguridadEmployeeType" name="seguridadEmployeeType" value=" CC">
+	<input type="hidden" id="seguridadFullName" name="seguridadFullName" value=" Wilson Enrique Sacristan Vaca">
+	<input type="hidden" id="seguridadJobCode" name="seguridadJobCode" value=" E96160">
+	<input type="hidden" id="seguridadSbcodActBenef" name="seguridadSbcodActBenef" value=" 48">
+	
+	<input type="hidden" id="seguridadUserLocationCode" name="seguridadUserLocationCode" value=" BOGOTA">
+	<input type="hidden" id="seguridadUsrSubtipo" name="seguridadUsrSubtipo" value=" 1">
+	
+	
+	<input type="hidden" id="reqMarca" name="reqMarca"> <input type="hidden" id="workFordeId" name="workFordeId" value=" 16659"> <input id="codCia" name="codCia" type="hidden" value="2"> <input id="cotNoSelected" name="cotNoSelected" type="hidden"> <input type="hidden" id="codMarcaInspeccionBasic" name="codMarcaInspeccionBasic"> <input type="hidden" id="codMarcaCotizacionBasic" name="codMarcaCotizacionBasic"> <input id="codSecc" name="codSecc" type="hidden" value="47"> <input type="hidden" id="codProducto" name="codProducto" value="948"><input type="hidden" id="codProductoForHogarHidden" name="codProductoForHogarHidden">
+	<input type="hidden" id="subProducto" name="subProducto" value="0"> <input type="hidden" id="proceso" name="proceso" value="241"> <input type="hidden" id="subProceso" name="subProceso" value="240"><input type="hidden" id="modulo" name="modulo" value="2"> <input id="action" name="action" type="hidden" value=""> <input type="hidden" id="numCotizacion" name="numCotizacion" value=""><input type="hidden" id="uuid" name="uuid"> <input type="hidden" id="codUsr" name="codUsr" value="79468066"> <input type="hidden" id="numSecuPol" name="numSecuPol" value=""> <input type="hidden" id="riskSize" name="riskSize" value="1">
+	<!-- added info2 and info3 for sending in data header -->
+	<input type="hidden" id="codUrs" name="codUrs" value="79468066"> 
+		<input type="hidden" id="codigoUsuario" name="codigoUsuario" value="79468066">
+		<input type="hidden" id="info2" name="info2" value="16659"> <input type="hidden" id="info3" name="info3" value="48;1"> <input type="hidden" id="pageName" name="pageName" value="commonConsultation">
+	<input type="hidden" id="workFordeId" name="workFordeId" value=" 16659"> <input type="hidden" id="isAgentAuth" name="isAgentAuth" value="">
+	<!-- FOR AUTOS FORMALIZATION  -->
+
+	<input type="hidden" id="reqMarca" name="reqMarca">
+	<input type="hidden" id="codCia" name="codCia" value="">
+	<input type="hidden" id="cotNoSelected" name="cotNoSelected">
+	<input type="hidden" id="codMarcaInspeccionBasic" name="codMarcaInspeccionBasic">
+	<input type="hidden" id="codMarcaCotizacionBasic" name="codMarcaCotizacionBasic">
+	<input type="hidden" id="modelo" name="modelo">
+	<input type="hidden" id="uso" name="uso">
+	<input id="placaViginte" name="placaViginte" type="hidden" value="">
+	<input id="numSecuPol" name="numSecuPol" type="hidden" value="">
+	<input id="reqInspeccion" name="reqInspeccion" type="hidden" value="">
+	<input id="numSecuPol" name="numSecuPol" type="hidden">
+	<input id="macaTermOK" name="reqInspeccion" type="hidden" value="">
+	<input id="reqInspeccion" name="reqInspeccion" type="hidden" value="">
+	<input id="reqInspeccionVal" name="reqInspeccionVal" type="hidden" value="">
+	<input id="maxFechaDay" name="maxFechaDay" type="hidden" value="07072023">
+	<input id="msgAutosFasecolda" name="msgAutosFasecolda" type="hidden" value="">
+	<input type="hidden" id="UUID" name="UUID">
+
+	<div>
+		<ul class="breadcrumb hidden-phone">
+			<li><a href="/SimonQuotation/agentHomeAction.do">Inicio</a><span class="divider">/</span></li>
+			<li>Consultas</li>
+		</ul>
+	</div>
+	<h2 align="center">
+		Consulta cotización
+	</h2>
+	<!-- ***************** info ********************-->
+	<p align="right"><span style="color: #BD4247;">( * )  indica los campos obligatorios</span></p>
+
+	<div class="row-fluid" id="datosTomador">
+		<div class="box span12">
+
+			<div class="box-content">
+				<div class="form-horizontal">
+					<fieldset>
+						<div class="span6">
+							<div class="campos__form campo-select">
+								<label class="control-label">Compañía</label>
+								<div class="controls">
+									<select id="company" name="companyId" class="input-large" title="2 - COMPANIA SEGUROS BOLIVAR S.A">
+										<option value="2" title="2 - COMPANIA SEGUROS BOLIVAR S.A">2
+											- COMPANIA SEGUROS BOLIVAR S.A</option>
+										<option value="3" title="3 - SEGUROS COMERCIALES BOLIVAR">3
+											- SEGUROS COMERCIALES BOLIVAR</option>
+									</select>
+								</div>
+								<span id="email1"></span>
+							</div>
+
+							<div class="campos__form campo-select">
+								<label class="control-label">Sección</label>
+								<div class="controls">
+									<select id="seccion" name="seccion" class="input-large"><option value="18" title="ACCIDENTES PERSONALES">18 - ACCIDENTES PERSONALES</option><option value="20" title="GRUPO">20 - GRUPO</option><option value="21" title="GRUPO PLAN CRECIENTE">21 - GRUPO PLAN CRECIENTE</option><option value="22" title="DEUDORES">22 - DEUDORES</option><option value="24" title="GRUPO EDUCATIVO">24 - GRUPO EDUCATIVO</option><option value="25" title="ULTIMOS GASTOS">25 - ULTIMOS GASTOS</option><option value="26" title="ACCIDENTES ESCOLARES">26 - ACCIDENTES ESCOLARES</option><option value="29" title="GRUPO - PLAN NIVELADO">29 - GRUPO - PLAN NIVELADO</option><option value="30" title="ACCIDENTES PERSONALES">30 - ACCIDENTES PERSONALES</option><option value="31" title="I.A.P.A">31 - I.A.P.A</option><option value="32" title="GRUPO TRADICIONAL">32 - GRUPO TRADICIONAL</option><option value="34" title="SALUD">34 - SALUD</option><option value="40" title="VIDA INDIVIDUAL">40 - VIDA INDIVIDUAL</option><option value="41" title="GRUPO VIP">41 - GRUPO VIP</option><option value="42" title="VIDA INDIVIDUAL BANCASEGUROS">42 - VIDA INDIVIDUAL BANCASEGUROS</option><option value="46" title="VIDA INDIVIDUAL">46 - VIDA INDIVIDUAL</option><option value="47" title="VIDA INDIVIDUAL">47 - VIDA INDIVIDUAL</option><option value="48" title="VIDA CONJUNTO">48 - VIDA CONJUNTO</option><option value="50" title="VIDA INDIVIDUAL MIGRACION">50 - VIDA INDIVIDUAL MIGRACION</option><option value="56" title="HOTELERO">56 - HOTELERO</option><option value="68" title="RAMOS PREVISIONALES">68 - RAMOS PREVISIONALES</option><option value="69" title="PENSIONES LEY 100">69 - PENSIONES LEY 100</option><option value="70" title="ADMINISTRADORA DE RIESGOS PROF">70 - ADMINISTRADORA DE RIESGOS PROF</option><option value="118" title="ACCIDENTES PERSONALES INDIVID.">118 - ACCIDENTES PERSONALES INDIVID.</option><option value="124" title="PLAN TUTOR">124 - PLAN TUTOR</option><option value="140" title="SEGUROS DE VIDA (ANTIGUOS)">140 - SEGUROS DE VIDA (ANTIGUOS)</option><option value="922" title="OFERTAS DE PROTECCION PERSONAS">922 - OFERTAS DE PROTECCION PERSONAS</option></select>
+								</div>
+							</div>
+							<div class="campos__form campo-select">
+								<label class="control-label">Producto</label>
+								<div class="controls">
+									<select id="product" name="product" class="input-large"></select> <span id="errorSpanProduct" style="color: #BD4247;" class="error"></span>
+								</div>
+							</div>
+
+							<div class="campos__form campo-imput">
+								<label class="control-label">Número de cotización</label>
+
+								<div class="controls">
+									<input type="text" id="numDeCotizacion" name="numDeCotizacion" maxlength="15" style="text-transform: uppercase;">
+								</div>
+							</div>
+						</div>
+						<div class="span6">
+
+							<div class="campos__form campo-imput">
+								<label class="control-label">Fecha desde:<font color="#BD4247">*</font></label>
+
+								<div class="controls">
+									<input type="text" id="fechaInicio" name="fechaInicio" class="input-medium datepicker requiredSubmit hasDatepicker success" maxlength="10" style="text-transform: uppercase;"><img class="ui-datepicker-trigger" src="images/icons/calendar.gif" alt="..." title="...">
+								</div>
+							</div>
+
+							<div class="campos__form campo-imput">
+								<label class="control-label">Fecha hasta:<font color="#BD4247">*</font></label>
+
+								<div class="controls">
+									<input type="text" id="fechaFin" name="fechaFin" class="input-medium datepicker1 requiredSubmit hasDatepicker success" maxlength="10" style="text-transform: uppercase;"><img class="ui-datepicker-trigger" src="images/icons/calendar.gif" alt="..." title="...">
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+				</div>
+				<div class="form-actions" align="center">
+					<input type="button" id="consultar" class="btn btn-success" value="Consultar">
+					<div id="errorSubmit" style="color: #BD4247; display: none;" class="alert alert-danger"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div align="center">
+		<div id="errorConsultas" style="color: #BD4247; display: none;" class="alert alert-danger"></div>
+	</div>
+
+	<!-- Email Success & Error message -->
+	<div id="successMsg" style="display: none;">
+		<p align="right" style="color: GREEN">
+			<span class="icon icon-green icon-check"></span><span><b>E-mail
+					enviado exitoso!!!</b></span>
+		</p>
+	</div>
+	<div class="alert alert-danger" id="errorCot" style="display: none" align="center"></div>
+	<div id="resultDiv" style="">
+		<div id="consultaDetails" class="row-fluid" style="">
+			<div class="box span12">
+				<div class="box-header well" data-original-title="">
+					<h2>
+						<i class="icon-edit"></i>Tabla de Consultas 
+					</h2>
+
+					<div class="box-icon">
+						<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+					</div>
+					<p>&nbsp;</p>
+				</div>
+
+				<div class="tab-pane box-content" id="panel_cot">
+					<div class="box-content">
+						<div class="searchResultDiv campos__form-table campo-select campo-imput" onclick="">
+							<div id="searchResult_wrapper" class="dataTables_wrapper" role="grid"><div id="searchResult_length" class="dataTables_length"><label>Mostrar <select size="1" name="searchResult_length" aria-controls="searchResult"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> registros</label></div><div class="dataTables_filter" id="searchResult_filter"><label>Buscar: <input type="text" aria-controls="searchResult"></label></div><table class="table content dataTable" id="searchResult" aria-describedby="searchResult_info" style="width: 1003px;">
+								<thead>
+									<tr role="row"><th style="width: 116px;" class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="Número">Número</th><th style="width: 81px;" class="sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Tomador: Activar para ordenar la columna de manera ascendente">Tomador</th><th style="width: 63px;" class="alignRight sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Valor prima: Activar para ordenar la columna de manera ascendente">Valor prima</th><th style="width: 87px;" class="sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Inicio vigencia: Activar para ordenar la columna de manera ascendente">Inicio vigencia</th><th style="width: 87px;" class="sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Fin vigencia: Activar para ordenar la columna de manera ascendente">Fin vigencia</th><th style="width: 87px;" class="sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Fecha exp.: Activar para ordenar la columna de manera ascendente">Fecha exp.</th><th style="width: 53px;" class="sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Estado: Activar para ordenar la columna de manera ascendente">Estado</th><th style="width: 116px;" class="sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Imprimir: Activar para ordenar la columna de manera ascendente">Imprimir</th><th style="width: 98px;" class="sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Correo: Activar para ordenar la columna de manera ascendente">Correo</th><th style="width: 116px;" class="sorting" role="columnheader" tabindex="0" aria-controls="searchResult" rowspan="1" colspan="1" aria-label="Acción: Activar para ordenar la columna de manera ascendente">Acción</th></tr>
+								</thead>
+							<tbody role="alert" aria-live="polite" aria-relevant="all"><tr class="odd"><td class=" sorting_1"><a href="#" onclick="getCotizacionDetails(1003000937101,948)">1003000937101</a></td><td class="">ESTEFANY SOFIA SIERRA SALAZAR</td><td class="alignRight">$ 170.940</td><td class="">14/06/2023</td><td class="">14/06/2024</td><td class="">14/06/2023</td><td class="">Si</td><td class=""><a href="#" id="Imprimir" onclick="getPDF(1003000937101,29861305481,3,948)"><span class="icon icon-color icon-pdf" title="Imprimir"></span></a></td><td class=""><a href="#" id="emailId" onclick="openEmailPopUp(1003000937101,29861305481,948)"><span class="icon icon-color icon-envelope-closed" title="Correo"></span></a></td><td class=""><a class="btn btn-success" onclick="emitirFromCommonConsultation(29861305481,1003000937101,948)">Emitir</a></td></tr></tbody></table><div class="dataTables_info" id="searchResult_info">Mostrando registros del 1 al 1 de un total de 1 registros</div><div class="dataTables_paginate paging_full_numbers" id="searchResult_paginate"><a tabindex="0" class="first paginate_button paginate_button_disabled" id="searchResult_first">Primero</a><a tabindex="0" class="previous paginate_button paginate_button_disabled" id="searchResult_previous">Anterior</a><span><a tabindex="0" class="paginate_active">1</a></span><a tabindex="0" class="next paginate_button paginate_button_disabled" id="searchResult_next">Siguiente</a><a tabindex="0" class="last paginate_button paginate_button_disabled" id="searchResult_last">Último</a></div></div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="form-actions" align="center">
+
+			<input type="button" id="imprimir" class="btn btn-success" value="Imprimir" style="display: none"> <input type="button" id="imprimirSalud" style="display: none" class="btn btn-success" value="Imprimir" tabindex="13">
+
+			<div align="center">
+
+				<span id="errorSubmitD" style="color: #BD4247; display: none;" class="error"></span>
+			</div>
+			<br>
+			<div align="center">
+				<span id="errorSuccessEmailAdd" style="color: #BD4247;" class="errorSuccessEmailAdd"></span>
+			</div>
+		</div>
+	</div>
+	<!-- ************   cotizacion detail popp  **************  -->
+<div id="overlayCotAuots" class="overlay-md md-show" style="display: none;">
+<div id="modalCotAuots" class="modal-md md-effect-1 md-show md-show-large">
+	<div class="close-md" id="closeCotAutos"></div>
+	<header>
+				<h3>Datos del cotización</h3>
+			</header>
+	<!-- 	Commons Consulta Terceros search panel -->
+	<div class="overlayContent">
+	<div class="row-fluid">
+		<div class="box span12">	
+			<div class="box-content">
+				<div class="form-horizontal">
+							<p align="center">
+								<label id="subProductoTxt_v" style="font-weight: bold; color: #048235; margin-top: 5px;">
+							</label></p>
+							<div class="box-content">
+								<table width="100%" class="table" id="table1">
+									<tbody><tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Autos Cotización Información</b></th>
+									</tr>
+
+									<tr>
+										<td width="50%"><label class="control-label">Número de cotización:</label>
+											<div class="controls">
+												<label id="numLiquidacion_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td width="50%"><label class="control-label">Periodicidad de pago:</label>
+											<div class="controls">
+												<label id="periodoFacturacion_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<tr>
+										<td colspan="2"><label class="control-label">Clave asesor:</label>
+											<div class="controls">
+												<label id="claveAsesor_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+
+									
+
+									<!-- Asegurado Section-->
+									<tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Datos del Asegurado</b></th>
+									</tr>
+
+									<tr>
+										<td colspan="2"><label class="control-label">Número de documento:</label>
+											<div class="controls">
+												<label id="aseguradoDoc_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+
+									</tr>
+									<!--End Asegurado Section-->
+									
+									<!-- Beneficiario Section-->
+                                    <tr bgcolor="#E3E3E3" class="bene">
+										<th colspan="2"><b>Datos del beneficiario</b></th>
+									</tr>
+
+									<tr class="bene">
+										<td><label class="control-label">Beneficiario id:</label>
+											<div class="controls">
+												<label id="idBeneficiario_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Razón social:</label>
+											<div class="controls">
+												<label id="razonSocialBeneficiario_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+
+                                    <!-- End Beneficiario Section-->
+                                    
+									<!-- Datos del Vehículo Section-->
+									<tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Datos del Vehículo</b></th>
+									</tr>
+
+									<tr>
+										<td><label class="control-label">Placa:</label>
+											<div class="controls">
+												<label id="placa_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Modelo:</label>
+											<div class="controls">
+												<label id="modelo_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<tr>
+
+										<td colspan="2"><label class="control-label">Marca:</label>
+											<div class="controls">
+												<label id="marcaCot_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+
+									</tr>
+									<!-- <tr>
+										<td colspan="2"><label class="control-label">Ciudad movilización:</label>
+											<div class="controls">
+												<label id="localidadMovilizacion_v"
+													class="tdLabel control-datarecord"></label>
+											</div></td>
+									</tr> -->
+									<!-- 								next row  -->
+									<tr>
+
+										<td colspan="2"><label class="control-label">Uso vehículo:</label>
+											<div class="controls">
+												<label id="uso_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<tr>
+										<td><label class="control-label">Suma asegurada:</label>
+											<div class="controls">
+												<label id="sumaAsegurado_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Suma accesorios:</label>
+											<div class="controls">
+												<label id="sumaAccesorios_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<!-- 								next row  -->
+									<tr>
+										<td><label class="control-label">Blindado:</label>
+											<div class="controls">
+												<label id="blindado_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Nuevo:</label>
+											<div class="controls">
+												<label id="ceroKm_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+
+
+									<!-- 								next row  -->
+									<tr>
+										<td><label class="control-label">Otras vinculaciones:</label>
+											<div class="controls">
+												<label id="vinculacionGrupo_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Vehículo reemplazo:</label>
+											<div class="controls">
+												<label id="vehiculoRemplazo_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<!-- 								next row  -->
+									<tr>
+										<td><label class="control-label">Inspección
+												requerido:</label>
+											<div class="controls">
+												<label id="reqInspeccion_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Fecha cexper:</label>
+											<div class="controls">
+												<label id="fechaCexper_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<!--  End Datos del Vehículo  Section-->
+									<!--Start Datos del locatario section  -->
+                                     <tr bgcolor="#E3E3E3" class="locatario">
+										<th colspan="2"><b>Documento del locatario</b></th>
+									</tr>
+									<tr class="locatario">
+									  <td colspan="2"><label class="control-label">Tipo documento:</label>
+									    <div class="controls">
+												<label id="tipoDocLocatario_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div>
+									  </td>
+									</tr>
+									<tr class="locatario">
+									  <td colspan="2"><label class="control-label">Número de documento:</label>
+									    <div class="controls">
+												<label id="numDocLocatario_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div>
+									  </td>
+									</tr>
+									<!-- End Datos del locatario section -->
+									<!--Start Datos del Representate legal section  -->
+                                     <tr bgcolor="#E3E3E3" class="representeLeg">
+										<th colspan="2"><b>Documento legal representante</b></th>
+									</tr>
+									<tr class="representeLeg">
+									  <td colspan="2"><label class="control-label">Tipo documento:</label>
+									    <div class="controls">
+												<label id="tipoDocRepLegal_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div>
+									  </td>
+									</tr>
+									<tr class="representeLeg">
+									  <td colspan="2"><label class="control-label">Número de documento:</label>
+									    <div class="controls">
+												<label id="numDocRepLegal_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div>
+									  </td>
+									</tr>
+									<!-- End Datos del RepresentateLegal section -->
+									<tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Datos del conductor</b></th>
+									</tr>
+									<!-- 								next row  -->
+									<tr>
+										<td colspan="2"><label class="control-label">Nombre(s):</label>
+											<div class="controls">
+												<label id="nombre_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+
+									</tr>
+									<tr>
+										<td><label class="control-label">Género:</label>
+											<div class="controls">
+												<label id="sexo_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Fecha nacimiento:</label>
+											<div class="controls">
+												<label id="fetchaNacimiento_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<!-- <td><label class="control-label">Ocupación:</label>
+											<div class="controls">
+												<label id="ocupacion_v" class="tdLabel control-datarecord"></label>
+											</div></td> -->
+										<td>&nbsp;</td>
+									</tr>
+									<!-- 	<tr>
+										<td><label class="control-label">Menor 25:</label>
+											<div class="controls">
+												<label id="menor25_v" class="tdLabel control-datarecord"></label>
+											</div></td>
+										<td><label class="control-label">Estado Civil:</label>
+											<div class="controls">
+												<label id="estadoCivil_v" class="tdLabel control-datarecord"></label>
+											</div></td>
+									</tr>
+									
+                                    <!--  ***************************** section for Beneficiario*********************** -->
+									<!--  *****************************End  section for Beneficiario*********************** -->
+
+
+
+									<!--  Coberturas Section-->
+									<tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Coberturas</b></th>
+									</tr>
+
+									<tr>
+										<td colspan="2"><label class="control-label">Opción coberturas:</label>
+											<div class="controls">
+												<label id="opcionCobertura_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<tr>
+										<td style="display:none;"><label class="control-label">Bonificación técnica:</label>
+											<div class="controls">
+												<label id="descuentoTecnico_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+
+										<td colspan="2" style="display:none;"><label class="control-label">Descuento por fidelización:</label>
+											<div class="controls">
+												<label id="descuentoComercial_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<!--  End Coberturas Section-->
+
+									<!--  Datos de Resp. Civil Suplementaria Section-->
+									<tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Datos de Resp. Civil Suplementaria</b></th>
+									</tr>
+
+									<tr>
+										<td><label class="control-label">Resp. civil suplementaria:</label>
+											<div class="controls">
+												<label id="responsabilidadCivil_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Deducible cobertura R.C:</label>
+											<div class="controls">
+												<label id="deducibleCobertura_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<!--  End Datos de Resp. Civil Suplementaria Section-->
+
+
+									<!--  Deducible Section-->
+									<tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Deducibles</b></th>
+									</tr>
+
+									<tr>
+										<td><label class="control-label">Deducible parcial daños:</label>
+											<div class="controls">
+												<label id="deducibleParcial_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+										<td><label class="control-label">Deducible cobertura hurto:</label>
+											<div class="controls">
+												<label id="deducibleHurto_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+									<tr>
+										<td colspan="2"><label class="control-label">Deducible total daños: </label>
+											<div class="controls">
+												<label id="deducibleTotal_v" class="tdLabel control-datarecord"><b>-</b></label>
+											</div></td>
+									</tr>
+
+									<!--  End Deducible Section-->
+
+									<tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Detalle Riesgo</b></th>
+									</tr>
+
+									<!-- 								next row  -->
+									<tr>
+										<td colspan="2">
+											<table id="autos_cobertura_table" class="table table-bordered">
+												<tbody><tr>
+													<th width="30%">Concepto</th>
+													<th width="35%" style="text-align: right;">Valor asegurado</th>
+													<th width="35%" style="text-align: right;">Valor prima </th>
+												</tr>
+											</tbody></table>
+
+										</td>
+									</tr>
+
+									<tr bgcolor="#E3E3E3">
+										<th colspan="2"><b>Cuadro Resumen</b></th>
+									</tr>
+
+									<tr>
+										<td colspan="2">
+											<table class="table table-bordered">
+												<tbody>
+													<tr>
+														<td>Valor de la prima</td>
+														<td style="text-align: right;"><span id="prima_v" class="control-datarecord"><b>-</b></span></td>
+													</tr>
+													<tr>
+														<td>IVA</td>
+														<td style="text-align: right;"><span id="impuestoPrima_v" class="control-datarecord"><b>-</b></span></td>
+
+													</tr>
+													<tr>
+														<td><strong>Total prima</strong></td>
+														<td style="text-align: right;"><span id="totalPrima_v" class="control-datarecord" style="font-weight: bold"><b>-</b></span></td>
+													</tr>
+
+												</tbody>
+											</table>
+										</td>
+									</tr>
+
+
+								</tbody></table>
+								<div align="center">
+								    <!--BRGH llamado de funcionamiento en consultas.js-->
+									<a class="btn btn-success disabled" id="formalizeDisabled" style="display: none">Emitir</a> <a class="btn btn-success" id="formalizeSoliz" style="display: none">Emitir</a> <a class="btn btn-success" id="formalizeDirect" style="display: none">Emitir</a>
+								</div>
+									<span id="errorCommonAutosSpan" style="color: #BD4247;display: none;" class="alert alert-danger"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+
+				<!-- end data of cotizacion -->
+			</div>
+
+</div>
+</div>
+
+<div id="overlayCancAcce" class="overlay-md md-show" style="display: none;">
+<div id="modalCot" class="modal-md md-effect-1 md-show md-show-large">
+	<div class="close-md" id="closeCot"></div>
+	<header>
+		<h3>Datos del cotización</h3>
+	</header>
+		<div class="overlayContent">
+		
+			<div class="box">
+				<div class="form-horizontal">
+					<!-- 							<fieldset> -->
+					<p align="center">
+						<label id="subProducto_hogar" style="font-weight: bold; color: #048235; margin-top: 5px;">
+					</label></p>
+					<div class="box-content">
+						<table width="100%" class="table">
+							<!-- 								first row  -->
+							<tbody><tr bgcolor="#E3E3E3">
+								<th colspan="2"><b>Condiciones Generales</b></th>
+							</tr>
+
+							<tr>
+								<td width="50%"><label class="control-label">Número de cotización:</label>
+									<div class="controls">
+									<label id="numLiquidacion_hogar" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+								<td width="50%"><label class="control-label">Forma de pago:</label>
+									<div class="controls">
+									<label id="periodoFacturacion_hogar" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+							</tr>
+							<!-- 								next row  -->
+							<tr>
+								<td><label class="control-label">Clave asesor:</label>
+
+									<div class="controls">
+									<label id="claveAsesor_hogar" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+								<td><label class="control-label">Número de documento:</label>
+									<div class="controls">
+									<label id="aseguradoDoc_hogar" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+
+							</tr>
+							<!-- 								next row  -->
+							<tr>
+								<td><label class="control-label">Asesor nombre:</label>
+
+									<div class="controls">
+									<label id="asesor_nombre_hogar" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+								<td></td>
+
+							</tr>
+						</tbody></table>
+					</div>
+
+<!-- my code begins -->
+<!-- Tomador -->
+<div class="box-content">
+						<table width="100%" class="table">
+							<!-- 								first row  -->
+							<tbody><tr bgcolor="#E3E3E3">
+								<th colspan="2"><b>Tomador</b></th>
+							</tr>
+
+							<tr>
+								<td width="50%"><label class="control-label">Nombre(s):</label>
+									<div class="controls">
+									<label id="nombresHogarPopup" class="tdLabel control-datarecord"> 
+									</label>
+									</div></td>
+								<td width="50%"><label class="control-label">Apellido(s):</label>
+									<div class="controls">
+									<label id="apellidosHogarPopup" class="tdLabel control-datarecord">
+										</label>
+									</div></td>
+							</tr>
+							<!-- 								next row  -->
+							<tr>
+								<td><label class="control-label">Correo electrónico:</label>
+
+									<div class="controls">
+									<label id="tomadorEmailHogarPopup" class="tdLabel control-datarecord">
+										 </label>
+									</div></td>
+								<td><label class="control-label">Teléfono celular:</label>
+									<div class="controls">
+									<label id="celularHogarPopup" class="tdLabel control-datarecord"> 
+									</label>
+									</div></td>
+
+							</tr>
+						</tbody></table>
+					</div> 
+ 
+ <!-- Oneroso -->
+ <div class="box-content">
+						<table width="100%" class="table">
+							<!-- 								first row  -->
+							<tbody><tr bgcolor="#E3E3E3">
+								<th colspan="2"><b>Oneroso</b></th>
+							</tr>
+
+							<tr>
+								<td width="50%"><label class="control-label">Tipo de identificación:</label>
+									<div class="controls">
+									<label id="oneroso_tipo" class="tdLabel control-datarecord">
+									</label>
+									</div></td>
+								<td width="50%"><label class="control-label">Número de identificación:</label>
+									<div class="controls">
+									<label id="oneroso_numero" class="tdLabel control-datarecord">
+									</label>
+									</div></td>
+							</tr>
+							<!-- 								next row  -->
+							<tr>
+								<td><label class="control-label">Razón social:</label>
+
+									<div class="controls">
+									<label id="oneroso_razon" class="tdLabel control-datarecord">
+									</label>
+									</div></td>
+								<td></td>
+
+							</tr>
+						</tbody></table>
+					</div> 
+					
+<!-- my code ends -->
+
+
+					<div id="reisgos"></div>
+
+					<div id="det"></div>
+
+					<table width="100%" class="table">
+						<tbody><tr bgcolor="#E3E3E3">
+							<th colspan="2"><b>Cuadro Resumen</b></th>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td>Valor de la prima</td>
+										<td style="text-align: right;"><span id="prima_hogar" class="control-datarecord"><b>-</b></span></td>
+										</tr>
+										<tr>
+											<td>IVA</td>
+											<td style="text-align: right;"><span id="impuestoPrima_hogar" class="control-datarecord"><b>-</b></span></td>
+
+										</tr>
+										<tr>
+											<td><strong>Total prima</strong></td>
+										<td style="text-align: right;"><span id="totalPrima_hogar" class="control-datarecord" style="font-weight: bold"><b>-</b></span></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</td>
+						</tr>
+
+
+					</tbody></table>
+					
+					<div align="center">
+					<a class="btn btn-success disabled btnLft" id="formalizeDisabledHogar" style="display: none"> Emitir
+					</a> <a class="btn btn-success btnLft" id="formalizeSolizHogar" style="display: none">Emitir</a> <a class="btn btn-success btnLft" id="formalizeEnableHogar" style="display: none"> Emitir
+						</a>
+				 	</div>
+				</div>
+				<!--  div end for  form -->
+			</div>
+			
+		</div>
+		</div>
+		</div>
+
+	<div id="saludOverlayCot" class="overlay-md md-show" style="display: none;">
+	<div id="saludModalCot" class="modal-md md-effect-1 md-show-large md-show">
+	<div class="close-md" id="closeCotSalud"></div>
+				<header>
+					<h3>Cotización de salud</h3>
+				</header>
+		<div class="overlayContent">
+			<div class="box">
+				<div class="form-horizontal">
+					<!-- 							<fieldset> -->
+					<p align="center">
+						<label id="subProducto_v_s" style="font-weight: bold; color: #048235; margin-top: 5px;">
+					</label></p>
+					<div class="box-content">
+						<table width="100%" class="table">
+							<!-- 								first row  -->
+							<tbody><tr bgcolor="#E3E3E3">
+								<th colspan="2"><b>Condiciones Generales</b></th>
+							</tr>
+
+							<tr>
+								<td width="50%"><label class="control-label">Número de cotización:</label>
+									<div class="controls">
+										<label id="numLiquidacion_v_s" class="control-datarecord tdLabel"><b>-</b></label>
+									</div></td>
+								<td width="50%"><label class="control-label">Forma de pago:</label>
+									<div class="controls">
+										<label id="periodoFacturacionKey_v_s" class="control-datarecord tdLabel"><b>-</b></label>
+									</div></td>
+							</tr>
+							<!-- 								next row  -->
+							<tr>
+								<td><label class="control-label">Clave asesor :</label>
+
+									<div class="controls">
+										<label id="claveAsesor_v_s" class="control-datarecord tdLabel"><b>-</b></label>
+									</div></td>
+								<td><label class="control-label">Número de documento:</label>
+									<div class="controls">
+										<label id="aseguradoDoc_v_s" class="control-datarecord tdLabel"><b>-</b></label>
+									</div></td>
+
+							</tr>
+						 
+						</tbody></table>
+					</div>
+
+					<div id="reisgosSalud"></div>
+
+					<div id="detSalud"></div>
+
+					<table width="100%" class="table">
+						<tbody><tr bgcolor="#E3E3E3">
+							<th colspan="2"><b>Cuadro Resumen</b></th>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td>Valor de la prima</td>
+											<td style="text-align: right;"><span id="prima_v_s" class="control-datarecord"><b>-</b></span></td>
+										</tr>
+										<tr>
+											<td>IVA</td>
+											<td style="text-align: right;"><span id="impuestoPrima_v_s" class="control-datarecord"><b>-</b></span></td>
+
+										</tr>
+										<tr>
+											<td><strong>Total prima</strong></td>
+											<td style="text-align: right;"><span id="totalPrima_v_s" class="control-datarecord" style="font-weight: bold"><b>-</b></span></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</td>
+						</tr>
+
+
+					</tbody></table>
+						 
+				</div>
+				<div align="center">
+				<input class="btn btn-success" id="formalizationButtonSalud" style="display:none;" type="button" value="Emitir" disabled="disabled">
+				<input class="btn btn-success" style="display:none;" id="formalizationButtonDisableSalud" disabled="disabled" type="button" value="Emitir">
+			</div>
+				<!--  div end for  form -->
+			</div>
+		</div>
+</div>
+</div>
+
+
+<div id="overlayQuoteVida" class="overlay-md md-show" style="display: none;">
+<div id="modalQuoteVida" class="modal-md md-effect-1 md-show md-show-large">
+	<header>
+		<h3 id="headerId">Cotización de vida</h3>
+	</header>
+	<div class="close-md" id="closeQuoteVida"></div>
+	<div class="overlayContent">
+		<div class="box">
+			<div class="form-horizontal">
+				<!-- 							<fieldset> -->
+				<p align="center">
+					<label id="subProducto_vida" style="font-weight: bold; color: #048235; margin-top: 5px;">
+				</label></p>
+				<div class="box-content">
+					<table width="100%" class="table">
+						<!-- 								first row  -->
+						<tbody><tr bgcolor="#E3E3E3">
+							<th colspan="2"><b>Condiciones Generales</b></th>
+						</tr>
+
+						<tr>
+							<td width="50%"><label class="control-label">Número de cotización:</label>
+								<div class="controls">
+									<label id="numLiquidacion_vida" class="tdLabel control-datarecord"><b>-</b></label>
+								</div></td>
+
+						</tr>
+						<!-- 								next row  -->
+						<tr>
+							<td><label class="control-label">Clave asesor:</label>
+
+								<div class="controls">
+									<label id="claveAsesor_vida" class="tdLabel control-datarecord"><b>-</b></label>
+								</div></td>
+							<!-- <td><label class="control-label">N&uacutemero de documento:</label>
+									<div class="controls">
+										<label id="aseguradoDoc_vida" class="tdLabel control-datarecord"></label>
+									</div></td> -->
+
+						</tr>
+						<tr id="descuentoDiv" style="display: none;">
+							<td><label class="control-label">Descuento agente:</label>
+
+								<div class="controls">
+									<label id="descuentoAgente_vida" class="tdLabel control-datarecord"><b>-</b></label>
+								</div></td>
+							<!-- <td><label class="control-label">N&uacutemero de documento:</label>
+									<div class="controls">
+										<label id="aseguradoDoc_vida" class="tdLabel control-datarecord"></label>
+									</div></td> -->
+
+						</tr>
+						<tr>
+							<td width="50%"><label class="control-label">Plan personalizado:</label>
+								<div class="controls">
+									<label id="planPersonalizado_vida" class="tdLabel control-datarecord"><b>-</b></label>
+								</div></td>
+
+						</tr>
+					</tbody></table>
+				</div>
+
+				<div id="reisgosVida"></div>
+				<span id="901_text" style="display: none"> Prima amparo básico </span> <span id="902_text" style="display: none"> Anexo de accidentes personales:muerte accidental</span> <span id="903_text" style="display: none"> Desmembración</span> <span id="904_text" style="display: none"> Renta mensual por incapacidad por accidente</span>
+				<span id="905_text" style="display: none"> Gastos	médicos por accidente</span><span id="918_text" style="display: none"> Renta diaria por incapacidad por accidente</span>
+				<span id="906_text" style="display: none"> Incapacidad total y permanente - Anticipo 40%</span> <span id="908_text" style="display: none"> Anexo de enfermedades graves - Anticipo 100%</span> <span id="910_text" style="display: none"> Incapacidad total y permanente - Anticipo 40%</span> <span id="911_text" style="display: none"> Incapacidad total y permanente - Suma adicional</span> <span id="912_text" style="display: none"> Anexo de enfermedades graves-Suma adicional</span> <span id="915_text" style="display: none"> Muerte	accidental por accidente de tránsito terrestre</span>
+				<span id="916_text" style="display: none"> Incapacidad total y permanente - Suma adicional</span><span id="901_text_Credito" style="display: none"> Prima amparo básico </span><span id="908_text_Credito" style="display: none"> Incapacidad total y permanente</span>
+				<span id="901_text_CreditoNew" style="display: none"> Amparo básico de vida</span>
+				<span id="928_text_CreditoNew" style="display: none"> Asistencia funeraria</span>
+				<span id="922_text_CreditoNew" style="display: none"> Incapacidad Total y Permanente por Enfermedad como Suma Adicional</span>
+				<span id="924_text_CreditoNew" style="display: none"> Incapacidad Total y Permanente por Accidente como Suma Adicional </span>
+				<span id="911_text_CreditoNew" style="display: none"> Enfermedades Graves como Suma Adicional</span>
+
+				<span id="901_text_Credito960" style="display: none"> Amparo básico de vida</span>
+				<span id="932_text_Credito960" style="display: none"> Devolución de prima</span>
+				<span id="928_text_Credito960" style="display: none"> Asistencia funeraria</span>
+				<span id="930_text_Credito960" style="display: none"> Auxilio medicamentos, vacunas, lentes</span>
+				<span id="922_text_Credito960" style="display: none"> Incapacidad Total y Permanente por Enfermedad como Suma Adicional</span>
+				<span id="924_text_Credito960" style="display: none"> Incapacidad Total y Permanente por Accidente como Suma Adicional </span>
+				<span id="908_text_Credito960" style="display: none"> Incapacidad Total y Permanente por Enfermedad o Accidente como Anticipo</span>
+				<span id="911_text_Credito960" style="display: none"> Enfermedades Graves como Suma Adicional</span>
+				<span id="917_text_Credito960" style="display: none"> Enfermedades Graves e Invalidez como anticipo al 50%</span>
+				<span id="920_text_Credito960" style="display: none"> Renta Diaria por Incapacidad por Enfermedad</span>
+				<span id="902_text_Credito960" style="display: none"> Anexo de accidentes personales: muerte accidental</span>
+				<span id="915_text_Credito960" style="display: none"> Muerte accidental por accidente de tránsito terrestre</span>
+				<span id="903_text_Credito960" style="display: none"> Desmembración</span>
+				<span id="905_text_Credito960" style="display: none"> Gastos médicos por accidente</span>
+				<span id="918_text_Credito960" style="display: none"> Renta diaria por incapacidad por accidente</span>
+
+				<div id="detVida"></div>
+
+				<table width="100%" class="table">
+					<tbody><tr bgcolor="#E3E3E3">
+						<th colspan="2"><b>Cuadro Resumen</b></th>
+					</tr>
+
+					<tr>
+						<td colspan="2">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<td>Valor de la prima</td>
+										<td style="text-align: right;"><span id="prima_vida" class="control-datarecord"><b>-</b></span></td>
+									</tr>
+									<tr>
+										<td>IVA</td>
+										<td style="text-align: right;"><span id="impuestoPrima_vida" class="control-datarecord"><b>-</b></span></td>
+
+									</tr>
+									<tr>
+										<td><strong>Total prima </strong></td>
+										<td style="text-align: right;"><span id="totalPrima_vida" class="control-datarecord" style="font-weight: bold"><b>-</b></span></td>
+									</tr>
+
+								</tbody>
+							</table>
+						</td>
+					</tr>
+
+				</tbody></table>
+			</div>
+			<div align="center">
+				<input class="btn btn-success" id="formalizationButton" type="button" value="Emitir" disabled="disabled">
+				<input class="btn btn-success" style="display: none;" id="formalizationButtonDisable" disabled="disabled" type="button" value="Emitir">
+			</div>
+		</div>
+
+	</div>
+</div>
+</div>
+<div id="overlayAgendamienteVidaPopup" class="overlay-md md-show" style="display: none;">
+<div id="modalAgendamienteVidaPopup" class="modal-md md-effect-1 md-show">
+	<div class="close-md" id="closeInspVidaPopup"></div>
+	<header>
+		<h3>Alerta</h3>
+	</header>
+	<div id="contentAgendamienteVidaPopup">
+		<div class="row-fluid" id="agendeDiv">
+			<div class="box span12">
+				<div class="box-content">
+					<div class="form-horizontal">
+						<fieldset>
+							<span class="icon icon-orange icon-alert"></span> <span id="errorSubmitTextVidaPopup" class="warningmessage"></span>
+								<div id="warningListDivId"></div>
+						</fieldset>
+					</div>
+					<div class="form-actions" align="center">
+						<input type="button" id="continueFormalization" class="btn btn-primary" value="Continuar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="overlayQuoteVidaGrupo" class="overlay-md md-show" style="display: none;">
+	<div id="modalQuoteVidaGrupo" class="modal-md md-effect-1 md-show md-show-large">
+		<div class="close-md" id="closeQuoteVidaGrupo"></div>
+		<header>
+			<h3>Cotización de vidaGrupo</h3>
+		</header>
+		<div class="overlayContent">
+			<div class="box">
+				<div class="form-horizontal">
+					<!-- 							<fieldset> -->
+					<p align="center">
+						<label id="subProducto_vidaGrupo" style="font-weight: bold; color: #048235; margin-top: 5px;">
+					</label></p>
+					<div class="box-content">
+						<table width="100%" class="table">
+							<!-- 								first row  -->
+							<tbody><tr bgcolor="#E3E3E3">
+								<th colspan="2"><b>Condiciones Generales</b></th>
+							</tr>
+
+							<tr>
+								<td width="50%"><label class="control-label">Número de cotización:</label>
+									<div class="controls">
+										<label id="numLiquidacion_vidaGrupo" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+
+							</tr>
+							<!-- 								next row  -->
+							<tr>
+								<td><label class="control-label">Clave asesor:</label>
+
+									<div class="controls">
+										<label id="claveAsesor_vidaGrupo" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+							</tr>
+
+						</tbody></table>
+					</div>
+
+
+					<div class="box-content">
+						<table width="100%" class="table">
+							<!-- 								first row  -->
+							<tbody><tr bgcolor="#E3E3E3">
+								<th colspan="2"><b>Tomador</b></th>
+							</tr>
+
+							<tr>
+								<td width="50%"><label class="control-label">Tipo
+										documento:</label>
+									<div class="controls">
+										<label id="tipodoc_vidaGrupo" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+
+							</tr>
+							<tr>
+								<td><label class="control-label">Número de
+										documento:</label>
+
+									<div class="controls">
+										<label id="numdoc_vidaGrupo" class="tdLabel control-datarecord"><b>-</b></label>
+									</div></td>
+							</tr>
+
+						</tbody></table>
+					</div>
+
+					<div id="reisgosVidaGrupo"></div>
+					<span id="663_text" style="display: none"> Vida basica</span> <span id="664_text" style="display: none"> Doble ind. X muerte accidental</span> <span id="665_text" style="display: none"> Incapacidad total y permanente</span> <span id="680_text" style="display: none"> Enfermedades graves</span> <span id="681_text" style="display: none"> Ultimos gastos</span>
+
+
+					<div id="detVidaGrupo"></div>
+
+					<table width="100%" class="table">
+						<tbody><tr bgcolor="#E3E3E3">
+							<th colspan="2"><b>Cuadro Resumen</b></th>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td>Valor de la prima</td>
+											<td style="text-align: right;"><span id="prima_vidaGrupo" class="control-datarecord formatC"><b>-</b></span></td>
+										</tr>
+										<tr>
+											<td>IVA</td>
+											<td style="text-align: right;"><span id="impuestoPrima_vidaGrupo" class="control-datarecord"><b>-</b></span></td>
+
+										</tr>
+										<tr>
+											<td><strong>Total prima</strong></td>
+											<td style="text-align: right;"><span id="totalPrima_vidaGrupo" class="control-datarecord formatC" style="font-weight: bold"><b>-</b></span></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</td>
+						</tr>
+
+					</tbody></table>
+				</div>
+				<div align="center">
+					<input type="hidden" id="quotationNoVidaGrupo"> <input type="hidden" id="codProductoVidaGrupo"> <input class="btn btn-success" id="formalizationButtonGrupo" type="button" value="Emitir">
+					<input class="btn btn-success" style="display: none;" id="formalizationButtonDisableGrupo" disabled="disabled" type="button" value="Emitir">
+				</div>
+				<!--  div end for  form -->
+			</div>
+		</div>
+	</div>
+</div>
+<div id="overlayAgendamienteVidaPopupGrupo" class="overlay-md md-show" style="display: none;">
+	<div id="modalAgendamienteVidaPopupGrupo" class="modal-md md-effect-1 md-show">
+		<div class="close-md" id="closeInspVidaPopupGrupo"></div>
+		<header>
+			<h3>Alerta</h3>
+		</header>
+		<div id="contentAgendamienteVidaPopupGrupo">
+			<div class="row-fluid" id="agendeDivGrupo">
+				<div class="box span12">
+					<div class="box-content">
+						<div class="form-horizontal">
+							<fieldset>
+								<span class="icon icon-orange icon-alert"></span> <span id="errorSubmitTextVidaPopupGrupo" class="warningmessage"></span>
+							</fieldset>
+						</div>
+						<div class="form-actions" align="center">
+							<input type="button" id="continueFormalizationGrupo" class="btn btn-primary" value="Continuar">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- ************   cotizacion pop ups for agentamiento and inspeccion number  **************  -->
+	<!-- <div id="overlayAgendamiente" style="display: none"> -->
+	<div id="overlayAgendamiente" class="overlay-md md-show" style="display: none;">
+			<div id="modalAgendamiente" class="modal-md md-effect-1 md-show">
+		<header>
+			<h3>Solicitud inspección</h3>
+		</header>
+		<div class="close-md" id="closeInsp"></div>
+		<div id="contentAgendamiente">
+
+			<div class="row-fluid" id="agendeDiv">
+				<!-- <div id="emailFormAuto" style="display: none;"
+	class="row-fluid sortable"> -->
+				<div class="box span12">
+					<div class="box-content">
+						<div class="form-horizontal">
+							<fieldset>
+								<p align="left">
+									<span></span>
+								</p>
+								<p align="left">
+									<span> ¿Quieres enviar solicitud agendamiento? </span>
+								</p>
+							</fieldset>
+						</div>
+						<div class="form-actions" align="center">
+							<input type="button" id="closeReqInspeccion" class="btn btn-primary" value="NO"> <input type="button" id="sendReqInspeccion" class="btn btn-primary" value="SI">
+						</div>
+					</div>
+
+				</div>
+				<!-- </div> -->
+			</div>
+
+			<div class="row-fluid" id="inspeccDiv" style="display: none;">
+				<!-- <div id="emailFormAuto" style="display: none;"
+	class="row-fluid sortable"> -->
+				<div class="box span12">
+
+					<div class="box-header well" data-original-title="">
+
+						<h2>
+							<i class="icon-edit"></i>Inspección
+						</h2>
+
+					</div>
+					<div class="box-content">
+						<div class="form-horizontal">
+							<fieldset>
+								<table width="100%">
+									<tbody><tr>
+										<td width="50%">
+											<div class="campos__form campo-imput">
+												<label class="control-label">Número inspección <font color="#BD4247">*</font></label>
+
+												<div class="controls">
+													<input type="text" id="inspeccionNo" name="inspeccionNo" class="required input-large numbersOnly continueInspeccion" maxlength="15" tabindex="1"> <span id="errorinspeccionNo" style="color: #BD4247;" class="error"></span>
+												</div>
+												<p align="center"></p>
+												<p align="center">
+													<span id="errorContinueInspeccion" style="color: #BD4247;" class="error"></span>
+												</p>
+											</div>
+										</td>
+									</tr>
+								</tbody></table>
+							</fieldset>
+						</div>
+						<div class="form-actions" align="center">
+							<input type="button" id="closeInspeccion" class="btn btn-primary" value="Cerrar"> <input type="button" id="sendInspeccion" class="btn btn-primary" value="Enviar">
+						</div>
+					</div>
+
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--/span-->
+	
+</form>
+
+<style type="text/css">
+.mb-tag-text {
+	text-transform: uppercase;
+}
+
+.responsiveFloatLft {
+	z-index: 99999;
+}
+
+}
+#contentemails {
+	z-index: 55555;
+}
+
+.responsiveFloatLft {
+	z-index: 99999;
+}
+}
+.si-label {
+	transform: translate(10%, -93%);
+}
+@media ( min-width : 320px) and (max-width: 420px) {
+.campo-radio-check .checkbox label::before {
+transform: translate(55%, 11%);
+  }
+}
+
+</style>
+
+
+
+
+
+<div id="overlayemails" class="overlay-md md-show" style="display: none;">
+	<div id="modalemails" class="modal-md md-effect-1 md-show">
+		<header>
+			<h3>
+				Correo electrónico
+			</h3>
+		</header>
+		<div id="contentemails">
+		<div class="overlayContent">
+					<div class="responsiveFloatLft">
+			<div class="row-fluid">
+				<!-- <div id="emailFormAuto" style="display: none;"
+	class="row-fluid sortable"> -->
+				<div class="box span12">
+					<div class="box-content">
+						<div class="">
+							<p align="left">
+								<span style="color: #BD4247;"> </span>
+							</p>
+							<p align="left">
+								<i class="icon-info-sign" data-original-title=" Después de digitar el correo presione ENTER/TAB para añadirlo. No se puede añadir más de 10 correos" data-rel="tooltip"></i> <span> Después de digitar el
+									correo presione ENTER/TAB para añadirlo. No se puede
+									añadir más de 10 correos </span>
+							</p>
+							<div class="campos__form campo-imput">
+								<label class="control-label">Correo electrónico</label>
+								<div id="emailTxtBoxDiv" class="controls">
+									<input id="emailTxtBox" style="text-transform: uppercase; display: none;" tabindex="0" placeholder="Escribir el correo electrónico.."><div class="mb-container"><ul class="mb-taglist"><div class="mb-meta"><input id="" style="text-transform: uppercase;" tabindex="0" placeholder="Escribir el correo electrónico.." class="mb-input"></div></ul></div>
+									<div align="left" id="errorDivEmail"></div>
+								</div>
+							</div>
+
+							<div class="campos__form campo-radio-check">
+								<label id="agentEmailDivLabel" class="control-label" for="agentEmailId">Copiar
+									Agente</label>
+
+								<div id="agentEmailDiv" class="checkbox">
+									 <div class="checker" id="uniform-agentEmailId"><span><input type="checkbox" tabindex="1" id="agentEmailId" name="agentEmailId" value="hollmann.qvision@gmail.com" style="opacity: 0;"><label class="handle-cbx" for="agentEmailId"> </label></span></div>
+								</div>
+								<label class="si-label" style="margin-top: -18px;"> Si</label>
+							</div>
+						</div>
+					</div>
+					<input type="hidden" id="defaultemail" value=""> <input type="hidden" id="actionUrl" value="printQuotationAction.do?codUsr=79468066"> <input type="hidden" id="counter" value="1"> <input type="hidden" id="counterEmail" value="">
+
+
+					<div class="form-actions" align="center">
+						<input type="button" id="closeEmail" tabindex="2" class="btn btn-primary" value="Cerrar"> <input type="button" id="emailSubmit" tabindex="3" class="btn btn-primary" value="Enviar">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- </div> -->
+	  </div>
+	</div>
+   </div>
+</div>
+
+
+
+
+
+
+
+<div id="overlayAlerta" class="overlay-md md-show" style="display: none;">
+			<div id="modalAlerta" class="modal-md md-effect-1 md-show">
+	<header>
+		<h3>Alerta</h3>
+	</header>
+	<div class="close-md" id="closeAlerta"></div>
+	<div id="contentAlerta">
+		<div class="row-fluid" id="alertDiv">
+			<div class="box span12">
+				<div class="box-content">
+					<div class="form-horizontal">
+						<fieldset>
+							<span class="icon icon-orange icon-alert"></span> <span id="alertMsgSpan" class="warningmessage"></span>
+						</fieldset>
+					</div>
+					<div class="form-actions" align="center">
+						<input type="button" id="continueAlerta" class="btn btn-primary" value="Continuar"> <input type="button" id="continueAlertaAdvance" style="display: none;" class="btn btn-primary" value="Continuar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- This model is for display when marcaTermOk is false: Autos -->
+
+<!-- <div id="commonConsultationPopup" class="overlayPopup" style="display: none"> -->
+<div id="commonConsultationPopup" class="overlay-md md-show" style="display: none;">
+			<div id="modalConfirmationPopup" class="modal-md md-effect-1 md-show">
+	<header>
+		<h3>Alerta</h3>
+	</header>
+	<div class="close-md" id="closeCommonConsultationPopup"></div>
+	<div id="contentConfirmationPopup" class="overlayContent">
+		<div class="row-fluid" id="confirmationPopupDiv">
+			<div class="box span12">
+				<div class="box-content">
+					<div class="form-horizontal">
+						<fieldset>
+							<span class="icon icon-orange icon-alert"></span> <span id="alertMsgSpanForCommonConsultation" class="warningmessage"></span>
+								<div id="commonConsultationPopupWarningList"></div>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="overlayAgendamienteVidaPopup" class="overlay-md md-show" style="display: none;">
+			<div id="modalAgendamienteVidaPopup" class="modal-md md-effect-1 md-show">
+	<div class="close-md" id="closeInspVidaPopup"></div>
+	<header>
+		<h3>Alerta</h3>
+	</header>
+	<div id="contentAgendamienteVidaPopup">
+		<div class="row-fluid" id="agendeDiv">
+			<div class="box span12">
+				<div class="box-content">
+					<div class="form-horizontal">
+						<fieldset>
+							<span class="icon icon-orange icon-alert"></span> <span id="errorSubmitTextVidaPopup" class="warningmessage"></span>
+										<div id="warningList"></div>
+						</fieldset>
+					</div>
+					<input type="hidden" id="quotationNoInAgentamientoPopup" value="">
+					<div class="form-actions" align="center">
+						<input type="button" id="continueFormalization" class="btn btn-primary" value="Continuar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="overlayAgendamienteSaludPopup" class="overlay-md md-show" style="display: none;">
+<div id="modalAgendamienteSaludPopup" class="modal-md md-effect-1 md-show">
+	<div class="close-md" id="closeInspSaludPopup"></div>
+	<header>
+		<h3>Alerta</h3>
+	</header>
+	<div id="contentAgendamienteSaludPopup" class="overlayContent">
+		<div class="row-fluid" id="agendeDiv">
+			<div class="box span12">
+				<div class="box-content">
+					<div class="form-horizontal">
+						<fieldset>
+							<span class="icon icon-orange icon-alert"></span> <span id="errorSubmitTextSaludPopup" class="warningmessage"></span>
+						</fieldset>
+					</div>
+					<input type="hidden" id="quotationNoInAgentamientoPopup" value="">
+					<div class="form-actions" align="center">
+						<input type="button" id="continueFormalizationSalud" class="btn btn-primary" value="Continuar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="overlayHogarPopup" class="overlay-md md-show" style="display: none;">
+			<div id="modalAgendamienteHogarPopup" class="modal-md md-effect-1 md-show">
+	<div class="close-md" id="HogarcloseAlerta"></div>
+	<header>
+		<h3>Alerta</h3>
+	</header>
+	<div id="contentHogarPopup">
+		<div class="responsiveFloatLft">
+			<div class="row-fluid" id="alertDiv">
+				<div class="box span12">
+					<div class="box-content">
+						<div class="form-horizontal">
+							<fieldset>
+								<span class="icon icon-orange icon-alert"></span> <span id="HogaralertMsgSpan" class="warningmessage"></span>
+							</fieldset>
+						</div>
+
+						<div class="form-actions" align="center">
+							<input type="button" id="HogarcontinueAlertaAdvance" style="display: none;" class="btn btn-primary" value="Continuar">
+
+							<input type="button" id="HogarcontinueAlerta" style="display: none;" class="btn btn-primary" value="Continuar">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- // popup is used to display error message  ValidaPlacaVigenteRequest -->
+	
+	<!-- Mantis 59160 -->
+<div id="autosPlacaOverlayAlerta" class="overlay-md md-show" style="display: none">
+	<div id="AutosPlacaModalAlerta" class="modal-md md-effect-1 md-show">
+		<div class="close-md" id="autosPlacacloseAlerta"></div>
+		<header>
+			<h3>Alerta</h3>
+		</header>
+		<div id="autosPlacacontentAlerta" class="overlayContent">
+			<div class="row-fluid" id="autosPlacaPopupDiv">
+				<div class="responsiveFloatLft">
+					<div class="box span12">
+						<div class="box-content">
+							<div class="form-horizontal">
+								<fieldset>
+									<div id="autosPlacaAlertMsgSpan" class="error"></div>
+								</fieldset>
+							</div>
+							<div class="form-actions" align="center">
+								<input type="button" id="CanclearAlertaAdvance" class="btn btn-primary" value="Cancelar">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<form id="agendamientoForm" name="agendamientoForm" method="post" target="AgendamientoWindow" action="">
+	<input type="hidden" id="Username" name="Username" value="79468066">
+	<input type="hidden" id="employeeType" name="employeeType" value="CC">
+	<input type="hidden" name="tipoNegocio" value="1">
+	<input type="hidden" name="nroNegocio" value="">
+	<input type="hidden" name="procesosAgendamiento" value="240">
+	<!-- <input type="hidden" name="parameter" value="viewAutosInspection"> -->
+	<input type="hidden" name="parameterAgendamiento" value="viewAutosInspection">
+	<input type="hidden" name="nombreAsegurado" value="">
+	<input type="hidden" name="tipoDocumento" value="">
+	<input type="hidden" name="cedulaAsegurado" value="">
+	<input type="hidden" name="numeroDocumento" value="">
+	<input type="hidden" name="correoElectronico" value="">
+	<input type="hidden" name="codCiudad" value="">
+	<input type="hidden" id="agendaWorkForceId" name="agendaWorkForceId" value="16659">
+		
+	<input type="hidden" id="companyAgenda" name="companyAgenda" value=""> 	
+	<input type="hidden" id="codProdAgenda" name="codProdAgenda" value=""> 
+	<input type="hidden" id="codSeccAgenda" name="codSeccAgenda" value=""> 
+	<input type="hidden" id="procesoAgenda" name="procesoAgenda" value="241"> 
+	<input type="hidden" id="subProcesoAgenda" name="subProcesoAgenda" value="240"> 
+		
+</form>
+
+
+<script type="text/javascript">
+	/*$(document).ready(function() {
+	 $('.overlayPopup').height($(document).height()).addClass('overlayPopupRahul');
+	 });*/
+	/*$(function() {
+	 $(window).resize(function(){
+	 var w = $(window).width();
+	 if(w > 240 && w > 360 && menu.is(':hidden')) {
+	 $('.overlayPopup').height($(document).height()).addClass('overlayPopupRahul');
+	 }
+	 });
+	 });*/
+</script>
+<div id="overlayInspectionDelegada" class="overlay-md md-show" style="display: none;">
+	<div id="modalInspectionDelegadaMsg" class="modal-md md-effect-1 md-show">
+		<div class="close-md closeInspectionDelegadaPopup"></div>
+		<header>
+			<h3>Alerta</h3>
+		</header>
+		<div class="overlayContent">
+			<div class="responsiveFloatLft">
+				<div class="row-fluid ">
+					<div class="box span12">
+						<div class="box-content">
+						<input id="ciudadForInspection" name="ciudadForInspection" type="hidden" value=""> 
+						<input id="placaForInspection" name="placaForInspection" type="hidden" value=""> 
+						<input id="codTipoVehicleInspection" name="codTipoVehicleInspection" type="hidden" value=""> 
+							<h3>
+								<fieldset>
+									<span id="overlayInspectionDelegadaMsg">
+										Usted cuenta con inspección delegada o desea tomar otra opción de inspección
+									</span>
+								</fieldset>
+							</h3>
+
+							<div class="form-actions" align="center">
+								<input type="button" id="acceptarDelegada" class="btn btn-success " value="Aceptar"> &nbsp;&nbsp;&nbsp; <input type="button" id="otraOption" class="btn btn-success" value="Otra opción">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+						<!-- content ends -->
+					</div>
+				
+			
+
+			<!-- left menu ends -->
+		</div>
+	</div>
+		
+
+<footer>
+	<div class="footer">
+		<div class="content-footer">
+
+			Copyright © 2014 <a href="http://www.segurosbolivar.com">Seguros Bolivar</a>. Todos los derechos reservados.<span class="pleca-footer"> &nbsp;
+				&nbsp;|&nbsp; &nbsp; </span>
+				<span class="copiright-footer">Build:SimonQuotation_20230628</span>
+
+
+		</div>
+	</div>
+</footer>
+
+
+		
+	<div style="display: none;">
+		<button id="mandatoryNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Por favor diligencie los campos obligatorios&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+
+		<button id="pageLevelNoty" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Center
+		</button>
+
+		<button id="anosNotification" class="btn btn-primary noty" data-noty-options="{&quot;text&quot;:&quot;Entre años 1 y 70&quot;,&quot;layout&quot;:&quot;bottom&quot;,&quot;type&quot;:&quot;error&quot;,&quot;closeButton&quot;:&quot;true&quot;}">Bottom
+			Left</button>
+	</div>
+
+	<!-- external javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<script src="/SimonQuotation/js/jquery/jquery.js?v=SimonQuotation_20230628"></script>
+
+	<!-- jQuery UI -->
+	 <script src="/SimonQuotation/js/jquery/jquery-ui-1.8.21.custom.min.js?v=SimonQuotation_20230628"></script> 
+
+	<!-- data table plugin -->
+	 <script src="/SimonQuotation/js/jquery/jquery.dataTables.min.js?v=SimonQuotation_20230628"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.dataTables.columnFilter.js?v=SimonQuotation_20230628"></script>
+
+	<!-- application script for Charisma demo -->
+	<script src="/SimonQuotation/js/charisma.js?v=SimonQuotation_20230628"></script>
+
+	<!-- custom js files -->
+	<script src="/SimonQuotation/js/common/dwr.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/common/dwr-common.js?v=SimonQuotation_20230628"></script>
+
+	<script src="/SimonQuotation/js/common/ajax.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/common/validation.js?v=SimonQuotation_20230628"></script><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" onclick="DP_jQuery_1688356769042.datepicker._adjustDate('#fechaFin', -1, 'M');" title="<Ant"><span class="ui-icon ui-icon-circle-triangle-w">&lt;Ant</span></a><a class="ui-datepicker-next ui-corner-all" onclick="DP_jQuery_1688356769042.datepicker._adjustDate('#fechaFin', +1, 'M');" title="Sig>"><span class="ui-icon ui-icon-circle-triangle-e">Sig&gt;</span></a><div class="ui-datepicker-title"><select class="ui-datepicker-month" onchange="DP_jQuery_1688356769042.datepicker._selectMonthYear('#fechaFin', this, 'M');"><option value="0">Ene</option><option value="1">Feb</option><option value="2">Mar</option><option value="3">Abr</option><option value="4">May</option><option value="5">Jun</option><option value="6" selected="selected">Jul</option><option value="7">Ago</option><option value="8">Sep</option><option value="9">Oct</option><option value="10">Nov</option><option value="11">Dic</option></select><select class="ui-datepicker-year" onchange="DP_jQuery_1688356769042.datepicker._selectMonthYear('#fechaFin', this, 'Y');"><option value="1923">1923</option><option value="1924">1924</option><option value="1925">1925</option><option value="1926">1926</option><option value="1927">1927</option><option value="1928">1928</option><option value="1929">1929</option><option value="1930">1930</option><option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option><option value="1936">1936</option><option value="1937">1937</option><option value="1938">1938</option><option value="1939">1939</option><option value="1940">1940</option><option value="1941">1941</option><option value="1942">1942</option><option value="1943">1943</option><option value="1944">1944</option><option value="1945">1945</option><option value="1946">1946</option><option value="1947">1947</option><option value="1948">1948</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023" selected="selected">2023</option></select></div></div><table class="ui-datepicker-calendar"><thead><tr><th><span title="Lunes">Lu</span></th><th><span title="Martes">Ma</span></th><th><span title="Miércoles">Mi</span></th><th><span title="Jueves">Ju</span></th><th><span title="Viernes">Vi</span></th><th class="ui-datepicker-week-end"><span title="Sábado">Sá</span></th><th class="ui-datepicker-week-end"><span title="Domingo">Do</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-current-day" onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default ui-state-active ui-state-hover" href="#">1</a></td><td class=" ui-datepicker-week-end  ui-datepicker-today" onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default ui-state-highlight" href="#">2</a></td></tr><tr><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">3</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">4</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">5</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">6</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">7</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">8</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">9</a></td></tr><tr><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">10</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">11</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">12</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">13</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">14</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">15</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">16</a></td></tr><tr><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">17</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">18</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">19</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">20</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">21</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">22</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">23</a></td></tr><tr><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">24</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">25</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">26</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">27</a></td><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">28</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">29</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">30</a></td></tr><tr><td class=" " onclick="DP_jQuery_1688356769042.datepicker._selectDay('#fechaFin',6,2023, this);return false;"><a class="ui-state-default" href="#">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table><div class="ui-datepicker-buttonpane ui-widget-content"><button type="button" class="ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all" onclick="DP_jQuery_1688356769042.datepicker._gotoToday('#fechaFin');">Hoy</button><button type="button" class="ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all" onclick="DP_jQuery_1688356769042.datepicker._hideDatepicker();">Cerrar</button></div></div>
+	<script src="/SimonQuotation/js/common/commonUI.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/common/drop-down-search.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.formatCurrency-1.4.0.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.formatCurrency.es-CO.js?v=SimonQuotation_20230628"></script>
+
+	<script src="/SimonQuotation/js/jquery/i18n/jquery.ui.datepicker-es.js?v=SimonQuotation_20230628"></script>
+
+	<script src="/SimonQuotation/js/jquery/jquery.blockUI.js?v=SimonQuotation_20230628"></script>
+
+
+	<!-- transition / effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-transition.js?v=SimonQuotation_20230628"></script>
+
+	<!-- alert enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-alert.js?v=SimonQuotation_20230628"></script>
+
+	<!-- modal / dialog library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-modal.js?v=SimonQuotation_20230628"></script>
+
+	<!-- custom dropdown library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-dropdown.js?v=SimonQuotation_20230628"></script>
+
+	<!-- scrolspy library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-scrollspy.js?v=SimonQuotation_20230628"></script>
+
+	<!-- library for creating tabs -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tab.js?v=SimonQuotation_20230628"></script>
+
+	<!-- library for advanced tooltip -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tooltip.js?v=SimonQuotation_20230628"></script>
+
+	<!-- popover effect library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-popover.js?v=SimonQuotation_20230628"></script>
+
+	<!-- button enhancer library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-button.js?v=SimonQuotation_20230628"></script>
+
+	<!-- accordion library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-collapse.js?v=SimonQuotation_20230628"></script>
+
+	<!-- carousel slideshow library (optional, not used in demo) -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-carousel.js?v=SimonQuotation_20230628"></script>
+
+	<!-- autocomplete library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-typeahead.js?v=SimonQuotation_20230628"></script>
+
+	<!-- tour library -->
+	<script src="/SimonQuotation/js/bootstrap/bootstrap-tour.js?v=SimonQuotation_20230628"></script>
+
+	<!-- library for cookie management -->
+	<script src="/SimonQuotation/js/jquery/jquery.cookie.js?v=SimonQuotation_20230628"></script>
+
+	<!-- calander plugin -->
+	<script src="/SimonQuotation/js/fullcalendar.min.js?v=SimonQuotation_20230628"></script>
+
+	<!-- chart libraries start -->
+	
+    <!--Mail:Fwd:Performance-->
+	
+	<!-- chart libraries end -->
+
+	<!-- select or dropdown enhancer -->
+	<script src="/SimonQuotation/js/jquery/jquery.chosen.min.js?v=SimonQuotation_20230628"></script>
+
+	<!-- checkbox, radio, and file input styler -->
+	<script src="/SimonQuotation/js/jquery/jquery.uniform.min.js?v=SimonQuotation_20230628"></script>
+
+	<!-- plugin for gallery image view -->
+	<script src="/SimonQuotation/js/jquery/jquery.colorbox.min.js?v=SimonQuotation_20230628"></script>
+
+	<!-- rich text editor library -->
+	<script src="/SimonQuotation/js/jquery/jquery.cleditor.min.js?v=SimonQuotation_20230628"></script>
+
+	<!-- notification plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.noty.js?v=SimonQuotation_20230628"></script>
+
+	<!-- file manager library -->
+	<script src="/SimonQuotation/js/jquery/jquery.elfinder.min.js?v=SimonQuotation_20230628"></script>
+
+	<!-- star rating plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.raty.min.js?v=SimonQuotation_20230628"></script>
+
+	<!-- for iOS style toggle switch -->
+	<script src="/SimonQuotation/js/jquery/jquery.iphone.toggle.js?v=SimonQuotation_20230628"></script>
+
+	<!-- autogrowing textarea plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.autogrow-textarea.js?v=SimonQuotation_20230628"></script>
+
+	<!-- multiple file upload plugin -->
+	<script src="/SimonQuotation/js/jquery/jquery.uploadify-3.1.min.js?v=SimonQuotation_20230628"></script>
+
+	<!-- testing carousel-->
+	<script src="/SimonQuotation/js/jquery/jquery.ui.rcarousel.min.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.ui.widget.min.js?v=SimonQuotation_20230628"></script>
+
+	<script src="/SimonQuotation/js/hammer.min.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/hammer.fakemultitouch.js?v=SimonQuotation_20230628"></script>
+
+	<script src="/SimonQuotation/js/googleAnalytics/trzConsole.js"></script>	
+
+	<script src="/SimonQuotation/js/googleAnalytics/ScriptSeguimientoSimon.js"></script>	
+
+	<script src="/SimonQuotation/js/quotation/consultas.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/popup/hogarQuotePopup.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/popup/saludQuotePopup.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/popup/autosQuotePopup.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/popup/vidaQuotePopup.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/popup/vidaGrupoPopup.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/empty.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/common/properties.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/jquery/jquery.masterblaster.js"></script>
+	<script src="/SimonQuotation/js/common/email.js"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomador.js?v=SimonQuotation_20230628"></script>
+	<script src="/SimonQuotation/js/common/commonAddTomadorBasico.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/common/designRadioCbx.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/tmpl.min.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/load-image.min.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/canvas-to-blob.min.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/bootstrap.min.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/bootstrap-image-gallery.min.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/jquery.iframe-transport.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-fp.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/jquery.fileupload-ui.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/locale.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/main.js?v=SimonQuotation_20230628"></script>
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBn8TQ8ANlkaa65XPY3rFyv_bU01HB7ezM"></script>
+		<script src="/SimonQuotation/js/common/app-feedback-popup.js?v=SimonQuotation_20230628"></script>
+		<script src="/SimonQuotation/js/common/html2canvas.js?v=SimonQuotation_20230628"></script>
+<script src="/SimonQuotation/js/common/html2canvas.min.js?v=SimonQuotation_20230628"></script>
+<script src="/SimonQuotation/js/common/callAgendamiento.js?v=SimonQuotation_20230628"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- 	<script type="javascript"> -->
+	<!-- jQuery('.numbersOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/\D/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbersWithDecimalOnly').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/[^0-9\.]/g,''); -->
+	<!-- }); -->
+
+	<!-- jQuery('.numbers1').keyup(function () {  -->
+	<!--     this.value = this.value.replace(/^[1-9]\d*(\.\d+)?$/,''); -->
+	<!-- }); -->
+
+
+	<!-- </script> -->
+	<script type="text/javascript">
+	
+	var addedFilesCount=0;
+        $('#fileupload').bind('fileuploadadd', function (e, data) {
+		  addedFilesCount++;
+		  $('#addedFilesCount').val(addedFilesCount);
+		});
+		
+	$('#fileupload').bind('fileuploadfailed', function (e, data) {
+		    if($('#delSingleMultiple').val()=="multiple"){
+		        $(".template-download").remove();
+			    $("#overlayUploadDocPopup").hide();
+			    $("#modalUploadDocPopup").removeClass("md-show");
+				$("#modalUploadDocPopup").hide();
+			}
+	});
+		    
+	/* var inp = document.getElementById('fileElementId');
+	for (var i = 0; i < inp.files.length; ++i) {
+	  var name = inp.files.item(i).name;
+	  alert("here is a file name: " + name);
+	}*/
+	</script>
+	
+						        
+		<!-- The template to display files available for upload -->
+        <script id="template-upload" type="text/x-tmpl">
+            {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-upload fade">
+            <td class="preview"><span class="fade"></span></td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            {% if (file.error) { %}
+            <td class="error" colspan="2" style="display: none;"><span class="label label-important">Error</span> {%=file.error%}</td>
+            {% } else if (o.files.valid && !i) { %}
+            <td>
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" style="width:0%;"></div></div>
+            </td>
+            <td class="start" style="display: none;">{% if (!o.options.autoUpload) { %}
+                <button class="">
+                    <i class="icon-upload icon-white"></i>
+                    <span>Start</span>
+                </button>
+                {% } %}</td>
+            {% } else { %}
+            <td colspan="2"></td>
+            {% } %} 
+            <td colspan="2"></td>
+            <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+        </tr>
+        {% } %}
+    </script>
+    <!-- The template to display files available for download -->
+    <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade"">
+            {% if (file.error) { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            <td class="error" colspan="2"><span class="label label-important">Error</span> {%=file.error%}</td>
+           <td class="cancel">{% if (!i) { %}
+                <button class="">
+                  <img src="/SimonQuotation/img/delete_icon.PNG" title="Delete"/>    
+                </button>
+                {% } %}</td>
+           {% } else { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+                {% } %}</td>
+            <td class="name">
+                {%=file.name%}
+            </td>
+            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+            <td colspan="2"></td>
+            <td>UPLOADED</td>
+            {% } %}
+        </tr>
+        {% } %}
+    </script>
+
+	<script>
+		/* setTimeout("window.location.reload()",(25000*60)); */
+
+		jQuery(function($) {
+
+			var ctx = "/SimonQuotation";
+
+			function generatePages() {
+				var _total, i, _link;
+
+				_total = $("#carousel").rcarousel("getTotalPages");
+
+				for (i = 0; i < _total; i++) {
+					_link = $("<a href='#'></a>");
+
+					$(_link).bind("click", {
+						page : i
+					}, function(event) {
+						$("#carousel").rcarousel("goToPage", event.data.page);
+						event.preventDefault();
+					}).addClass("bullet off").appendTo("#pages");
+				}
+
+				// mark first page as active
+				$("a:eq(0)", "#pages").removeClass("off").addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+
+			}
+
+			function pageLoaded(event, data) {
+				$("a.on", "#pages").removeClass("on").css("background-image",
+						"url(" + ctx + "/images/icons/page-off.png)");
+
+				$("a", "#pages").eq(data.page).addClass("on").css(
+						"background-image",
+						"url(" + ctx + "/images/icons/page-on.png)");
+			}
+
+			$(".bullet").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+
+			function initializeCarousel() {
+				if ($(window).width() < 515) {
+					$("#carousel ").rcarousel({
+						visible : 1,
+						step : 1,
+						width : 214,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else if ($(window).width() > 515 && $(window).width() <= 979) {
+					$("#carousel ").rcarousel({
+						visible : 2,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+				} else {
+					$("#carousel ").rcarousel({
+						visible : 3,
+						step : 1,
+						width : 220,
+						height : 183,
+						speed : 500,
+						auto : {
+							enabled : true,
+							direction : "next",
+							interval : 3000
+						},
+					});
+
+				}
+			}
+
+			initializeCarousel();
+
+			//			$(window).bind('orientationchange', function(event) {
+			//				alert('new orientation:' + orientation);
+			//				$( "#carousel" ).rcarousel( "destroy" );
+
+			//				initializeCarousel();
+			//			});
+
+			$("#ui-carousel-next").add("#ui-carousel-prev").hover(function() {
+				$(this).css("opacity", 0.7);
+			}, function() {
+				$(this).css("opacity", 1.0);
+			});
+		});
+
+		$(document)
+				.ready(
+						function() {
+							$("#menuMy li > a")
+									.on(
+											'click',
+											function(e) {
+												$(this).siblings('ul').toggle(
+														'slow');
+												$(this)
+														.find("span")
+														.last()
+														.toggleClass(
+																'icon-triangle-n icon-triangle-s');
+											});
+
+							$('.ajax-link')
+									.click(
+											function() {
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+
+											});
+
+							$(document)
+									.ajaxStart(
+											function() {
+												if ($("#showBlockUI").val() == "N") {
+													return;
+												}
+												$
+														.blockUI({
+															message : '<img src="img/loadajax.gif" title="Cargando..">Cargando...',
+															css : {
+																padding : 20,
+																margin : 5,
+																width : '30%',
+																top : '40%',
+																left : '35%',
+																textAlign : 'center',
+																color : '#000',
+																border : 'none',
+																backgroundColor : '#fff',
+																cursor : 'wait'
+															}
+														});
+											});
+
+							// 		var isUnblockUI = true;
+
+							$(document).ajaxStop(function() {
+								// 			if (isUnblockUI) {
+								$.unblockUI();
+								// 			}
+								if ($.browser.msie && $.browser.version < 9) {
+									$(".blockUI").fadeOut("slow");
+								}
+
+								document.onselectstart = function(e) {
+									/* if (dragging) {
+										e.preventDefault();
+										return false;
+									} */
+								};
+								$(document).ready(function() {
+									$('input').on('drop', function(event) {
+										event.preventDefault();
+									});
+								});
+							});
+
+						});
+
+		$(document).click(function(e) {
+			//alert(e.button);
+			if (e.button == 2) {
+				return false;
+			} else {
+				$("#userInfo").hide();
+				//return false;
+			}
+
+		});
+
+		$("#userButton").click(function(e) {
+			e.stopPropagation();
+			$("#userInfo").toggle();
+			return false;
+
+		});
+		// 		$(".navbar").hover(function() {
+		// 			$("#userInfo").hide();
+		// 		});
+
+		$("#userInfo").click(function(e) {
+			e.stopPropagation();
+			return false;
+		});
+		$("#logout").click(function() {
+			var logoutAction = $(this).attr('name');
+			window.location.href = logoutAction;
+		});
+
+		function goToVidaPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/vidaHomeAgent/gi);
+			if (result) {
+				window.location.href = "vidaHomeAgent.do";
+			} else {
+				return false;
+			}
+		}
+		function goToHogarPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/hogar/gi);
+			if (result) {
+				window.location.href = "hogarHomeAgent.do?user=hogarOld";
+			} else {
+				return false;
+			}
+		}
+
+		function goToSaludPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/salud/gi);
+			if (result) {
+				window.location.href = "saludHomeNew.do?viewStyle=nuevaUI";
+			} else {
+				return false;
+			}
+		}
+
+		function goToAutosPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/autos/gi);
+			if (result) {
+				window.location.href = "autosHomeAgentNew.do";
+			} else {
+				return false;
+			}
+		}
+		function goToVidaGrupoPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/grupo/gi);
+			if (result) {
+				window.location.href = "vidaColectiva.do";
+			} else {
+				return false;
+			}
+		}
+		function goToPymesPage() {
+			var value = document.getElementById("menuListText").value;
+			var result = value.match(/pymes/gi);
+			if (result) {
+				window.location.href = "PymesHome.do";
+			} else {
+				return false;
+			}
+		}       
+		//Prevents backspace except in the case of textareas and text inputs to prevent user navigation.
+		$(document)
+				.keydown(
+						function(e) {
+							var preventKeyPress;
+							if (e.keyCode == 8) {
+								var d = e.srcElement || e.target;
+								switch (d.tagName.toUpperCase()) {
+								case 'TEXTAREA':
+									preventKeyPress = d.readOnly || d.disabled;
+									break;
+								case 'INPUT':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| (d.attributes["type"] && $
+													.inArray(
+															d.attributes["type"].value
+																	.toLowerCase(),
+															[ "radio",
+																	"checkbox",
+																	"submit",
+																	"button" ]) >= 0);
+									break;
+								case 'DIV':
+									preventKeyPress = d.readOnly
+											|| d.disabled
+											|| !(d.attributes["contentEditable"] && d.attributes["contentEditable"].value == "true");
+									break;
+								default:
+									preventKeyPress = true;
+									break;
+								}
+							} else
+								preventKeyPress = false;
+
+							if (preventKeyPress)
+								e.preventDefault();
+						});
+
+		$(function() {
+			$("textarea[maxlength]")
+					.bind(
+							'input propertychange',
+							function() {
+								var maxLength = $(this).attr('maxlength');
+								var newlines = ($(this).val().match(/\n/g) || []).length;
+								if ($(this).val().length + newlines > maxLength) {
+									$(this).val(
+											$(this).val().substring(0,
+													maxLength - newlines));
+								}
+							});
+		});
+
+		$(document)
+				.ready(
+						function() {
+
+							(function($) {
+
+								$
+										.extend({
+
+											APP : {
+
+												formatTimer : function(a) {
+													if (a < 10) {
+														a = '0' + a;
+													}
+													return a;
+												},
+
+												startTimer : function(dir) {
+
+													var a;
+
+													// save type
+													$.APP.dir = dir;
+
+													// get current date
+													$.APP.d1 = new Date();
+
+													switch ($.APP.state) {
+
+													case 'pause':
+
+														// resume timer
+														// get current timestamp (for calculations) and
+														// substract time difference between pause and now
+														$.APP.t1 = $.APP.d1
+																.getTime()
+																- $.APP.td;
+
+														break;
+
+													default:
+
+														// get current timestamp (for calculations)
+														$.APP.t1 = $.APP.d1
+																.getTime();
+
+														// if countdown add ms based on seconds in textfield
+														if ($.APP.dir === 'cd') {
+															$.APP.t1 += parseInt($(
+																	'#cd_seconds')
+																	.val()) * 1000;
+														}
+
+														break;
+
+													}
+
+													// reset state
+													$.APP.state = 'alive';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Running');
+
+													// start loop
+													$.APP.loopTimer();
+
+												},
+
+												pauseTimer : function() {
+
+													// save timestamp of pause
+													$.APP.dp = new Date();
+													$.APP.tp = $.APP.dp
+															.getTime();
+
+													// save elapsed time (until pause)
+													$.APP.td = $.APP.tp
+															- $.APP.t1;
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Resume');
+
+													// set state
+													$.APP.state = 'pause';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Paused');
+
+												},
+
+												stopTimer : function() {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'stop';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html('Stopped');
+
+												},
+
+												resetTimer : function() {
+
+													// reset display
+													$(
+															'#' + $.APP.dir
+																	+ '_ms,#'
+																	+ $.APP.dir
+																	+ '_s,#'
+																	+ $.APP.dir
+																	+ '_m,#'
+																	+ $.APP.dir
+																	+ '_h')
+															.html('00');
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Start');
+
+													// set state
+													$.APP.state = 'reset';
+													$(
+															'#' + $.APP.dir
+																	+ '_status')
+															.html(
+																	'Reset & Idle again');
+
+												},
+
+												endTimer : function(callback) {
+
+													// change button value
+													$(
+															'#' + $.APP.dir
+																	+ '_start')
+															.val('Restart');
+
+													// set state
+													$.APP.state = 'end';
+
+													// invoke callback
+													if (typeof callback === 'function') {
+														callback();
+													}
+
+												},
+
+												loopTimer : function() {
+
+													var td;
+													var d2, t2;
+
+													var ms = 0;
+													var s = 0;
+													var m = 0;
+													var h = 0;
+
+													if ($.APP.state === 'alive') {
+
+														// get current date and convert it into 
+														// timestamp for calculations
+														d2 = new Date();
+														t2 = d2.getTime();
+
+														// calculate time difference between
+														// initial and current timestamp
+														if ($.APP.dir === 'sw') {
+															td = t2 - $.APP.t1;
+															// reversed if countdown
+														} else {
+															td = $.APP.t1 - t2;
+															if (td <= 0) {
+																// if time difference is 0 end countdown
+																$.APP
+																		.endTimer(function() {
+																			$.APP
+																					.resetTimer();
+																			$(
+																					'#'
+																							+ $.APP.dir
+																							+ '_status')
+																					.html(
+																							'Ended & Reset');
+																		});
+															}
+														}
+
+														// calculate milliseconds
+														ms = td % 1000;
+														if (ms < 1) {
+															ms = 0;
+														} else {
+															// calculate seconds
+															s = (td - ms) / 1000;
+															if (s < 1) {
+																s = 0;
+															} else {
+																// calculate minutes   
+																var m = (s - (s % 60)) / 60;
+																if (m < 1) {
+																	m = 0;
+																} else {
+																	// calculate hours
+																	var h = (m - (m % 60)) / 60;
+																	if (h < 1) {
+																		h = 0;
+																	}
+																}
+															}
+														}
+
+														// substract elapsed minutes & hours
+														ms = Math
+																.round(ms / 100);
+														s = s - (m * 60);
+														m = m - (h * 60);
+
+														// update display
+														$(
+																'#' + $.APP.dir
+																		+ '_ms')
+																.html(
+																		$.APP
+																				.formatTimer(ms));
+														$(
+																'#' + $.APP.dir
+																		+ '_s')
+																.html(
+																		$.APP
+																				.formatTimer(s));
+														$(
+																'#' + $.APP.dir
+																		+ '_m')
+																.html(
+																		$.APP
+																				.formatTimer(m));
+														$(
+																'#' + $.APP.dir
+																		+ '_h')
+																.html(
+																		$.APP
+																				.formatTimer(h));
+
+														// loop
+														$.APP.t = setTimeout(
+																$.APP.loopTimer,
+																1);
+
+													} else {
+
+														// kill loop
+														clearTimeout($.APP.t);
+														return true;
+
+													}
+
+												}
+
+											}
+
+										});
+
+								
+									$.APP.startTimer('sw');
+								
+							})(jQuery);
+
+						});
+	</script>
+	<script src="/SimonQuotation/js/drum.js?v=SimonQuotation_20230628"></script>
+	<input type="hidden" name="showBlockUI" id="showBlockUI" value="">
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div class="blockUI" style="display:none"></div><div class="blockUI blockOverlay" style="z-index: 100000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: fixed;"></div><div class="blockUI blockMsg blockPage" style="z-index: 100011; position: fixed; padding: 20px; margin: 5px; width: 30%; top: 40%; left: 35%; text-align: center; color: rgb(0, 0, 0); border: none; background-color: rgb(255, 255, 255); cursor: wait;"><img src="img/loadajax.gif" title="Cargando..">Cargando...</div></body></html>

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"consultarCotizacion","Consultar cotizacion","ERROR","2023-07-27T23:02:49.288-05:00[America/Bogota]","0.0","39.87"
+"Formulario Declaracion de asegurabilidad","Diligenciar formulario de declaracion de asegurabilidad","ERROR","2023-11-02T16:50:24.607-05:00[America/Bogota]","0.0","91.53"
+"consultarCotizacion","descargar cotizacion","ERROR","2023-10-31T13:06:20.061-05:00[America/Bogota]","0.0","52.91"
+"Loguearse en la pagina de GuardianPruebas","Login The Guardian","FAILURE","2023-07-02T14:51:29.803-05:00[America/Bogota]","0.0","0.87"
+"Loguearse en la pagina de GuardianPruebas","Login Simon Ventas","ERROR","2023-07-02T15:20:07.96-05:00[America/Bogota]","0.0","25.8"
