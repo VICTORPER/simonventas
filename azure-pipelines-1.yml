@@ -1,0 +1,10 @@
+trigger:
+  - main
+
+pool:
+  name: Default   # 👈 Usa el pool donde registraste tu agente
+
+steps:
+  - checkout: self
+  - script: echo "🚀 Hola Eli, ahora tu pipeline corre en tu agente local"
+    displayName: "Prueba en agente self-hosted"
