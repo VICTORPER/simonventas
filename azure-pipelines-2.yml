@@ -1,0 +1,23 @@
+trigger:
+- main   # rama donde quieres que se ejecute (ajústalo según tu repo)
+
+pool:
+    name: Default
+
+jobs:
+- job: Build
+  displayName: "Compilar y ejecutar pruebas"
+  steps:
+  - checkout: self
+
+  - task: UseNode@1
+    inputs:
+      version: '18.x'
+
+  - script: echo "Hola, Azure DevOps Pipeline funcionando 🚀"
+    displayName: "Ejecutar script"
+
+  - script: |
+      node -v
+      npm -v
+    displayName: "Verificar Node y NPM"
