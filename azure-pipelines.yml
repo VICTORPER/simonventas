@@ -1,0 +1,24 @@
+# Este pipeline se ejecuta cuando hay cambios en la rama main
+trigger:
+  - main
+
+# Define el agente en el que corre (puede ser Ubuntu, Windows o macOS)
+pool:
+  vmImage: 'ubuntu-latest'
+
+# Pasos del pipeline
+steps:
+  # 1. Descarga el código fuente
+  - checkout: self
+
+  # 2. Mensaje de prueba (verás este log en la consola de ejecución)
+  - script: echo " Hola Victor, tu pipeline YAML funciona correctamente en Azure DevOps"
+    displayName: "Imprimir mensaje de prueba"
+
+  # 3. Publicar un archivo como artefacto (ejemplo)
+  - script: |
+      echo "Este es un archivo generado por el pipeline" > salida.txt
+    displayName: "Generar archivo de salida"
+
+  - publish: salida.txt
+    artifact: drop
