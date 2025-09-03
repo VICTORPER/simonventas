@@ -1,0 +1,16 @@
+trigger:
+- main   # o la rama de tu repo
+
+pool:
+  name: Default   # usa tu pool con agente auto-hospedado
+  # O si ya tienes minutos gratis activados:
+  # vmImage: 'ubuntu-latest'
+
+jobs:
+- job: Build
+  displayName: "Compilar y ejecutar pruebas"
+  steps:
+  - checkout: self
+
+  - script: echo "Hola mundo desde Azure DevOps 🚀"
+    displayName: "Ejecutar script de prueba"
