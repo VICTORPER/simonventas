@@ -1,0 +1,50 @@
+trigger:
+- main   # Cambia por la rama que quieras
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: BuildAndTest
+  displayName: "Compilar y ejecutar pruebas con Serenity + Gradle"
+  steps:
+  - checkout: self
+
+  # Instalar Java 11
+  - task: JavaToolInstaller@0
+    inputs:
+      versionSpec: '11'
+      jdkArchitectureOption: 'x64'
+      jdkSourceOption: 'PreInstalled'
+
+  # Instalar Gradle (si no está en el repo con wrapper)
+  - task: Gradle@2
+    inputs:
+      gradleWrapperFile: 'gradlew'
+      tasks: 'clean test aggregate'
+      publishJUnitResults: true
+      testResultsFiles: '**/build/test-results/test/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: 11
+      jdkArchitectureOption: 'x64'
+
+  # Publicar resultados de pruebas JUnit (Cucumber + Serenity)
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/build/test-results/test/TEST-*.xml'
+      failTaskOnFailedTests: true
+
+  # Publicar reporte Serenity (HTML)
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: 'target/site/serenity'
+      artifact: 'serenity-report'
+      publishLocation: 'pipeline'
+
+  # Publicar build completo como artefacto (para Release)
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: 'build'
+      ArtifactName: 'drop'
+      publishLocation: 'Container'
