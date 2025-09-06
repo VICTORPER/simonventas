@@ -1,0 +1,75 @@
+trigger:
+- main   # rama donde se dispara el pipeline
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+# ============================
+# 1. BUILD
+# ============================
+- stage: Build
+  displayName: "Compilar proyecto"
+  jobs:
+  - job: BuildJob
+    steps:
+    - checkout: self
+
+    - task: Gradle@2
+      displayName: "Compilar con Gradle"
+      inputs:
+        gradleWrapperFile: 'gradlew'
+        tasks: 'clean build'
+        publishJUnitResults: false
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.11'   # Ajusta según tu proyecto
+        gradleOptions: '-Xmx3072m'
+        workingDirectory: ''
+
+    - publish: build/libs
+      artifact: drop   # publica el JAR/artefactos compilados
+
+# ============================
+# 2. TEST
+# ============================
+- stage: Test
+  displayName: "Ejecutar pruebas automáticas"
+  dependsOn: Build
+  jobs:
+  - job: TestJob
+    steps:
+    - checkout: self
+
+    - task: Gradle@2
+      displayName: "Ejecutar pruebas con Gradle"
+      inputs:
+        gradleWrapperFile: 'gradlew'
+        tasks: 'clean test aggregate'   # aggregate genera reportes Serenity
+        publishJUnitResults: true
+        testResultsFiles: '**/TEST-*.xml'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.11'
+        gradleOptions: '-Xmx3072m'
+
+    - task: PublishBuildArtifacts@1
+      displayName: "Publicar reportes Serenity"
+      inputs:
+        PathtoPublish: 'target/site/serenity'
+        ArtifactName: 'serenity-reports'
+        publishLocation: 'Container'
+
+# ============================
+# 3. DEPLOY (Release moderno)
+# ============================
+- stage: Deploy
+  displayName: "Desplegar artefacto"
+  dependsOn: Test
+  jobs:
+  - deployment: DeployJob
+    environment: 'qa'   # crea un Environment en Azure DevOps llamado "qa"
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "Aquí irían los pasos de despliegue 🚀"
+            displayName: "Simulación de release
