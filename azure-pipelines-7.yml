@@ -1,0 +1,56 @@
+trigger:
+- main   # Ajusta a la rama que uses
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: BuildAndTest
+  displayName: "Compilar y ejecutar pruebas"
+  steps:
+  - checkout: self
+
+  # Instalar JDK
+  - task: JavaToolInstaller@0
+    inputs:
+      versionSpec: '11'
+      jdkArchitecture: 'x64'
+      jdkSourceOption: 'PreInstalled'
+
+  # Cache de dependencias Gradle
+  - task: Cache@2
+    inputs:
+      key: 'gradle | "$(Agent.OS)" | **/gradle-wrapper.properties'
+      restoreKeys: |
+        gradle | "$(Agent.OS)"
+      path: ~/.gradle/caches
+    displayName: "Cache de dependencias Gradle"
+
+  # Compilar el proyecto
+  - script: ./gradlew clean build -x test
+    displayName: "Compilar proyecto con Gradle"
+
+  # Ejecutar pruebas con Gradle
+  - script: ./gradlew test
+    displayName: "Ejecutar pruebas (Cucumber + Serenity)"
+
+  # Publicar resultados de pruebas (JUnit)
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFiles: '**/build/test-results/test/TEST-*.xml'
+      testRunTitle: 'Resultados de Pruebas - Serenity + Cucumber'
+
+  # Publicar reportes de Serenity como artefacto
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: 'target/site/serenity'
+      ArtifactName: 'SerenityReports'
+      publishLocation: 'Container'
+
+- job: Release
+  displayName: "Simulación de Release"
+  dependsOn: BuildAndTest
+  condition: succeeded()   # Solo se ejecuta si la compilación y pruebas pasaron
+  steps:
+  - script: echo 'Aquí irían los pasos de despliegue 🚀'
+    displayName: 'Simulación de release'
